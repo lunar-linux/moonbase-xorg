@@ -1,12 +1,12 @@
           MODULE=util-macros
-         VERSION=1.16.2
+         VERSION=1.17
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/util
-      SOURCE_VFY=sha1:17340193e7ba5d9fd5a787a9401e84d223fcc918
+      SOURCE_VFY=sha1:c424a09fa6f628e24eff74496acebef13e8093b9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20120306
+         UPDATED=20120314
            SHORT="Create dependencies in makefiles using 'gcc -M'"
 
 cat << EOF

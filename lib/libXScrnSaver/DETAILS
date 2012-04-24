@@ -1,12 +1,12 @@
           MODULE=libXScrnSaver
-         VERSION=1.2.1
+         VERSION=1.2.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:3c29e2222fd68e26e408234c51c6d8b2edf6ab19
+      SOURCE_VFY=sha1:7b8298eec371c33a71232e3653370a98f03c6c88
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20101116
+         UPDATED=20120313
            SHORT="the X.Org MIT-SCREEN-SAVER extension library"
 
 cat << EOF
