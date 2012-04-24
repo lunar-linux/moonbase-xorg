@@ -1,0 +1,2 @@
+depends libFS
+depends libXfont

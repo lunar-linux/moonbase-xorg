@@ -1,0 +1,2 @@
+depends  libSM
+depends  libX11

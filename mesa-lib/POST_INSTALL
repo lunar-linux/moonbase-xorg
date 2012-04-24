@@ -1,0 +1,7 @@
+if [[ ! -e /usr/include/GL/glut.h ]] ; then
+  # mesa-lib previously installed part of glut,
+  # so install freeglut so it is complete
+  lin -c freeglut
+fi
+
+lin -c mesa-demos

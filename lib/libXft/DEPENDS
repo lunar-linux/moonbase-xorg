@@ -1,0 +1,2 @@
+depends  libXrender
+depends  fontconfig
