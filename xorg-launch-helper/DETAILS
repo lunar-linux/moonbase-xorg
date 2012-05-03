@@ -1,0 +1,14 @@
+          MODULE=xorg-launch-helper
+         VERSION=3
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=http://foo-projects.org/~sofar/xorg-launch-helper/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha1:846f0653c51d17c14b5da749e93f19ac6d66f6ec
+        WEB_SITE="http://foo-projects.org/~sofar/xorg-launch-helper/"
+         ENTERED=20120501
+         UPDATED=20120501
+           SHORT="A wrapper for Xorg to use in systemd user session environments."
+cat <<EOF
+This wrapper around Xorg allows you to run Xorg as a service under
+a systemd --user session.
+EOF
