@@ -8,3 +8,8 @@ depends libXi
 depends libXdamage
 depends libXt
 depends libXxf86vm
+
+optional_depends "libvdpau"         ""  ""  "vdpau hw acceleration using any gallium supported 3D GPU"
+optional_depends "libva"         ""  ""  "libVA hw acceleration using any gallium supported 3D GPU"
+optional_depends "libXvMC"         ""  ""  "XvMC hw acceleration using any gallium supported 3D GPU"
+optional_depends "llvm"         ""  ""  "llvm IS REQUIRED when you have ATI/AMD Radeon or FireGL"

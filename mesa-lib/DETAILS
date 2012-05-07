@@ -1,18 +1,17 @@
            MODULE=mesa-lib
-          VERSION=7.11.2
+          VERSION=8.0.2
            SOURCE=MesaLib-$VERSION.tar.bz2
-          SOURCE2=MesaGLUT-$VERSION.tar.bz2
+          SOURCE2=mesa-va-0.32.patch.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/Mesa-$VERSION
        SOURCE_URL=ftp://ftp.freedesktop.org/pub/mesa/$VERSION
-      SOURCE2_URL=$SOURCE_URL
-       SOURCE_VFY=sha1:5981ac2de8438e5f4a1f3561f2044d700c5f0de9
-      SOURCE2_VFY=sha1:2e6e730204800a0748b301a5f58b86332699788b
+      SOURCE2_URL=$PATCH_URL
+       SOURCE_VFY=sha1:bbb55d81294425137ee66c7389fbb474a43c9ab9
+      SOURCE2_VFY=sha1:81f1e921a5cfe30655e79eb1a95beee77affda79
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20120122
+          UPDATED=20120325
             SHORT="Mesa 3D library"
 
-PSAFE=no
 cat << EOF
 Mesa is a 3-D graphics library with an API which is very similar to
 that of OpenGL.

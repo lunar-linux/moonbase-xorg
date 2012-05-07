@@ -1,15 +1,12 @@
           MODULE=xf86-video-ati
-         VERSION=6.14.3
+         VERSION=6.14.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-         SOURCE2=xf86-video-ati-6.14.3-xorg-server-1.12.patch.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha1:db635e2e2858d5db90362f546ac0adad85474bad
-     SOURCE2_VFY=sha1:55fa15b3cbd5f900e9a90bf56375c6903d2aec7f
+      SOURCE_VFY=sha1:75ad000bc00599e1797134f2d20d3094cba6af92
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20120311
+         UPDATED=20120502
            SHORT="The X.Org video driver for ATI based cards"
 
 cat << EOF
