@@ -1,0 +1,6 @@
+depends libdrm
+depends udev
+depends pciaccess
+depends libXext
+depends xorg-server
+depends xproto

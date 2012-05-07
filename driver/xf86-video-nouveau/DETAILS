@@ -1,0 +1,13 @@
+          MODULE=xf86-video-nouveau
+         VERSION=20120210
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archlinux.c3sl.ufpr.br/other/xf86-video-nouveau/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+        WEB_SITE="http://nouveau.freedesktop.org/wiki/"
+         ENTERED=20120405
+         UPDATED=20120405
+           SHORT="Open Source 2D NVidia drivers."
+cat <<EOF
+nouveau project aims to build high-quality, open source drivers for
+nVidia cards. "Nouveau" [nuvo] is the French word for "new".
+EOF
