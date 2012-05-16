@@ -1,12 +1,12 @@
           MODULE=xf86-input-synaptics
-         VERSION=1.6.0
+         VERSION=1.6.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:24627bf7e1ac120fceb7a32dcfe3ebc29eddfbd6
+      SOURCE_VFY=sha1:963276a5dd240e84efff28d516f8d23cfeedaa13
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20080821
-         UPDATED=20120506
+         UPDATED=20120513
            SHORT="A Synaptics touchpad driver"
 
 cat << EOF
