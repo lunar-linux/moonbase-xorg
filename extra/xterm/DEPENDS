@@ -1,2 +1,16 @@
-depends           xorg-server
+
+depends libICE
+depends libSM
+depends libX11
+depends libXau
+depends libXaw
+depends libxcb
+depends libXext
+depends libXft
+depends libXmu
+depends libXpm
+depends libXrender
+depends libXt
+depends ncurses
+
 optional_depends  luit        "--enable-luit" "" "for unicode support"
