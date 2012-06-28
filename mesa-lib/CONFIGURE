@@ -49,7 +49,6 @@ select_gallium_drivers() {
 }
 
 if ! grep -q "MESADRIVER=" $MODULE_CONFIG; then
-  unpack_localedata
   MESADRIVER=`select_drivers`
   set_module_config MESADRIVER "$MESADRIVER"
 fi
@@ -61,7 +60,6 @@ GALLIUM=`get_module_config GALLIUM`
 
 if [[ $GALLIUM == y ]] ; then
   if ! grep -q "GALLIUMDRIVER=" $MODULE_CONFIG; then
-    unpack_localedata
     GALLIUMDRIVER=`select_gallium_drivers`
     set_module_config GALLIUMDRIVER "$GALLIUMDRIVER"
   fi
