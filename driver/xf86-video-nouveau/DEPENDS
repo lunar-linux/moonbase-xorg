@@ -1,5 +1,5 @@
 depends libdrm
-depends udev
+depends %UDEV
 depends pciaccess
 depends libXext
 depends xorg-server
