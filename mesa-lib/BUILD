@@ -6,7 +6,7 @@
   fi  &&
 
   # Do not look for old libva
-  sedit 's/libva = 0.31.1/libva = 0.33.0/' configure &&
+  sedit 's/libva = 0.31.1/libva = 0.32.0/' configure &&
   patch_it $SOURCE2 1 &&
   patch_it $SOURCE3 1 &&
 
