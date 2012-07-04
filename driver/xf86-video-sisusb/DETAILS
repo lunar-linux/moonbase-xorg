@@ -1,12 +1,12 @@
           MODULE=xf86-video-sisusb
-         VERSION=0.9.4
+         VERSION=0.9.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:600fd49dffe00121f9042555fea55948653d1a7e
+      SOURCE_VFY=sha1:7b5ad3bf7d19557120f2b842f9d0d0e16e00f7e6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20100712
+         UPDATED=20120704
            SHORT="the X.Org video driver for SiS based USB-attached video devices"
 
 cat << EOF
