@@ -1,6 +1,6 @@
 depends libdrm
 depends %UDEV
-depends pciaccess
+depends libpciaccess
 depends libXext
 depends xorg-server
 depends xproto
