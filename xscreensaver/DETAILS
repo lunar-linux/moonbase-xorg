@@ -1,13 +1,12 @@
           MODULE=xscreensaver
-         VERSION=5.15
+         VERSION=5.18
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.jwz.org/$MODULE
-      SOURCE_VFY=sha1:b5ce7caa19f4d57c3bac83377a36dddbe7095052
+      SOURCE_VFY=sha1:a9f66d3f5094d2c1ef46c1209730e7cb653f33a7
         WEB_SITE=http://www.jwz.org/xscreensaver
          ENTERED=20010922
-         UPDATED=20110930
+         UPDATED=20120724
            SHORT="A modular screen saver and locker for X"
-           PSAFE=no
 
 cat << EOF
 XScreenSaver is a modular screen saver and locker for the X Window
