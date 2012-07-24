@@ -13,8 +13,9 @@
           --without-pixbuf        \
           --enable-locking"      &&
 
-  default_build  &&
+  # this is a harmless debugging line and AF_LINK is currently undefined over here
+  sedit '/AF_LINK/d' hacks/glx/sonar-icmp.c &&
 
-  rm -fR /xscreensaver
+  default_build
 
 ) > $C_FIFO 2>&1
