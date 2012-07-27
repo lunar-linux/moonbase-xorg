@@ -1,18 +1,18 @@
            MODULE=mesa-lib
-          VERSION=8.0.3
+          VERSION=8.0.4
            SOURCE=MesaLib-$VERSION.tar.bz2
           SOURCE2=mesa-va-0.32.patch.bz2
-          SOURCE3=MesaLib-${VERSION}-llvm-3.1-fixes-1.patch
+          SOURCE3=MesaLib-8.0.3-llvm-3.1-fixes-1.patch
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/Mesa-$VERSION
        SOURCE_URL=ftp://ftp.freedesktop.org/pub/mesa/$VERSION
       SOURCE2_URL=$PATCH_URL
-      SOURCE3_URL=http://www.linuxfromscratch.org/patches/blfs/svn/
-       SOURCE_VFY=sha1:768bdb2fe133bbcccd3323b79484d0d17bc0d05d
+      SOURCE3_URL=http://www.linuxfromscratch.org/patches/blfs/svn
+       SOURCE_VFY=sha1:c64f8c03caf9ededd5f7011e246c42a649096c8c
       SOURCE2_VFY=sha1:81f1e921a5cfe30655e79eb1a95beee77affda79
       SOURCE3_VFY=sha1:d4f742b587b64f61151ed679a6a4f1309886b3c2
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20120523
+          UPDATED=20120712
             SHORT="Mesa 3D library"
 
 cat << EOF
