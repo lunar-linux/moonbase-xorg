@@ -1,12 +1,12 @@
           MODULE=xf86-video-ast
-         VERSION=0.96.0
+         VERSION=0.97.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:e8d6e5e925715ece134b5215de3e7ad331e39502
+      SOURCE_VFY=sha1:
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120704
+         UPDATED=20120728
            SHORT=""
 
 cat << EOF

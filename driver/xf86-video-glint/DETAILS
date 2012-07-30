@@ -1,12 +1,12 @@
           MODULE=xf86-video-glint
-         VERSION=1.2.7
+         VERSION=1.2.8
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:2d760568e21327461e0aecf5bc201bd6c2cec47e
+      SOURCE_VFY=sha1:
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120227
+         UPDATED=20120728
            SHORT="The X.Org video driver for GLINT/Permedia based cards"
 
 cat << EOF

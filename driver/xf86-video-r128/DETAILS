@@ -1,12 +1,12 @@
           MODULE=xf86-video-r128
-         VERSION=6.8.3
+         VERSION=6.8.4
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:4c5281ccb5e3540ced6eb3df24ba70541f8ed28a
+      SOURCE_VFY=sha1:
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20090123
-         UPDATED=20120704
+         UPDATED=20120728
            SHORT="The X.Org video driver for ATI R128 based cards"
 
 cat << EOF
