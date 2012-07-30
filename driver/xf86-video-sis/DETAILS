@@ -1,12 +1,12 @@
           MODULE=xf86-video-sis
-         VERSION=0.10.4
+         VERSION=0.10.7
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:e17fabf160939cef3128f4b10f70fd5f9b0e6442
+      SOURCE_VFY=sha1:
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120324
+         UPDATED=20120728
            SHORT="The X.Org video driver for SiS and XGI based cards"
 
 cat << EOF

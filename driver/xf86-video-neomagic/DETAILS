@@ -1,12 +1,12 @@
           MODULE=xf86-video-neomagic
-         VERSION=1.2.6
+         VERSION=1.2.7
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:35ac1d62357fa2ddc37473b24335db441bc70f4d
+      SOURCE_VFY=sha1:
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120324
+         UPDATED=20120728
            SHORT="The X.Org video driver for Neomagic MagicGraph based cards"
 
 cat << EOF
