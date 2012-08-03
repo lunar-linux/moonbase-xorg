@@ -2,7 +2,7 @@
          VERSION=2.3.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:
+      SOURCE_VFY=sha1:d49a57de24e7923bf17270084ce91ecf2feb4286
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
