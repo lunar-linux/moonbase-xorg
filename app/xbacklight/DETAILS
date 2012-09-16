@@ -1,12 +1,12 @@
           MODULE=xbacklight
-         VERSION=1.1.2
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:e297b359ab83f3844ca5ea1c23280b2f8bb71cfd
+      SOURCE_VFY=sha1:6c43b29098e18a9d539b20fb7d0002e295ecdc20
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070823
-         UPDATED=20101211
+         UPDATED=20120916
            SHORT="adjust backlight brightness"
 
 cat << EOF
