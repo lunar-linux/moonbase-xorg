@@ -6,7 +6,7 @@
 
 #  OPTS+=" --with-xserver-source=`pwd -P`" &&
   CFLAGS="$CFLAGS -I`pwd -P`/src/parser" &&
-  OPTS=" $OPTS --enable-sna --enable-vmap " &&
+  OPTS=" $OPTS --enable-sna " &&
   default_build
 
 ) > $C_FIFO 2>&1
