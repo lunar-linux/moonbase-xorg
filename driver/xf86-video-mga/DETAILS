@@ -1,12 +1,12 @@
           MODULE=xf86-video-mga
-         VERSION=1.6.1
+         VERSION=1.6.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:6dd3ac82be4cd9c7f201561d1bab8a98e2028488
+      SOURCE_VFY=sha1:030e097dc435b17f603c64e46f7b655a185a075b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120728
+         UPDATED=20120929
            SHORT="The X.Org video driver for Matrox based cards"
 
 cat << EOF
