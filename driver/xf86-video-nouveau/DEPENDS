@@ -1,6 +1,3 @@
 depends libdrm
-depends %UDEV
-depends libpciaccess
-depends libXext
+depends systemd
 depends xorg-server
-depends xproto
