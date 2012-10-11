@@ -1,12 +1,12 @@
           MODULE=xcb-proto
-         VERSION=1.7.1
+         VERSION=1.8
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://xcb.freedesktop.org/dist
-      SOURCE_VFY=sha1:82a568559235fc6e26d0a38911c5ea18f8e8455c
+      SOURCE_VFY=sha1:a8e71b9a09066870ff12049f45e8bccaaf83fc31
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://xcb.freedesktop.org
          ENTERED=20060216
-         UPDATED=20120324
+         UPDATED=20121008
            SHORT="The X C-bindings (XCB) protocol headers"
 
 cat << EOF
