@@ -1,14 +1,15 @@
 (
 
+  NOCONFIGURE=1 ./autogen.sh &&
+
   # Mesa Gallium mklib breaks build when linker flags are set
   if [[ $GALLIUM == y ]]; then
     bad_flags linker
   fi  &&
 
   # Do not look for old libva
-  sedit 's/libva = 0.31.1/libva = 0.32.0/' configure &&
+  sedit 's/libva = 0.31.1/libva = 0.32.1/' configure &&
   patch_it $SOURCE2 1 &&
-  patch_it $SOURCE3 1 &&
 
   OPTS+=" --with-dri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
@@ -19,7 +20,7 @@
   fi &&
 
   if module_installed xorg-server; then
-    OPTS+=" --with-x --enable-xorg"
+    OPTS+=" --enable-xorg"
   fi  &&
 
   default_build
