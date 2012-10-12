@@ -7,9 +7,8 @@
     bad_flags linker
   fi  &&
 
-  # Do not look for old libva
-  sedit 's/libva = 0.31.1/libva = 0.32.1/' configure &&
-  patch_it $SOURCE2 1 &&
+  # Do not use libva here at all
+  OPTS+=" --disable-va" &&
 
   OPTS+=" --with-dri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
