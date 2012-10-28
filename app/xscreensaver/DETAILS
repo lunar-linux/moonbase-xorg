@@ -1,8 +1,8 @@
           MODULE=xscreensaver
-         VERSION=5.18
+         VERSION=5.20
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.jwz.org/$MODULE
-      SOURCE_VFY=sha1:a9f66d3f5094d2c1ef46c1209730e7cb653f33a7
+      SOURCE_VFY=sha1:052cc6676fe7818ec4131f41942266c237acdced
         WEB_SITE=http://www.jwz.org/xscreensaver
          ENTERED=20010922
          UPDATED=20120724
