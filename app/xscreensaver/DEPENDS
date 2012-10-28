@@ -9,7 +9,7 @@ optional_depends "gettext"  "" ""  \
 optional_depends "glade2"  "--with-gtk"  "--without-gtk" \
                  "to build the GNOME configuration manager"
 
-optional_depends "fortune"  "--with-fortune=/usr/games/fortune"  ""  \
+optional_depends "fortune"  ""  ""  \
                  "allow fortune to be used as a text source in screensavers"
 
 optional_depends "appres"  ""  ""  \
