@@ -15,6 +15,8 @@
 
   # this is a harmless debugging line and AF_LINK is currently undefined over here
   sedit '/AF_LINK/d' hacks/glx/sonar-icmp.c &&
+  # remove unnecessary #endif
+  sedit '597d' hacks/glx/sonar-icmp.c &&
 
   default_build
 
