@@ -25,14 +25,14 @@
   LD_LIBRARY_PATH="$SOURCE_DIRECTORY:$LD_LIBRARY_PATH" &&
   CFLAGS=" -L$SOURCE_DIRECTORY $CFLAGS " &&
   export SYSSRC=/usr/src/linux &&
-  ln -s libGL.so.$VERSION nvidia-installer-$AVERSION/libGL.so &&
-  ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$AVERSION/libGLcore.so.1 &&
-  ln -s libnvidia-tls.so.$VERSION nvidia-installer-$AVERSION/libnvidia-tls.so.1 &&
+  ln -s libGL.so.$VERSION nvidia-installer-$VERSION/libGL.so &&
+  ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$VERSION/libGLcore.so.1 &&
+  ln -s libnvidia-tls.so.$VERSION nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
 
   echo libXvMCNVIDIA_dynamic.so.1 > XvMCConfig &&
 
   # Builds nvidia-installer from source
-  cd nvidia-installer-$AVERSION &&
+  cd nvidia-installer-$VERSION &&
   rm -f *Linux* &&
 
   if [[ $(arch) == x86_64 ]] ; then
@@ -63,7 +63,7 @@
   cd ..
   if in_depends $MODULE "gtk+-2" ; then
     # Builds nvidia-settings from source
-    cd nvidia-settings-$AVERSION &&
+    cd nvidia-settings-$VERSION &&
 
     # xf86vmode.h has been removed in xf86vidmodeproto 2.3
     if [[ ! -e /usr/include/X11/extensions/xf86vmode.h ]] ; then
@@ -71,15 +71,16 @@
     fi &&
 
     make clean &&
+    make -C src/libXNVCtrl clean &&
     make -C src/libXNVCtrl &&
 # X_CFLAGS=$CFLAGS GL_INCLUDE_PATH=$SOURCE_DIRECTORY
     make &&
     if [[ $(arch) == x86_64 ]] ; then
-      install -m 755 _out/Linux_x86_64/nvidia-settings .. &&
-      install -m 644 _out/Linux_x86_64/nvidia-settings.1.gz ..
+      install -m 755 src/_out/Linux_x86_64/nvidia-settings .. &&
+      install -m 644 doc/_out/Linux_x86_64/nvidia-settings.1.gz ..
     else
-      install -m 755 _out/Linux_x86/nvidia-settings .. &&
-      install -m 644 _out/Linux_x86/nvidia-settings.1.gz ..
+      install -m 755 src/_out/Linux_x86/nvidia-settings .. &&
+      install -m 644 doc/_out/Linux_x86/nvidia-settings.1.gz ..
     fi &&
     sedit 's/__UTILS_PATH__/\/usr\/bin/' doc/nvidia-settings.desktop &&
     sedit 's/__PIXMAP_PATH__/\/usr\/share\/doc\/NVIDIA_GLX-1.0/' doc/nvidia-settings.desktop &&
@@ -88,7 +89,7 @@
   fi &&
 
   # Builds nvidia-xconfig from source
-  cd nvidia-xconfig-$AVERSION &&
+  cd nvidia-xconfig-$VERSION &&
   make clean &&
   make &&
   if [[ $(arch) == x86_64 ]] ; then
@@ -126,11 +127,6 @@
   ln -sf /usr/lib/libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so.1 &&
   ln -sf /usr/lib/libnvidia-cfg.so.1 /usr/lib/libnvidia-cfg.so &&
 
-  install -m0755 libXvMCNVIDIA.so.$VERSION /usr/lib &&
-  install -m0444 libXvMCNVIDIA.a /usr/lib &&
-  ln -sf /usr/lib/libXvMCNVIDIA.so.$VERSION /usr/lib/libXvMCNVIDIA_dynamic.so.1 &&
-  ln -sf /usr/lib/libXvMCNVIDIA_dynamic.so.1 /usr/lib/libXvMCNVIDIA_dynamic.so &&
-
   install -m0755 libcuda.so.$VERSION /usr/lib &&
   ln -sf /usr/lib/libcuda.so.$VERSION /usr/lib/libcuda.so.1 &&
   ln -sf /usr/lib/libcuda.so.1 /usr/lib/libcuda.so &&
@@ -167,8 +163,8 @@
 
   if in_depends $MODULE "gtk+-2" ; then
     install -m0755 nvidia-settings /usr/bin &&
-    install -m0444 nvidia-settings-$AVERSION/doc/nvidia-settings.desktop /usr/share/applications &&
-    install -m0444 nvidia-settings-$AVERSION/doc/nvidia-settings.png /usr/share/doc/NVIDIA_GLX-1.0 &&
+    install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.desktop /usr/share/applications &&
+    install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.png /usr/share/doc/NVIDIA_GLX-1.0 &&
     install -m0444 nvidia-settings.1.gz /usr/share/man/man1
   fi
 
