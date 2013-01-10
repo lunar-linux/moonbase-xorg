@@ -1,3 +1,2 @@
 depends libdrm
-depends systemd
 depends xorg-server
