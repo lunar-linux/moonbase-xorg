@@ -1,12 +1,12 @@
           MODULE=xkbutils
-         VERSION=1.0.3
+         VERSION=1.0.4
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:e5a2619b9449f95e02b520b492de0575bc4551d6
+      SOURCE_VFY=sha1:b09aef7cc3853eb12dbda332f55adec3add4447b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20101116
+         UPDATED=20130213
            SHORT="additional keyboard utils"
 
 cat << EOF
