@@ -1,6 +1,8 @@
 (
 
-  OPTS+=" --enable-udev  --enable-vmwgfx-experimental-api --enable-nouveau-experimental-api" &&
+  sedit "s/man\/Makefile//" configure configure.ac
+
+  OPTS+=" --enable-udev " &&
 
   default_build
 
