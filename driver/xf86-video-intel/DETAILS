@@ -1,12 +1,12 @@
           MODULE=xf86-video-intel
-         VERSION=2.21.2
+         VERSION=2.21.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:42f65d7ac9a8cb27b16e134533cc11d2c366451d
+      SOURCE_VFY=sha1:e09d16c2a3a4501cd9429f15fb9e5e4137870f8f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20130211
+         UPDATED=20130226
            SHORT="The X.Org video driver for Intel based cards"
 
 cat << EOF
