@@ -1,4 +1,3 @@
-
 SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon swrast"
 SUPPORTED_GALLIUM="i915 nouveau r300 r600 svga swrast"
 
@@ -64,7 +63,8 @@ if [[ -z "$(get_module_config CONFIGURED)" ]]; then
   message "If you build for NVidia or Ati hardware, enable Gallium, llvm, xvmc, vdpau."
   message ""
   message "Binary / Proprietary Drivers:"
-  message "If building the NVIDIA/fglrx binary driver, disable gallium, llvm, vdpau, xvmc."
+  message "If you build the NVIDIA binary driver, disable gallium, llvm and xvmc."
+  message "If you build the fglrx binary driver, disable gallium, llvm, vdpau and xvmc."
   message "${DEFAULT_COLOR}"
 fi
 
