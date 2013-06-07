@@ -1,12 +1,12 @@
         MODULE=libdmx
-       VERSION=1.1.2
+       VERSION=1.1.3
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/lib
-    SOURCE_VFY=sha1:76956d4127ded2e6d1bb5746a6d1603ee23b442a
+    SOURCE_VFY=sha1:0eeac14a06cffb04a1c78793563f233a8f8b79be
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20120310
+       UPDATED=20130606
          SHORT="The X.Org DMX extenstion library"
 
 cat << EOF
