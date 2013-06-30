@@ -5,7 +5,7 @@
       SOURCE_VFY=sha1:5bd5e2fe10e3055ccec347e8608476fab2d3eaca
         WEB_SITE=http://portland.freedesktop.org/wiki/XdgUtils
          ENTERED=20061012
-         UPDATED=20110927
+         UPDATED=20130630
            SHORT="tools to help applications to easily integrate with the free desktop standards"
 
 cat << EOF
