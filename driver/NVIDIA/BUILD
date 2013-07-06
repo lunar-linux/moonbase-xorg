@@ -1,4 +1,10 @@
 (
+
+  # Fix for x86_64 with kernel >= 3.10
+  if [[ $(arch) == x86_64 ]]; then
+    patch_it $SOURCE5 1
+  fi &&
+
   # This is an installer-less build script. If you find bugs let me know by e-mail: zbiggy(0)o2(period)pl
 
   GCCKNL=`cat /proc/version | cut -d\( -f3 | cut -d\  -f3`
