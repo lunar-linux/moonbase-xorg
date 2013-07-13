@@ -1,57 +1,67 @@
+GCCKNL=`cat /proc/version | cut -d\( -f3 | cut -d\  -f3` &&
+GCCNOW=`gcc --version | grep gcc | cut -d\  -f3` &&
+if [[ "$GCCKNL" != "$GCCNOW" ]]; then
+  message "${PROBLEM_COLOR}"                                    \
+          "The kernel is compiled using gcc version: $GCCKNL"   \
+          "but you try to compile nvidia kernel module with"    \
+          "gcc version: $GCCNOW. You can not use different"     \
+          "gcc to build kernel and modules. Please lin kernel"  \
+          "with current gcc, then reboot and lin nvidia driver."\
+          "${DEFAULT_COLOR}" &&
+  false
+fi &&
 
 # Temporary paths and symlinks to make sources compilable
 LD_LIBRARY_PATH="$SOURCE_DIRECTORY:$LD_LIBRARY_PATH" &&
-CFLAGS=" -L$SOURCE_DIRECTORY $CFLAGS " &&
-export SYSSRC=/usr/src/linux &&
-ln -s libGL.so.$VERSION nvidia-installer-$VERSION/libGL.so &&
-ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$VERSION/libGLcore.so.1 &&
-ln -s libnvidia-tls.so.$VERSION nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
+CFLAGS="-L$SOURCE_DIRECTORY $CFLAGS"                 &&
+export SYSSRC=/usr/src/linux                         &&
+
+ln -s libGL.so.$VERSION            nvidia-installer-$VERSION/libGL.so           &&
+ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$VERSION/libGLcore.so.1     &&
+ln -s libnvidia-tls.so.$VERSION    nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
 
 echo libXvMCNVIDIA_dynamic.so.1 > XvMCConfig &&
 
-# Builds nvidia-installer from source
+# build installer
 cd nvidia-installer-$VERSION &&
-rm -f *Linux* &&
 
-make clean &&
-make rebuild_tls_test &&
-make rebuild_tls_test_dso &&
-make rebuild_rtld_test &&
-make &&
-install -m 755 _out/Linux_x86/nvidia-installer .. &&
-install -m 755 _out/Linux_x86/mkprecompiled .. &&
-install -m 644 _out/Linux_x86/nvidia-installer.1.gz .. &&
-cp tls_test_`uname`-x86 ../tls_test &&
-cp tls_test_dso_`uname`-x86.so ../tls_test_dso.so &&
+ make rebuild_tls_test &&
+ make rebuild_tls_test_dso &&
+ make rebuild_rtld_test &&
+ make &&
+
+ install -m 755 _out/*/nvidia-installer      .. &&
+ install -m 755 _out/*/mkprecompiled         .. &&
+ install -m 644 _out/*/nvidia-installer.1.gz .. &&
+ cp             tls_test_*                   ../tls_test        &&
+ cp             tls_test_dso_*.so            ../tls_test_dso.so &&
+
 cd .. &&
 
+# optionally build nvidia-settings
 if in_depends $MODULE "gtk+-2" ; then
-  # Builds nvidia-settings from source
   cd nvidia-settings-$VERSION &&
 
-  # xf86vmode.h has been removed in xf86vidmodeproto 2.3
-  if [[ ! -e /usr/include/X11/extensions/xf86vmode.h ]] ; then
-    sedit "s:#include <X11/extensions/xf86vmode.h>:#include <X11/extensions/xf86vmproto.h>:" src/libXNVCtrlAttributes/NvCtrlAttributes{,VidMode,Glx}.c
-  fi &&
-
-  make clean &&
   make -C src/libXNVCtrl clean &&
   make -C src/libXNVCtrl &&
   make &&
-  install -m 755 src/_out/Linux_x86/nvidia-settings .. &&
-  install -m 644 doc/_out/Linux_x86/nvidia-settings.1.gz .. &&
+
+  install -m 755 src/_out/*/nvidia-settings .. &&
+  install -m 644 doc/_out/*/nvidia-settings.1.gz .. &&
   sedit 's/__UTILS_PATH__/\/usr\/bin/' doc/nvidia-settings.desktop &&
   sedit 's/__PIXMAP_PATH__/\/usr\/share\/doc\/NVIDIA_GLX-1.0/' doc/nvidia-settings.desktop &&
   sedit 's/__NVIDIA_SETTINGS_DESKTOP_CATEGORIES__/Settings;DesktopSettings;/' doc/nvidia-settings.desktop &&
   cd ..
 fi &&
 
-# Builds nvidia-xconfig from source
+# build nvidia-xconfig
 cd nvidia-xconfig-$VERSION &&
-make clean &&
-make &&
-install -m 755 _out/Linux_x86/nvidia-xconfig .. &&
-install -m 644 _out/Linux_x86/nvidia-xconfig.1.gz .. &&
+
+ make &&
+
+ install -m 755 _out/*/nvidia-xconfig      .. &&
+ install -m 644 _out/*/nvidia-xconfig.1.gz .. &&
+
 cd .. &&
 
 # We make the kernel modules on our own
