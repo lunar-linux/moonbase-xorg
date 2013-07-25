@@ -1,0 +1,7 @@
+default_pre_build &&
+
+install -m644 $SCRIPT_DIRECTORY/50-synaptics.conf conf &&
+
+# This function was removed somewhere...
+# This kills the X server on mouse click
+sedit '/BUG_RETURN_VAL/ d' src/synaptics.c
