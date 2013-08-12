@@ -33,7 +33,7 @@ cd nvidia-installer-$VERSION &&
  install -m 755 _out/*/nvidia-installer      .. &&
  install -m 755 _out/*/mkprecompiled         .. &&
  install -m 644 _out/*/nvidia-installer.1.gz .. &&
- cp             tls_test_*                   ../tls_test        &&
+# cp             tls_test_*                   ../tls_test        &&
  cp             tls_test_dso_*.so            ../tls_test_dso.so &&
 
 cd .. &&
@@ -66,7 +66,7 @@ cd .. &&
 
 # We make the kernel modules on our own
 cd kernel &&
-sedit "s@\$\(shell uname -r\)@`cat /usr/src/linux/include/config/kernel.release`@" Makefile.* makefile &&
+sedit "s@\$\(shell uname -r\)@`cat /usr/src/linux/include/config/kernel.release`@" Makefile &&
 make module &&
 rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
 
