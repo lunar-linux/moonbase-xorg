@@ -16,4 +16,7 @@
 
   # xf86vmode.h has been removed in xf86vidmodeproto 2.3
   sedit "s:#include <X11/extensions/xf86vmode.h>:#include <X11/extensions/xf86vmproto.h>:" \
-        nvidia-settings-$VERSION/src/libXNVCtrlAttributes/NvCtrlAttributes{,VidMode,Glx}.c
+        nvidia-settings-$VERSION/src/libXNVCtrlAttributes/NvCtrlAttributes{,VidMode,Glx}.c &&
+
+  # Fix for kernel 3.11 changes
+  patch_it $SOURCE5 1

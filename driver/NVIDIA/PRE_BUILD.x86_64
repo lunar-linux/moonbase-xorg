@@ -18,7 +18,7 @@
   sedit "s:#include <X11/extensions/xf86vmode.h>:#include <X11/extensions/xf86vmproto.h>:" \
         nvidia-settings-$VERSION/src/libXNVCtrlAttributes/NvCtrlAttributes{,VidMode,Glx}.c &&
 
-  # Temporary fix for x86_64 with kernel >= 3.10
+  # Fix for kernel 3.11 changes
   patch_it $SOURCE5 1 &&
 
   # Don't compile 32-bits on pure 64-bit Lunar

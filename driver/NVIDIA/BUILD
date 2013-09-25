@@ -33,7 +33,7 @@ cd nvidia-installer-$VERSION &&
  install -m 755 _out/*/nvidia-installer      .. &&
  install -m 755 _out/*/mkprecompiled         .. &&
  install -m 644 _out/*/nvidia-installer.1.gz .. &&
- cp             tls_test_*                   ../tls_test        &&
+ cp             tls_test_Linux*                   ../tls_test        &&
  cp             tls_test_dso_*.so            ../tls_test_dso.so &&
 
 cd .. &&
