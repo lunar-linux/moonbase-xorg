@@ -28,6 +28,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
   SOURCE2_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-settings/snapshot
   SOURCE3_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-installer/snapshot
   SOURCE4_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-xconfig/snapshot
+     SOURCE5_URL=$PATCH_URL
       SOURCE_VFY=sha1:f46d2f434c01a37ce516819f5c9265a801e9d159
      SOURCE2_VFY=sha1:c2c6e59cdf161d9d8d8946e10794af5a86e16f75
      SOURCE3_VFY=sha1:663ca06d4fdc052142428dfcc378b600a1f1f095
