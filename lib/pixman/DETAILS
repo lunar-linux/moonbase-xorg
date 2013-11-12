@@ -1,12 +1,12 @@
           MODULE=pixman
-         VERSION=0.30.2
+         VERSION=0.32.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:4ea0832932fd5447a1d5768e0d5403b6c7c4dbaf
+      SOURCE_VFY=sha1:f1490e3fbe3012ea1ca1b45d0a4af23fdaba70e7
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070809
-         UPDATED=20130810
+         UPDATED=20131112
            SHORT="Low-level pixel manipulation routine library"
 
 cat << EOF
