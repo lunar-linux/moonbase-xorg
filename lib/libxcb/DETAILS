@@ -1,12 +1,12 @@
           MODULE=libxcb
-         VERSION=1.9.1
+         VERSION=1.9.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://xcb.freedesktop.org/dist
-      SOURCE_VFY=sha1:bf786bb7b9089102b73753135e061c87dc8e8685
+      SOURCE_VFY=sha1:28076500e2ca05e5887c7ed231ba305a85e8bd0b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://xcb.freedesktop.org
          ENTERED=20070216
-         UPDATED=20130606
+         UPDATED=20131110
            SHORT="A replacement of the Xlib interface"
 
 cat << EOF
