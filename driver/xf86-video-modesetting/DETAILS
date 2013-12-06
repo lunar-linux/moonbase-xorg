@@ -1,12 +1,12 @@
           MODULE=xf86-video-modesetting
-         VERSION=0.8.0
+         VERSION=0.8.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:5ada282cedc46327c8c97410e05b14fc40bc67fd
+      SOURCE_VFY=sha1:49da63b1b9ca945300b1dc4fbf9aa7f1423f04f4
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20120916
-         UPDATED=20130613
+         UPDATED=20131206
            SHORT="The X.Org driver for modesetting video cards"
 
 cat << EOF
