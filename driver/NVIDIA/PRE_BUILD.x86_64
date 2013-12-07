@@ -18,9 +18,6 @@
   sedit "s:#include <X11/extensions/xf86vmode.h>:#include <X11/extensions/xf86vmproto.h>:" \
         nvidia-settings-$VERSION/src/libXNVCtrlAttributes/NvCtrlAttributes{,VidMode,Glx}.c &&
 
-  # Fix for kernel 3.11 changes
-  patch_it $SOURCE5 1 &&
-
   # Don't compile 32-bits on pure 64-bit Lunar
   sedit 's/COMPAT_32_SRC *= */\0#/' nvidia-installer-$VERSION/Makefile &&
   sedit 's/-DNV_X86_64//'           nvidia-installer-$VERSION/Makefile
