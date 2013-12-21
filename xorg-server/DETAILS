@@ -1,12 +1,12 @@
           MODULE=xorg-server
-         VERSION=1.14.4
+         VERSION=1.14.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/xserver
-      SOURCE_VFY=sha1:5ee112b52f0cec043aa68bd909457b2ea2a11380
+      SOURCE_VFY=sha1:3891522665195ac722403e34840ec94b0b5cc5bc
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20131102
+         UPDATED=20131215
       MAINTAINER=elangelo@lunar-linux.org
            SHORT="The X.Org X11R7 server for the X Window System"
 
