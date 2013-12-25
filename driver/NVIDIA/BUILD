@@ -65,14 +65,14 @@ cd nvidia-xconfig-$VERSION &&
 cd .. &&
 
 # We make the kernel modules on our own
+KVER=$(cat /usr/src/linux/include/config/kernel.release)
 cd kernel &&
-sedit "s@\$\(shell uname -r\)@`cat /usr/src/linux/include/config/kernel.release`@" Makefile.* makefile &&
-make module &&
+make module KERNEL_UNAME=$KVER &&
 rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
 
 prepare_install &&
 
-make install &&
+make install KERNEL_UNAME=$KVER &&
 cd .. &&
 
 mkdir -p /etc/OpenCL/vendors &&
