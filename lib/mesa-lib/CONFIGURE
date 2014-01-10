@@ -83,12 +83,14 @@ fi
 mquery XA "Enable XA support?" y "--enable-xa" "--disable-xa"
 if [[ $GALLIUM == y ]]; then
   mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
-  mquery OPENVG "Enable openVG?" y "--enable-openvg" "--disable-openvg"
-  mquery D3D "Enable D3D API's?" n "--enable-d3d1x --enable-gallium-g3dvl" "--disable-d3d1x --disable-gallium-g3dvl"
 else
   mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl" "--disable-egl"
-  mquery D3D "Enable D3D API's?" n "--enable-d3d1x" "--disable-d3d1x"
 fi
+
+if [[ $EGL == y ]]; then
+  mquery OPENVG "Enable openVG?" y "--enable-openvg" "--disable-openvg"
+fi
+
 mquery TEXTURE_FLOAT "Enable patented texture-float? (if this patent is valid in your country choose N)" n "--enable-texture-float" "--disable-texture-float"
 mquery ENABLE_GLX_TLS "Enable glx-tls? (lin -r xorg-server also)" y "--enable-glx-tls" "--disable-glx-tls"
 
