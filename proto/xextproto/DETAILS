@@ -1,12 +1,12 @@
         MODULE=xextproto
-       VERSION=7.2.1
+       VERSION=7.3.0
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/proto
-    SOURCE_VFY=sha1:f969e02009adf2d51fd1ba4583a859984728a461
+    SOURCE_VFY=sha1:b8d736342dcb73b71584d99a1cb9806d93c25ff8
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20120324
+       UPDATED=20131229
          SHORT="Protocol headers for various extensions"
 
 cat << EOF
