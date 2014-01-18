@@ -14,6 +14,7 @@ depends  compositeproto
 depends  trapproto
 depends  xineramaproto
 depends  xcmiscproto
+depends  presentproto
 depends  libxkbfile
 depends  libXt
 depends  evieext
