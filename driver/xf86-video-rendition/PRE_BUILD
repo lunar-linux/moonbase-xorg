@@ -1,0 +1,5 @@
+default_pre_build &&
+
+# Build fixes
+sedit 's;#include "mibstore.h";;' src/rendition.h &&
+sedit 's:miInitializeBackingStore(pScreen);::' src/rendition.c
