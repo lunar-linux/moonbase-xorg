@@ -1,0 +1,5 @@
+default_pre_build &&
+
+# Build fixes
+sedit 's;#include "mibstore.h";;;s:miInitializeBackingStore(pScreen);::' src/i740_driver.c
+
