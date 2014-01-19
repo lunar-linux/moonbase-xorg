@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# Build fix
+sedit 's:miInitializeBackingStore(pScreen);::' src/smi_driver.c
