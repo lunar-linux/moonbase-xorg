@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# Build fix
+sedit 's;#include "mibstore.h";;' src/sisusb_driver.c
