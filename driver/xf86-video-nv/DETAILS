@@ -1,8 +1,11 @@
           MODULE=xf86-video-nv
          VERSION=2.1.20
           SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=$MODULE-remove-mibstore.patch
       SOURCE_URL=$XORG_URL/individual/driver
+     SOURCE2_URL=$PATCH_URL
       SOURCE_VFY=sha1:42b129be471d16444c5a7b443491e8d9e3e5df1a
+     SOURCE2_VFY=sha1:7db44033619e8907e89fe06c9de1d81721eb71f3
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060227
