@@ -1,0 +1,4 @@
+depends xcb-util-image
+depends xcb-util-renderutil
+depends libxcb
+depends xcb-util
