@@ -1,12 +1,21 @@
           MODULE=xf86-video-sis
          VERSION=0.10.7
           SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=$MODULE-disable-uploadtoscreen-downloadfromscreen.patch
+         SOURCE3=$MODULE-xi.patch
+         SOURCE4=$MODULE-build-fixes.patch
       SOURCE_URL=$XORG_URL/individual/driver
+     SOURCE2_URL=$PATCH_URL
+     SOURCE3_URL=$PATCH_URL
+     SOURCE4_URL=$PATCH_URL
       SOURCE_VFY=sha1:8f8cd88fe7d3a85f6bf2b12a34fd55db35f186d7
+     SOURCE2_VFY=sha1:a99b417dd81f7dae7a013723872332402afc7fa2
+     SOURCE3_VFY=sha1:7a2cf4cdb24667f7703c6894dccd6e0e10a91cae
+     SOURCE4_VFY=sha1:f370033a699eaf5d0b13e6e27146450218d7069a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120728
+         UPDATED=20140119
            SHORT="The X.Org video driver for SiS and XGI based cards"
 
 cat << EOF
