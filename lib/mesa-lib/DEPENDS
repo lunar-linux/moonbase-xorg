@@ -2,12 +2,14 @@ depends libxml2
 depends expat
 depends glproto
 depends dri2proto
+depends dri3proto
 depends libdrm
 depends makedepend
 depends libXi
 depends libXdamage
 depends libXt
 depends libXxf86vm
+depends libxshmfence
 
 optional_depends "libvdpau" "--enable-vdpau" "--disable-vdpau" "vdpau hw acceleration"
 optional_depends "libXvMC"  "--enable-xvmc"  "--disable-xvmc"  "XvMC hw acceleration"
