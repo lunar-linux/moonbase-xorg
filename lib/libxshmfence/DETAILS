@@ -1,0 +1,13 @@
+          MODULE=libxshmfence
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/lib/
+      SOURCE_VFY=sha1:aeae8a045fda1aaad446244f56f1ed450cb242e3
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20140305
+         UPDATED=20140305
+           SHORT="A library that exposes a event API on top of Linux futexes"
+
+cat << EOF
+EOF
