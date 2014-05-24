@@ -1,2 +1,5 @@
 depends libXtst
 depends mtdev
+depends libevdev
+depends scrnsaverproto
+depends resourceproto
