@@ -1,12 +1,12 @@
           MODULE=xf86-input-evdev
-         VERSION=2.8.4
+         VERSION=2.9.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:b9e7c7c07efb7b3e8543905411b0cb1fb3fee853
+      SOURCE_VFY=sha1:e5e196719c09a02ca275b8eab534753408518e05
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20140510
+         UPDATED=20140521
            SHORT="An input driver"
 
 cat << EOF
