@@ -1,0 +1,5 @@
+depends systemd
+depends mtdev
+depends libevdev
+depends scrnsaverproto
+depends resourceproto
