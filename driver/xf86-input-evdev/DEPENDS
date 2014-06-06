@@ -1,4 +1,4 @@
-depends libXtst
+depends systemd
 depends mtdev
 depends libevdev
 depends scrnsaverproto
