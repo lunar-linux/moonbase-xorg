@@ -5,6 +5,9 @@
     OPTS+=" --with-pam --without-shadow"
   fi  &&
 
+# fixes undefined reference to `pthread_create' 
+  export LIBS+=" -lpthread" &&
+
   OPTS+=" --without-kerberos      \
           --with-dpms-ext         \
           --with-xf86vmode-ext    \
