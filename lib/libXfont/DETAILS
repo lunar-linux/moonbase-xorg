@@ -1,12 +1,15 @@
           MODULE=libXfont
-         VERSION=1.4.7
+         VERSION=1.4.8
           SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=libXfont-1.4.8-fontsproto-2.1.3-constchar.patch
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:77f60d0a2190cb36c07c2217693f46d5e8942ca2
+     SOURCE2_URL=http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/x11-libs/libXfont/files/
+      SOURCE_VFY=sha1:687746ba7e6d6064cb2b930e2dfe744603a5f85b
+     SOURCE2_VFY=sha1:f6bc9bdba6270de56d259e6d077bd4008456227b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20140108
+         UPDATED=20140714
            SHORT="The X.Org font rasterisation library"
 
 cat << EOF
