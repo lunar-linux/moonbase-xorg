@@ -15,10 +15,6 @@
     OPTS+=" --enable-gallium-egl"
   fi &&
 
-  if module_installed xorg-server; then
-    OPTS+=" --enable-xorg"
-  fi  &&
-
   default_build
 
 ) > $C_FIFO 2>&1
