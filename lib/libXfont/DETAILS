@@ -1,12 +1,12 @@
           MODULE=libXfont
-         VERSION=1.4.7
+         VERSION=1.5.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:77f60d0a2190cb36c07c2217693f46d5e8942ca2
+      SOURCE_VFY=sha1:54d0d0814679901ebf6dd2dd656c8842a4a61b6c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20140108
+         UPDATED=20140720
            SHORT="The X.Org font rasterisation library"
 
 cat << EOF
