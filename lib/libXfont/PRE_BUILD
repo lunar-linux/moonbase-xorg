@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's:char \*pattern:const char *pattern:' src/util/patcache.c
