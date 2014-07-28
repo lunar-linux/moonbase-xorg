@@ -5,12 +5,16 @@
     OPTS+=" --with-pam --without-shadow"
   fi  &&
 
-  OPTS+=" --without-kerberos      \
+  OPTS+=" --prefix=/usr           \
+          --without-kerberos      \
           --with-dpms-ext         \
           --with-xf86vmode-ext    \
           --with-xf86gamma-ext    \
-          --with-proc-interrupts  \
           --without-pixbuf        \
+          --with-proc-interrupts  \
+          --with-pthread          \
+          --with-xshm-ext         \
+          --disable-nls           \
           --enable-locking"      &&
 
   # this is a harmless debugging line and AF_LINK is currently undefined over here
@@ -18,6 +22,9 @@
   # remove unnecessary #endif
   sedit '597d' hacks/glx/sonar-icmp.c &&
 
-  default_build
+# Else it tanks on pthread stuff
+  LIBS=-lpthread ./configure $OPTS &&
+
+  default_make
 
 ) > $C_FIFO 2>&1
