@@ -93,5 +93,7 @@ fi
 
 mquery TEXTURE_FLOAT "Enable patented texture-float? (if this patent is valid in your country choose N)" n "--enable-texture-float" "--disable-texture-float"
 mquery ENABLE_GLX_TLS "Enable glx-tls? (lin -r xorg-server also)" y "--enable-glx-tls" "--disable-glx-tls"
+mquery ENABLE_GLES1 "Enable gles1? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles1" "--disable-gles1"
+mquery ENABLE_GLES2 "Enable gles2? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles2" "--disable-gles2"
 
 set_module_config CONFIGURED y
