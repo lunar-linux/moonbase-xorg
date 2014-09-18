@@ -95,5 +95,6 @@ mquery TEXTURE_FLOAT "Enable patented texture-float? (if this patent is valid in
 mquery ENABLE_GLX_TLS "Enable glx-tls? (lin -r xorg-server also)" y "--enable-glx-tls" "--disable-glx-tls"
 mquery ENABLE_GLES1 "Enable gles1? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles1" "--disable-gles1"
 mquery ENABLE_GLES2 "Enable gles2? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles2" "--disable-gles2"
+mquery ENABLE_GBM "Enable Mesa GBM (Graphics Buffer Manager) library? ${PROBLEM_COLOR} If KMS in kernel, will enable KMS in qt5.${QUERY_COLOR}" n "--enable-gbm" "--disable-gbm"
 
 set_module_config CONFIGURED y
