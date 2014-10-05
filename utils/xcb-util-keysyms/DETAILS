@@ -1,10 +1,12 @@
           MODULE=xcb-util-keysyms
-         VERSION=0.3.9
+         VERSION=0.4.0
           SOURCE=${MODULE}-${VERSION}.tar.bz2
       SOURCE_URL=http://xcb.freedesktop.org/dist/
-        WEB_SITE="http://www.x.org"
+      SOURCE_VFY=sha256:0ef8490ff1dede52b7de533158547f8b454b241aa3e4dcca369507f66f216dd9
+        WEB_SITE=http://www.x.org
          ENTERED=20121213
-         UPDATED=20121213
+         UPDATED=20141004
            SHORT="XCB Key syms"
+
 cat <<EOF
 EOF
