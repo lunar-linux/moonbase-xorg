@@ -1,15 +1,12 @@
           MODULE=xorg-server
-         VERSION=1.16.0
+         VERSION=1.16.1
           SOURCE=$MODULE-$VERSION.tar.bz2
-         SOURCE2=xorg-server-1.16.0-glamor-upstream-fix.patch
       SOURCE_URL=$XORG_URL/individual/xserver
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha256:38330a03c5f7a38745a3f9816cf069db5b8844eebb358fd39dbabf61f32cd06b
-     SOURCE2_VFY=sha256:fbd898f0e867c77c9bf918fd2e7956c7776ecb3cc3634c61290fb03513b47987
+      SOURCE_VFY=sha256:f4677c6ec9fb7b59648321737087aeb9963b60bcea50ee3773fe46be1a37e060
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20140920
+         UPDATED=20141012
            SHORT="The X.Org X11R7 server for the X Window System"
 
 cat << EOF
