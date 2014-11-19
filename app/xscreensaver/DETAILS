@@ -1,11 +1,11 @@
           MODULE=xscreensaver
-         VERSION=5.30
+         VERSION=5.32
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.jwz.org/xscreensaver/
-      SOURCE_VFY=sha1:734e0861145ec67cb848348fc25ea29393dc4d95
+      SOURCE_VFY=sha256:4252a6079d2d2f5b342e8bdd172cbad5f0af73daf4e412b61a68344d91ca93bd
         WEB_SITE=http://www.jwz.org/xscreensaver
          ENTERED=20010922
-         UPDATED=20140918
+         UPDATED=20141119
            SHORT="A modular screen saver and locker for X"
 
 cat << EOF
