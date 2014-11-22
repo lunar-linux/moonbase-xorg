@@ -5,9 +5,6 @@ depends libXmu
 optional_depends "gettext"  "" ""  \
                  "enable NLS support"
 
-optional_depends "Linux-PAM"  "" "" \
-                 "for PAM (Plugable Authentification Modules) support"
-
 optional_depends "glade2"  "--with-gtk"  "--without-gtk" \
                  "to build the GNOME configuration manager"
 
