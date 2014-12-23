@@ -15,3 +15,4 @@ depends presentproto
 optional_depends "libvdpau" "--enable-vdpau" "--disable-vdpau" "vdpau hw acceleration"
 optional_depends "libXvMC"  "--enable-xvmc"  "--disable-xvmc"  "XvMC hw acceleration"
 optional_depends "llvm"     ""  ""  "llvm is required when building Gallium drivers"
+optional_depends "elfutils" ""  "" "elfutils is required when building radeonsi driver"

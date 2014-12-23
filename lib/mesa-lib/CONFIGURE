@@ -1,5 +1,5 @@
 SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon swrast"
-SUPPORTED_GALLIUM="i915 nouveau r300 r600 svga swrast"
+SUPPORTED_GALLIUM="i915 nouveau r300 r600 radeonsi svga swrast"
 
 make_drivers_checklist() {
 
@@ -82,9 +82,9 @@ fi
 
 mquery XA "Enable XA support?" y "--enable-xa" "--disable-xa"
 if [[ $GALLIUM == y ]]; then
-  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
+  mquery EGL "Enable EGL (for i9x5,radeonsi)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
 else
-  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl" "--disable-egl"
+  mquery EGL "Enable EGL (for i9x5,radeonsi)?" y "--enable-egl" "--disable-egl"
 fi
 
 if [[ $EGL == y ]]; then
