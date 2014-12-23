@@ -8,7 +8,7 @@
 
   OPTS+=" --enable-composite --enable-aiglx --disable-devel-docs \
           --enable-install-libxf86config --enable-unix-transport \
-          --with-fontrootdir=/usr/share/fonts/X11 "  &&
+          --with-fontrootdir=/usr/share/fonts/X11"  &&
 
   default_build  &&
 
