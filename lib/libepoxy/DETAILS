@@ -1,0 +1,12 @@
+          MODULE=libepoxy
+         VERSION=1.2
+          SOURCE=v$VERSION.tar.gz
+      SOURCE_URL=https://github.com/anholt/libepoxy/archive/
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=https://github.com/anholt/libepoxy
+         ENTERED=20141223
+         UPDATED=20141223
+
+cat << EOF
+Epoxy is a library for handling OpenGL function pointer management for you.
+EOF
