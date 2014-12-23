@@ -2,6 +2,7 @@
          VERSION=7.5.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
+      SOURCE_VFY=sha256:ec3e6f06b6cf9a40c72aafa3448aae8b034c80b37410ca9442d5cf6806e07936
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124

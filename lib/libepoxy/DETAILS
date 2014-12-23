@@ -2,6 +2,7 @@
          VERSION=1.2
           SOURCE=v$VERSION.tar.gz
       SOURCE_URL=https://github.com/anholt/libepoxy/archive/
+      SOURCE_VFY=sha256:42c328440f60a5795835c5ec4bdfc1329e75bba16b6e22b3a87ed17e9679e8f6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://github.com/anholt/libepoxy
          ENTERED=20141223
