@@ -82,11 +82,16 @@ fi
 
 mquery XA "Enable XA support?" y "--enable-xa" "--disable-xa"
 if [[ $GALLIUM == y ]]; then
-  mquery EGL "Enable EGL (for i9x5,radeonsi)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
+  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
 else
-  mquery EGL "Enable EGL (for i9x5,radeonsi)?" y "--enable-egl" "--disable-egl"
+  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl" "--disable-egl"
 fi
 
+#radeonsi driver needs these options
+if [[ $GALLIUMDRIVER == *"radeonsi"* ]]; then
+	OPTS+=" --with-egl-platforms=drm,x11 --enable-egl --enable-gallium-egl"
+fi
+  
 if [[ $EGL == y ]]; then
   mquery OPENVG "Enable openVG?" y "--enable-openvg" "--disable-openvg"
 fi
