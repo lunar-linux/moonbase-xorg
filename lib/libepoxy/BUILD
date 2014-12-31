@@ -1,2 +1,2 @@
-./autogen.sh --prefix=/usr
+./autogen.sh &&
 default_build
