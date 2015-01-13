@@ -1,12 +1,12 @@
           MODULE=xproto
-         VERSION=7.0.26
+         VERSION=7.0.27
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/proto
-      SOURCE_VFY=sha1:81101b78052fa0f652982081f9328f912b71a948
+      SOURCE_VFY=sha256:246f23a6b235c8008183deeb1dcd76d529a099f93600b648b399811b10ea110c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20140417
+         UPDATED=20150102
            SHORT="The X.org prototypes"
 
 cat << EOF
