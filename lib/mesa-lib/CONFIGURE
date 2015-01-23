@@ -1,5 +1,5 @@
-SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon swrast"
-SUPPORTED_GALLIUM="i915 nouveau r300 r600 radeonsi svga swrast"
+SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon"
+SUPPORTED_GALLIUM="i915 nouveau r300 r600 radeonsi svga"
 
 make_drivers_checklist() {
 
