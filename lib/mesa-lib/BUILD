@@ -8,7 +8,7 @@
 
     OPTS+=" --enable-gallium-egl --enable-gallium-osmesa"
   else
-    OPTS+=" --enable-egl --enable-osmesa"
+    OPTS+=" --enable-egl --enable-osmesa --with-gallium-drivers="
   fi  &&
 
   OPTS+=" --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
