@@ -1,16 +1,18 @@
-(
-
   NOCONFIGURE=1 ./autogen.sh &&
 
-  # Mesa Gallium mklib breaks build when linker flags are set
   if [[ $GALLIUM == y ]]; then
-    bad_flags linker
+    # Mesa Gallium mklib breaks build when linker flags are set
+    bad_flags linker &&
+
+    OPTS+=" --with-gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
+
+    OPTS+=" --enable-gallium-egl --enable-gallium-osmesa"
+  else
+    OPTS+=" --enable-egl --enable-osmesa --with-gallium-drivers="
   fi  &&
 
-  OPTS+=" --with-dri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
+  OPTS+=" --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
-  OPTS+=" --with-gallium-drivers=$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
+  OPTS+=" --enable-xa --enable-gles1 --enable-gles2 --enable-gbm --with-egl-platforms=drm,x11" &&
 
   default_build
-
-) > $C_FIFO 2>&1

@@ -1,5 +1,5 @@
-SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon swrast"
-SUPPORTED_GALLIUM="i915 nouveau r300 r600 radeonsi svga swrast"
+SUPPORTED_DRIVERS="i915 i965 nouveau r200 radeon"
+SUPPORTED_GALLIUM="i915 nouveau r300 r600 radeonsi svga"
 
 make_drivers_checklist() {
 
@@ -80,26 +80,8 @@ if [[ $GALLIUM == y ]] ; then
   fi
 fi
 
-mquery XA "Enable XA support?" y "--enable-xa" "--disable-xa"
-if [[ $GALLIUM == y ]]; then
-  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl --enable-gallium-egl" "--disable-egl --disable-gallium-egl"
-else
-  mquery EGL "Enable EGL (for i9x5)?" y "--enable-egl" "--disable-egl"
-fi
-
-#radeonsi driver needs these options
-if [[ $GALLIUMDRIVER == *"radeonsi"* ]]; then
-	OPTS+=" --with-egl-platforms=drm,x11 --enable-egl --enable-gallium-egl"
-fi
-  
-if [[ $EGL == y ]]; then
-  mquery OPENVG "Enable openVG?" y "--enable-openvg" "--disable-openvg"
-fi
-
 mquery TEXTURE_FLOAT "Enable patented texture-float? (if this patent is valid in your country choose N)" n "--enable-texture-float" "--disable-texture-float"
+
 mquery ENABLE_GLX_TLS "Enable glx-tls? (lin -r xorg-server also)" y "--enable-glx-tls" "--disable-glx-tls"
-mquery ENABLE_GLES1 "Enable gles1? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles1" "--disable-gles1"
-mquery ENABLE_GLES2 "Enable gles2? ${PROBLEM_COLOR}Needed by freshplayerplugin${MQUERY_COLOR}" n "--enable-gles2" "--disable-gles2"
-mquery ENABLE_GBM "Enable Mesa GBM (Graphics Buffer Manager) library? ${PROBLEM_COLOR} If KMS in kernel, will enable KMS in qt5.${QUERY_COLOR}" n "--enable-gbm" "--disable-gbm"
 
 set_module_config CONFIGURED y
