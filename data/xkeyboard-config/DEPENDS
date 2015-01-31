@@ -1,2 +1,3 @@
-depends xkbcomp
+depends perl
 depends intltool
+depends xkbcomp
