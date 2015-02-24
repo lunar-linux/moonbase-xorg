@@ -6,9 +6,12 @@
     rm -f /usr/share/X11/xkb/compiled
   fi  &&
 
-  OPTS+=" --enable-composite --enable-aiglx --disable-devel-docs \
-          --enable-install-libxf86config --enable-unix-transport \
-          --with-fontrootdir=/usr/share/fonts/X11"  &&
+  OPTS+=" --enable-composite \
+          --enable-aiglx \
+          --disable-devel-docs \
+          --enable-install-libxf86config \
+          --enable-unix-transport \
+          --with-fontrootdir=/usr/share/fonts/X11" &&
 
   default_build  &&
 

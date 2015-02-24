@@ -35,4 +35,5 @@ depends  libXinerama
 
 optional_depends "acpid"         ""  ""  "for ACPI support through xorg-server"
 optional_depends "libXxf86misc"  ""  ""  "for some old binary compatibility"
-optional_depends "libepoxy"	 "--enable-glamor" "--disable-glamor" "for glamor support (needed for radeonsi driver)"
+
+optional_depends "libepoxy"      "--enable-glamor" "--disable-glamor" "for glamor support (needed for radeonsi driver)"
