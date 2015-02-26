@@ -1,12 +1,12 @@
            MODULE=mesa-lib
-          VERSION=10.4.2
+          VERSION=10.4.5
            SOURCE=MesaLib-$VERSION.tar.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/Mesa-$VERSION
        SOURCE_URL=ftp://ftp.freedesktop.org/pub/mesa/$VERSION/
-       SOURCE_VFY=sha256:08a119937d9f2aa2f66dd5de97baffc2a6e675f549e40e699a31f5485d15327f
+       SOURCE_VFY=sha256:bf60000700a9d58e3aca2bfeee7e781053b0d839e61a95b1883e05a2dee247a0
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20150112
+          UPDATED=20150221
             SHORT="Mesa 3D library"
 
 cat << EOF
