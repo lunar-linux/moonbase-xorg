@@ -32,6 +32,7 @@ depends  xkeyboard-config
 depends  mesa-lib
 depends  libpciaccess
 depends  libXinerama
+depends  xcb-util-keysyms
 
 optional_depends "acpid"         ""  ""  "for ACPI support through xorg-server"
 optional_depends "libXxf86misc"  ""  ""  "for some old binary compatibility"
