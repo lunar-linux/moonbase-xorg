@@ -1,3 +1,9 @@
+if [[ `arch` == x68_64 ]]; then
+  ARCH=`arch`
+else
+  ARCH=x86
+fi &&
+
 GCCKNL=`cat /proc/version | cut -d\( -f3 | cut -d\  -f3` &&
 GCCNOW=`gcc --version | grep gcc | cut -d\  -f3` &&
 if [[ "$GCCKNL" != "$GCCNOW" ]]; then
@@ -33,8 +39,8 @@ cd nvidia-installer-$VERSION &&
  install -m 755 _out/*/nvidia-installer      .. &&
  install -m 755 _out/*/mkprecompiled         .. &&
  install -m 644 _out/*/nvidia-installer.1.gz .. &&
- cp             tls_test_Linux*                   ../tls_test        &&
- cp             tls_test_dso_*.so            ../tls_test_dso.so &&
+ cp             tls_test_Linux-$ARCH         ../tls_test        &&
+ cp             tls_test_dso_Linux-$ARCH.so  ../tls_test_dso.so &&
 
 cd .. &&
 
@@ -65,7 +71,7 @@ cd nvidia-xconfig-$VERSION &&
 cd .. &&
 
 # We make the kernel modules on our own
-KVER=$(cat /usr/src/linux/include/config/kernel.release)
+KVER=$(cat /usr/src/linux/include/config/kernel.release) &&
 cd kernel &&
 make module KERNEL_UNAME=$KVER &&
 rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
