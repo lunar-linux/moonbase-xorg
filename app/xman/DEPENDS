@@ -1,2 +1,5 @@
 depends xproto
-depends libXprintUtil
+depends libXaw
+depends libXmu
+depends util-macros
+
