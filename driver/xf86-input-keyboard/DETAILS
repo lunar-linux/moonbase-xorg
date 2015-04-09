@@ -1,12 +1,12 @@
           MODULE=xf86-input-keyboard
-         VERSION=1.8.0
+         VERSION=1.8.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:7728d733ef16d664a201868ecae5db3705cf8ef1
+      SOURCE_VFY=sha256:1ac8ff39bf9da7d2fc7fd6c24515726e8138340c0518ab8c606e008cf93ca211
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20131102
+         UPDATED=20150409
            SHORT="The X.Org keyboard input device driver"
 
 cat << EOF
