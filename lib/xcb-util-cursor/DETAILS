@@ -1,11 +1,11 @@
           MODULE=xcb-util-cursor
-         VERSION=0.1.1
+         VERSION=0.1.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://xcb.freedesktop.org/dist
-      SOURCE_VFY=sha1:75ea5d4dc5f185151f171e525023cb76f3b72128
+      SOURCE_VFY=sha256:ed65367b810d47ab637011585135f4a84dd12e235dddcd3b26e0cfb3be21fb3a
         WEB_SITE=http://xcb.freedesktop.org/
          ENTERED=20140124
-         UPDATED=20140124
+         UPDATED=20150405
            SHORT="Cursor extensions for libxcb"
 
 cat << EOF
