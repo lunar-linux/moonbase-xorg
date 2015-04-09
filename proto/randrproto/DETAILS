@@ -1,12 +1,12 @@
           MODULE=randrproto
-         VERSION=1.4.0
+         VERSION=1.4.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/proto
-      SOURCE_VFY=sha1:65d2fc4440adf1557cde2b36901a3de21ab189c1
+      SOURCE_VFY=sha256:543dcb2ebb0622d8a506dcef6470c6dd066f3e3f866552a5060b91ab6129e1dc
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20120726
+         UPDATED=20150315
            SHORT="The X.Org RandR protocol headers"
 
 cat << EOF
