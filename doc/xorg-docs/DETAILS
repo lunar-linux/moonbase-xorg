@@ -1,12 +1,12 @@
           MODULE=xorg-docs
-         VERSION=1.7
+         VERSION=1.7.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/doc
-      SOURCE_VFY=sha1:565df5219a9d72d81a84f7e75294752ba2ea0cc8
+      SOURCE_VFY=sha256:24b8677c3462c10465cf50d40576d76682acd5835526093a575865b2aa242c4b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070906
-         UPDATED=20120612
+         UPDATED=20150503
            SHORT="the core X Window System documentation"
 
 cat << EOF
