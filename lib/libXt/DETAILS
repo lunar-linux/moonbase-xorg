@@ -1,12 +1,12 @@
           MODULE=libXt
-         VERSION=1.1.4
+         VERSION=1.1.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:0111c316d83fb7e830c517128150094cb0a48ae7
+      SOURCE_VFY=sha256:46eeb6be780211fdd98c5109286618f6707712235fdd19df4ce1e6954f349f1a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130606
+         UPDATED=20150503
            SHORT="the X.Org toolkit intrinsics library"
 
 cat << EOF
