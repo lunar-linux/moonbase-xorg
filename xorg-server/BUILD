@@ -16,7 +16,6 @@
           --disable-xfake       \
           --disable-static      \
           --disable-devel-docs  \
-          --disable-install-setuid \
           --enable-install-libxf86config \
           --with-fontrootdir=/usr/share/fonts/X11" &&
 
