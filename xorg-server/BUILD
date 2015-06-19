@@ -1,16 +1,23 @@
-(
-
   . /etc/profile.d/x11r7.rc  &&
 
   if [ -h /usr/share/X11/xkb/compiled ]; then
     rm -f /usr/share/X11/xkb/compiled
   fi  &&
 
-  OPTS+=" --enable-composite \
-          --enable-aiglx \
-          --disable-devel-docs \
+  OPTS+=" --enable-dri          \
+          --enable-dmx          \
+          --enable-kdrive       \
+          --enable-kdrive-evdev \
+          --enable-kdrive-kbd   \
+          --enable-kdrive-mouse \
+          --enable-xcsecurity   \
+          --enable-config-udev  \
+          --enable-composite    \
+          --disable-xfake       \
+          --disable-static      \
+          --disable-devel-docs  \
+          --disable-install-setuid \
           --enable-install-libxf86config \
-          --enable-unix-transport \
           --with-fontrootdir=/usr/share/fonts/X11" &&
 
   default_build  &&
@@ -26,5 +33,3 @@
   if  module_installed mkfontdir ; then
     mkfontdir /usr/share/fonts/X11/OTF
   fi
-
-) > $C_FIFO 2>&1
