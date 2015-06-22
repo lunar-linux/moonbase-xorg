@@ -1,0 +1,1 @@
+mquery DEFAULT_SNA "Build with SandyBridge's New Acceleration (recommended)" y "--enable-sna" "--disable-sna"
