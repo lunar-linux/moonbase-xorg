@@ -1,16 +1,12 @@
           MODULE=xf86-video-vesa
-         VERSION=2.3.2
+         VERSION=2.3.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-         # obsolete with next release
-         SOURCE2=xf86-video-vesa-2.3.2-no-mibstore.patch
       SOURCE_URL=$XORG_URL/individual/driver
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha1:d49a57de24e7923bf17270084ce91ecf2feb4286
-     SOURCE2_VFY=sha1:e48804306b05d54603d9107d61e5f74d60ec9d3d
+      SOURCE_VFY=sha256:7bddf4d879dd6f67088ecb203a31e12334aab980174bd0909930a21f32e251c1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20120728
+         UPDATED=20150626
            SHORT="The X.Org VESA video driver for all video cards"
 
 cat << EOF
