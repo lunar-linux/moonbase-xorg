@@ -1,3 +1,6 @@
-depends libpthread-stubs
 depends %UDEV
 depends libpciaccess
+depends util-macros
+
+optional_depends valgrind  "--enable-valgrind" "--disable-valgrind" "for valgrind support"
+
