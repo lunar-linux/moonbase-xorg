@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# missing include for `fstat'
+sedit '/unistd\.h/ i #include <sys/stat.h>' src/sna/sna_driver.c src/uxa/intel_driver.c
