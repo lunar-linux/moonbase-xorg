@@ -78,7 +78,10 @@ rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
 
 prepare_install &&
 
-make install KERNEL_UNAME=$KVER &&
+make modules_install KERNEL_UNAME=$KVER &&
+install -dm 0755 /usr/lib/modprobe.d &&
+echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia.conf &&
+touch /usr/lib/modprobe.d/nvidia.conf &&
 cd .. &&
 
 mkdir -p /etc/OpenCL/vendors &&
