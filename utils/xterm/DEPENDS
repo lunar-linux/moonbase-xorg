@@ -1,4 +1,3 @@
-
 depends libICE
 depends libSM
 depends libX11
@@ -13,4 +12,4 @@ depends libXrender
 depends libXt
 depends ncurses
 
-optional_depends  luit        "--enable-luit" "" "for unicode support"
+optional_depends luit "--enable-luit" "" "for unicode support"
