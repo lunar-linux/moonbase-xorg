@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# Fixes warning for Polish keyboard layout
+sedit 's/ralt_switch)/ralt_switch_multikey)/' symbols/pl

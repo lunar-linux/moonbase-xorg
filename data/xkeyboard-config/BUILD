@@ -1,13 +1,7 @@
-(
+. /etc/profile.d/x11r7.rc &&
 
-  # Fixes warning for Polish keyboard layout
-  sedit 's/ralt_switch)/ralt_switch_multikey)/' symbols/pl &&
+OPTS+=" --enable-compat-rules \
+        --with-xkb-rules-symlink=xorg \
+        --with-xkb-base=/usr/share/X11/xkb" &&
 
-  . /etc/profile.d/x11r7.rc &&
-
-  OPTS+=" --with-xkb-base=/usr/share/X11/xkb --enable-compat-rules \
-          --with-xkb-rules-symlink=xorg" &&
-
-  default_build
-
-) > $C_FIFO 2>&1
+default_build
