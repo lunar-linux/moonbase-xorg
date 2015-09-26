@@ -2,13 +2,14 @@ depends bc
 depends perl
 depends libXmu
 depends intltool
+depends libglade
 
 optional_depends "gettext" "" "" "enable NLS support"
 optional_depends "fortune" "" "" "allow fortune to be used as a text source in screensavers"
 optional_depends "appres"  "" "" "required for some of the text-printing screensavers"
 optional_depends "xsnow"   "" "" "to allow xsnow to be used as a screensaver"
 
-optional_depends "Linux-PAM" "--with-pam" "--without-pam" \
+optional_depends "Linux-PAM" "--with-pam --without-shadow" "--without-pam --with-shadow" \
                  "for PAM support"
 
 optional_depends "%GLX" "--with-gl" "--without-gl" \
