@@ -2,3 +2,5 @@ optional_depends %GLX \
                  "--enable-glx --enable-egl" \
                  "--disable-glx --disable-egl" \
                  "For GLX and EGL support (WARNING: say no if installing mesa-lib the first time, then rebuild libva with mesa-lib to avoid dependency loop)" n
+
+optional_depends wayland "--enable-wayland" "--disable-wayland" "For wayland support"
