@@ -1,40 +1,48 @@
-depends  libdmx
-depends  bigreqsproto
-depends  xf86driproto
-depends  libdrm
-depends  glproto
-depends  randrproto
-depends  fixesproto
-depends  damageproto
-depends  xf86bigfontproto
-depends  scrnsaverproto
-depends  xf86dgaproto
-depends  videoproto
-depends  compositeproto
-depends  trapproto
-depends  xineramaproto
-depends  xcmiscproto
-depends  presentproto
-depends  libxkbfile
-depends  libXt
-depends  evieext
-depends  libXfont
-depends  libxkbui
-depends  libXxf86vm
-depends  libXaw
-depends  libXi
-depends  libXrender
-depends  libXtst
-depends  libXres
-depends  pixman
-depends  dbus-glib
-depends  xkeyboard-config
-depends  mesa-lib
-depends  libpciaccess
-depends  libXinerama
-depends  xcb-util-keysyms
+depends libdmx
+depends bigreqsproto
+depends xf86driproto
+depends libdrm
+depends glproto
+depends randrproto
+depends fixesproto
+depends damageproto
+depends xf86bigfontproto
+depends scrnsaverproto
+depends xf86dgaproto
+depends videoproto
+depends compositeproto
+depends trapproto
+depends xineramaproto
+depends xcmiscproto
+depends presentproto
+depends libxkbfile
+depends libXt
+depends evieext
+depends libXfont
+depends libxkbui
+depends libXxf86vm
+depends libXaw
+depends libXi
+depends libXrender
+depends libXtst
+depends libXres
+depends pixman
+depends dbus-glib
+depends xkeyboard-config
+depends mesa-lib
+depends libpciaccess
+depends libXinerama
+depends xcb-util-keysyms
 
-optional_depends "acpid"         ""  ""  "for ACPI support through xorg-server"
-optional_depends "libXxf86misc"  ""  ""  "for some old binary compatibility"
+optional_depends acpid        "" "" "for ACPI support through xorg-server"
+optional_depends libXxf86misc "" "" "for some old binary compatibility"
 
-optional_depends "libepoxy"      "--enable-glamor" "--disable-glamor" "for glamor support (needed for radeonsi driver)"
+optional_depends libepoxy \
+                 "--enable-glamor" \
+                 "--disable-glamor" \
+                 "for glamor support (needed for radeonsi driver)"
+
+optional_depends libunwind \
+                 "--enable-libunwind" \
+                 "--disable-libunwind" \
+                 "for call-chain library support"
