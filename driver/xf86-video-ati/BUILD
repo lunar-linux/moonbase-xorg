@@ -1,6 +1,5 @@
-(
-  . /etc/profile.d/x11r7.rc &&
-  OPTS+=" --enable-dri --enable-kms --enable-exa" &&
-  default_build
+. /etc/profile.d/x11r7.rc &&
 
-) > $C_FIFO 2>&1
+OPTS+=" --enable-dri --enable-kms --enable-exa" &&
+
+default_build
