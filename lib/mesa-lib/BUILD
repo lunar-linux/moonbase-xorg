@@ -18,6 +18,9 @@ OPTS+=" --enable-dri   \
         --enable-gles2 \
         --enable-shared-glapi \
         --enable-texture-float \
+        --disable-omx \
+        --disable-opencl \
+        --disable-opencl-icd \
         --with-egl-platforms=drm,x11 \
         --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
