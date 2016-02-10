@@ -1,1 +1,2 @@
 depends libxkbfile
+depends util-macros
