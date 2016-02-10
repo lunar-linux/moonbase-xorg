@@ -1,0 +1,4 @@
+depends libinput
+depends scrnsaverproto
+depends resourceproto
+depends xorg-server
