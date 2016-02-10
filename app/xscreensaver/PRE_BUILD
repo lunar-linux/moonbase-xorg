@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit "s:gdk-pixbuf/:gdk-pixbuf-xlib/:" driver/xscreensaver-getimage.c
