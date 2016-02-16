@@ -1,12 +1,12 @@
         MODULE=libXi
-       VERSION=1.7.5
+       VERSION=1.7.6
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/lib
-    SOURCE_VFY=sha256:d964d7deb5d8f7d6b9c358969c625073d7ab273dbda94693130b3540bc0ca229
+    SOURCE_VFY=sha256:1f32a552cec0f056c0260bdb32e853cec0673d2f40646ce932ad5a9f0205b7ac
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20150911
+       UPDATED=20151222
          SHORT="The X.Org XINPUT extension library"
 
 cat << EOF
