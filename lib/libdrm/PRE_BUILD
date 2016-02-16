@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# pthread is useless in Linux
+sedit "/pthread-stubs/d" configure.ac
