@@ -3,26 +3,29 @@ depends perl
 depends libXmu
 depends intltool
 depends libglade
+depends gdk-pixbuf
 
-optional_depends "gettext" "" "" "enable NLS support"
-optional_depends "fortune" "" "" "allow fortune to be used as a text source in screensavers"
-optional_depends "appres"  "" "" "required for some of the text-printing screensavers"
-optional_depends "xsnow"   "" "" "to allow xsnow to be used as a screensaver"
+optional_depends gettext "" "" "enable NLS support"
+optional_depends fortune "" "" "allow fortune to be used as a text source in screensavers"
+optional_depends appres  "" "" "required for some of the text-printing screensavers"
+optional_depends xsnow   "" "" "to allow xsnow to be used as a screensaver"
 
-optional_depends "Linux-PAM" "--with-pam --without-shadow" "--without-pam --with-shadow" \
+optional_depends Linux-PAM \
+                 "--with-pam --without-shadow" \
+                 "--without-pam --with-shadow" \
                  "for PAM support"
 
-optional_depends "%GLX" "--with-gl" "--without-gl" \
+optional_depends %GLX \
+                 "--with-gl" \
+                 "--without-gl" \
                  "for OpenGL screensaver support"
 
-optional_depends "%JPEG" "--with-jpeg" "--without-jpeg" \
+optional_depends %JPEG \
+                 "--with-jpeg" \
+                 "--without-jpeg" \
                  "for Jpeg support"
 
-optional_depends "libXpm" "--with-xpm" "--without-xpm" \
+optional_depends libXpm \
+                 "--with-xpm" \
+                 "--without-xpm" \
                  "for xpm support"
-
-optional_depends "glade2"  "--with-gtk"  "--without-gtk" \
-                 "to build the GNOME configuration manager"
-
-optional_depends "gdk-pixbuf" "--with-pixbuf" "--without-pixbuf" \
-                 "for image loading support"
