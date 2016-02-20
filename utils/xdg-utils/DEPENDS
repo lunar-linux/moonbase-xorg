@@ -1,1 +1,3 @@
 depends xset
+depends xmlto
+depends docbook-xsl

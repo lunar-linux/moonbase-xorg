@@ -1,15 +1,15 @@
           MODULE=xdg-utils
-         VERSION=1.1.0-rc1
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://portland.freedesktop.org/download/
-      SOURCE_VFY=sha1:5bd5e2fe10e3055ccec347e8608476fab2d3eaca
+      SOURCE_VFY=sha256:b0dd63a2576e0bb16f1aa78d6ddf7d6784784a098d4df17161cd6a17c7bc4125
         WEB_SITE=http://portland.freedesktop.org/wiki/XdgUtils
          ENTERED=20061012
-         UPDATED=20130630
-           SHORT="tools to help applications to easily integrate with the free desktop standards"
+         UPDATED=20151007
+           SHORT="Tools to easily integrate applications with the free desktop standards"
 
 cat << EOF
-xdg-utils is one part of the Portland project.  Portland is a Free
+xdg-utils is one part of the Portland project. Portland is a Free
 Desktop initiative that delivers a common set of Linux Desktop
 Interfaces and Tools to allow all applications to easily integrate
 with the free desktop configuration an end user has chosen to work

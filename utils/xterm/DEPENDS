@@ -1,14 +1,8 @@
-depends libICE
-depends libSM
-depends libX11
 depends libXau
 depends libXaw
-depends libxcb
-depends libXext
 depends libXft
 depends libXmu
-depends libXpm
-depends libXrender
+depends libxkbfile
 depends libXt
 depends ncurses
 
