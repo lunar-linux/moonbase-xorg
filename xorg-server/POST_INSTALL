@@ -1,6 +1,6 @@
 # make sure drivers have the same ABI version as the server
 for driver in $(list_modules xorg/driver); do
-   if module_installed "$driver"; then
-      lin -c "$driver"
-   fi
+  if module_installed "$driver"; then
+    lin -c "$driver"
+  fi
 done
