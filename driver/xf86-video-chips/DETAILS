@@ -1,12 +1,12 @@
           MODULE=xf86-video-chips
-         VERSION=1.2.5
+         VERSION=1.2.6
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:5642e1d1bf3a05d24a0b8db48ca3b522c1962b00
+      SOURCE_VFY=sha256:99aef5cf9f58391eefab5b4983814f417fd1cf2e4a0f93564de1e9bd75636b1c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20110728
+         UPDATED=20150929
            SHORT="The X.Org video driver for Chips and Technologies based cards"
 
 cat << EOF

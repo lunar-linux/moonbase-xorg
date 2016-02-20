@@ -1,0 +1,14 @@
+          MODULE=xf86-video-amdgpu
+         VERSION=1.0.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver
+      SOURCE_VFY=sha256:296bd5376f4921bbdb3d0e6e6bc100ff2682312ae5965a43d3cab53f50f92a6a
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://xorg.freedesktop.org/
+         ENTERED=20151119
+         UPDATED=20151119
+           SHORT="The X.Org video driver for AMD GPU"
+
+cat << EOF
+xf86-video-amdgpu - AMD Radeon video driver for the Xorg X server.
+EOF
