@@ -4,17 +4,20 @@ else
   ARCH=x86
 fi &&
 
-GCCKNL=`cat /proc/version | cut -d\( -f3 | cut -d\  -f3` &&
-GCCNOW=`gcc --version | grep gcc | cut -d\  -f3` &&
-if [[ "$GCCKNL" != "$GCCNOW" ]]; then
-  message "${PROBLEM_COLOR}"                                    \
-          "The kernel is compiled using gcc version: $GCCKNL"   \
-          "but you try to compile nvidia kernel module with"    \
-          "gcc version: $GCCNOW. You can not use different"     \
-          "gcc to build kernel and modules. Please lin kernel"  \
-          "with current gcc, then reboot and lin nvidia driver."\
-          "${DEFAULT_COLOR}" &&
-  false
+# This check needs to check the kernel it's built against, not the running kernel.
+if [ -f /usr/src/linux/vmlinux.o ]; then
+  GCCKNL=$(strings -a /usr/src/linux/vmlinux.o | grep 'GCC: (' | head -1 | awk '{ print $3 }') &&
+  GCCNOW=$(gcc --version | grep gcc | cut -d\  -f3) &&
+    if [[ "$GCCKNL" != "$GCCNOW" ]]; then
+      message "${PROBLEM_COLOR}"                                    \
+              "The kernel is compiled using gcc version: $GCCKNL"   \
+              "but you try to compile nvidia kernel module with"    \
+              "gcc version: $GCCNOW. You can not use different"     \
+              "gcc to build kernel and modules. Please lin kernel"  \
+              "with current gcc, then reboot and lin nvidia driver."\
+              "${DEFAULT_COLOR}" &&
+        false
+    fi
 fi &&
 
 # Temporary paths and symlinks to make sources compilable
