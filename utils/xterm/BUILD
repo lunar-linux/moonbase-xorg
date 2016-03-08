@@ -5,7 +5,12 @@
 # And to put icons in /usr/share/icons/
 sedit "s:@icondir@:/usr/share/icons:1" Makefile.in &&
 
-OPTS+=" --with-app-defaults=/etc/X11/app-defaults" &&
+OPTS+=" --with-app-defaults=/etc/X11/app-defaults \
+        --disable-imake \
+        --enable-logging \
+        --enable-88-color \
+        --enable-256-color" &&
+
 LDFLAGS+=" -lncurses" &&
 
 default_build &&
@@ -14,6 +19,6 @@ default_build &&
 if ! grep -q 'XTerm*loginShell:' /etc/X11/app-defaults/XTerm; then
   echo 'XTerm*loginShell: true' >> /etc/X11/app-defaults/XTerm &&
   echo 'XTerm*loginShell: true' >> /etc/X11/app-defaults/XTerm-color
-fi  &&
+fi &&
 
 install -Dm 644 {,/usr/share/applications/}xterm.desktop

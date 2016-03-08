@@ -1,9 +1,21 @@
-depends libXau
 depends libXaw
 depends libXft
-depends libXmu
 depends libxkbfile
-depends libXt
 depends ncurses
 
-optional_depends luit "--enable-luit" "" "for unicode support"
+optional_depends freetype2 \
+                 "--enable-freetype" \
+                 "--disable-freetype" \
+                 "for TTF fonts support"
+
+optional_depends pcre \
+                 "--with-pcre" "" \
+                 "for PCRE regular expressions support"
+
+optional_depends luit \
+                 "--enable-luit" "" \
+                 "for unicode support"
+
+optional_depends libutempter \
+                 "--with-utempter" "" \
+                 "for session logging in utmp and wtpm files"
