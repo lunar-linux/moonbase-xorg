@@ -1,12 +1,12 @@
           MODULE=videoproto
-         VERSION=2.3.2
+         VERSION=2.3.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/proto
-      SOURCE_VFY=sha1:aa60e3b93c6a78ad03f1c502b910e7c45faaedbc
+      SOURCE_VFY=sha256:c7803889fd08e6fcaf7b68cc394fb038b2325d1f315e571a6954577e07cca702
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130726
+         UPDATED=20160313
            SHORT="The X.Org XVideo protocol headers"
 
 cat << EOF
