@@ -9,6 +9,12 @@ else
   OPTS+=" --enable-egl --enable-osmesa --with-gallium-drivers="
 fi  &&
 
+OPTS+=" --with-egl-platforms=drm,x11" &&
+
+if module_installed wayland; then
+  OPTS+=",wayland"
+fi &&
+
 OPTS+=" --enable-dri   \
         --enable-dri3  \
         --enable-xa    \
@@ -21,7 +27,6 @@ OPTS+=" --enable-dri   \
         --disable-omx \
         --disable-opencl \
         --disable-opencl-icd \
-        --with-egl-platforms=drm,x11 \
         --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
 default_build
