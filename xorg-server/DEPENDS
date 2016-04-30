@@ -53,7 +53,7 @@ optional_depends libepoxy \
 optional_depends libunwind \
                  "--enable-libunwind" \
                  "--disable-libunwind" \
-                 "for call-chain library support"
+                 "for call-chain library support" n
 
 optional_depends wayland \
                  "--enable-wayland" "" \

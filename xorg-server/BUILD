@@ -8,7 +8,6 @@ OPTS+=" --enable-dri          \
         --enable-dmx          \
         --enable-xorg         \
         --enable-kdrive       \
-        --enable-kdrive-evdev \
         --enable-kdrive-kbd   \
         --enable-kdrive-mouse \
         --enable-xcsecurity   \
