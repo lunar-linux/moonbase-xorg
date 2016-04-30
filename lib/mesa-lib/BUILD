@@ -11,7 +11,7 @@ fi  &&
 
 OPTS+=" --with-egl-platforms=drm,x11" &&
 
-if module_installed wayland; then
+if in_depends $MODULE wayland; then
   OPTS+=",wayland"
 fi &&
 
