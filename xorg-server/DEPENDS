@@ -48,7 +48,7 @@ optional_depends libgcrypt \
 optional_depends libepoxy \
                  "--enable-glamor" \
                  "--disable-glamor" \
-                 "for glamor support (needed for radeonsi driver)" n
+                 "for glamor support (needed for radeonsi driver)" y
 
 optional_depends libunwind \
                  "--enable-libunwind" \
