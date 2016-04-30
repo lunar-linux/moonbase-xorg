@@ -2,7 +2,7 @@
        VERSION=2.3.2
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/proto
-    SOURCE_VFY=sha256:
+    SOURCE_VFY=sha256:893a6af55733262058a27b38eeb1edc733669f01d404e8581b167f03c03ef31d
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
