@@ -22,7 +22,6 @@ OPTS+=" --enable-dri          \
 
 OPTS+=" --libexecdir=/usr/lib/xorg-server" &&
 
-
 default_build  &&
 
 # This should not be needed, check in next release if still needed.
