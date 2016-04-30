@@ -2,7 +2,7 @@
          VERSION=5.3
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION::3}
-      SOURCE_VFY=sha1:dc5e824c738520229174ba9481f0cab35be4870f
+      SOURCE_VFY=sha256:ebec3bc54b5652838502b96223152fb1cd8fcb14ace5cb02d718fc3276bbd404
         WEB_SITE=http://www.freedesktop.org/wiki/Software/LibXklavier
          ENTERED=20031201
          UPDATED=20121024
