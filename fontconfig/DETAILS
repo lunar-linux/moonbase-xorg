@@ -1,11 +1,11 @@
           MODULE=fontconfig
-         VERSION=2.11.1
+         VERSION=2.11.95
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.fontconfig.org/release
-      SOURCE_VFY=sha1:4f83bab1834f60345f1ef3920ac393d9f9c609ab
+      SOURCE_VFY=sha256:39da7704b348b3c9c83f449e9aa6e0e131ffe77e3533b68017f3b40a95d75a9c
         WEB_SITE=http://www.fontconfig.org
          ENTERED=20030425
-         UPDATED=20140327
+         UPDATED=20160406
            SHORT="A library for configuring and customizing font access"
 
 cat << EOF
