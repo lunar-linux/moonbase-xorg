@@ -1,10 +1,10 @@
-depends xauth
 depends xmodmap
 depends xrdb
 depends libX11
 depends libXau
 depends libxcb
 
-optional_depends "xterm"  "" "--without-xterm"  "for a very basic terminal (not needed by modern Desktop Environments)"
-optional_depends "xclock" "" "--without-xclock" "for a very basic clock app (not needed by modern Desktop Environments)"
-optional_depends "twm"    "" "--without-twm"    "for a very basic window manager (not needed by modern Desktop Environments)"
+optional_depends xauth  "" "--without-xauth"  "for X authorization protocol support"
+optional_depends xterm  "" "--without-xterm"  "for a very basic terminal"
+optional_depends xclock "" "--without-xclock" "for a very basic clock app"
+optional_depends twm    "" "--without-twm"    "for a very basic window manager"
