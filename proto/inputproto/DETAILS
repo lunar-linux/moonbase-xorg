@@ -1,12 +1,12 @@
         MODULE=inputproto
-       VERSION=2.3.1
+       VERSION=2.3.2
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/proto
-    SOURCE_VFY=sha1:126b6ad57b5432e154485f900920765eae8fda45
+    SOURCE_VFY=sha256:
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20140530
+       UPDATED=20160405
          SHORT="The X.Org Input protocol headers"
 
 cat << EOF
