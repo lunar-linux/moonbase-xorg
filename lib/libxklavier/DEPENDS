@@ -1,1 +1,17 @@
 depends iso-codes
+depends libXi
+depends libXfixes
+depends libxkbfile
+depends libxml2
+depends xkeyboard-config
+depends intltool
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"
