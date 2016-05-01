@@ -1,25 +1,67 @@
-depends libxml2
-depends expat
-depends glproto
-depends dri2proto
-depends dri3proto
 depends libdrm
-depends makedepend
-depends libXdamage
-depends libXt
-depends libXxf86vm
-depends libxshmfence
-depends libva
+depends libdmx
+depends bigreqsproto
+depends xf86driproto
+depends glproto
+depends randrproto
+depends fixesproto
+depends damageproto
+depends xf86bigfontproto
+depends scrnsaverproto
+depends xf86dgaproto
+depends videoproto
+depends compositeproto
+depends trapproto
+depends xineramaproto
+depends xcmiscproto
 depends presentproto
-depends Mako
-depends nettle
+depends libxkbfile
+depends libXt
+depends evieext
+depends libXfont
+depends libxkbui
+depends libXxf86vm
+depends libXaw
+depends libXi
+depends libXrender
+depends libXtst
+depends libXres
+depends pixman
+depends dbus-glib
+depends xkeyboard-config
+depends libpciaccess
+depends libXinerama
+depends xcb-util-keysyms
+depends mesa-lib
+depends %UDEV
 
-optional_depends libvdpau "--enable-vdpau" "--disable-vdpau" "vdpau hw acceleration"
-optional_depends libXvMC  "--enable-xvmc"  "--disable-xvmc"  "XvMC hw acceleration"
+optional_depends libinput "" "" "for libinput support"
 
-optional_depends elfutils ""  "" "elfutils is required when building radeonsi driver"
+optional_depends libevdev \
+                 "--enable-kdrive-evdev" "" \
+                 "for evdev support"
 
-optional_depends llvm \
-                 "--enable-gallium-llvm --enable-llvm-shared-libs" \
-                 "" \
-                 "llvm is required when building Gallium drivers"
+optional_depends libgcrypt \
+                 "--with-sha1=libgcrypt" "" \
+                 "for SHA1 implementation"
+
+optional_depends libepoxy \
+                 "--enable-glamor" \
+                 "--disable-glamor" \
+                 "for glamor support (needed for radeonsi driver)" y
+
+optional_depends libunwind \
+                 "--enable-libunwind" \
+                 "--disable-libunwind" \
+                 "for call-chain library support"
+
+optional_depends wayland \
+                 "--enable-wayland" "" \
+                 "for Wayland support"
+
+optional_depends xmlto \
+                 "--with-xmlto" \
+                 "--without-xmlto" \
+                 "for xmlto support to regenerate documentation" n
+
+optional_depends libXxf86misc "" "" "for some old binary compatibility" n
