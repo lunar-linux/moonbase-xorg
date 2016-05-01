@@ -14,6 +14,7 @@ depends presentproto
 depends Mako
 depends nettle
 
+optional_depends wayland  "" "" "This is needed by various components of Plasma"
 optional_depends libvdpau "--enable-vdpau" "--disable-vdpau" "vdpau hw acceleration"
 optional_depends libXvMC  "--enable-xvmc"  "--disable-xvmc"  "XvMC hw acceleration"
 
