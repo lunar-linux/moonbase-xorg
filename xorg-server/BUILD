@@ -8,7 +8,6 @@ OPTS+=" --enable-dri          \
         --enable-dmx          \
         --enable-xorg         \
         --enable-kdrive       \
-        --enable-kdrive-evdev \
         --enable-kdrive-kbd   \
         --enable-kdrive-mouse \
         --enable-xcsecurity   \
@@ -21,7 +20,6 @@ OPTS+=" --enable-dri          \
         --with-fontrootdir=/usr/share/fonts/X11" &&
 
 OPTS+=" --libexecdir=/usr/lib/xorg-server" &&
-
 
 default_build  &&
 
