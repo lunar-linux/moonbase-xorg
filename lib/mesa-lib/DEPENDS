@@ -32,7 +32,6 @@ depends xkeyboard-config
 depends libpciaccess
 depends libXinerama
 depends xcb-util-keysyms
-depends mesa-lib
 depends %UDEV
 
 optional_depends libinput "" "" "for libinput support"
