@@ -32,36 +32,12 @@ depends xkeyboard-config
 depends libpciaccess
 depends libXinerama
 depends xcb-util-keysyms
-depends mesa-lib
 depends %UDEV
 
 optional_depends libinput "" "" "for libinput support"
 
-optional_depends libevdev \
-                 "--enable-kdrive-evdev" "" \
-                 "for evdev support"
-
 optional_depends libgcrypt \
                  "--with-sha1=libgcrypt" "" \
                  "for SHA1 implementation"
-
-optional_depends libepoxy \
-                 "--enable-glamor" \
-                 "--disable-glamor" \
-                 "for glamor support (needed for radeonsi driver)" y
-
-optional_depends libunwind \
-                 "--enable-libunwind" \
-                 "--disable-libunwind" \
-                 "for call-chain library support"
-
-optional_depends wayland \
-                 "--enable-wayland" "" \
-                 "for Wayland support"
-
-optional_depends xmlto \
-                 "--with-xmlto" \
-                 "--without-xmlto" \
-                 "for xmlto support to regenerate documentation" n
 
 optional_depends libXxf86misc "" "" "for some old binary compatibility" n
