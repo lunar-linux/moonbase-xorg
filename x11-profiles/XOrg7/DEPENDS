@@ -1,7 +1,7 @@
-depends xproto
-depends mkfontdir
+depends libX11
 depends rgb
 depends xinit
+depends mkfontdir
 depends font-alias
 depends font-cursor-misc
 depends font-adobe-100dpi
@@ -30,12 +30,8 @@ depends xset
 depends xsetroot
 depends xdpyinfo
 depends xorg-cf-files
-depends iceauth
 depends libXvMC
 depends xkill
-
-#adding imake for old apps
-#depends imake
 
 #adding gccmakedep for xpm
 depends gccmakedep
@@ -44,9 +40,13 @@ depends gccmakedep
 depends xprop
 
 #and optional, a video driver
-optional_depends "xf86-video-vesa"  ""  ""  "install VESA driver"
+optional_depends xf86-video-vesa "" "" "install VESA driver"
 
 # evdev is optional, some people want a manual setup
-optional_depends "xf86-input-evdev"  \
-                 ""  ""              \
-                 "automatic input device configuration (RECOMMENDED)"
+optional_depends xf86-input-evdev "" "" "automatic input device configuration (RECOMMENDED)"
+
+#it work without it
+#depends iceauth
+
+#adding imake for old apps
+#depends imake
