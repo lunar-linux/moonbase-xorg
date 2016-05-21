@@ -48,7 +48,8 @@ cd nvidia-installer-$VERSION &&
 cd .. &&
 
 # optionally build nvidia-settings
-if in_depends $MODULE "gtk+-2" ; then
+if in_depends $MODULE "gtk+-3" ; then
+  export GTK3_AVAILABLE=$(usex gtk3 1 0) 1
   cd nvidia-settings-$VERSION &&
 
   make -C src/libXNVCtrl clean &&
