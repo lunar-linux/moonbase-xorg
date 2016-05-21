@@ -9,10 +9,10 @@ else
   OPTS+=" --enable-egl --enable-osmesa --with-gallium-drivers="
 fi  &&
 
-OPTS+=" --with-egl-platforms=drm,x11" &&
-
-if in_depends $MODULE wayland; then
-  OPTS+=",wayland"
+if module_installed wayland; then
+  OPTS+=" --with-egl-platforms=drm,x11,wayland"
+   else
+  OPTS+=" --with-egl-platforms=drm,x11"
 fi &&
 
 OPTS+=" --enable-dri   \
