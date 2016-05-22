@@ -41,3 +41,6 @@ optional_depends libgcrypt \
                  "for SHA1 implementation"
 
 optional_depends libXxf86misc "" "" "for some old binary compatibility" n
+
+optional_depends wayland "" "" "for wayland windowing protocol support"
+
