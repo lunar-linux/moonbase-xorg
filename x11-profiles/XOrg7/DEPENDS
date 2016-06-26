@@ -1,36 +1,8 @@
-depends libXvMC
-depends libXrandr
-depends libXevie
-depends libXft
-depends libXfontcache
-depends rgb
-depends bitmap
-depends xset
-depends xsetroot
-depends xdpyinfo
-depends xorg-cf-files
-depends xkill
-depends xinit
-depends mkfontdir
-depends font-alias
-depends font-cursor-misc
-depends font-adobe-100dpi
-depends font-adobe-75dpi
-depends font-adobe-utopia-100dpi
-depends font-adobe-utopia-75dpi
-depends font-adobe-utopia-type1
-depends font-bh-100dpi
-depends font-bh-75dpi
-depends font-bh-lucidatypewriter-100dpi
-depends font-bh-lucidatypewriter-75dpi
-depends font-bh-ttf
-depends font-bh-type1
-depends font-bitstream-100dpi
-depends font-bitstream-75dpi
-depends font-bitstream-speedo
-depends font-bitstream-type1
-depends font-xfree86-type1
-depends font-misc-misc
+# divide and conquer split method to optimize build time
+depends XOrg-libs
+depends XOrg-apps
+depends XOrg-fonts
+#
 
 #adding gccmakedep for xpm
 depends gccmakedep
