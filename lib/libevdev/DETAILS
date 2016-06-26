@@ -1,16 +1,16 @@
           MODULE=libevdev
-         VERSION=1.5.1
+         VERSION=1.5.2
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=http://freedesktop.org/software/$MODULE/
-      SOURCE_VFY=sha256:17630821a57e6e3f02e01ade836f24068df9bd530067091152b0d468c3a86f40
+      SOURCE_VFY=sha256:5ee2163656a61f5703cb5c08a05c9471ffb7b640bfbe2c55194ea50d908f629b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.freedesktop.org/wiki/Software/libevdev/
          ENTERED=20140520
-         UPDATED=20160521
+         UPDATED=20160618
            SHORT="Wrapper library for evdev devices"
 
 cat << EOF
-libevdev is a wrapper library for evdev devices. it moves the common tasks when
+libevdev is a wrapper library for evdev devices. It moves the common tasks when
 dealing with evdev devices into a library and provides a library interface to
 the callers, thus avoiding erroneous ioctls, etc. The eventual goal is that
 libevdev wraps all ioctls available to evdev devices, thus making direct access
