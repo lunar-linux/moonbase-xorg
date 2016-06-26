@@ -1,0 +1,8 @@
+depends rgb
+depends bitmap
+depends xset
+depends xsetroot
+depends xdpyinfo
+depends xorg-cf-files
+depends xkill
+depends xinit
