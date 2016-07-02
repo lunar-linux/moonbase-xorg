@@ -1,1 +1,3 @@
 depends check
+
+optional_depends doxygen "" "" "for documentation install"
