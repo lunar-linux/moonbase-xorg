@@ -1,11 +1,11 @@
           MODULE=mesa-demos
-         VERSION=8.2.0
+         VERSION=8.3.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=ftp://ftp.freedesktop.org/pub/mesa/demos/$VERSION
-      SOURCE_VFY=sha1:e1a66ac63eebba4f950f95d830f34a6005167116
+      SOURCE_VFY=sha256:c173154bbd0d5fb53d732471984def42fb1b14ac85fcb834138fb9518b3e0bef
         WEB_SITE=http://mesa3d.org
          ENTERED=20110227
-         UPDATED=20140806
+         UPDATED=20160529
            SHORT="Mesa Demos - glxgears and glxinfo"
 
 cat << EOF
