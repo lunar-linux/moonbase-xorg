@@ -1,8 +1,8 @@
           MODULE=xf86-input-synaptics
-         VERSION=1.8.3
+         VERSION=1.8.99.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:d39f100c74f3673778b53f17bab7690161925e25dd998a15dd8cc69b52e83f01
+      SOURCE_VFY=sha256:4c895339fa10c4f97b27ab62d974cae2a96e19ae8d52f80ef0fa5c202c67ebaa
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20080821
