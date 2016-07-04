@@ -1,0 +1,12 @@
+          MODULE=XOrg-fonts
+         VERSION=X11R7.x
+        WEB_SITE=http://www.x.org/
+         ENTERED=20060120
+         UPDATED=20160624
+           SHORT="A profile for the usual fonts for XOrg 7.x"
+         PROFILE=yes
+
+cat << EOF
+A profile for the usual fonts for XOrg 7.x.
+EOF
+

@@ -1,5 +1,7 @@
 depends libdrm
 depends libdmx
+depends dri2proto
+depends dri3proto
 depends bigreqsproto
 depends xf86driproto
 depends glproto
@@ -15,6 +17,8 @@ depends trapproto
 depends xineramaproto
 depends xcmiscproto
 depends presentproto
+depends libxshmfence
+depends libXdamage
 depends libxkbfile
 depends libXt
 depends evieext
