@@ -15,7 +15,11 @@ depends trapproto
 depends xineramaproto
 depends xcmiscproto
 depends presentproto
+depends dri2proto
+depends dri3proto
+depends libxshmfence
 depends libxkbfile
+depends libXdamage
 depends libXt
 depends evieext
 depends libXfont
