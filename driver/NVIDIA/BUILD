@@ -36,7 +36,7 @@ cd nvidia-installer-$VERSION &&
 
  make rebuild_tls_test &&
  make rebuild_tls_test_dso &&
- make rebuild_rtld_test &&
+ make rebuild_rtld_test.unstripped &&
  make &&
 
  install -m 755 _out/*/nvidia-installer      .. &&
