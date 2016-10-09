@@ -1,7 +1,15 @@
 depends %UDEV
+depends cairo
 depends libpciaccess
 depends util-macros
-depends libpthread-stubs
+depends libxslt
 
-optional_depends valgrind  "--enable-valgrind" "--disable-valgrind" "for valgrind support"
+optional_depends valgrind \
+                 "--enable-valgrind" \
+                 "--disable-valgrind" \
+                 "for valgrind support"
 
+optional_depends docbook-xsl \
+                 "--enable-manpages" \
+                 "--disable-manpages" \
+                 "for man pages install"
