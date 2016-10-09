@@ -12,7 +12,7 @@ default_build
 
 touch $SOURCE_DIRECTORY/x11r7.rc
 
-# we only need this when are installing in a different prefix then /usr  
+# we only need this when are installing in a different prefix then /usr
 if [ ${MODULE_PREFIX} != /usr ]; then
   echo export PATH=\""${MODULE_PREFIX}"/bin:'$PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc;
   echo export PKG_CONFIG_PATH=\""${MODULE_PREFIX}"/lib/pkgconfig:'$PKG_CONFIG_PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc;
