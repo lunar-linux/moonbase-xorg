@@ -1,21 +1,25 @@
 depends bc
 depends perl
 depends libXmu
-depends intltool
-depends libglade
 depends gdk-pixbuf
+depends intltool
 
 optional_depends gettext "" "" "enable NLS support"
 optional_depends fortune "" "" "allow fortune to be used as a text source in screensavers"
 optional_depends appres  "" "" "required for some of the text-printing screensavers"
 optional_depends xsnow   "" "" "to allow xsnow to be used as a screensaver"
 
+optional_depends libglade \
+                 "--with-gtk" \
+                 "--without-gtk" \
+                 "for PAM support"
+
 optional_depends Linux-PAM \
                  "--with-pam --without-shadow" \
                  "--without-pam --with-shadow" \
                  "for PAM support"
 
-optional_depends %GLX \
+optional_depends mesa-lib \
                  "--with-gl" \
                  "--without-gl" \
                  "for OpenGL screensaver support"
