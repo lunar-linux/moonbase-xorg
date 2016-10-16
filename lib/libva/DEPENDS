@@ -1,12 +1,14 @@
 depends libdrm
 depends libXfixes
 
-optional_depends %GLX \
-                 "--enable-glx --enable-egl" \
-                 "--disable-glx --disable-egl" \
-                 "for GLX and EGL support"
-
 optional_depends wayland \
                  "--enable-wayland" \
                  "--disable-wayland" \
                  "for wayland support"
+
+# circular depend on mesa-lib
+#optional_depends mesa-lib \
+#                 "--enable-glx --enable-egl" \
+#                 "--disable-glx --disable-egl" \
+#                 "for GLX and EGL support"
+
