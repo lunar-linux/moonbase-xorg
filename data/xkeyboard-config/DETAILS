@@ -1,12 +1,12 @@
           MODULE=xkeyboard-config
-         VERSION=2.18
+         VERSION=2.19
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/data/$MODULE
-      SOURCE_VFY=sha256:c41d917d6c8a59feb7ccbda51c40a6ada824fdd1e9684b52dd48c9530617ddd0
+      SOURCE_VFY=sha256:83dfd186b9eb9ced69e01d8d8e2f15b6a79b2e30124874ef086f2d3048f45827
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://freedesktop.org/wiki/Software/XKeyboardConfig
          ENTERED=20070329
-         UPDATED=20160605
+         UPDATED=20160930
            SHORT="keyboard data files for the X.Org server"
        LDD_CHECK=off
 
