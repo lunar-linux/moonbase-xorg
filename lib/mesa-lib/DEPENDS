@@ -5,7 +5,6 @@ depends xf86driproto
 depends glproto
 depends randrproto
 depends fixesproto
-depends damageproto
 depends xf86bigfontproto
 depends scrnsaverproto
 depends xf86dgaproto
