@@ -1,8 +1,8 @@
 (
 
-  git checkout modesetting &&
-  touch NEWS AUTHORS INSTALL &&
-  echo "SUBDIRS = src" > Makefile.am &&
+#  git checkout modesetting &&
+#  touch NEWS AUTHORS INSTALL &&
+#  echo "SUBDIRS = src" > Makefile.am &&
   . /etc/profile.d/x11r7.rc &&
   default_cvs_build
 
