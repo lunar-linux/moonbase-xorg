@@ -1,0 +1,14 @@
+          MODULE=xcb-util-xrm
+         VERSION=1.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://github.com/Airblader/$MODULE/releases/download/v$VERSION
+      SOURCE_VFY=sha256:f75ec8d909cccda2f4d1460f9639338988a0946188b9d2109316c4509e82786d
+        WEB_SITE=https://github.com/Airblader/xcb-util-xrm
+         ENTERED=20170117
+         UPDATED=20170117
+           SHORT="XCB utility functions for the X resource manager"
+
+cat << EOF
+XCB util-xrm module provides the following libraries:
+  - xrm: utility functions for the X resource manager
+EOF
