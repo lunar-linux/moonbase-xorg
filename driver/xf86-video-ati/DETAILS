@@ -1,12 +1,12 @@
           MODULE=xf86-video-ati
-         VERSION=7.7.1
+         VERSION=7.8.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:00a58588db62ee309095c5c5920bbd248d965e8627f88affe68a73b18865078d
+      SOURCE_VFY=sha256:401f5de772928f3dc4ce43a885adb0a47a2f61aa4a9e45d2ab3d184136a9d6fa
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20160916
+         UPDATED=20161119
            SHORT="The X.Org video driver for ATI based cards"
 
 cat << EOF
