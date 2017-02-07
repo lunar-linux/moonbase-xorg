@@ -1,12 +1,12 @@
           MODULE=xf86-input-joystick
-         VERSION=1.6.2
+         VERSION=1.6.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:61658b8d829fdaed6064c7c26232c3884d359187
+      SOURCE_VFY=sha256:9e7669ecf0f23b8e5dc39d5397cf28296f692aa4c0e4255f5e02816612c18eab
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20130118
+         UPDATED=20161220
            SHORT="Joystick input driver"
 
 cat << EOF
