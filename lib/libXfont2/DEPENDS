@@ -1,0 +1,5 @@
+depends freetype2
+depends libfontenc
+depends fontsproto
+depends util-macros
+depends xtrans

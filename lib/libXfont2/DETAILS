@@ -1,0 +1,19 @@
+          MODULE=libXfont2
+         VERSION=2.0.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://xorg.freedesktop.org//archive/individual/lib/
+      SOURCE_VFY=sha256:e9fbbb475ddd171b3a6a54b989cbade1f6f874fc35d505ebc5be426bc6e4db7e
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://xorg.freedesktop.org/
+         ENTERED=20061119
+         UPDATED=20161119
+           SHORT="X11 font rasterisation library"
+
+cat << EOF
+libXfont provides the core of the legacy X11 font system, handling the index
+files (fonts.dir, fonts.alias, fonts.scale), the various font file formats,
+and rasterizing them. It is used by the X servers, the X Font Server (xfs),
+and some font utilities (bdftopcf for instance), but should not be used by
+normal X11 clients.  X11 clients access fonts via either the new API's in
+libXft, or the legacy API's in libX11.
+EOF
