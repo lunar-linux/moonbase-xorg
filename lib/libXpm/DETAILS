@@ -1,12 +1,12 @@
           MODULE=libXpm
-         VERSION=3.5.11
+         VERSION=3.5.12
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:77b95dd1c8cd9bc00b3b834b53d824409202acbb
+      SOURCE_VFY=sha256:fd6a6de3da48de8d1bb738ab6be4ad67f7cb0986c39bd3f7d51dd24f7854bdec
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130919
+         UPDATED=20161216
            SHORT="The X.Org pixmap library"
 
 cat << EOF
