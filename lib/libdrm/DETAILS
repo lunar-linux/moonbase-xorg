@@ -1,12 +1,12 @@
           MODULE=libdrm
-         VERSION=2.4.70
+         VERSION=2.4.75
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=http://dri.freedesktop.org/libdrm
-      SOURCE_VFY=sha256:b17d4b39ed97ca0e4cffa0db06ff609e617bac94646ec38e8e0579d530540e7b
+      SOURCE_VFY=sha256:2d5a500eef412cc287d12268eed79d571e262d4957a2ec9258073f305985054f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://dri.freedesktop.org
          ENTERED=20061017
-         UPDATED=20160724
+         UPDATED=20170128
            SHORT="The userspace interface to kernel DRM services"
 
 cat << EOF

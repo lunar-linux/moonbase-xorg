@@ -1,12 +1,12 @@
         MODULE=libXtst
-       VERSION=1.2.1
+       VERSION=1.2.3
         SOURCE=$MODULE-$VERSION.tar.bz2
     SOURCE_URL=$XORG_URL/individual/lib
-    SOURCE_VFY=sha1:44e19899f9938d3db5546e51c338d6f86d88cfe2
+    SOURCE_VFY=sha256:4655498a1b8e844e3d6f21f3b2c4e2b571effb5fd83199d428a6ba7ea4bf5204
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20120310
+       UPDATED=20161220
          SHORT="The X.Org testing resource extension library"
 
 cat << EOF
