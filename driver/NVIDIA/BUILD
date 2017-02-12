@@ -134,7 +134,7 @@ install -m644 XvMCConfig /etc/X11 &&
 
 install -Dm644 $SCRIPT_DIRECTORY/50-nvidia.conf /usr/share/X11/xorg.conf.d/50-nvidia.conf &&
 
-if in_depends $MODULE "gtk+-2" ; then
+if in_depends $MODULE "gtk+-3" ; then
   install -m0755 nvidia-settings /usr/bin &&
   install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.desktop /usr/share/applications &&
   install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.png /usr/share/doc/NVIDIA_GLX-1.0 &&
