@@ -8,16 +8,17 @@ OPTS+=" --enable-dri          \
         --enable-dmx          \
         --enable-xorg         \
         --enable-kdrive       \
+        --enable-record       \
+        --enable-composite    \
+        --enable-xcsecurity   \
         --enable-kdrive-kbd   \
         --enable-kdrive-mouse \
-        --enable-xcsecurity   \
         --enable-config-udev  \
-        --enable-composite    \
         --disable-xfbdev      \
         --disable-xfake       \
         --disable-static      \
         --disable-devel-docs  \
-        --with-fontrootdir=/usr/share/fonts/X11" &&
+        --with-fontrootdir=/usr/share/fonts/" &&
 
 OPTS+=" --libexecdir=/usr/lib/xorg-server" &&
 
