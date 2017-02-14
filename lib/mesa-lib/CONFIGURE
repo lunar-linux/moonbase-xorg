@@ -25,7 +25,7 @@ select_drivers() {
   BACKTITLE="MesaLib Configuration"
       TITLE="Driver Selection"
        HELP=""
-  make_drivers_checklist | xargs \
+  make_drivers_checklist | xargs  \
   dialog --backtitle "$BACKTITLE" \
          --title     "$TITLE"     \
          --stdout                 \
@@ -55,16 +55,16 @@ fi
 if [[ -z "$(get_module_config CONFIGURED)" ]]; then
   message "${MESSAGE_COLOR}Gallium is an alternative to DRI and needed to do 3D acceleration on"
   message "nouveau, radeon(-hd), ati or Intel GMA (Poulsbo/Cedar Trail). However, Gallium is not"
-  message "performing on Intel GENX graphics (Any onboard Corei3/5/7, G25/33/45, pinetrail gfx"
+  message "performing on Intel GENX graphics (Any onboard Corei3/5/7, G25/33/45, pinetrail gfx)"
   message ""
   message "Open Source Drivers:"
-  message "If you build for Intel DRI-based hardware, disable Gallium, llvm and enable libva, xvmc."
-  message "If you build for Intel CedarTrail or Poulsbo, enable Gallium, llvm, xvmc, vdpau."
-  message "If you build for NVidia or Ati hardware, enable Gallium, llvm, xvmc, vdpau."
+  message "If you build for Intel DRI-based hardware, disable Gallium, llvm and enable libva, libXvMC."
+  message "If you build for Intel CedarTrail or Poulsbo, enable Gallium, llvm, libXvMC, libvdpau."
+  message "If you build for NVidia or Ati hardware, enable Gallium, llvm, libXvMC, libvdpau."
   message ""
   message "Binary / Proprietary Drivers:"
-  message "If you build the NVIDIA binary driver, disable gallium, llvm and xvmc."
-  message "If you build the fglrx binary driver, disable gallium, llvm, vdpau and xvmc."
+  message "If you build the NVIDIA binary driver, disable gallium, llvm and libXvMC."
+  message "If you build the fglrx (radeon) binary driver, disable gallium, llvm, libvdpau and libXvMC."
   message "${DEFAULT_COLOR}"
 fi
 

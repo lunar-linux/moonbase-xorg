@@ -1,11 +1,8 @@
-depends libdrm
-depends libdmx
+depends evieext
 depends bigreqsproto
 depends xf86driproto
-depends glproto
 depends randrproto
 depends fixesproto
-depends damageproto
 depends xf86bigfontproto
 depends scrnsaverproto
 depends xf86dgaproto
@@ -14,26 +11,23 @@ depends compositeproto
 depends trapproto
 depends xineramaproto
 depends xcmiscproto
-depends presentproto
-depends libxkbfile
+depends libdmx
+depends libXaw
 depends libXt
-depends evieext
-depends libXfont
+depends libXfont2
 depends libxkbui
-depends libXxf86vm
 depends libXaw
 depends libXi
 depends libXrender
 depends libXtst
 depends libXres
+depends libXv
+depends libxkbfile
 depends pixman
+depends mesa-lib
 depends dbus-glib
 depends xkeyboard-config
-depends libpciaccess
-depends libXinerama
 depends xcb-util-keysyms
-depends mesa-lib
-depends %UDEV
 
 optional_depends libinput "" "" "for libinput support"
 
@@ -56,7 +50,7 @@ optional_depends libunwind \
                  "for call-chain library support" n
 
 optional_depends wayland \
-                 "--enable-wayland" "" \
+                 "--enable-xwayland" "" \
                  "for Wayland support"
 
 optional_depends xmlto \

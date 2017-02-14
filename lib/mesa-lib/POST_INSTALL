@@ -5,3 +5,13 @@ if [[ ! -e /usr/include/GL/glut.h ]]; then
 fi
 
 lin -c mesa-demos
+
+# relin cairo with mesa-lib support (avoid a circular depend on it)
+if module_installed cairo; then
+  lin -c cairo
+fi &&
+
+# relin libva with mesa-lib support (avoid a circular depend on it)
+if module_installed libva; then
+  lin -c libva
+fi
