@@ -1,3 +1,3 @@
 default_pre_build &&
 
-sedit "s:cygwin* ):cygwin* | linux* ):" configure.ac
+sedit "s:-l@GL_LIB@:-lGL:" src/mesa/gl.pc.in.jx
