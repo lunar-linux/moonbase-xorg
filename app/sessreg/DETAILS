@@ -1,12 +1,12 @@
           MODULE=sessreg
-         VERSION=1.1.0
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha256:551177657835e0902b5eee7b19713035beaa1581bbd3c6506baa553e751e017c
+      SOURCE_VFY=sha256:78a76ae3f3f6a26547a34630d1b740f42344848b5fb6d7c9c7f7da255e35a6e1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20150121
+         UPDATED=20170228
            SHORT="Registeres X sessions in utmp/utmpx"
 
 cat << EOF
