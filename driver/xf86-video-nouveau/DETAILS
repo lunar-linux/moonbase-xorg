@@ -1,12 +1,12 @@
           MODULE=xf86-video-nouveau
-         VERSION=1.0.14
+         VERSION=1.0.15
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
-      SOURCE_VFY=sha256:4ddff99b3cc49f16cdcf99f6e1c5856b6f06589ec98376cedb5754100afe31c1
+      SOURCE_VFY=sha256:aede10fd395610a328697adca3434fb14e9afbd79911d6c8545cfa2c0e541d4c
         WEB_SITE=http://nouveau.freedesktop.org/wiki
          ENTERED=20120405
-         UPDATED=20170314
+         UPDATED=20170422
            SHORT="Open Source 2D NVidia drivers"
 
 cat <<EOF
