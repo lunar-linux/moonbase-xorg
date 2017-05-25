@@ -6,8 +6,8 @@ if [[ $GALLIUM == y ]]; then
   OPTS+=" --with-gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
   OPTS+=" --enable-gallium-egl --enable-gallium-osmesa"
 else
-  OPTS+=" --enable-egl --enable-osmesa --with-gallium-drivers="
-fi  &&
+  OPTS+=" --enable-egl --enable-gallium-osmesa --with-gallium-drivers="
+fi &&
 
 OPTS+=" --with-egl-platforms=drm,x11" &&
 if in_depends $MODULE wayland; then
@@ -28,3 +28,6 @@ OPTS+=" --enable-xa \
         --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
 default_build
+
+# indirect rendering
+ln -s /usr/lib/libGLX_mesa.so.0 /usr/lib/libGLX_indirect.so.0

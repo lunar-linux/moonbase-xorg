@@ -1,3 +1,4 @@
 default_pre_build &&
 
+sedit "s:-l@GL_LIB@:-lGL:" src/mesa/gl.pc.in &&
 sedit "s:cygwin* ):cygwin* | linux* ):" configure.ac
