@@ -1,11 +1,17 @@
           MODULE=xorg-server
          VERSION=1.19.3
           SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=CVE-2017-10971.patch
+         SOURCE3=CVE-2017-10972.patch
       SOURCE_URL=$XORG_URL/individual/xserver
+     SOURCE2_URL=$PATCH_URL
+     SOURCE3_URL=$PATCH_URL
       SOURCE_VFY=sha256:677a8166e03474719238dfe396ce673c4234735464d6dadf2959b600d20e5a98
+     SOURCE2_VFY=sha256:3950d5d64822b4a34ca0358389216eed25e159751006d674e7cb491aa3b54d0b
+     SOURCE3_VFY=sha256:700af48c541f613b376eb7a7e567d13c0eba7a835d0aaa9d4b0431ebdd9f397c 
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20170316
+         UPDATED=20170814
            SHORT="The X.Org X11R7 server for the X Window System"
 
 cat << EOF

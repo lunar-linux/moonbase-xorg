@@ -6,4 +6,8 @@ if [ "$ENABLE_GLX_TLS" == "y" ]; then
   fi
 fi
 
-default_pre_build
+default_pre_build &&
+
+# CVE patches
+patch_it $SOURCE2 1 &&
+patch_it $SOURCE3 1
