@@ -1,2 +1,6 @@
-depends  resourceproto
-depends  libXext
+depends compositeproto
+depends damageproto
+depends scrnsaverproto
+depends resourceproto
+depends libXext
+depends util-macros
