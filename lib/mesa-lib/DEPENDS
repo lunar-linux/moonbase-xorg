@@ -25,10 +25,6 @@ optional_depends libXvMC \
                  "--disable-xvmc" \
                  "for XVideo Motion Compensation support"
 
-optional_depends libgcrypt \
-                 "--with-sha1=libgcrypt" "" \
-                 "for SHA1 implementation"
-
 optional_depends libomxil-bellagio \
                  "--enable-omx" \
                  "--disable-omx" \
