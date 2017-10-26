@@ -1,11 +1,11 @@
           MODULE=xdg-utils
-         VERSION=1.1.1
+         VERSION=1.1.2
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://portland.freedesktop.org/download/
-      SOURCE_VFY=sha256:b0dd63a2576e0bb16f1aa78d6ddf7d6784784a098d4df17161cd6a17c7bc4125
+      SOURCE_VFY=sha256:951952e2c6bb21214e0bb54e0dffa057d30f5563300225c24c16fba846258bcc
         WEB_SITE=http://portland.freedesktop.org/wiki/XdgUtils
          ENTERED=20061012
-         UPDATED=20151007
+         UPDATED=20170508
            SHORT="Tools to easily integrate applications with the free desktop standards"
 
 cat << EOF
