@@ -1,12 +1,12 @@
           MODULE=xf86-input-wacom
-         VERSION=0.34.2
+         VERSION=0.35.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$SFORGE_URL/linuxwacom/$MODULE/
-      SOURCE_VFY=sha256:2ad1b9db141104370aef4966aae419dde915caea316e1df2c6ac063545706b1c
+      SOURCE_VFY=sha256:55f60a71e81ef5544885652069a4f52b5cbaceabba53a28ac1397ec0ac26447d
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20110925
-         UPDATED=20170309
+         UPDATED=20170731
            SHORT="The X.Org wacom tablet input device driver"
 
 cat << EOF
