@@ -6,7 +6,7 @@ if [[ $GALLIUM == y ]]; then
   OPTS+=" --with-gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
   OPTS+=" --enable-gallium-egl --enable-gallium-osmesa"
 else
-  OPTS+=" --enable-egl --enable-gallium-osmesa --with-gallium-drivers="
+  OPTS+=" --enable-egl --enable-gallium-osmesa --with-gallium-drivers=svga,swrast"
 fi &&
 
 OPTS+=" --with-egl-platforms=drm,x11" &&
