@@ -1,9 +1,9 @@
           MODULE=libtxc_dxtn
          VERSION=1.0.1
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=http://people.freedesktop.org/~cbrill/$MODULE
+      SOURCE_URL=https://people.freedesktop.org/~cbrill/$MODULE
       SOURCE_VFY=sha1:b5c3b274b962380ef8ab91c0017ea8320103034e
-        WEB_SITE=http://dri.freedesktop.org/wiki/S3TC
+        WEB_SITE=https://dri.freedesktop.org/wiki/S3TC
          ENTERED=20130808
          UPDATED=20130808
            SHORT="S3 Texture Compression (S3TC) library for Mesa"
