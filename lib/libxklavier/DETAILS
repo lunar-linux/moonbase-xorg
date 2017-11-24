@@ -3,7 +3,7 @@
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION::3}
       SOURCE_VFY=sha256:ebec3bc54b5652838502b96223152fb1cd8fcb14ace5cb02d718fc3276bbd404
-        WEB_SITE=http://www.freedesktop.org/wiki/Software/LibXklavier
+        WEB_SITE=https://www.freedesktop.org/wiki/Software/LibXklavier
          ENTERED=20031201
          UPDATED=20121024
            SHORT="library providing high-level API for XKB"

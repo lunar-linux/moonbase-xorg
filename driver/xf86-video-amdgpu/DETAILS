@@ -4,7 +4,7 @@
       SOURCE_URL=$XORG_URL/individual/driver
       SOURCE_VFY=sha256:f8cac4bf3dd795b93cc337e5c0c62618026f597890a10d996f09c73eb88ba67c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://xorg.freedesktop.org/
+        WEB_SITE=https://xorg.freedesktop.org/
          ENTERED=20151119
          UPDATED=20170909
            SHORT="The X.Org video driver for AMD GPU"

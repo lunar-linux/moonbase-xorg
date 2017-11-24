@@ -4,7 +4,7 @@
       SOURCE_URL=$XORG_URL/individual/data/$MODULE
       SOURCE_VFY=sha256:deaec9989fbc443358b43864437b7b6d39caff07890a4a8055105ce9fcaa59bd
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://freedesktop.org/wiki/Software/XKeyboardConfig
+        WEB_SITE=https://freedesktop.org/wiki/Software/XKeyboardConfig
          ENTERED=20070329
          UPDATED=20171008
            SHORT="keyboard data files for the X.Org server"
