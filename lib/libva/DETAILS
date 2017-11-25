@@ -3,7 +3,7 @@
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=https://github.com/01org/libva/releases/download/$VERSION/
       SOURCE_VFY=sha256:56ee129deba99b06eb4a8d4f746b117c5d1dc2ec5b7a0bfc06971fca1598ab9b
-        WEB_SITE=http://www.freedesktop.org/wiki/Software/vaapi
+        WEB_SITE=https://www.freedesktop.org/wiki/Software/vaapi
          ENTERED=20110211
          UPDATED=20170728
            SHORT="Video Acceleration (VA) API for Linux"

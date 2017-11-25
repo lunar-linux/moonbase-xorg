@@ -4,7 +4,7 @@
       SOURCE_URL=$XORG_URL/individual/driver
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
       SOURCE_VFY=sha256:aede10fd395610a328697adca3434fb14e9afbd79911d6c8545cfa2c0e541d4c
-        WEB_SITE=http://nouveau.freedesktop.org/wiki
+        WEB_SITE=https://nouveau.freedesktop.org/wiki
          ENTERED=20120405
          UPDATED=20170422
            SHORT="Open Source 2D NVidia drivers"
