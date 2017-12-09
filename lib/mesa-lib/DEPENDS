@@ -30,6 +30,6 @@ optional_depends libomxil-bellagio \
                  "--disable-omx" \
                  "for OpenMAX Integration Layer API support"
 
-optional_depends wayland "" "" "for Wayland windowing protocol support"
+optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
 
 optional_depends libXxf86misc "" "" "for some old binary compatibility" n
