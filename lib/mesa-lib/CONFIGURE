@@ -68,7 +68,7 @@ if [[ -z "$(get_module_config CONFIGURED)" ]]; then
   message "${DEFAULT_COLOR}"
 fi
 
-mquery GALLIUM "Enable Gallium llvm renderer?" y "--enable-gallium-llvm" "--disable-gallium-llvm"
+mquery GALLIUM "Enable Gallium llvm renderer?" y "--enable-llvm" "--disable-llvm"
 
 # mquery doesn't return or set env's, so read out the result:
 GALLIUM=`get_module_config GALLIUM`

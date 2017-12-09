@@ -4,13 +4,13 @@ if [[ $GALLIUM == y ]]; then
   # Mesa Gallium mklib breaks build when linker flags are set
   bad_flags linker &&
   OPTS+=" --with-gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
-  OPTS+=" --enable-gallium-egl --enable-gallium-osmesa"
+  OPTS+=" --enable-egl --enable-gallium-osmesa"
 else
   OPTS+=" --enable-egl --enable-gallium-osmesa --with-gallium-drivers=svga,swrast"
 fi &&
 
-OPTS+=" --with-egl-platforms=drm,x11" &&
-if in_depends $MODULE wayland; then
+OPTS+=" --with-platforms=drm,x11" &&
+if in_depends $MODULE wayland-protocols; then
   OPTS+=",wayland"
 fi &&
 
