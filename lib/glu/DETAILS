@@ -1,7 +1,8 @@
           MODULE=glu
          VERSION=9.0.0
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=ftp://ftp.freedesktop.org/pub/mesa/glu
+   SOURCE_URL[0]=https://mesa.freedesktop.org/archive/glu/
+   SOURCE_URL[1]=ftp://ftp.freedesktop.org/pub/mesa/glu
       SOURCE_VFY=sha1:c2814bbaf1e60e28a75ec80f4646047c0da742bd
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
