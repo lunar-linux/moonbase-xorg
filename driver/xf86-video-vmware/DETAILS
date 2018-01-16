@@ -1,12 +1,12 @@
           MODULE=xf86-video-vmware
-         VERSION=13.1.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=13.2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:3c1d244e4b1b77e92126957965cdc9fb82de4c215c0706a3a8aaff6939e4a0cc
+      SOURCE_VFY=sha256:71908666e2743651accd58823ed4b201a078864203cf49b634cedca3e616abc1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20150121
+         UPDATED=20161117
            SHORT="The X.Org video driver for VMware client sessions"
 
 cat << EOF
