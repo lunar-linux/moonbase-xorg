@@ -9,6 +9,7 @@ OPTS+=" --enable-dri          \
         --enable-xorg         \
         --enable-kdrive       \
         --enable-record       \
+        --enable-glamor       \
         --enable-composite    \
         --enable-xcsecurity   \
         --enable-kdrive-kbd   \
