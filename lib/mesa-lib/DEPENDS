@@ -26,8 +26,8 @@ optional_depends libXvMC \
                  "for XVideo Motion Compensation support"
 
 optional_depends libomxil-bellagio \
-                 "--enable-omx" \
-                 "--disable-omx" \
+                 "--enable-omx-bellagio" \
+                 "--disable-omx-bellagio" \
                  "for OpenMAX Integration Layer API support"
 
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
