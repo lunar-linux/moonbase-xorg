@@ -4,6 +4,12 @@ if [ -h /usr/share/X11/xkb/compiled ]; then
   rm -f /usr/share/X11/xkb/compiled
 fi &&
 
+autoreconf -vfi &&
+
+export CFLAGS=${CFLAGS/-fno-plt}
+export CXXFLAGS=${CXXFLAGS/-fno-plt}
+export LDFLAGS=${LDFLAGS/,-z,now}
+
 OPTS+=" --enable-dri          \
         --enable-dmx          \
         --enable-xorg         \
@@ -18,11 +24,11 @@ OPTS+=" --enable-dri          \
         --disable-xfake       \
         --disable-static      \
         --disable-devel-docs  \
+        --with-xkb-output=/var/lib/xkb \
+        --with-xkb-path=/usr/share/X11/xkb \
         --with-fontrootdir=/usr/share/fonts/" &&
 
-OPTS+=" --libexecdir=/usr/lib/xorg-server" &&
-
-default_build  &&
+default_build &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&
