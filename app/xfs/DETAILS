@@ -1,12 +1,12 @@
           MODULE=xfs
-         VERSION=1.1.4
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:5b8c653476a09e65d93eb7e40da99794366699f5
+      SOURCE_VFY=sha256:db2212115783498f8eeaaee1349461d6c4e9d2005e142bacd3a984fe57269860
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20140822
+         UPDATED=20180210
            SHORT="X Font Server"
 
 cat << EOF

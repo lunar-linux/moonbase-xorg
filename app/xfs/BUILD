@@ -1,8 +1,5 @@
-(
-  . /etc/profile.d/x11r7.rc &&
+. /etc/profile.d/x11r7.rc &&
 
-  OPTS="--disable-devel-docs"
+OPTS="--disable-devel-docs"
 
-  default_build
-
-) > $C_FIFO 2>&1
+default_build
