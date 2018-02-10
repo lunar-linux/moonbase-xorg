@@ -1,5 +1,7 @@
 default_pre_build &&
 
-# Build fixes
+patch_it $SOURCE2 1 &&
+
+# Build fix
 sedit 's;#include "mibstore.h";;;s:miInitializeBackingStore(pScreen);::' src/i740_driver.c
 
