@@ -1,5 +1,4 @@
 default_pre_build &&
 
-# Build fixes
-cp $SCRIPT_DIRECTORY/iopl.h util/ &&
+# Build fix
 sedit 's:#include "mibstore.h"::;s:miInitializeBackingStore(pScreen);::g' src/ct_driver.c

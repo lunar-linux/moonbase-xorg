@@ -1,12 +1,12 @@
           MODULE=libXfont2
-         VERSION=2.0.2
+         VERSION=2.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=https://xorg.freedesktop.org//archive/individual/lib/
-      SOURCE_VFY=sha256:94088d3b87f7d42c7116d9adaad155859e93330c6e47f5989f2de600b9a6c111
+      SOURCE_VFY=sha256:0e8ab7fd737ccdfe87e1f02b55f221f0bd4503a1c5f28be4ed6a54586bac9c4e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xorg.freedesktop.org/
          ENTERED=20061119
-         UPDATED=20171013
+         UPDATED=20171128
            SHORT="X11 font rasterisation library"
 
 cat << EOF
