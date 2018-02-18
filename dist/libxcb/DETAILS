@@ -9,10 +9,10 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org/
          ENTERED=20070216
-         UPDATED=20160523
+         UPDATED=20180211
            SHORT="A replacement of the Xlib interface"
 
 cat << EOF
-libxcb provides an interface to the X Window System protocol, which
-replaces the current Xlib interface.
+libxcb provides an interface to the X Window System protocol, which replaces
+the current Xlib interface.
 EOF
