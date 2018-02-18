@@ -1,17 +1,17 @@
           MODULE=xev
          VERSION=1.2.2
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
+      SOURCE_URL=$XORG_URL/individual/app/
       SOURCE_VFY=sha256:d94ae62a6c1af56c2961d71f5782076ac4116f0fa4e401420ac7e0db33dc314f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20150419
+         UPDATED=20180211
            SHORT="The X.Org event application"
 
 cat << EOF
-The xev application creates a window and then asks the X server to send
-it events whenever anything happens to the window (such as it being moved,
+The xev application creates a window and then asks the X server to send it
+events whenever anything happens to the window (such as it being moved,
 resized, typed in, etc). You can also attach it to an existing window.
 It is useful debugging tool for seeing what cases events to occur and to
 display the information that they contain.

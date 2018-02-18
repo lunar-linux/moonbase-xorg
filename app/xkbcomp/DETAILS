@@ -1,17 +1,17 @@
           MODULE=xkbcomp
          VERSION=1.4.0
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
+      SOURCE_URL=$XORG_URL/individual/app/
       SOURCE_VFY=sha256:bc69c8748c03c5ad9afdc8dff9db11994dd871b614c65f8940516da6bf61ce6b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20170504
+         UPDATED=20180211
            SHORT="The X.Org XKB keyboard description compiler"
 
 cat << EOF
-xkbcomp is the keymap compiler that converts a description of an XKB
-keymap into one of several output formats. The most common use is to
-create a compiled keymap file (.xkm) which can be read directly by
-XKB-capable X servers or utilities.
+xkbcomp is the keymap compiler that converts a description of an XKB keymap
+into one of several output formats. The most common use is to create a compiled
+keymap file (.xkm) which can be read directly by XKB-capable X servers or
+utilities.
 EOF

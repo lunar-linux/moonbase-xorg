@@ -1,15 +1,14 @@
           MODULE=xsetroot
          VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:63bfcf55e95553df1e28f538bf009883568115d1
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:ba215daaa78c415fce11b9e58c365d03bb602eaa5ea916578d76861a468cc3d9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060305
-         UPDATED=20130124
-           SHORT="root window preference utility"
+         UPDATED=20180211
+           SHORT="A root window preference utility"
 
 cat << EOF
-This program is used to set various root window options of the
-display.
+This program is used to set various root window options of the display.
 EOF

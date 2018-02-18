@@ -1,1 +1,1 @@
-depends libXfont
+depends xorgproto
