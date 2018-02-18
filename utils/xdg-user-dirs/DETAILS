@@ -5,11 +5,11 @@
       SOURCE_VFY=sha256:770fb42c8809d192c661585a0ee9ed9b65ebaca7532abe7dd68eca0e4962e3e6
         WEB_SITE=https://www.freedesktop.org/wiki/Software/xdg-user-dirs
          ENTERED=20070825
-         UPDATED=20170905
+         UPDATED=20180211
            SHORT="a tool to help manage 'well known' user directories"
 
 cat << EOF
-xdg-user-dirs is a tool to help manage "well known" user directories
-like the desktop folder and the music folder. It also handles
-localization of the filenames.
+xdg-user-dirs is a tool to help manage "well known" user directories like the
+desktop folder and the music folder.
+It also handles localization of the filenames.
 EOF

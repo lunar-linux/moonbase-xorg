@@ -1,0 +1,4 @@
+default_pre_build &&
+
+sedit 's/\/opt\/local/\${X11R7_PREFIX}/g' Makefile &&
+sedit 's/\/usr\/local/\/usr\/share/g' Makefile
