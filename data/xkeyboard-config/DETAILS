@@ -6,14 +6,13 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://freedesktop.org/wiki/Software/XKeyboardConfig
          ENTERED=20070329
-         UPDATED=20180210
+         UPDATED=20180211
            SHORT="keyboard data files for the X.Org server"
        LDD_CHECK=off
 
 cat << EOF
-The non-arch keyboard configuration database for X Window. The goal
-is to provide the consistent, well-structured, frequently released
-open source of X keyboard configuration data for X Window System
-implementations (free, open source and commercial). The project is
-targeted to XKB-based systems.
+The non-arch keyboard configuration database for X Window. The goal is to
+provide the consistent, well-structured, frequently released open source of
+X keyboard configuration data for X Window System implementations (free, open
+source and commercial). The project is targeted to XKB-based systems.
 EOF
