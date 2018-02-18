@@ -1,2 +1,2 @@
-depends  libXt
-depends  libxkbfile
+depends libXt
+depends libxkbfile

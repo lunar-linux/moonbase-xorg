@@ -1,2 +1,2 @@
-depends damageproto
 depends libXfixes
+depends pkgconfig

@@ -1,8 +1,6 @@
-depends fontsproto
 depends libfontenc
 depends freetype2
 depends xtrans
-depends util-macros
 
 optional_depends bzip2 \
                  "--with-bzip2" \

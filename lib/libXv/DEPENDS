@@ -1,2 +1,2 @@
-depends videoproto
 depends libXext
+depends libXfixes

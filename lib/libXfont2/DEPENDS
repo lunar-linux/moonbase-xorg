@@ -1,5 +1,8 @@
-depends freetype2
 depends libfontenc
-depends fontsproto
-depends util-macros
+depends freetype2
 depends xtrans
+
+optional_depends bzip2 \
+                 "--with-bzip2" \
+                 "--without-bzip2" \
+                 "for bzip2 compressed bitmap font support"

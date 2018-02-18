@@ -1,0 +1,19 @@
+depends libevdev
+depends libunwind
+depends mtdev
+depends %UDEV
+depends meson
+
+optional_depends gtk+-3 \
+                 "-Ddebug-ui=true" \
+                 "-Ddebug-ui=false" \
+                 "for debug-ui support"
+
+optional_depends libwacom \
+                 "-Dlibwacom=true" \
+                 "-Dlibwacom=false" \
+                 " for tablet identification"
+
+optional_depends doxygen \
+                 "-Ddocumentation=true" \
+                 "-Ddocumentation=false"

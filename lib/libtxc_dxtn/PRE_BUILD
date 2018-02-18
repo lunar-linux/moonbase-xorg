@@ -1,6 +1,6 @@
 if ! module_installed "$MODULE"; then
-   message " ${PROBLEM_COLOR}Warning! The S3TC algorithm is patented."                                   &&
-   message " ${MESSAGE_COLOR}Please be aware of the patent law in your own country with respect to"      &&
+   message " ${PROBLEM_COLOR}Warning! The S3TC algorithm is patented." &&
+   message " ${MESSAGE_COLOR}Please be aware of the patent law in your own country with respect to" &&
    message " using this code, as it is illegal in many places without a proper license.${DEFAULT_COLOR}" &&
 
    if ! query "Do you want to continue to install this module (y/n)? " n; then

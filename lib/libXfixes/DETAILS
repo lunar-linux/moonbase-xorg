@@ -1,16 +1,16 @@
           MODULE=libXfixes
          VERSION=5.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/lib
+      SOURCE_URL=$XORG_URL/individual/lib/
       SOURCE_VFY=sha256:de1cd33aff226e08cefd0e6759341c2c8e8c9faf8ce9ac6ec38d43e287b22ad6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20161220
+         UPDATED=20180211
            SHORT="The X.Org miscellaneous fixes extension"
 
 cat << EOF
-libXfixes provides access to the XFIXES extension to the X protocol,
-which provides support for region types, misc cursor functions, and
-other various items.
+libXfixes provides access to the XFIXES extension to the X protocol, which
+provides support for region types, misc cursor functions, and other various
+items.
 EOF

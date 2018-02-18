@@ -1,3 +1,13 @@
-./autogen.sh &&
+mkdir build &&
 
-default_build
+cd build &&
+
+meson --prefix /usr \
+      -Denable-glx=yes \
+      $OPTS && 
+
+ninja &&
+
+prepare_install &&
+
+ninja install

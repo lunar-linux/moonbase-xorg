@@ -1,16 +1,16 @@
           MODULE=libXdamage
          VERSION=1.1.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:c3fc0f4b02dce2239bf46c82a5f06b06585720ae
+      SOURCE_URL=$XORG_URL/individual/lib/
+      SOURCE_VFY=sha256:7c3fe7c657e83547f4822bfde30a90d84524efb56365448768409b77f05355ad
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130103
+         UPDATED=20180211
            SHORT="The X.Org damaged region extension library"
 
 cat << EOF
 libXdamage provides access to the DAMAGE extension of the X protocol.
-The DAMAGE extension provides for notification of when on-screen
-regions have be altered.
+The DAMAGE extension provides for notification of when on-screen regions have
+been altered.
 EOF
