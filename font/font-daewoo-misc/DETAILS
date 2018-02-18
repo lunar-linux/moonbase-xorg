@@ -1,13 +1,14 @@
           MODULE=font-daewoo-misc
          VERSION=1.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/font
-      SOURCE_VFY=sha1:0c7b24e08e6d42eb006d79ae7ab4bbf446d59f7a
+      SOURCE_URL=$XORG_URL/individual/font/
+      SOURCE_VFY=sha256:bc65de70bee12698caa95b523d3b652c056347e17b68cc8b5d6bbdff235c4be8
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20061018
-         UPDATED=20101118
-           SHORT=""
+         UPDATED=20161130
+           SHORT="XOrg Daewoo fonts"
 
 cat << EOF
+XOrg Daewoo fonts.
 EOF
