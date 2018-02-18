@@ -1,19 +1,20 @@
           MODULE=xf86-video-apm
          VERSION=1.2.5
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:a4cdb587f94c0fd28bea92b2469ea1e55d6d6589
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:953b04320117b14c5b7efb37de45cef45592409f639c2aa87b7e2d77dc8d3d0f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120728
+         UPDATED=20180211
            SHORT="The X.Org video dirver for Alliance ProMotion video cards"
 
 cat << EOF
 xf86-video-apm provides the X.Org video drivers for the Alliance ProMotion
-family of video cards. The driver is accelerated for supported
-hardware/depth combination. It supports framebuffer depths of 8, 15, 16, 24
-and 32 bits. For 6420, 6422, AT24, AT3D and AT25, all depths are fully
-accelerated except 24 bpp for which only screen to screen copy and rectangle
-filling is accelerated.
+family of video cards.
+The driver is accelerated for supported hardware/depth combination.
+It supports framebuffer depths of 8, 15, 16, 24 and 32 bits.
+For 6420, 6422, AT24, AT3D and AT25, all depths are fully accelerated except
+24 bpp for which only screen to screen copy and rectangle filling is
+accelerated.
 EOF

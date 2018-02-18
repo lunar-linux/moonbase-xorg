@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xorg.freedesktop.org/
          ENTERED=20151119
-         UPDATED=20170909
+         UPDATED=20180211
            SHORT="The X.Org video driver for AMD GPU"
 
 cat << EOF

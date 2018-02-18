@@ -1,0 +1,16 @@
+          MODULE=xf86-video-omap
+         VERSION=0.4.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:93e7d42107521e61f61980eaea64fb452e87b7b94272e48938ac8d904ccfab5a
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="Omap video driver"
+
+cat << EOF
+Omap video driver for X server.
+It needs libdrm compiled with '-Domap=true' option (or have such a video card 
+on the build system to be detected).
+EOF

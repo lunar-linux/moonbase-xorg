@@ -1,4 +1,0 @@
-default_pre_build &&
-
-# Build fixes
-patch_it $SOURCE2 1

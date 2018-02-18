@@ -1,0 +1,14 @@
+          MODULE=xf86-video-openchrome
+         VERSION=0.6.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:da2975c6379358de52c1257710c67eb59139a7f0a1cd28d00cc64cc3e1c02f75
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="Openchrome video driver"
+
+cat << EOF
+Openchrome driver for X server.
+EOF

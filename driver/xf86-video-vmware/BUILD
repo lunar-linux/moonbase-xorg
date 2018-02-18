@@ -1,7 +1,5 @@
-(
-  . /etc/profile.d/x11r7.rc &&
+. /etc/profile.d/x11r7.rc &&
 
-  OPTS+=" --enable-vmwarectrl-client" &&
-  default_build
+OPTS+=" --enable-vmwarectrl-client" &&
 
-) > $C_FIFO 2>&1
+default_build

@@ -1,5 +1,3 @@
-depends mtdev
 depends libevdev
-depends resourceproto
-depends systemd
+depends mtdev
 depends xorg-server
