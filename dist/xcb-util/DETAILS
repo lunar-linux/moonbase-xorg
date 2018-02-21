@@ -1,0 +1,15 @@
+          MODULE=xcb-util
+         VERSION=0.4.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://xcb.freedesktop.org/dist/
+      SOURCE_VFY=sha256:46e49469cb3b594af1d33176cd7565def2be3fa8be4371d62271fabb5eae50e9
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=https://xcb.freedesktop.org
+         ENTERED=20090504
+         UPDATED=20180211
+           SHORT="Extensions libraries for libxcb"
+
+cat << EOF
+These experimental libraries provide convenience functions and
+interfaces which make the raw X protocol more usable.
+EOF

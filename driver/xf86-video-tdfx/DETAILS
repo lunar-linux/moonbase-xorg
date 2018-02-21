@@ -1,0 +1,14 @@
+          MODULE=xf86-video-tdfx
+         VERSION=1.4.7
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:4cf48ee14ead52b23493c3dce5032496fd68bf1d000170bb138730497e212a42
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="Tdfx video driver"
+
+cat << EOF
+Tdfx video driver for X server.
+EOF

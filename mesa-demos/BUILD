@@ -6,4 +6,3 @@ make &&
 prepare_install &&
 
 install -v -m755 glx{gears,info} /usr/bin/
-

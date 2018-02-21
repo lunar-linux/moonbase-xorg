@@ -1,5 +1,18 @@
-OPTS+=" --enable-udev" &&
+mkdir build &&
 
-autoreconf --force
+cd build &&
 
-default_build
+meson --prefix /usr \
+      -Dudev=true \
+      -Damdgpu=auto \
+      -Dfreedreno=auto \
+      -Dexynos=auto \
+      -Domap=auto \
+      -Dtegra=auto \
+      $OPTS && 
+
+ninja &&
+
+prepare_install &&
+
+ninja install

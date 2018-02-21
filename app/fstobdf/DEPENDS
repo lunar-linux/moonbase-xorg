@@ -1,0 +1,3 @@
+depends libFS
+depends libxcb
+depends libXdmcp

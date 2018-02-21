@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.freedesktop.org/wiki/Software/libevdev/
          ENTERED=20140520
-         UPDATED=20180130
+         UPDATED=20180211
            SHORT="Wrapper library for evdev devices"
 
 cat << EOF

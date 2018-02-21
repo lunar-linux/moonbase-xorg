@@ -1,1 +1,2 @@
 depends xcursorgen
+depends util-macros

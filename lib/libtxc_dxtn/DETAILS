@@ -1,19 +1,18 @@
           MODULE=libtxc_dxtn
          VERSION=1.0.1
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=https://people.freedesktop.org/~cbrill/$MODULE
-      SOURCE_VFY=sha1:b5c3b274b962380ef8ab91c0017ea8320103034e
+      SOURCE_URL=https://people.freedesktop.org/~cbrill/$MODULE/
+      SOURCE_VFY=sha256:45290d12cdca529a3f41e7fc35c4250fc1b6d2fc16b56680f8401f6aa792ae60
         WEB_SITE=https://dri.freedesktop.org/wiki/S3TC
          ENTERED=20130808
-         UPDATED=20130808
+         UPDATED=20180211
            SHORT="S3 Texture Compression (S3TC) library for Mesa"
 
 cat << EOF
 S3 Texture Compression (S3TC) library for Mesa.
-S3TC support has been partially implemented in Mesa. However,
-S3TC code can't be integrated and enabled by default due to
-the patents on the algorithm. Because of this, to be cautious,
-code was integrated to only attempt to open an external library,
-libtxc_dxtn.so, and use a small number of functions from that
-to implement S3TC if available.
+S3TC support has been partially implemented in Mesa. However, S3TC code can't
+be integrated and enabled by default due to the patents on the algorithm.
+Because of this, to be cautious, code was integrated to only attempt to open
+an external library, libtxc_dxtn.so, and use a small number of functions from
+that to implement S3TC if available.
 EOF

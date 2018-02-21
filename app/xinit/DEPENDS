@@ -1,8 +1,6 @@
+depends xauth
 depends xmodmap
 depends xrdb
-depends libX11
-depends libXau
-depends libxcb
 
 optional_depends xauth  "" "--without-xauth"  "for X authorization protocol support"
 optional_depends xterm  "" "--without-xterm"  "for a very basic terminal"

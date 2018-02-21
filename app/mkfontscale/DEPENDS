@@ -1,4 +1,7 @@
-depends  libfontenc
-depends  freetype2
+depends freetype2
+depends libfontenc
 
-optional_depends "bzip2" "--with-bzip2" "--without-bzip2" "for bzip2 compressed bitmap font support"
+optional_depends bzip2 \
+                 "--with-bzip2" \
+                 "--without-bzip2" \
+                 "for bzip2 compressed bitmap font support"

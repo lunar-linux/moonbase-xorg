@@ -1,12 +1,12 @@
           MODULE=xkbevd
          VERSION=1.1.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
+      SOURCE_URL=$XORG_URL/individual/app/
       SOURCE_VFY=sha256:2430a2e5302a4cb4a5530c1df8cb3721a149bbf8eb377a2898921a145197f96a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20150419
+         UPDATED=20180211
            SHORT="XKB event daemon demo"
 
 cat << EOF

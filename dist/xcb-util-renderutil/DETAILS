@@ -1,0 +1,15 @@
+          MODULE=xcb-util-renderutil
+         VERSION=0.3.9
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://xcb.freedesktop.org/dist/
+      SOURCE_VFY=sha256:c6e97e48fb1286d6394dddb1c1732f00227c70bd1bedb7d1acabefdd340bea5b
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=https://xcb.freedesktop.org/
+         ENTERED=20110608
+         UPDATED=20180211
+           SHORT="Renderutil extensions for libxcb"
+
+cat << EOF
+These experimental libraries provide convenience functions and interfaces
+which make the raw X protocol more usable.
+EOF

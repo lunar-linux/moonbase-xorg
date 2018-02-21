@@ -1,16 +1,3 @@
-depends evieext
-depends bigreqsproto
-depends xf86driproto
-depends randrproto
-depends fixesproto
-depends xf86bigfontproto
-depends scrnsaverproto
-depends xf86dgaproto
-depends videoproto
-depends compositeproto
-depends trapproto
-depends xineramaproto
-depends xcmiscproto
 depends libdmx
 depends libXaw
 depends libXt

@@ -1,15 +1,15 @@
           MODULE=xf86-video-neomagic
          VERSION=1.2.9
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/driver
+      SOURCE_URL=$XORG_URL/individual/driver/
       SOURCE_VFY=sha256:72f89396b10527549337cb72a7eafb1194cf140144f9236a94ad2becdf140bf2
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20150511
+         UPDATED=20180211
            SHORT="The X.Org video driver for Neomagic MagicGraph based cards"
 
 cat << EOF
-xf86-video-neomagic provides the driver for Neomagic MagicGraph based
-video cards, which are commonly found in laptop computers.
+xf86-video-neomagic provides the driver for Neomagic MagicGraph based video
+cards, which are commonly found in laptop computers.
 EOF

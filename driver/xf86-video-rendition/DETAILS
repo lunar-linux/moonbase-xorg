@@ -1,27 +1,24 @@
           MODULE=xf86-video-rendition
-         VERSION=4.2.5
+         VERSION=4.2.6
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:930e99e4d44418b1e55f11a2a8525b42b0e2d3b5
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURC_VFY=sha256:660ecf21f65a4d6002c1b603d62c314f8e9624d208db5b346850b0df9dc2f9a8
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20120728
-           SHORT="the X.Org video driver for Rendition based cards"
+         UPDATED=20180218
+           SHORT="The X.Org video driver for Rendition based cards"
 
 cat << EOF
-xf86-video-rendition provides the X.Org video drivers for the
-Rendition/Micron Verite family of video cards, commonly found in 3D
-accelerators such as the Creative 3D Blaster.
-
-The driver supports following framebuffer depths: 8, 15 (Verite V1000
-only), 16, and 24.  Acceleration and multi-head configurations are not
-supported yet.
-
-The rendition driver supports PCI and AGP video cards based on the
-following Rendition/Micron chips:
+xf86-video-rendition provides the X.Org video drivers for the Rendition/Micron
+Verite family of video cards, commonly found in 3D accelerators such as the
+Creative 3D Blaster.
+The driver supports following framebuffer depths: 8, 15 (Verite V1000 only),
+16, and 24.  Acceleration and multi-head configurations are not supported yet.
+The rendition driver supports PCI and AGP video cards based on the following
+Rendition/Micron chips:
   V1000  Verite V1000 based cards.
-  V2100  Verite V2100 based cards. Diamond Stealth II S220 is the only
-           known such card.
+  V2100  Verite V2100 based cards. Diamond Stealth II S220 is the only known
+         such card.
   V2200  Verite V2200 based cards.
 EOF

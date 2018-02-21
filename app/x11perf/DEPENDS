@@ -1,0 +1,2 @@
+depends libXft
+depends libXmu

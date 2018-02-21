@@ -1,15 +1,15 @@
           MODULE=bdftopcf
          VERSION=1.1
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
+      SOURCE_URL=$XORG_URL/individual/app/
       SOURCE_VFY=sha256:4b4df05fc53f1e98993638d6f7e178d95b31745c4568cee407e167491fd311a2
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20171108
+         UPDATED=20180211
            SHORT="The X.Org BDF to PCF font compiler"
 
 cat << EOF
-bdfttopcf is a font compiler for the X server. It compiles an X font
-from Bitmap Distribution Format(BDF) to Portable Compiled Format(PCF).
+bdfttopcf is a font compiler for the X server. It compiles an X font from Bitmap
+Distribution Format(BDF) to Portable Compiled Format(PCF).
 EOF

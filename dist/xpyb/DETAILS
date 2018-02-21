@@ -1,0 +1,14 @@
+          MODULE=xpyb
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://xcb.freedesktop.org/dist/
+      SOURCE_VFY=sha256:259c9ff7e6eb458f57437dbdc0f1993b63e1f30bbe0e4272bfeb8df18ff45933
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=https://xcb.freedesktop.org
+         ENTERED=20090415
+         UPDATED=20180211
+           SHORT="Python bindings for X over libxcb"
+
+cat << EOF
+xpyb provides a Python binding to the X Window System protocol via libxcb.
+EOF

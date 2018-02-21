@@ -1,0 +1,15 @@
+          MODULE=xcb-util-image
+         VERSION=0.4.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://xcb.freedesktop.org/dist/
+      SOURCE_VFY=sha256:2db96a37d78831d643538dd1b595d7d712e04bdccf8896a5e18ce0f398ea2ffc
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=https://xcb.freedesktop.org/
+         ENTERED=20110608
+         UPDATED=20180211
+           SHORT="Image extensions for libxcb"
+
+cat << EOF
+These experimental libraries provide convenience functions and interfaces
+which make the raw X protocol more usable.
+EOF

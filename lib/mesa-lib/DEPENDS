@@ -1,9 +1,5 @@
 depends elfutils
 depends libgcrypt
-depends dri2proto
-depends dri3proto
-depends glproto
-depends presentproto
 depends libdrm
 depends libXxf86vm
 depends libXdamage
@@ -32,4 +28,5 @@ optional_depends libomxil-bellagio \
 
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
 
-optional_depends libXxf86misc "" "" "for some old binary compatibility" n
+optional_depends libtxc_dxtn  "" "" "for S3 texture compression (patented)" n
+optional_depends libXxf87misc "" "" "for some old binary compatibility" n

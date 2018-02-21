@@ -1,13 +1,17 @@
           MODULE=libxshmfence
          VERSION=1.2
           SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=$MODULE-glibc-2.27.patch
       SOURCE_URL=$XORG_URL/individual/lib/
+     SOURCE2_URL=$PATCH_URL
       SOURCE_VFY=sha256:d21b2d1fd78c1efbe1f2c16dae1cb23f8fd231dcf891465b8debe636a9054b0c
+     SOURCE2_VFY=sha256:392226eca2e6549f9ec5405009b5bc4db76ca97a66740f8fa90442a5ec725dd5
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org/
          ENTERED=20140305
-         UPDATED=20150112
+         UPDATED=20180217
            SHORT="A library that exposes a event API on top of Linux futexes"
 
 cat << EOF
+A library that exposes a event API on top of Linux futexes.
 EOF

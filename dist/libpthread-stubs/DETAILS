@@ -1,0 +1,18 @@
+          MODULE=libpthread-stubs
+         VERSION=0.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://xcb.freedesktop.org/dist/
+      SOURCE_VFY=sha256:50d5686b79019ccea08bcbd7b02fe5a40634abcfd4146b6e75c6420cc170e9d9
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20070216
+         UPDATED=20180217
+           SHORT="A library that provides weak aliases for pthread functions"
+
+cat << EOF
+libpthread-stubs is a library that provides weak aliases for pthread functions
+not provided in libc or otherwise available by default. Libraries like libxcb
+rely on pthread stubs to use pthreads optionally, becoming thread-safe when
+linked to libpthread, while avoiding any performance hit when running
+single-threaded.
+EOF

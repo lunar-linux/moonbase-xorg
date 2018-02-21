@@ -1,6 +1,3 @@
-(
-  . /etc/profile.d/x11r7.rc &&
+OPTS+=" --with-fontdir=/usr/share/fonts/TTF"
 
-  default_build
-
-) > $C_FIFO 2>&1
+default_build

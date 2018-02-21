@@ -5,12 +5,12 @@
       SOURCE_VFY=sha256:c6e9ba9cd2de9fb000555c7e6c0f45e6fdf5e79ddf54402024b92ff97281a8b8
         WEB_SITE=http://www.jwz.org/xscreensaver
          ENTERED=20010922
-         UPDATED=20171224
+         UPDATED=20180211
            SHORT="A modular screen saver and locker for X"
 
 cat << EOF
-XScreenSaver is a modular screen saver and locker for the X Window
-System. It is highly customizable and allows the use of any program
-that can draw on the root window as a display mode. More than 160
-display modes are included in this package.
+XScreenSaver is a modular screen saver and locker for the X Window System.
+It is highly customizable and allows the use of any program that can draw on
+the root window as a display mode. More than 160 display modes are included
+in this package.
 EOF

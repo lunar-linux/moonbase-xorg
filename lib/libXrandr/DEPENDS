@@ -1,3 +1,2 @@
-depends randrproto
 depends libXext
 depends libXrender
