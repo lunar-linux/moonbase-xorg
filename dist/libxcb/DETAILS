@@ -1,11 +1,8 @@
           MODULE=libxcb
          VERSION=1.13
           SOURCE=$MODULE-$VERSION.tar.bz2
-         SOURCE2=$MODULE-1.12-python35x_fixes.patch.bz2
       SOURCE_URL=https://xcb.freedesktop.org/dist/
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha256:
-     SOURCE2_VFY=sha256:b3b851ebf94d80e8725a505991146fa4850f094181fc2ef67d20810958936c85
+      SOURCE_VFY=sha256:188c8752193c50ff2dbe89db4554c63df2e26a2e47b0fa415a70918b5b851daa
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org/
          ENTERED=20070216
