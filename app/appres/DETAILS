@@ -1,12 +1,12 @@
           MODULE=appres
-         VERSION=1.0.4
+         VERSION=1.0.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:9f614e9427cd9641a4a801ed5055700afa410674c0b7aa186b86078f11b83e8d
+      SOURCE_VFY=sha256:ffad893712c81943b919e3cbfe46fc65259cc0d9eb96d5e658670e3fbb265928
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20180211
+         UPDATED=20180307
            SHORT="List X application resource database"
 
 cat << EOF
