@@ -1,21 +1,20 @@
           MODULE=fontconfig
-         VERSION=2.12.6
+         VERSION=2.13.0
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=http://www.fontconfig.org/release
-      SOURCE_VFY=sha256:064b9ebf060c9e77011733ac9dc0e2ce92870b574cca2405e11f5353a683c334
+      SOURCE_VFY=sha256:a6ca290637d8b2c4e1dd40549b179202977593f7481ec83ddfb1765ad90037ba
         WEB_SITE=http://www.fontconfig.org
          ENTERED=20030425
-         UPDATED=20171019
+         UPDATED=20180308
            SHORT="A library for configuring and customizing font access"
 
 cat << EOF
-Fontconfig is a font configuration and customization library, which
-does not depend on the X Window System.  It is designed to locate
-fonts within the system and select them according to requirements
-specified by applications.
+Fontconfig is a font configuration and customization library, which does not
+depend on the X Window System. It is designed to locate fonts within the system
+and select them according to requirements specified by applications.
 
-This package contains a program to maintain the fontconfig cache
-(fc-cache), a sample program to list installed fonts (fc-list),
-and a program to test the matching rules (fc-match). It also makes
-fonts managed by defoma available to fontconfig applications.
+This package contains a program to maintain the fontconfig cache (fc-cache), a
+sample program to list installed fonts (fc-list), and a program to test the
+matching rules (fc-match). It also makes fonts managed by defoma available to
+fontconfig applications.
 EOF
