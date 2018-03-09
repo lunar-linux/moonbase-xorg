@@ -1,12 +1,12 @@
           MODULE=xf86-video-amdgpu
-         VERSION=1.4.0
+         VERSION=18.0.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:f8cac4bf3dd795b93cc337e5c0c62618026f597890a10d996f09c73eb88ba67c
+      SOURCE_VFY=sha256:e909b9707d2562dfc36d8075a8cbddbc93901aaa8f2522d9a429c3fc5ad66d94
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xorg.freedesktop.org/
          ENTERED=20151119
-         UPDATED=20180211
+         UPDATED=20180309
            SHORT="The X.Org video driver for AMD GPU"
 
 cat << EOF
