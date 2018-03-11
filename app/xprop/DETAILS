@@ -1,12 +1,12 @@
           MODULE=xprop
-         VERSION=1.2.2
+         VERSION=1.2.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:9bee88b1025865ad121f72d32576dd3027af1446774aa8300cce3c261d869bc6
+      SOURCE_VFY=sha256:d22afb28c86d85fff10a50156a7d0fa930c80ae865d70b26d805fd28a17a521b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20180211
+         UPDATED=20180311
            SHORT="A property displayer for X"
 
 cat << EOF
