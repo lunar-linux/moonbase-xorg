@@ -6,6 +6,7 @@ mkdir build &&
 
 cd build &&
 
+# avoid a circular depend with mesa-lib (via gtk+-3 libinput)
 if module_installed mesa-lib; then
    OPTS+=" -Dglx=yes -Degl=yes"
 else
