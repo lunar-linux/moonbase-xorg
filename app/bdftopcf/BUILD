@@ -1,3 +1,3 @@
-  . /etc/profile.d/x11r7.rc &&
+. /etc/profile.d/x11r7.rc &&
 
-  default_build
+default_build

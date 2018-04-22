@@ -1,2 +1,5 @@
-depends xproto
+depends Linux-PAM
+depends libXaw
+depends libXft
+depends libXinerama
 depends xrdb

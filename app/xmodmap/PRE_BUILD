@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# ignore implicit asprintf function
+sedit '/-Werror=implicit/d' configure

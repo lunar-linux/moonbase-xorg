@@ -1,15 +1,15 @@
           MODULE=xset
-         VERSION=1.2.3
+         VERSION=1.2.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:62a5e7ec91e6900b798a88ca3b30d25bd5ef3047
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:e4fd95280df52a88e9b0abc1fee11dcf0f34fc24041b9f45a247e52df941c957
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060210
-         UPDATED=20130810
+         UPDATED=20180311
            SHORT="A user preference utility for X"
 
 cat << EOF
-command line utility to get and set various preferences and properties 
-for the current session.
+command line utility to get and set various preferences and properties for
+the current session.
 EOF

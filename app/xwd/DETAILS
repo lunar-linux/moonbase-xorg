@@ -1,12 +1,12 @@
           MODULE=xwd
-         VERSION=1.0.6
+         VERSION=1.0.7
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:d1573340d67ce4a2dae31477a8e5459e36dda967
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:cd6815b8b9e0b98e284d3d732fb12162159cb9dcee4f45a7d4c0bd8b308a6794
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20130907
+         UPDATED=20180312
            SHORT="Dump an image of an X window"
 
 cat << EOF
