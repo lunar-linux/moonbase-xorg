@@ -1,13 +1,14 @@
           MODULE=xbitmaps
-         VERSION=1.1.1
+         VERSION=1.1.2
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/data
-      SOURCE_VFY=sha1:578afff7e4912192b524c25254cf7f54c16e57d8
+      SOURCE_URL=$XORG_URL/individual/data/
+      SOURCE_VFY=sha256:b9f0c71563125937776c8f1f25174ae9685314cbd130fb4c2efce811981e07ee
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20101211
-           SHORT=""
+         UPDATED=20180312
+           SHORT="X.org Bitmap files"
 
 cat << EOF
+X.org Bitmap files.
 EOF

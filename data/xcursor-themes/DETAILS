@@ -1,15 +1,15 @@
           MODULE=xcursor-themes
          VERSION=1.0.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/data
-      SOURCE_VFY=sha1:fb22702607810607ab1b9cde1c9a033430c5f037
+      SOURCE_URL=$XORG_URL/individual/data/
+      SOURCE_VFY=sha256:e3fd2c05b9df0d88a3d1192c02143295744685f4f9a03db116e206698331bb86
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130717
+         UPDATED=20180211
            SHORT="A set of cursor themes for Xorg"
 
 cat << EOF
-This is a default set of cursor themes for use with libXcursor, originally created
-for the XFree86 Project, and now shipped as part of the X.Org software. 
+This is a default set of cursor themes for use with libXcursor, originally
+created for the XFree86 Project, and now shipped as part of the X.Org software.
 EOF
