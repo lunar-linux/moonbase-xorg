@@ -1,2 +1,1 @@
-depends  xproto
-depends  util-macros
+depends xorgproto

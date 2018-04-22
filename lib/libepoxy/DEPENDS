@@ -1,3 +1,6 @@
-depends Python
-depends mesa-lib
-depends util-macros
+depends meson
+
+optional_depends doxygen \
+                 "-Denable-docs=true" \
+                 "-Denable-docs=false" \
+                 "for install the documentation"

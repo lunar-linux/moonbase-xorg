@@ -2,15 +2,14 @@
          VERSION=1.0.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha1:6391b4a018189b49e31eda0fe76b3daf92b447ec
+      SOURCE_VFY=sha256:24606446003379dbf499ef57e9294ce622c0f7f8a8f10834db61dc59ef690aa5
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org/
          ENTERED=20060120
-         UPDATED=20060120
-           SHORT="the X.Org XPrint job utility client library"
+         UPDATED=20180211
+           SHORT="The X.Org XPrint job utility client library"
 
 cat << EOF
-libXprintAppUtil provides X.Org utility Xpau APIs, allowing client
-applications to access information about and control Xprint jobs from
-and Xprint server.
+libXprintAppUtil provides X.Org utility Xpau APIs, allowing client applications
+to access information about and control Xprint jobs from and Xprint server.
 EOF

@@ -1,4 +1,0 @@
-default_pre_build &&
-# Fix memfd_create() glibc 2.27
-patch_it $SOURCE2 1 &&
-NOCONFIGURE=1 autoreconf -v --install

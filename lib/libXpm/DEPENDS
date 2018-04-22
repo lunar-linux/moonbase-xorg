@@ -1,3 +1,2 @@
 depends libXt
 depends libXext
-depends util-macros

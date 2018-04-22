@@ -1,15 +1,16 @@
-depends %UDEV
 depends cairo
 depends libpciaccess
 depends util-macros
 depends libxslt
+depends %UDEV
+depends meson
 
 optional_depends valgrind \
-                 "--enable-valgrind" \
-                 "--disable-valgrind" \
+                 "-Dvalgrind=true" \
+                 "-Dvalgrind=false" \
                  "for valgrind support"
 
 optional_depends docbook-xsl \
-                 "--enable-manpages" \
-                 "--disable-manpages" \
+                 "-Dman-pages=true" \
+                 "-Dman-pages=false" \
                  "for man pages install"

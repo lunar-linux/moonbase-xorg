@@ -11,4 +11,3 @@ optional_depends wayland \
 #                 "--enable-glx --enable-egl" \
 #                 "--disable-glx --disable-egl" \
 #                 "for GLX and EGL support"
-

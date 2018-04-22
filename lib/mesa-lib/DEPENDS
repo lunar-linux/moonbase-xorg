@@ -1,9 +1,5 @@
 depends elfutils
 depends libgcrypt
-depends dri2proto
-depends dri3proto
-depends glproto
-depends presentproto
 depends libdrm
 depends libXxf86vm
 depends libXdamage
@@ -25,6 +21,12 @@ optional_depends libXvMC \
                  "--disable-xvmc" \
                  "for XVideo Motion Compensation support"
 
+optional_depends lm_sensors \
+                 "--enable-lmsensors" \
+                 "--disable-lmsensors" \
+                 "for hardware sensors monitoring support"
+
+
 optional_depends libomxil-bellagio \
                  "--enable-omx-bellagio" \
                  "--disable-omx-bellagio" \
@@ -32,4 +34,5 @@ optional_depends libomxil-bellagio \
 
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
 
-optional_depends libXxf86misc "" "" "for some old binary compatibility" n
+optional_depends libtxc_dxtn  "" "" "for S3 texture compression (patented)" n
+optional_depends libXxf87misc "" "" "for some old binary compatibility" n

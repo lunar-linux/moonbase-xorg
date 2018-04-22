@@ -1,2 +1,1 @@
-depends  libXext
-depends  dmxproto
+depends libXext

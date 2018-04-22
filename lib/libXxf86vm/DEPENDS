@@ -1,2 +1,1 @@
-depends  libXext
-depends  xf86vidmodeproto
+depends libXext
