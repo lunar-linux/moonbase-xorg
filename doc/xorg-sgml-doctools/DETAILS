@@ -1,16 +1,15 @@
           MODULE=xorg-sgml-doctools
          VERSION=1.11
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/doc
-      SOURCE_VFY=sha1:56acde359072d7ffc6627ffde5e2c698eb415ddc
+      SOURCE_URL=$XORG_URL/individual/doc/
+      SOURCE_VFY=sha256:e71ce1df82dcc51eb14be6f42171dcc6bdd11ef46c0c605d6da8af12bd73b74c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070906
-         UPDATED=20120612
+         UPDATED=20180211
            SHORT="SGML entity definitions"
 
 cat << EOF
-This is the X11 release of the SGML entity definitions for the
-version information in DocBook SGML/XML-based X.Org documentation.
+This is the X11 release of the SGML entity definitions for the version
+information in DocBook SGML/XML-based X.Org documentation.
 EOF
-
