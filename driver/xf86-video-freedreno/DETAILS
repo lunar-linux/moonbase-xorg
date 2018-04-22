@@ -1,0 +1,16 @@
+          MODULE=xf86-video-freedreno
+         VERSION=1.4.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:f5abdd0b09b7ba4bab13440667b00b9be72e734a343d35d8876f08e1b93dc6c1
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="Freedreno video driver"
+
+cat << EOF
+Freedreno video driver for X server.
+It needs libdrm compiled with '-Dfreedreno=true' option (or have such a video
+card on the build system to be detected).
+EOF

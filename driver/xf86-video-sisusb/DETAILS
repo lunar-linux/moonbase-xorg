@@ -1,26 +1,20 @@
           MODULE=xf86-video-sisusb
          VERSION=0.9.7
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/driver
+      SOURCE_URL=$XORG_URL/individual/driver/
       SOURCE_VFY=sha256:f4400416b920cd1136d60d36b99d33f245cdeaf2ad6c1340936c7c0987761424
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20180210
-           SHORT="the X.Org video driver for SiS based USB-attached video devices"
+         UPDATED=20180211
+           SHORT="The X.Org video driver for SiS based USB video devices"
 
 cat << EOF
-xf86-video-sisusb provides the X.Org video drivers for SiS (Silicon
-Integrated Systems) based video chips that are connected via a Net2280
-USB dongle.
-
-The driver is not accelerated, but provides support for colordepths of
-8, 16 and 24 bpp as well as Render and other extensions.
-
-The sisusb driver supports USB video cards based on the following
-chipsets:
- SiS315E/PRO
-
-The SiS315E/PRO features two CRT controllers. However, in its USB
-version, only the first output, referred to as "CRT1", is being used.
+xf86-video-sisusb provides the X.Org video drivers for SiS (Silicon Integrated
+Systems) based video chips that are connected via a Net2280 USB dongle.
+The driver is not accelerated, but provides support for colordepths of 8, 16
+and 24 bpp as well as Render and other extensions.
+The sisusb driver supports USB video cards based on the SiS315E/PRO chipset.
+The SiS315E/PRO features two CRT controllers. However, in its USB version,
+only the first output, referred to as "CRT1", is being used.
 EOF

@@ -1,4 +1,4 @@
 default_pre_build &&
 
-# Build fixes
+# Build fix
 sedit 's:#include "mibstore.h"::;s:miInitializeBackingStore(pScreen);::' src/glint_driver.c
