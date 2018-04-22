@@ -1,0 +1,14 @@
+          MODULE=xorgproto
+         VERSION=2018.4
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/proto/
+      SOURCE_VFY=sha256:fee885e0512899ea5280c593fdb2735beb1693ad170c22ebcc844470eec415a0
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20180210
+         UPDATED=20180301
+           SHORT="Combined X.Org X11 Protocol headers"
+
+cat << EOF
+Combined X.Org X11 Protocol headers.
+EOF
