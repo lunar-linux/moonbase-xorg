@@ -1,13 +1,14 @@
           MODULE=font-misc-misc
          VERSION=1.1.2
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/font
-      SOURCE_VFY=sha1:c6d28c56880807963175cbbd682fb6f75a35f77d
+      SOURCE_URL=$XORG_URL/individual/font/
+      SOURCE_VFY=sha256:b8e77940e4e1769dc47ef1805918d8c9be37c708735832a07204258bacc11794
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20060120
-         UPDATED=20101120
-           SHORT=""
+         UPDATED=20161130
+           SHORT="XOrg Misc fonts"
 
 cat << EOF
+XOrg Misc fonts.
 EOF

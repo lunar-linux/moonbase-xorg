@@ -1,13 +1,14 @@
           MODULE=font-misc-meltho
          VERSION=1.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/font
-      SOURCE_VFY=sha1:f0693ea8fbc1d43177014155a0ecd2516348b51b
+      SOURCE_URL=$XORG_URL/individual/font/
+      SOURCE_VFY=sha256:3721323f13855cf7ca609115a1f7b182491e9b2b9c6e01eb1a2c7f8edd480791
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20061106
-         UPDATED=20101120
-           SHORT=""
+         UPDATED=20161130
+           SHORT="XOrg Meltho fonts"
 
 cat << EOF
+XOrg Meltho fonts.
 EOF

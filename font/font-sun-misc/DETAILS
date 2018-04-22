@@ -1,13 +1,14 @@
           MODULE=font-sun-misc
          VERSION=1.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/font
-      SOURCE_VFY=sha1:6a72602557bb5dfe46c1ee3b56658aeed1e04f9d
+      SOURCE_URL=$XORG_URL/individual/font/
+      SOURCE_VFY=sha256:481f4fcbbf7005658b080b3cf342c8c76de752e77f47958b2b383de73266d2e0
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20060227
-         UPDATED=20101120
-           SHORT=""
+         UPDATED=20161130
+           SHORT="XOrg Sun fonts"
 
 cat << EOF
+XOrg Sun fonts.
 EOF
