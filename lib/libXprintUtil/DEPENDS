@@ -1,5 +1,5 @@
 depends libXp
 depends libXau
 depends libXt
-depends libXdcmp
+depends libXdmcp
 depends libxcb
