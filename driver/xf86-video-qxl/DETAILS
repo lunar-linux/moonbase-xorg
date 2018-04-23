@@ -1,0 +1,14 @@
+          MODULE=xf86-video-qxl
+         VERSION=0.1.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:b18682e04503c6326f7bf7190f3ee50a3d4d69758a2a3cc9af102a6b3f114c92
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org/
+         ENTERED=20180218
+         UPDATED=20180218
+           SHORT="Qxl video driver"
+
+cat << EOF
+Qxl driver for X server.
+EOF

@@ -1,2 +1,1 @@
-depends libdrm
 depends xorg-server

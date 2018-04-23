@@ -1,16 +1,15 @@
           MODULE=xf86-video-vmware
          VERSION=13.2.1
-          SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:71908666e2743651accd58823ed4b201a078864203cf49b634cedca3e616abc1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:e2f7f7101fba7f53b268e7a25908babbf155b3984fb5268b3d244eb6c11bf62b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20161117
+         UPDATED=20180218
            SHORT="The X.Org video driver for VMware client sessions"
 
 cat << EOF
-xf86-video-vmware provides the X.Org video driver for the VMware
-virtual video card in a client session, i.e. if Linux is running
-inside a VMware session.
+xf86-video-vmware provides the X.Org video driver for the VMware virtual video
+card in a client session, i.e. if Linux is running inside a VMware session.
 EOF
