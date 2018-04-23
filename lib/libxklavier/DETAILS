@@ -5,12 +5,12 @@
       SOURCE_VFY=sha256:ebec3bc54b5652838502b96223152fb1cd8fcb14ace5cb02d718fc3276bbd404
         WEB_SITE=https://www.freedesktop.org/wiki/Software/LibXklavier
          ENTERED=20031201
-         UPDATED=20121024
-           SHORT="library providing high-level API for XKB"
+         UPDATED=20180211
+           SHORT="A library providing high-level API for XKB"
 
 cat << EOF
 libxklavier is a library providing high-level API for X Keyboard
-Extension known as XKB. This library is indended to support XFree86
-and other commercial X servers. It is useful for creating XKB-related
-software (layout indicators etc).
+Extension known as XKB. This library is indended to support XFree86 and other
+commercial X servers. It is useful for creating XKB-related software (layout
+indicators etc).
 EOF

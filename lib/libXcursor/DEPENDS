@@ -1,2 +1,2 @@
-depends libXrender
 depends libXfixes
+depends libXrender

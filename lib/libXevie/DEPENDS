@@ -1,2 +1,2 @@
-depends libXext
 depends evieext
+depends libXext

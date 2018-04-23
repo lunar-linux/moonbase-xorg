@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sed -e '/lbxbuf.h/d' -e '/lbximage.h/d' -e '/lbxbufstr.h/d' -i src/Makefile.*

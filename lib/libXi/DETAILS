@@ -1,17 +1,16 @@
         MODULE=libXi
        VERSION=1.7.9
         SOURCE=$MODULE-$VERSION.tar.bz2
-    SOURCE_URL=$XORG_URL/individual/lib
+    SOURCE_URL=$XORG_URL/individual/lib/
     SOURCE_VFY=sha256:c2e6b8ff84f9448386c1b5510a5cf5a16d788f76db018194dacdc200180faf45
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20170124
+       UPDATED=20180211
          SHORT="The X.Org XINPUT extension library"
 
 cat << EOF
-libXi provides access to the XINPUT extension of the X protocol. The
-XINPUT extension allows set and configuration of multiple input devices
-with the eventual goal of supporting the hotplugging of various input
-devices on the fly.
+libXi provides access to the XINPUT extension of the X protocol. The XINPUT
+extension allows set and configuration of multiple input devices with the
+eventual goal of supporting the hotplugging of various input devices on the fly.
 EOF

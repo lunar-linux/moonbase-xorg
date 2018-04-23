@@ -1,15 +1,15 @@
           MODULE=libXfont
          VERSION=1.5.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/lib
+      SOURCE_URL=$XORG_URL/individual/lib/
       SOURCE_VFY=sha256:1a7f7490774c87f2052d146d1e0e64518d32e6848184a18654e8d0bb57883242
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20180210
+         UPDATED=20180211
            SHORT="The X.Org font rasterisation library"
 
 cat << EOF
-libXfont provides access to items like font selection and rasterisation
-within X.Org.
+libXfont provides access to items like font selection and rasterisation within
+X.Org.
 EOF

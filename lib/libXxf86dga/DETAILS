@@ -1,16 +1,16 @@
           MODULE=libXxf86dga
          VERSION=1.1.4
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/lib
-      SOURCE_VFY=sha1:51f2fc8d5d5fb398cf3c66735789feadb9aaeba9
+      SOURCE_URL=$XORG_URL/individual/lib/
+      SOURCE_VFY=sha256:8eecd4b6c1df9a3704c04733c2f4fa93ef469b55028af5510b25818e2456c77e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20130606
+         UPDATED=20180211
            SHORT="The X.Org XFree86-DGA extension library"
 
 cat << EOF
-libXxf86dga provides access to the X Direct Graphics Access
-(XFree86-DGA) extension of the X11 protocol. XFree86-DGA allows for
-direct graphics access by X11 clients.
+libXxf86dga provides access to the X Direct Graphics Access (XFree86-DGA)
+extension of the X11 protocol. XFree86-DGA allows for direct graphics access
+by X11 clients.
 EOF

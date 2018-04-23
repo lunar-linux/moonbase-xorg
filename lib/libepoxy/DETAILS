@@ -1,12 +1,12 @@
           MODULE=libepoxy
-         VERSION=1.4.3
+         VERSION=1.5.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/anholt/libepoxy/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:7f18518ba0036f7670f837a510bb25be4b3e7fba97d75193b24f7220de55b515
+      SOURCE_VFY=sha256:76c18bf8a8c48c804f4ce64f533c6631b3b19357735bf0b2f6fb4abe752fd2e9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://github.com/anholt/libepoxy
          ENTERED=20141223
-         UPDATED=20170612
+         UPDATED=20180301
            SHORT="A library for handling OpenGL function pointer management"
 
 cat << EOF

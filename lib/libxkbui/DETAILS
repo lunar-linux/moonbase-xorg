@@ -2,14 +2,13 @@
          VERSION=1.0.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha1:bd6f1d6fa390d3fee118f9d5b15e156315576b9f
+      SOURCE_VFY=sha256:20c23101d63234ee5f6d696dfa069b29c6c58e39eff433bcd7705b50b3ffa214
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org/
          ENTERED=20060120
-         UPDATED=20060523
-           SHORT="the X.Org keyboard UI presentation library"
+         UPDATED=20180211
+           SHORT="The X.Org keyboard UI presentation library"
 
 cat << EOF
-libxkbui provides a way to easily present XKB layouts as graphical
-widgets.
+libxkbui provides a way to easily present XKB layouts as graphical widgets.
 EOF

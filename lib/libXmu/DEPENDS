@@ -1,2 +1,2 @@
-depends  libXt
-depends  libXext
+depends libXt
+depends libXext

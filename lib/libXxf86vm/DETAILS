@@ -1,17 +1,16 @@
         MODULE=libXxf86vm
        VERSION=1.1.4
         SOURCE=$MODULE-$VERSION.tar.bz2
-    SOURCE_URL=$XORG_URL/individual/lib
+    SOURCE_URL=$XORG_URL/individual/lib/
     SOURCE_VFY=sha256:afee27f93c5f31c0ad582852c0fb36d50e4de7cd585fcf655e278a633d85cd57
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20060120
-       UPDATED=20150302
+       UPDATED=20180211
          SHORT="The X.Org XFree86-VidModeExtension extension library"
 
 cat << EOF
-libXxf86vm provides access to the XFree86-VidModeExtension extension of
-the X protocol. This allows client application to get and set video
-mode timings in extensive detail. It is the main library used in the
-xvidtune application.
+libXxf86vm provides access to the XFree86-VidModeExtension extension of the X
+protocol. This allows client application to get and set video mode timings in
+extensive detail. It is the main library used in the xvidtune application.
 EOF
