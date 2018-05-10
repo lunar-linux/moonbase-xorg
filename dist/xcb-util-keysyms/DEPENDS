@@ -1,3 +1,2 @@
-depends gperf
 depends libxcb
 depends util-macros

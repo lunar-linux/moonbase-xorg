@@ -1,18 +1,15 @@
           MODULE=libxcb
-         VERSION=1.12
+         VERSION=1.13
           SOURCE=$MODULE-$VERSION.tar.bz2
-         SOURCE2=$MODULE-1.12-python35x_fixes.patch.bz2
       SOURCE_URL=https://xcb.freedesktop.org/dist/
-     SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha256:4adfb1b7c67e99bc9c2ccb110b2f175686576d2f792c8a71b9c8b19014057b5b
-     SOURCE2_VFY=sha256:b3b851ebf94d80e8725a505991146fa4850f094181fc2ef67d20810958936c85
+      SOURCE_VFY=sha256:188c8752193c50ff2dbe89db4554c63df2e26a2e47b0fa415a70918b5b851daa
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org/
          ENTERED=20070216
-         UPDATED=20160523
+         UPDATED=20180307
            SHORT="A replacement of the Xlib interface"
 
 cat << EOF
-libxcb provides an interface to the X Window System protocol, which
-replaces the current Xlib interface.
+libxcb provides an interface to the X Window System protocol, which replaces
+the current Xlib interface.
 EOF

@@ -1,5 +1,0 @@
-default_pre_build &&
-
-sedit "s:pthread-stubs xau >=:xau >=:" configure.ac &&
-
-patch_it $SOURCE2 1
