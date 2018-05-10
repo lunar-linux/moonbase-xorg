@@ -1,0 +1,10 @@
+--- ./startx.cpp	2015-09-21 17:07:29.732240308 +0200
++++ ./startx.cpp	2015-09-21 17:07:59.255424644 +0200
+@@ -11,7 +11,6 @@
+ XCOMM Site administrators are STRONGLY urged to write nicer versions.
+ XCOMM
+ 
+-unset DBUS_SESSION_BUS_ADDRESS
+ unset SESSION_MANAGER
+ 
+ #ifdef __APPLE__

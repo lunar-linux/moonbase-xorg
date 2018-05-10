@@ -43,5 +43,3 @@ optional_depends gdm \
 #                 "--with-pixbuf" \
 #                 "--without-pixbuf" \
 #                 "for image loading support"
-
-

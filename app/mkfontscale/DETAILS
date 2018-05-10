@@ -1,16 +1,15 @@
           MODULE=mkfontscale
-         VERSION=1.1.2
+         VERSION=1.1.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha256:8c6d5228af885477b9aec60ca6f172578e7d2de42234357af62fb00439453f20
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:1e98df69ee5f4542d711e140e1d93e2c3f2775407ccbb7849110d52b91782a6a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20150119
+         UPDATED=20180308
            SHORT="The X.Org scalable font directory creator"
 
 cat << EOF
-mkfontscale scans a directory for scalable fonts and creates a file
-named "fonts.scale", which the X server uses to identify and locate
-scalable fonts.
+mkfontscale scans a directory for scalable fonts and creates a file named
+"fonts.scale", which the X server uses to identify and locate scalable fonts.
 EOF

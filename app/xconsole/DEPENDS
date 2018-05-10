@@ -1,4 +1,2 @@
-depends util-macros
 depends libXt
 depends libXaw
-

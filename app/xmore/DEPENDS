@@ -1,2 +1,4 @@
-depends xproto
-depends libXprintUtil
+depends libXaw
+depends libSM
+depends libICE
+depends libXdmcp

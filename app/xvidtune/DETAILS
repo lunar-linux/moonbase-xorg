@@ -1,24 +1,23 @@
           MODULE=xvidtune
          VERSION=1.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:5ed9967f61cb7f6698fc6da6a2ca7afc5305468d
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:24e5e103933a04bfb2e1d18562619ed74031ab515e7343eb546bacdbcbeecf01
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20130118
-           SHORT="video mode tuner for the X server"
+         UPDATED=20180211
+           SHORT="Video mode tuner for the X server"
 
 cat << EOF
 Xvidtune is a client interface to the X server video mode
 extension (XFree86-VidModeExtension).
 
- When given one of the non-toolkit options, xvidtune provides a command line
- interface to either switch the video mode.
+When given one of the non-toolkit options, xvidtune provides a command line
+interface to either switch the video mode.
 
- Without any options (or with only toolkit options) it presents the user with
- various buttons and sliders that can be used to interactively adjust existing
- video modes. It will also print the settings in a format suitable for
- inclusion in an __xconfigfile__ file.
-
+Without any options (or with only toolkit options) it presents the user with
+various buttons and sliders that can be used to interactively adjust existing
+video modes. It will also print the settings in a format suitable for
+inclusion in an_xconfigfile file.
 EOF

@@ -1,16 +1,16 @@
           MODULE=xbacklight
-         VERSION=1.2.1
+         VERSION=1.2.2
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/app
-      SOURCE_VFY=sha1:861c2ce6a9ff44e93dece8c69508af9d826c032a
+      SOURCE_URL=$XORG_URL/individual/app/
+      SOURCE_VFY=sha256:615a1d13e429ed5a0300b2f4508bc199d7cf21b6b9f088a9d8188d3bc957bf5e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070823
-         UPDATED=20131102
-           SHORT="adjust backlight brightness"
+         UPDATED=20180312
+           SHORT="Adjust backlight brightness"
 
 cat << EOF
 Xbacklight is used to adjust the backlight brightness where  supported.
-It finds all outputs on the X server supporting backlight brightness
-control and changes them all in the same way.
+It finds all outputs on the X server supporting backlight brightness control
+and changes them all in the same way.
 EOF
