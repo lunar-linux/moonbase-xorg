@@ -1,14 +1,14 @@
           MODULE=font-adobe-100dpi
          VERSION=1.0.3
           SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=$XORG_URL/individual/font
-      SOURCE_VFY=sha1:53311cbd604f18bd9570727105a4222473d363e3
+      SOURCE_URL=$XORG_URL/individual/font/
+      SOURCE_VFY=sha256:b2c08433eab5cb202470aa9f779efefce8d9cab2534f34f3aa4a31d05671c054
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20060120
-         UPDATED=20101117
-           SHORT=""
+         UPDATED=20161130
+           SHORT="XOrg Adobe 100dpi fonts"
 
 cat << EOF
+XOrg Adobe 100dpi fonts.
 EOF
-
