@@ -14,7 +14,6 @@ fi
 
 optional_depends libva    "" "" "for Intel DRI video acceleration support"
 optional_depends libvdpau "" "" "for NVIDIA (or nouveau) VDPAU support"
-optional_depends libinput "" "" "for libinput support"
 
 optional_depends libXvMC \
                  "--enable-xvmc" \
