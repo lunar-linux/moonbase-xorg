@@ -16,8 +16,6 @@ depends dbus-glib
 depends xkeyboard-config
 depends xcb-util-keysyms
 
-optional_depends libinput "" "" "for libinput support"
-
 optional_depends libevdev \
                  "--enable-kdrive-evdev" "" \
                  "for evdev support"
