@@ -31,7 +31,5 @@ optional_depends libomxil-bellagio \
                  "--disable-omx-bellagio" \
                  "for OpenMAX Integration Layer API support"
 
-optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
-
-optional_depends libtxc_dxtn  "" "" "for S3 texture compression (patented)" n
-optional_depends libXxf87misc "" "" "for some old binary compatibility" n
+optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
+optional_depends libXxf87misc      "" "" "for some old binary compatibility" n

@@ -16,11 +16,9 @@ Signed-off-by: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
  meson.build | 2 ++
  1 file changed, 2 insertions(+)
 
-diff --git a/meson.build b/meson.build
-index bc1905178d..41a5a0c2ba 100644
---- a/meson.build
-+++ b/meson.build
-@@ -646,6 +646,8 @@ endif
+--- ./meson.build
++++ ./meson.build
+@@ -705,6 +705,8 @@ endif
  # Define DEBUG for debug builds only (debugoptimized is not included on this one)
  if get_option('buildtype') == 'debug'
    pre_args += '-DDEBUG'
