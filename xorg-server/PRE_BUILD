@@ -6,4 +6,6 @@ if [ "$ENABLE_GLX_TLS" == "y" ]; then
   fi
 fi
 
-default_pre_build
+default_pre_build &&
+
+cp $SCRIPT_DIRECTORY/xwayland-config.h.meson.in include/

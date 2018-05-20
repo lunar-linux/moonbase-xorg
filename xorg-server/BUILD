@@ -4,31 +4,36 @@ if [ -h /usr/share/X11/xkb/compiled ]; then
   rm -f /usr/share/X11/xkb/compiled
 fi &&
 
-autoreconf -vfi &&
-
 export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}
 
-OPTS+=" --enable-dri          \
-        --enable-dmx          \
-        --enable-xorg         \
-        --enable-kdrive       \
-        --enable-record       \
-        --enable-composite    \
-        --enable-xcsecurity   \
-        --enable-kdrive-kbd   \
-        --enable-kdrive-mouse \
-        --enable-config-udev  \
-        --disable-xfbdev      \
-        --disable-xfake       \
-        --disable-static      \
-        --disable-devel-docs  \
-        --with-xkb-output=/var/lib/xkb \
-        --with-xkb-path=/usr/share/X11/xkb \
-        --with-fontrootdir=/usr/share/fonts/" &&
+OPTS+="  --prefix /usr \
+        -D xorg=true \
+        -D dmx=false \
+        -D xvfb=false \
+        -D xnest=false \
+        -D xephyr=false \
+        -D pciaccess=true \
+        -D xcsecurity=true \
+        -D xkb-output=/var/lib/xkb \
+        -D default_font_path=/usr/share/fonts/"
 
-default_build &&
+if module_installed libXvMC; then
+   OPTS+=" -D xvmc=true"
+fi &&
+
+if module_installed systemd; then
+   OPTS+=" -D systemd_logind=true"
+fi &&
+
+mkdir build &&
+
+meson build $OPTS &&
+
+ninja -C build &&
+prepare_install &&
+ninja -C build install &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&
@@ -40,4 +45,8 @@ ln -sf /var/lib/xkb /usr/share/X11/xkb/compiled &&
 mkdir -p /usr/share/fonts/X11/OTF &&
 if module_installed mkfontdir; then
   mkfontdir /usr/share/fonts/X11/OTF
-fi
+fi &&
+
+# drivers need this directory
+mkdir -p /etc/X11/xorg.conf.d
+

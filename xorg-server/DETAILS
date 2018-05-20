@@ -9,6 +9,6 @@
            SHORT="The X.Org X11R7 server for the X Window System"
 
 cat << EOF
-The XOrg foundation's open sourced public implemetation of X11 (the XOrg
-Server) is the offical reference implementation of the X Window System.
+The XOrg foundation's open sourced public implemetation of X11 (the XOrg Server)
+is the offical reference implementation of the X Window System.
 EOF
