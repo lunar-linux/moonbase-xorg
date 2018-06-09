@@ -26,7 +26,7 @@ OPTS+=" --enable-dri          \
         --disable-devel-docs  \
         --with-xkb-output=/var/lib/xkb \
         --with-xkb-path=/usr/share/X11/xkb \
-        --with-fontrootdir=/usr/share/fonts/" &&
+        --with-fontrootdir=/usr/share/fonts/"
 
 default_build &&
 
@@ -40,4 +40,7 @@ ln -sf /var/lib/xkb /usr/share/X11/xkb/compiled &&
 mkdir -p /usr/share/fonts/X11/OTF &&
 if module_installed mkfontdir; then
   mkfontdir /usr/share/fonts/X11/OTF
-fi
+fi &&
+
+# Neded for drivers install
+mkdir -p /etc/X11/xorg.conf.d
