@@ -1,15 +1,15 @@
           MODULE=xdg-user-dirs
-         VERSION=0.16
+         VERSION=0.17
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://user-dirs.freedesktop.org/releases/
-      SOURCE_VFY=sha256:770fb42c8809d192c661585a0ee9ed9b65ebaca7532abe7dd68eca0e4962e3e6
+      SOURCE_VFY=sha256:2a07052823788e8614925c5a19ef5b968d8db734fdee656699ea4f97d132418c
         WEB_SITE=https://www.freedesktop.org/wiki/Software/xdg-user-dirs
          ENTERED=20070825
-         UPDATED=20170905
+         UPDATED=20180324
            SHORT="a tool to help manage 'well known' user directories"
 
 cat << EOF
-xdg-user-dirs is a tool to help manage "well known" user directories
-like the desktop folder and the music folder. It also handles
-localization of the filenames.
+xdg-user-dirs is a tool to help manage "well known" user directories like the
+desktop folder and the music folder.
+It also handles localization of the filenames.
 EOF
