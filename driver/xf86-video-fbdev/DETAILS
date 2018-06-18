@@ -1,12 +1,12 @@
           MODULE=xf86-video-fbdev
-         VERSION=0.4.4
+         VERSION=0.5.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:9dd4b326498223abbfdf786089a46ea3db4fa6bbd341308eb48a9e00bc3fd51b
+      SOURCE_VFY=sha256:dcc3d85f378022180e437a9ec00a59b6cb7680ff79c40394d695060af2374699
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20180211
+         UPDATED=20180603
            SHORT="The X.Org video driver for the Linux framebuffer device"
 
 cat << EOF
