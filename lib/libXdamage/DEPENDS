@@ -1,2 +1,2 @@
 depends libXfixes
-depends pkgconfig
+depends %PKGCONF
