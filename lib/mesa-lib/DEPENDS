@@ -32,4 +32,4 @@ optional_depends libomxil-bellagio \
                  "for OpenMAX Integration Layer API support"
 
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
-optional_depends libXxf87misc      "" "" "for some old binary compatibility" n
+optional_depends libXxf86misc      "" "" "for some old binary compatibility" n
