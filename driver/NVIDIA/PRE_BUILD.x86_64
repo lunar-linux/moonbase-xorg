@@ -5,7 +5,6 @@
   unpack $SOURCE2 &&
   unpack $SOURCE3 &&
   unpack $SOURCE4 &&
-  patch_it $SOURCE5 1 &&
 
   # Remove files to avoid module conflicts and
   # make place for source compiled replacements

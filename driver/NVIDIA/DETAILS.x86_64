@@ -1,10 +1,9 @@
           MODULE=NVIDIA
-         VERSION=390.25
+         VERSION=390.77
           SOURCE=NVIDIA-Linux-x86_64-$VERSION-no-compat32.run
          SOURCE2=nvidia-settings-$VERSION.tar.bz2
          SOURCE3=nvidia-installer-$VERSION.tar.bz2
          SOURCE4=nvidia-xconfig-$VERSION.tar.bz2
-         SOURCE5=NVIDIA-kernel-4.14.9-fix.patch
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-no-compat32
       SOURCE_URL=$NVIDIA_URL/Linux-x86_64/$VERSION
   SOURCE2_URL[0]=$NVIDIA_URL/nvidia-settings
@@ -13,16 +12,14 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-no-compat32
   SOURCE3_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-installer/snapshot
   SOURCE4_URL[0]=$NVIDIA_URL/nvidia-xconfig
   SOURCE4_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-xconfig/snapshot
-     SOURCE5_URL=$PATCH_URL
-      SOURCE_VFY=sha256:02263bc81b66e68fc8224447b249f4f0ca4ae201c467e236d917be2fe187f3d6
-     SOURCE2_VFY=sha256:c79bb974e3e716f3448088d72201bb9cfeec8d13ea8dbe5376439bf191c90bca
-     SOURCE3_VFY=sha256:2a9994a4af3e083f4245a018eda1096fcfda06e9ec55cbf3e786fa53ffabdc35
-     SOURCE4_VFY=sha256:1fbcc43094d2a2dc64c8906e38c103b57d7d797e3bff50bcefb2409e8df49ed1
-     SOURCE5_VFY=sha256:664b565f0863441192b52cdd50a1126da8d696069c63d391bd8cdeb91ee3cf48
+      SOURCE_VFY=sha256:6eb950dc4b59697d12d79a975b2c21a5e3cde49a12b61432d7e836110a06a6ea
+     SOURCE2_VFY=sha256:b275ee0e9e504d67ff74d0580013e2ec76754d65ded05265a3a0e7296fa37df3
+     SOURCE3_VFY=sha256:04bbf54e0a7334d37c95645267639b6c54fbcaea8394e6eb37fae0e259e6f51b
+     SOURCE4_VFY=sha256:42b721f012250a80ad2dcd7b98d1dba37e852c4b11cbddfc787cb9984bb150a1
         WEB_SITE=http://www.nvidia.com/
          LICENSE="proprietary"
          ENTERED=20030804
-         UPDATED=20180216
+         UPDATED=20180719
            SHORT="X11 NVIDIA binary driver for Geforce 6/7/8/9/GT2xx"
 
 cat << EOF
