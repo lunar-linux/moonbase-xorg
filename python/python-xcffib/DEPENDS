@@ -1,0 +1,4 @@
+depends python-setuptools
+depends python-six
+depends python-cffi
+depends libxcb
