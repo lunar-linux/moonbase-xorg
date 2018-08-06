@@ -1,2 +1,2 @@
 depends xorgproto
-depends %PKGCONF
+depends pkgconf
