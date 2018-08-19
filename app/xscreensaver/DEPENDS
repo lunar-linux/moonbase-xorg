@@ -1,6 +1,7 @@
 depends bc
 depends perl
 depends libXmu
+depends libXpm
 depends intltool
 
 optional_depends gettext "" "" "enable NLS support"
@@ -17,11 +18,6 @@ optional_depends %JPEG \
                  "--with-jpeg" \
                  "--without-jpeg" \
                  "for JPEG support"
-
-optional_depends libXpm \
-                 "--with-xpm" \
-                 "--without-xpm" \
-                 "for XPM support"
 
 optional_depends glu \
                  "--with-gl --with-gle" \

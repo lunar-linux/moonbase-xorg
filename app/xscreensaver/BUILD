@@ -1,12 +1,11 @@
-OPTS+=" --without-kerberos     \
+OPTS+=" --enable-locking       \
+        --with-pthread         \
         --with-dpms-ext        \
+        --with-xshm-ext        \
         --with-xf86vmode-ext   \
         --with-xf86gamma-ext   \
         --with-proc-interrupts \
-        --with-pthread         \
-        --with-xshm-ext        \
-        --enable-locking" &&
-
-OPTS+=" --without-pixbuf"
+	--without-pixbuf       \
+        --without-kerberos"
 
 default_build
