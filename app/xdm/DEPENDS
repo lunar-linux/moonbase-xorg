@@ -3,3 +3,4 @@ depends libXaw
 depends libXft
 depends libXinerama
 depends xrdb
+depends libXdmcp
