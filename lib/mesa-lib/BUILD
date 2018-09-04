@@ -29,7 +29,7 @@ OPTS+=" --enable-xa \
         --disable-opencl-icd \
         --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
-default_build
+default_build &&
 
 # indirect rendering
 ln -s /usr/lib/libGLX_mesa.so.0 /usr/lib/libGLX_indirect.so.0
