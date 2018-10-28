@@ -1,11 +1,5 @@
 OPTS+=" --prefix=/usr \
-        -Ddebug-ui=false \
-        -Dtests=false"
+        -D debug-ui=false \
+        -D tests=false"
 
-mkdir -p build &&
-
-meson build $OPTS &&
-
-prepare_install &&
-
-ninja -C build install
+default_meson_build
