@@ -34,6 +34,6 @@ optional_depends libunwind \
 		 "for backtracing support"
 
 optional_depends libva             "" "" "for Intel DRI video acceleration support"
-optional_depends livdpau           "" "" "for NVIDIA (or nouveau) VDPAU support"
+optional_depends libvdpau          "" "" "for NVIDIA (or nouveau) VDPAU support"
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
 optional_depends libXxf86misc      "" "" "for some old binary compatibility" n
