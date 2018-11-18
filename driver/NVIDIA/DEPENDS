@@ -3,6 +3,7 @@ depends ncurses
 depends libXxf86vm
 depends libvdpau
 depends CUDA-OpenCL-headers
+depends libglvnd
 
 # Optional, to break circular dependency between gtk+-2 and nvidia
 optional_depends gtk+-3 "" "" "to build nvidia-settings"
