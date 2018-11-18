@@ -25,7 +25,6 @@ LD_LIBRARY_PATH="$SOURCE_DIRECTORY:$LD_LIBRARY_PATH" &&
 CFLAGS="-L$SOURCE_DIRECTORY $CFLAGS"                 &&
 export SYSSRC=/usr/src/linux                         &&
 
-ln -s libGL.so.$VERSION            nvidia-installer-$VERSION/libGL.so           &&
 ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$VERSION/libGLcore.so.1     &&
 ln -s libnvidia-tls.so.$VERSION    nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
 
@@ -79,64 +78,117 @@ KVER=$(cat /usr/src/linux/include/config/kernel.release) &&
 cd kernel &&
 make module KERNEL_UNAME=$KVER &&
 rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
+# We don't want to track the kernel module
+make modules_install KERNEL_UNAME=$KVER &&
 
 prepare_install &&
 
-make modules_install KERNEL_UNAME=$KVER &&
 install -dm 0755 /usr/lib/modprobe.d &&
 echo "blacklist nouveau" > /usr/lib/modprobe.d/nvidia.conf &&
 touch /usr/lib/modprobe.d/nvidia.conf &&
 cd .. &&
 
-mkdir -p /etc/OpenCL/vendors &&
-install -m0444 nvidia.icd /etc/OpenCL/vendors &&
-install -m0755 nvidia-bug-report.sh /usr/bin &&
-install -m0755 nvidia-installer /usr/bin &&
-install -m0755 nvidia-smi /usr/bin &&
-ln -sf  /usr/bin/nvidia-installer /usr/bin/nvidia-uninstall &&
-install -m0755 nvidia-xconfig /usr/bin &&
+# Driver
+install -D -m755 nvidia_drv.so /usr/lib/xorg/modules/drivers/nvidia_drv.so &&
 
-install -m0755 libnv*.so.$VERSION /usr/lib &&
-ln -sf /usr/lib/libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so.1 &&
-ln -sf /usr/lib/libnvidia-cfg.so.1 /usr/lib/libnvidia-cfg.so &&
+# GLX extension
+install -D -m755 libglxserver_nvidia.so.${VERSION} /usr/lib/nvidia/xorg/libglxserver_nvidia.so.${VERSION} &&
+ln -sf libglxserver_nvidia.so.${VERSION} /usr/lib/nvidia/xorg/libglxserver_nvidia.so.1 &&
+ln -sf libglxserver_nvidia.so.${VERSION} /usr/lib/nvidia/xorg/libglxserver_nvidia.so &&
 
-install -m0755 libcuda.so.$VERSION /usr/lib &&
+install -D -m755 libGLX_nvidia.so.${VERSION} /usr/lib/libGLX_nvidia.so.${VERSION} &&
+ln -sf libGLX_nvidia.so.${VERSION} /usr/lib/libGLX_nvidia.so.0 &&
+ln -sf libGLX_nvidia.so.${VERSION} /usr/lib/libGLX_nvidia.so &&
+
+# VDPAU
+install -D -m755 libvdpau_nvidia.so.${VERSION} /usr/lib/vdpau/libvdpau_nvidia.so.${VERSION} &&
+ln -sf libvdpau_nvidia.so.${VERSION} /usr/lib/vdpau/libvdpau_nvidia.so.1 &&
+ln -sf libvdpau_nvidia.so.1 /usr/lib/vdpau/libvdpau_nvidia.so &&
+
+# OpenGL
+install -D -m755 libEGL_nvidia.so.${VERSION} /usr/lib/libEGL_nvidia.so.${VERSION} &&
+ln -sf libEGL_nvidia.so.${VERSION} /usr/lib/libEGL_nvidia.so.0 &&
+ln -sf libEGL_nvidia.so.${VERSION} /usr/lib/libEGL_nvidia.so &&
+install -D -m755 libGLESv1_CM_nvidia.so.${VERSION} /usr/lib/libGLESv1_CM_nvidia.so.${VERSION} &&
+ln -sf libGLESv1_CM_nvidia.so.${VERSION} /usr/lib/libGLESv1_CM_nvidia.so.1 &&
+ln -sf libGLESv1_CM_nvidia.so.${VERSION} /usr/lib/libGLESv1_CM_nvidia.so &&
+install -D -m755 libGLESv2_nvidia.so.${VERSION} /usr/lib/libGLESv2_nvidia.so.${VERSION} &&
+ln -sf libGLESv2_nvidia.so.${VERSION} /usr/lib/libGLESv2_nvidia.so.2 &&
+ln -sf libGLESv2_nvidia.so.${VERSION} /usr/lib/libGLESv2_nvidia.so &&
+install -D -m644 10_nvidia.json /usr/share/glvnd/egl_vendor.d/10_nvidia.json &&
+
+# CUDA
+install -D -m755 libcuda.so.${VERSION} /usr/lib/libcuda.so.${VERSION} &&
 ln -sf /usr/lib/libcuda.so.$VERSION /usr/lib/libcuda.so.1 &&
 ln -sf /usr/lib/libcuda.so.1 /usr/lib/libcuda.so &&
 
-install -m0755 libGL.so.$VERSION /usr/lib &&
-
+# OpenCL
 install -m0755 libOpenCL.so.1.0.0 /usr/lib &&
 ln -sf /usr/lib/libOpenCL.so.1.0.0 /usr/lib/libOpenCL.so.1.0 &&
 ln -sf /usr/lib/libOpenCL.so.1.0 /usr/lib/libOpenCL.so.1 &&
 ln -sf /usr/lib/libOpenCL.so.1 /usr/lib/libOpenCL.so &&
 
-mkdir -p /usr/lib/tls &&
-install -m0755 tls/libnvidia-tls.so.$VERSION /usr/lib/tls &&
+# Other libs
+install -m0755 libnv*.so.$VERSION /usr/lib &&
+#install -m0755 libGL.so.$VERSION /usr/lib &&
 
-install -m0755 libvdpau_nvidia.so.$VERSION /usr/lib/vdpau &&
-ln -sf /usr/lib/vdpau/libvdpau_nvidia.so.$VERSION /usr/lib/vdpau/libvdpau_nvidia.so.1 &&
-ln -sf /usr/lib/vdpau/libvdpau_nvidia.so.1 /usr/lib/libvdpau_nvidia.so &&
+# TLS lib
+install -D -m755 tls/libnvidia-tls.so.${VERSION} /usr/lib/tls/libnvidia-tls.so.${VERSION} &&
 
-mkdir -p /usr/lib/xorg/modules/drivers &&
-install -m0755 nvidia_drv.so /usr/lib/xorg/modules/drivers &&
-mkdir -p /usr/lib/xorg/modules/extensions &&
-install -m0755 libglx.so.$VERSION /usr/lib/xorg/modules/extensions &&
+install -D -m644 nvidia.icd /etc/OpenCL/vendors/nvidia.icd &&
+install -D -m755 nvidia-bug-report.sh /usr/bin/nvidia-bug-report.sh &&
+install -D -m755 nvidia-debugdump /usr/bin/nvidia-debugdump &&
+install -D -m755 nvidia-smi /usr/bin/nvidia-smi &&
+install -D -m644 nvidia-smi.1.gz /usr/share/man/man1/nvidia-smi.1.gz &&
+install -D -m755 nvidia-xconfig /usr/bin/nvidia-xconfig &&
+install -D -m644 nvidia-xconfig.1.gz /usr/share/man/man1/nvidia-xconfig.1.gz &&
+install -D -m755 nvidia-cuda-mps-server /usr/bin/nvidia-cuda-mps-server &&
+install -D -m755 nvidia-cuda-mps-control /usr/bin/nvidia-cuda-mps-control &&
+install -D -m644 nvidia-cuda-mps-control.1.gz /usr/share/man/man1/nvidia-cuda-mps-control.1.gz &&
+install -D -m755 nvidia-modprobe /usr/bin/nvidia-modprobe &&
+install -D -m644 nvidia-modprobe.1.gz /usr/share/man/man1/nvidia-modprobe.1.gz &&
+install -D -m755 nvidia-persistenced /usr/bin/nvidia-persistenced &&
+install -D -m644 nvidia-persistenced.1.gz /usr/share/man/man1/nvidia-persistenced.1.gz &&
+install -D -m644 nvidia-persistenced-init/systemd/nvidia-persistenced.service.template /usr/lib/systemd/system/nvidia-persistenced.service &&
 
-mkdir -p /usr/share/{applications,doc/NVIDIA_GLX-1.0/html} &&
-install -m0444 html/* /usr/share/doc/NVIDIA_GLX-1.0/html &&
-
-install -m0444 README.txt LICENSE NVIDIA_Changelog /usr/share/doc/NVIDIA_GLX-1.0 &&
-install -m0444 nvidia-xconfig.1.gz nvidia-smi.1.gz nvidia-installer.1.gz /usr/share/man/man1 &&
+# Lib symlinks
+ln -sf libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so.1 &&
+ln -sf libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so &&
+ln -sf libnvcuvid.so.$VERSION /usr/lib/libnvcuvid.so &&
+ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
+ln -sf libnvidia-eglcore.so.$VERSION /usr/lib/libnvidia-eglcore.so &&
+ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so.1 &&
+ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so &&
+ln -sf libnvidia-fatbinaryloader.so.$VERSION /usr/lib/libnvidia-fatbinaryloader.so &&
+ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so.1 &&
+ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so &&
+ln -sf libnvidia-glcore.so.$VERSION /usr/lib/libnvidia-glcore.so &&
+ln -sf libnvidia-glsi.so.$VERSION /usr/lib/libnvidia-glsi.so &&
+ln -sf libnvidia-glvkspirv.so.$VERSION /usr/lib/libnvidia-glvkspirv.so &&
+ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so.1 &&
+ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so &&
+ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so.1 &&
+ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so &&
+ln -sf libnvidia-ptxjitcompiler.so.$VERSION /usr/lib/libnvidia-ptxjitcompiler.so.1 &&
+ln -sf libnvidia-ptxjitcompiler.so.$VERSION /usr/lib/libnvidia-ptxjitcompiler.so &&
+ln -sf libnvidia-rtcore.so.$VERSION /usr/lib/libnvidia-rtcore.so &&
+ln -sf libnvidia-tls.so.$VERSION /usr/lib/libnvidia-tls.so &&
+ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so.1 &&
+ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so &&
+ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so.1 &&
+ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so &&
 
 # Register Nvidia XvMC library for use in any XvMC enabled media player
 install -m644 XvMCConfig /etc/X11 &&
 
-install -Dm644 $SCRIPT_DIRECTORY/50-nvidia.conf /usr/share/X11/xorg.conf.d/50-nvidia.conf &&
+install -D -m644 $SCRIPT_DIRECTORY/10-nvidia-drm-outputclass.conf /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf &&
+install -D -m644 $SCRIPT_DIRECTORY/50-nvidia.conf /usr/share/X11/xorg.conf.d/50-nvidia.conf &&
 
 if in_depends $MODULE "gtk+-3" ; then
   install -m0755 nvidia-settings /usr/bin &&
   install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.desktop /usr/share/applications &&
   install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.png /usr/share/doc/NVIDIA_GLX-1.0 &&
   install -m0444 nvidia-settings.1.gz /usr/share/man/man1
-fi
+fi &&
+
+gather_docs README.txt LICENSE NVIDIA_Changelog
