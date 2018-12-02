@@ -16,10 +16,6 @@ depends dbus-glib
 depends xkeyboard-config
 depends xcb-util-keysyms
 
-optional_depends libevdev \
-                 "--enable-kdrive-evdev" "" \
-                 "for evdev support"
-
 optional_depends libgcrypt \
                  "--with-sha1=libgcrypt" "" \
                  "for SHA1 implementation"

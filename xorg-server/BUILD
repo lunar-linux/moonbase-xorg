@@ -10,20 +10,16 @@ export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}
 
-OPTS+=" --enable-dri          \
-        --enable-dmx          \
-        --enable-xorg         \
-        --enable-kdrive       \
-        --enable-record       \
-        --enable-composite    \
-        --enable-xcsecurity   \
-        --enable-kdrive-kbd   \
-        --enable-kdrive-mouse \
-        --enable-config-udev  \
-        --disable-xfbdev      \
-        --disable-xfake       \
-        --disable-static      \
-        --disable-devel-docs  \
+OPTS+=" --enable-dri         \
+        --enable-dmx         \
+        --enable-xorg        \
+        --enable-kdrive      \
+        --enable-record      \
+        --enable-composite   \
+        --enable-xcsecurity  \
+        --enable-config-udev \
+        --disable-static     \
+        --disable-devel-docs \
         --with-xkb-output=/var/lib/xkb \
         --with-xkb-path=/usr/share/X11/xkb \
         --with-fontrootdir=/usr/share/fonts/"
@@ -42,5 +38,4 @@ if module_installed mkfontdir; then
   mkfontdir /usr/share/fonts/X11/OTF
 fi &&
 
-# Neded for drivers install
 mkdir -p /etc/X11/xorg.conf.d
