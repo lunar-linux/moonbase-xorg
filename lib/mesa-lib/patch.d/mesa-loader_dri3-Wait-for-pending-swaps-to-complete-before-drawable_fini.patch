@@ -1,6 +1,6 @@
 --- ./src/loader/loader_dri3_helper.c
 +++ ./src/loader/loader_dri3_helper.c
-@@ -285,6 +283,9 @@ loader_dri3_drawable_fini(struct loader_dri3_drawable *draw)
+@@ -283,6 +283,9 @@ loader_dri3_drawable_fini(struct loader_dri3_drawable *draw)
  {
     int i;
  
