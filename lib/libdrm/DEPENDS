@@ -6,11 +6,11 @@ depends %UDEV
 depends meson
 
 optional_depends valgrind \
-                 "-Dvalgrind=true" \
-                 "-Dvalgrind=false" \
-                 "for valgrind support"
+                 "-D valgrind=true" \
+                 "-D valgrind=false" \
+                 "for valgrind support" n
 
 optional_depends docbook-xsl \
-                 "-Dman-pages=true" \
-                 "-Dman-pages=false" \
-                 "for man pages install"
+                 "-D man-pages=true" \
+                 "-D man-pages=false" \
+                 "for man pages install" n

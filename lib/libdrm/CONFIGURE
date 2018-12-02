@@ -1,0 +1,30 @@
+SUPPORTED_DRIVERS="freedreno exynos omap tegra"
+
+make_drivers_checklist() {
+  # For each locale, extract name, title and charmap information
+  for driver in $SUPPORTED_DRIVERS; do
+      title=$driver
+
+    echo "\"$driver\" \"$title\" \"on\" "
+  done
+}
+
+select_drivers() {
+  BACKTITLE="Libdrm Configuration"
+      TITLE="Additional Drivers Selection"
+       HELP=""
+  make_drivers_checklist | xargs  \
+  dialog --backtitle "$BACKTITLE" \
+         --title     "$TITLE"     \
+         --stdout                 \
+         --separate-output        \
+         --checklist "$HELP"      \
+         0 0 0
+}
+
+if ! grep -q "DRMDRIVER=" $MODULE_CONFIG; then
+  DRMDRIVER=`select_drivers`
+  set_module_config DRMDRIVER "$DRMDRIVER"
+fi
+
+set_module_config CONFIGURED y
