@@ -35,7 +35,7 @@ OPTS+=" -D b_lto=false \
 #        -D gallium-nine=true \
 
 if module_installed libglvnd; then
-   OPTS+=" -D glvnd=false"
+  OPTS+=" -D glvnd=false"
 fi
 
 echo '"'$OPTS'"'

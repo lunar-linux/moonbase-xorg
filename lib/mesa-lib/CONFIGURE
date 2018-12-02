@@ -1,4 +1,4 @@
-SUPPORTED_DRIVERS="i915 i965 nouveau r100 r200i"
+SUPPORTED_DRIVERS="i915 i965 nouveau r100 r200"
 SUPPORTED_GALLIUM="i915 i965 nouveau r300 r600 radeonsi svga virgl"
 SUPPORTED_VULKAN="amd intel"
 
@@ -112,3 +112,4 @@ if [[ $VULKAN == y ]]; then
 fi
 
 set_module_config CONFIGURED y
+

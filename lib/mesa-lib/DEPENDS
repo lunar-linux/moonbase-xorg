@@ -47,4 +47,5 @@ optional_depends libomxil-bellagio \
                  "for OpenMAX Integration Layer API support"
 
 optional_depends libglvnd "" "" "for GL Vendor-Neutral Dispatch support"
+
 optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
