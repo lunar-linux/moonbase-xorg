@@ -1,3 +1,4 @@
+depends XML-Parser
 depends libxslt
 depends xkbcomp
 depends intltool
