@@ -11,6 +11,7 @@ depends libXres
 depends libXv
 depends libxkbfile
 depends pixman
+depends font-util
 depends mesa-lib
 depends dbus-glib
 depends xkeyboard-config
