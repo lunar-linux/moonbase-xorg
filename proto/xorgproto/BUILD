@@ -13,23 +13,23 @@ OPTS+=" --prefix /usr \
 
 meson $OPTS . build &&
 
-cd build
+cd build &&
 ninja &&
 prepare_install &&
 ninja install &&
 
 # cleanup
-rm -f /usr/include/X11/extensions/{apple,windows}*;
-rm -f /usr/share/pkgconfig/{apple,windows}wmproto.pc;
-rm -f /usr/share/licenses/$MODULE/COPYING-{apple,windows}wmproto;
+rm -f /usr/include/X11/extensions/{apple,windows}* &&
+rm -f /usr/share/pkgconfig/{apple,windows}wmproto.pc &&
+rm -f /usr/share/licenses/$MODULE/COPYING-{apple,windows}wmproto &&
 
-touch $SOURCE_DIRECTORY/x11r7.rc
+touch $SOURCE_DIRECTORY/x11r7.rc &&
 
 # we only need this when are installing in a different prefix then /usr
 if [ ${MODULE_PREFIX} != /usr ]; then
-  echo export PATH=\"$MODULE_PREFIX/bin:'$PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc;
-  echo export PKG_CONFIG_PATH=\"$MODULE_PREFIX/lib/pkgconfig:'$PKG_CONFIG_PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc;
-fi
+  echo export PATH=\"$MODULE_PREFIX/bin:'$PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc
+  echo export PKG_CONFIG_PATH=\"$MODULE_PREFIX/lib/pkgconfig:'$PKG_CONFIG_PATH'\" >> $SOURCE_DIRECTORY/x11r7.rc
+fi &&
 
 # we still need to install the x11r7.rc file as it get sourced by all xorg7 modules
 install -m644 $SOURCE_DIRECTORY/x11r7.rc /etc/profile.d/
