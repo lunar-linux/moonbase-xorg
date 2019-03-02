@@ -8,6 +8,6 @@ optional_depends wayland \
 
 # circular depend on mesa-lib
 #optional_depends mesa-lib \
-#                 "--enable-glx --enable-egl" \
-#                 "--disable-glx --disable-egl" \
-#                 "for GLX and EGL support"
+#                 "--enable-glx" \
+#                 "--disable-glxl" \
+#                 "for GLX mesa support"
