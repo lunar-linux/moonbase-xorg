@@ -9,9 +9,9 @@ OPTS+=" --with-app-defaults=/etc/X11/app-defaults \
         --disable-imake \
         --enable-logging \
         --enable-88-color \
-        --enable-256-color" &&
+        --enable-256-color"
 
-LDFLAGS+=" -lncurses" &&
+LDFLAGS+=" -lncurses"
 
 default_build &&
 
