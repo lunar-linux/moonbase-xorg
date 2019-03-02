@@ -1,5 +1,5 @@
-depends libXext
-depends libX11
-depends mesa-lib
-depends xorgproto
 depends python
+depends libXext
+
+#circular depend on mesa
+#depends mesa-lib
