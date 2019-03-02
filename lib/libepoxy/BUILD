@@ -11,10 +11,10 @@ if module_installed mesa-lib; then
    OPTS+=" -Dglx=yes -Degl=yes"
 else
    OPTS+=" -Dglx=no -Degl=no"
-fi &&
+fi
 
 meson --prefix /usr \
-      $OPTS && 
+      $OPTS &&
 
 ninja &&
 
