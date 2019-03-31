@@ -31,7 +31,7 @@ optional_depends libomxil-bellagio \
 optional_depends libunwind \
                  "--enable-libunwind" \
                  "--disable-libunwind" \
-		 "for backtracing support"
+                 "for backtracing support"
 
 optional_depends libva             "" "" "for Intel DRI video acceleration support"
 optional_depends libvdpau          "" "" "for NVIDIA (or nouveau) VDPAU support"
