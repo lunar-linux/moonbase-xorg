@@ -18,15 +18,15 @@ Signed-off-by: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 --- ./meson.build
 +++ ./meson.build
-@@ -710,6 +710,8 @@ endif
+@@ -739,6 +739,8 @@ endif
  # Define DEBUG for debug builds only (debugoptimized is not included on this one)
  if get_option('buildtype') == 'debug'
    pre_args += '-DDEBUG'
 +else
 +  pre_args += '-DNDEBUG'
  endif
- 
+
  if get_option('shader-cache')
--- 
+--
 2.16.2
 
