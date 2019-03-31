@@ -17,4 +17,4 @@ To the extent that Mesa utilizes the OpenGL command syntax or state machine, it
 is being used with authorization from Silicon Graphics, Inc.(SGI).
 
 mesa-lib provides libGL.so, needed for many different programs.
-OF
+EOF
