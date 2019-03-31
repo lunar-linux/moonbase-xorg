@@ -1,12 +1,12 @@
           MODULE=libXcomposite
-         VERSION=0.4.4
+         VERSION=0.4.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:ede250cd207d8bee4a338265c3007d7a68d5aca791b6ac41af18e9a2aeb34178
+      SOURCE_VFY=sha256:b3218a2c15bab8035d16810df5b8251ffc7132ff3aa70651a1fba0bfe9634e8f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20180211
+         UPDATED=20190312
            SHORT="The X.Org Composite extension library"
 
 cat << EOF
