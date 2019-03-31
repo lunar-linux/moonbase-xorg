@@ -1,18 +1,12 @@
-mkdir build &&
+OPTS+=" --prefix /usr \
+        -Dudev=true \
+        -Dcairo-tests=false"
 
-cd build &&
+# if the  string is not empty
+if [[ -n "${DRMDRIVER/[  ]*\n/}" ]]; then
+   OPTS+=" -D"
+   OPTS+=" $(echo $DRMDRIVER" " | sed 's:\ :=true -D :g')"
+   OPTS+=" libkms=true"
+fi
 
-meson --prefix /usr \
-      -Dudev=true \
-      -Damdgpu=auto \
-      -Dfreedreno=auto \
-      -Dexynos=auto \
-      -Domap=auto \
-      -Dtegra=auto \
-      $OPTS && 
-
-ninja &&
-
-prepare_install &&
-
-ninja install
+default_meson_build
