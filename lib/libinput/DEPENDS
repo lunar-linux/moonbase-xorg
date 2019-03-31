@@ -5,15 +5,16 @@ depends %UDEV
 depends meson
 
 optional_depends gtk+-3 \
-                 "-D deebug-gui=true" \
-                 "-D debug-gui=false" \
+                 "-Ddeebug-gui=true" \
+                 "-Ddebug-gui=false" \
                  " for debug-gui support" n
 
 optional_depends libwacom \
-                 "-D libwacom=true" \
-                 "-D libwacom=false" \
+                 "-Dlibwacom=true" \
+                 "-Dlibwacom=false" \
                  " for tablet identification" n
 
 optional_depends doxygen \
-                 "-D documentation=true" \
-                 "-D documentation=false" n
+                 "-Ddocumentation=true" \
+                 "-Ddocumentation=false" n
+                 "for documentaton install"
