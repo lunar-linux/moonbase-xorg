@@ -26,23 +26,23 @@ CFLAGS="-L$SOURCE_DIRECTORY $CFLAGS"                 &&
 export SYSSRC=/usr/src/linux                         &&
 
 ln -s libnvidia-glcore.so.$VERSION nvidia-installer-$VERSION/libGLcore.so.1     &&
-ln -s libnvidia-tls.so.$VERSION    nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
+#ln -s libnvidia-tls.so.$VERSION    nvidia-installer-$VERSION/libnvidia-tls.so.1 &&
 
 echo libXvMCNVIDIA_dynamic.so.1 > XvMCConfig &&
 
 # build installer
 cd nvidia-installer-$VERSION &&
 
- make rebuild_tls_test &&
- make rebuild_tls_test_dso &&
+# make rebuild_tls_test &&
+# make rebuild_tls_test_dso &&
 # make rebuild_rtld_test.unstripped &&
  make &&
 
  install -m 755 _out/*/nvidia-installer      .. &&
  install -m 755 _out/*/mkprecompiled         .. &&
  install -m 644 _out/*/nvidia-installer.1.gz .. &&
- cp             tls_test_Linux-$ARCH         ../tls_test        &&
- cp             tls_test_dso_Linux-$ARCH.so  ../tls_test_dso.so &&
+# cp             tls_test_Linux-$ARCH         ../tls_test        &&
+# cp             tls_test_dso_Linux-$ARCH.so  ../tls_test_dso.so &&
 
 cd .. &&
 
@@ -133,7 +133,7 @@ install -m0755 libnv*.so.$VERSION /usr/lib &&
 #install -m0755 libGL.so.$VERSION /usr/lib &&
 
 # TLS lib
-install -D -m755 tls/libnvidia-tls.so.${VERSION} /usr/lib/tls/libnvidia-tls.so.${VERSION} &&
+#install -D -m755 tls/libnvidia-tls.so.${VERSION} /usr/lib/tls/libnvidia-tls.so.${VERSION} &&
 
 install -D -m644 nvidia.icd /etc/OpenCL/vendors/nvidia.icd &&
 install -D -m755 nvidia-bug-report.sh /usr/bin/nvidia-bug-report.sh &&

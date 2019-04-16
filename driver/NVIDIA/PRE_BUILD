@@ -16,3 +16,6 @@
     pkg-history.txt nvidia-installer{,.*}                  \
     mkprecompiled nvidia-xconfig{,.*} nvidia-settings{,.*} \
     tls_test* libGL.la gl*.h
+
+#sedit 's|\#if defined(NV_DEV_PM_OPS_PRESENT)|\#if defined(NV_DEV_PM_OPS_PRESENT) \|\| 1|' kernel/common/inc/nv-proto.h &&
+#sedit 's|#endif /*defined(NV_DEV_PM_OPS_PRESENT) */|#else /* defined(NV_PM_SUPPORT_DEVICE_DRIVER_MODEL) */|' kernel/common/inc/nv-proto.h
