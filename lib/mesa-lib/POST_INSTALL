@@ -15,3 +15,8 @@ fi &&
 if module_installed libva; then
   lin -c libva
 fi
+
+# relin libglvnd with mesa-lib support (avoid a circular depend on it)
+if module_installed libglvnd; then
+  lin -c libglvnd
+fi
