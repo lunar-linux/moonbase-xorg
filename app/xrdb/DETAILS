@@ -1,12 +1,12 @@
           MODULE=xrdb
-         VERSION=1.1.1
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:2d23ade7cdbb487996bf77cbb32cbe9bdb34d004748a53de7a4a97660d2217b7
+      SOURCE_VFY=sha256:f23a65cfa1f7126040d68b6cf1e4567523edac10f8dc06f23d840d330c7c6946
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060216
-         UPDATED=20180311
+         UPDATED=20190519
            SHORT="The X.Org utility to access the X resource database"
 
 cat << EOF
