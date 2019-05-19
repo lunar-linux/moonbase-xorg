@@ -1,12 +1,12 @@
           MODULE=xf86-video-mach64
-         VERSION=6.9.5
+         VERSION=6.9.6
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:3e98985b6e044189efd42342862208f472881c25debf22230a1d54a96d71b41f
+      SOURCE_VFY=sha256:7a0707c71bb522430f83bb5e9d9ee697e661e35534a3a2d10834f86b327a3c9c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20080918
-         UPDATED=20180211
+         UPDATED=20190519
            SHORT="the X.Org video driver for older ATI/Mach64 based cards"
 
 cat << EOF
