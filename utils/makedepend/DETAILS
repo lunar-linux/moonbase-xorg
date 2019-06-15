@@ -1,12 +1,12 @@
           MODULE=makedepend
-         VERSION=1.0.4
+         VERSION=1.0.6
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/util
-      SOURCE_VFY=sha1:1f0f8aea1526c6c022f2cf16f7a6c67118c68336
+      SOURCE_VFY=sha256:d558a52e8017d984ee59596a9582c8d699a1962391b632bec3bb6804bf4d501c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060227
-         UPDATED=20120310
+         UPDATED=20190519
            SHORT="makedepend create dependencies in makefiles"
 
 cat << EOF
