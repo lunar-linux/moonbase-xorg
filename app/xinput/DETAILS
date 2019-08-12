@@ -1,12 +1,12 @@
           MODULE=xinput
-         VERSION=1.6.2
+         VERSION=1.6.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:3694d29b4180952fbf13c6d4e59541310cbb11eef5bf888ff3d8b7f4e3aee5c4
+      SOURCE_VFY=sha256:35a281dd3b9b22ea85e39869bb7670ba78955d5fec17c6ef7165d61e5aeb66ed
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20180211
+         UPDATED=20190812
            SHORT="Configure and test XInput devices"
 
 cat << EOF
