@@ -12,4 +12,3 @@
 cat << EOF
 XOrg XFree86 type1 fonts.
 EOF
-

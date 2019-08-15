@@ -9,4 +9,3 @@
 cat << EOF
 A profile for the usual fonts for XOrg 7.x.
 EOF
-

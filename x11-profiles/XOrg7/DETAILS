@@ -9,4 +9,3 @@
 cat << EOF
 A profile for the autotooled version of XOrg 7.4
 EOF
-

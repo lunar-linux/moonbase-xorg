@@ -12,4 +12,3 @@
 cat << EOF
 font-util contains various font utilities for X.Org.
 EOF
-
