@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://xorg.freedesktop.org/
          ENTERED=20070216
-         UPDATED=20190903
+         UPDATED=20190904
            SHORT="XOrg font encoding files"
 
 cat << EOF
