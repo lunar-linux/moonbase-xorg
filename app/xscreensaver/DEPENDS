@@ -20,7 +20,7 @@ optional_depends %JPEG \
                  "for JPEG support"
 
 optional_depends glu \
-                 "--with-gl --with-gle" \
+                 "--with-gl --without-gle" \
                  "--without-gl --without-gle" \
                  "for OpenGL support"
 
