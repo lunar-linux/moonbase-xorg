@@ -1,12 +1,12 @@
           MODULE=xlsatoms
-         VERSION=1.1.2
+         VERSION=1.1.3
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:47e5dc7c3dbda6db2cf8c00cedac1722835c1550aa21cfdbc9ba83906694dea4
+      SOURCE_VFY=sha256:57868f958c263976727881f3078e55b86b4a109dc578d2b92f5c6d690850a382
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20180211
+         UPDATED=20190222
            SHORT="Lists atoms defined on an X server"
 
 cat << EOF
