@@ -1,13 +1,13 @@
           MODULE=glu
-         VERSION=9.0.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=9.0.1
+          SOURCE=$MODULE-$VERSION.tar.xz
    SOURCE_URL[0]=https://mesa.freedesktop.org/archive/glu/
    SOURCE_URL[1]=ftp://ftp.freedesktop.org/pub/mesa/glu/
-      SOURCE_VFY=sha256:1f7ad0d379a722fcbd303aa5650c6d7d5544fde83196b42a73d1193568a4df12
+      SOURCE_VFY=sha256:fb5a4c2dd6ba6d1c21ab7c05129b0769544e1d68e1e3b0ffecb18e73c93055bc
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20121011
-         UPDATED=20180211
+         UPDATED=20190724
            SHORT="GL Utility library"
 
 cat << EOF
