@@ -1,9 +1,9 @@
 --- ./include/evdev-properties.h
 +++ ./include/evdev-properties.h
-@@ -87,6 +87,9 @@
+@@ -89,6 +89,9 @@
  */
  #define EVDEV_PROP_FUNCTION_KEYS "Evdev Function Keys"
- 
+
 +/* CARD32 */
 +#define EVDEV_PROP_DEBOUNCE_DELAY "Evdev Debounce Delay"
 +
@@ -19,7 +19,7 @@
 +                               debounce.c \
                                 apple.c \
                                 axis_labels.h
- 
+
 --- /dev/null
 +++ ./src/debounce.c
 @@ -0,0 +1,198 @@
@@ -223,25 +223,25 @@
 +}
 --- ./src/evdev.c
 +++ ./src/evdev.c
-@@ -619,6 +619,9 @@ EvdevProcessButtonEvent(InputInfoPtr pInfo, struct input_event *ev)
+@@ -599,6 +599,9 @@ EvdevProcessButtonEvent(InputInfoPtr pInfo, struct input_event *ev)
      if (EvdevDragLockFilterEvent(pInfo, button, value))
          return;
- 
+
 +    if (EvdevDBFilterEvent(pInfo, button, value))
 +        return;
 +
      if (EvdevWheelEmuFilterButton(pInfo, button, value))
          return;
- 
-@@ -1908,6 +1911,7 @@ EvdevInit(DeviceIntPtr device)
+
+@@ -1961,6 +1961,7 @@ EvdevInit(DeviceIntPtr device)
      Evdev3BEmuInitProperty(device);
      EvdevWheelEmuInitProperty(device);
      EvdevDragLockInitProperty(device);
 +    EvdevDBInitProperty(device);
      EvdevAppleInitProperty(device);
- 
+
      return Success;
-@@ -1965,6 +1969,7 @@ EvdevProc(DeviceIntPtr device, int what)
+@@ -2019,6 +2019,7 @@ EvdevProc(DeviceIntPtr device, int what)
          {
              EvdevMBEmuFinalize(pInfo);
              Evdev3BEmuFinalize(pInfo);
@@ -249,17 +249,17 @@
          }
          if (pInfo->fd != -1)
          {
-@@ -2619,6 +2624,7 @@ EvdevPreInit(InputDriverPtr drv, InputInfoPtr pInfo, int flags)
+@@ -2671,6 +2671,7 @@ EvdevPreInit(InputDriverPtr drv, InputInfoPtr pInfo, int flags)
          Evdev3BEmuPreInit(pInfo);
          EvdevWheelEmuPreInit(pInfo);
          EvdevDragLockPreInit(pInfo);
 +        EvdevDBPreInit(pInfo);
      }
- 
+
      return Success;
 --- ./src/evdev.h
 +++ ./src/evdev.h
-@@ -221,6 +221,17 @@ typedef struct {
+@@ -227,6 +227,17 @@ typedef struct {
          Time                expires;     /* time of expiry */
          Time                timeout;
      } emulateWheel;
@@ -277,10 +277,10 @@
      struct {
          int                 vert_delta;
          int                 horiz_delta;
-@@ -295,6 +306,12 @@ BOOL EvdevWheelEmuFilterMotion(InputInfoPtr pInfo, struct input_event *pEv);
+@@ -308,6 +308,12 @@ BOOL EvdevWheelEmuFilterMotion(InputInfoPtr pInfo, struct input_event *pEv);
  void EvdevDragLockPreInit(InputInfoPtr pInfo);
  BOOL EvdevDragLockFilterEvent(InputInfoPtr pInfo, unsigned int button, int value);
- 
+
 +/* Button debouncing */
 +BOOL EvdevDBFilterEvent(InputInfoPtr pInfo, unsigned int button, BOOL pressed);
 +void EvdevDBPreInit(InputInfoPtr pInfo);
