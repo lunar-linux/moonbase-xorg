@@ -1,4 +1,3 @@
 depends xset
 depends xmlto
 depends lynx
-depends docbook-xsl
