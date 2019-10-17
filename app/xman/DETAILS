@@ -1,12 +1,11 @@
-          MODULE=xman
-         VERSION=1.1.4
+          ODULE=xman
+         VERSION=1.1.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:b3fa9d2e3f3745c529eb0b6ee4f0e00d936457d11e5221b2efad06ff7c84df29
-   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+      SOURCE_VFY=sha256:4e3c2c7497e9734a6d3c8e1b6a364612892bb31e9f33076c9fdae7177ab60978
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20180211
+         UPDATED=20190715
            SHORT="Manual page display program for the X Window System"
 
 cat << EOF
