@@ -1,0 +1,3 @@
+depends libxcb
+
+optional_depends doxygen "" "" "for documentation install" n
