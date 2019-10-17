@@ -1,12 +1,12 @@
           MODULE=xrandr
-         VERSION=1.5.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.5.1
+          SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:c1cfd4e1d4d708c031d60801e527abc9b6d34b85f2ffa2cadd21f75ff38151cd
+      SOURCE_VFY=sha256:7b99edb7970a1365eaf5bcaf552144e4dfc3ccf510c4abc08569849929fb366e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060227
-         UPDATED=20180211
+         UPDATED=20190812
            SHORT="A X.Org utility to access the RandR extension"
 
 cat << EOF
