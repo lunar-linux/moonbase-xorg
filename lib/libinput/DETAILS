@@ -1,11 +1,11 @@
           MODULE=libinput
-         VERSION=1.12.6
+         VERSION=1.13.4
           SOURCE=$MODULE-$VERSION.tar.xz
-      SOURCE_URL=http://freedesktop.org/software/libinput
-      SOURCE_VFY=sha256:12b4023a3fc683d3d8127db573bdf925a2ef366615042f69c87e57c32a50f45d
-        WEB_SITE=http://wiki.freedesktop.org/www/Software/libinput/
+      SOURCE_URL=https://freedesktop.org/software/libinput
+      SOURCE_VFY=sha256:d3eb57c714683b117aae29f6c0be76dd46de259f0a48f20cb43b9fa9f2e1401d
+        WEB_SITE=https://wiki.freedesktop.org/www/Software/libinput/
          ENTERED=20151211
-         UPDATED=20190122
+         UPDATED=20190711
            SHORT="Handles input devices for display servers and other applications"
 
 cat << EOF
