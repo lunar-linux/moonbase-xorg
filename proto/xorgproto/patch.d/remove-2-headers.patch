@@ -1,0 +1,18 @@
+--- ./include/X11/extensions/meson.build.orig	2019-06-20 06:13:03.000000000 +0300
++++ ./include/X11/extensions/meson.build	2019-10-10 22:09:20.583174654 +0300
+@@ -53,7 +53,6 @@
+     'syncconst.h',
+     'syncproto.h',
+     'syncstr.h',
+-    'vldXvMC.h',
+     'windowswm.h',
+     'windowswmstr.h',
+     'xcmiscproto.h',
+@@ -79,7 +78,6 @@
+     'XI2proto.h',
+     'XI.h',
+     'XIproto.h',
+-    'XKBgeom.h',
+     'XKB.h',
+     'XKBproto.h',
+     'XKBsrv.h',

@@ -15,7 +15,15 @@ meson $OPTS . build &&
 
 cd build &&
 ninja &&
+
 prepare_install &&
+
+# now part of libxvmc
+#rm -f $SOURCE_DIRECTORY/include/X11/extensions/vldXvMC.h &&
+
+# now part of libx11
+#rm -f $SOURCE_DIRECTORY/include/X11/extensions/XKBgeom.h &&
+
 ninja install &&
 
 # cleanup
