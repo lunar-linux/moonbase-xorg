@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20190519
+         UPDATED=20180321
            SHORT="The X.Org scalable font directory creator"
 
 cat << EOF
