@@ -1,8 +1,5 @@
-autoreconf -fi &&
-
 if module_installed mesa-lib; then
-  # for GLX and EGL support
-  OPTS+=" --enable-glx --enable-egl"
-fi &&
+   OPTS+=" --enable-glx"
+fi
 
 default_build
