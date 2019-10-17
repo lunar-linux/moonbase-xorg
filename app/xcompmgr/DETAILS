@@ -1,12 +1,12 @@
           MODULE=xcompmgr
-         VERSION=1.1.7
+         VERSION=1.1.8
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:c8049b1a2531313be7469ba9b198d334f0b91cc01efc2b20b9afcb117e4d6892
+      SOURCE_VFY=sha256:0b89daf4f060fa3fa83cca862c45d531fef7121b5d06552c1d73d396ad9a7243
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20040910
-         UPDATED=20180211
+         UPDATED=20190325
            SHORT="Adds drop shadows to windows and menus in XOrg"
 
 cat << EOF
