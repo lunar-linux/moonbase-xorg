@@ -1,12 +1,12 @@
           MODULE=x11perf
-         VERSION=1.6.0
+         VERSION=1.6.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:e87098dec1947572d70c62697a7b70bde1ab5668237d4660080eade6bc096751
+      SOURCE_VFY=sha256:1c7e0b8ffc2794b4ccf11e04d551823abe0ea47b4f7db0637390db6fbe817c34
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20180211
+         UPDATED=20190317
            SHORT="Summarize x11perf results"
 
 cat << EOF
