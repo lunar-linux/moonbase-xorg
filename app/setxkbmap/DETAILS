@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20190812
+         UPDATED=20190715
            SHORT="Set the keyboard using the X Keyboard Extension"
 
 cat << EOF
