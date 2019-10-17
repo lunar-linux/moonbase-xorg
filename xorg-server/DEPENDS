@@ -1,8 +1,8 @@
+depends nettle
 depends libdmx
 depends libXaw
 depends libXt
 depends libXfont2
-depends libxkbui
 depends libXaw
 depends libXi
 depends libXrender
@@ -10,34 +10,58 @@ depends libXtst
 depends libXres
 depends libXv
 depends libxkbfile
+depends libpciaccess
+depends libxshmfence
+depends libevdev
+depends libepoxy
 depends pixman
-depends font-util
 depends mesa-lib
 depends dbus-glib
+depends font-util
 depends xkeyboard-config
 depends xcb-util-keysyms
+depends xcb-util-cursor
+depends xcb-util-image
+depends xcb-util-renderutil
+depends xcb-util-wm
+depends xkbcomp
+depends setxkbmap
+depends xtrans
+depends meson
 
-optional_depends libgcrypt \
-                 "--with-sha1=libgcrypt" "" \
-                 "for SHA1 implementation"
+optional_depends acpid\
+                 "-Dacpi=true" \
+                 "-Dacpi=false" \
+                 "for ACPI support" y
 
-optional_depends libepoxy \
-                 "--enable-glamor" \
-                 "--disable-glamor" \
-                 "for glamor support (needed for radeonsi driver)" y
+optional_depends elogind \
+                 "-Delogind=true" \
+                 "-Delogind=false" \
+                 "for elogind support"
 
-optional_depends libunwind \
-                 "--enable-libunwind" \
-                 "--disable-libunwind" \
-                 "for call-chain library support" n
+optional_depends systemd \
+                 "-Dsystemd-logind=true" \
+                 "-Dsystemd-logind=false" \
+                 "for systemd logind support" n
 
-optional_depends wayland \
-                 "--enable-xwayland" "" \
+optional_depends libXvMC \
+                 "-Dxvmc=true" \
+                 "-Dxvmc=false" \
+                 "for MotionCompensation support"
+
+optional_depends wayland-protocols \
+                 "-Dxwayland=true" \
+                 "-Dxwayland=false" \
                  "for Wayland support"
 
-optional_depends xmlto \
-                 "--with-xmlto" \
-                 "--without-xmlto" \
-                 "for xmlto support to regenerate documentation" n
+#optional_depends libunwind \
+#                 "-Dlibunwind=true" \
+#                 "-Dlibunwind=false" \
+#                 "for call-chain library support" n
 
-optional_depends libXxf86misc "" "" "for some old binary compatibility" n
+#optional_depends xmlto \
+#                 "-Dxmlto=true" \
+#                 "-Dxmlto=false" \
+#                 "for xmlto support to regenerate documentation" n
+
+#optional_depends libXxf86misc "" "" "for some old binary compatibility" n
