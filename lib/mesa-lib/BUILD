@@ -1,35 +1,40 @@
-NOCONFIGURE=1 ./autogen.sh &&
-
 if [[ $GALLIUM == y ]]; then
   # Mesa Gallium mklib breaks build when linker flags are set
   bad_flags linker &&
-  OPTS+=" --with-gallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)" &&
-  OPTS+=" --enable-gallium-osmesa" &&
-  OPTS+=" --enable-llvm --enable-llvm-shared-libs --with-clang-libdir=/usr/lib"
-else
-  OPTS+=" --enable-gallium-osmesa --with-gallium-drivers=svga,swrast"
-fi &&
+  OPTS+=" -Dosmesa=gallium \
+          -Dgallium-xa=true \
+          -Dgallium-extra-hud=true \
+          -Dgallium-opencl=disabled"
 
-OPTS+=" --with-platforms=drm,x11" &&
+#        -Dgallium-opencl=icd \
+#        -Dgallium-nine=true \
+
+  OPTS+=" -Dgallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)"
+fi
+
+if [[ $VULKAN == y ]]; then
+  OPTS+=" -Dvulkan-drivers=$(echo $VULKANDRIVER | sed s/\ /,/g)"
+fi
+
+OPTS+=" -D platforms=x11,drm" &&
 if in_depends $MODULE wayland-protocols; then
   OPTS+=",wayland"
-fi &&
+fi
 
-OPTS+=" --enable-xa \
-        --enable-gbm \
-        --enable-dri \
-        --enable-egl \
-        --enable-glx \
-        --enable-dri3 \
-        --enable-gles1 \
-        --enable-gles2 \
-        --enable-shared-glapi \
-        --enable-texture-float \
-        --disable-opencl \
-        --disable-opencl-icd \
-        --with-dri-drivers=swrast,$(echo $MESADRIVER | sed s/\ /,/g)" &&
+OPTS+=" -Db_lto=false \
+        -Db_ndebug=true \
+        -Dglx=dri \
+        -Dgbm=true \
+        -Degl=true \
+        -Ddri3=true \
+        -Dgles1=false \
+        -Dgles2=true \
+        -Dvalgrind=false \
+        -Dshared-glapi=true \
+        -Dswr-arches=avx,avx2 \
+        -Ddri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
 
-default_build &&
+default_meson_build &&
 
 # indirect rendering
 ln -s /usr/lib/libGLX_mesa.so.0 /usr/lib/libGLX_indirect.so.0

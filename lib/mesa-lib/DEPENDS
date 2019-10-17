@@ -1,3 +1,4 @@
+depends %UDEV
 depends expat
 depends elfutils
 depends libgcrypt
@@ -5,35 +6,47 @@ depends libdrm
 depends libXxf86vm
 depends libXdamage
 depends libxshmfence
+depends libXrandr
 depends libxml2
 depends dbus-glib
-depends %UDEV
+depends python-mako
+depends meson
 
-if [[ $GALLIUM == y ]]; then
+if [[ "$GALLIUM" == "y" || "$VULKAN" == "y" ]]; then
+  # it needs to be compiled with amdgpu backend
   depends llvm
 fi
 
 optional_depends libXvMC \
-                 "--enable-xvmc" \
-                 "--disable-xvmc" \
+                 "-Dgallium-xvmc=true" \
+                 "-Dgallium-xvmc=false" \
                  "for XVideo Motion Compensation support"
 
 optional_depends lm_sensors \
-                 "--enable-lmsensors" \
-                 "--disable-lmsensors" \
+                 "-Dlmsensors=true" \
+                 "-Dlmsensors=false" \
                  "for hardware sensors monitoring support"
 
+optional_depends libunwind \
+                 "-Dlibunwind=true" \
+                 "-Dlibunwind=false" \
+                 "for backtracing support"
+
+optional_depends libva \
+                 "-Dgallium-va=true" \
+                 "-Dgallium-va=false" \
+                 "for Intel DRI video acceleration support"
+
+optional_depends libvdpau \
+                 "-Dgallium-vdpau=true" \
+                 "-Dgallium-vdpau=false" \
+                 "for NVIDIA (or nouveau) VDPAU support"
+
 optional_depends libomxil-bellagio \
-                 "--enable-omx-bellagio" \
-                 "--disable-omx-bellagio" \
+                 "-Dgallium-omx=bellagio" \
+                 "-Dgallium-omx=disabled" \
                  "for OpenMAX Integration Layer API support"
 
-optional_depends libunwind \
-                 "--enable-libunwind" \
-                 "--disable-libunwind" \
-		 "for backtracing support"
+optional_depends libglvnd "-Dglvnd=true" "" "for GL Vendor-Neutral Dispatch support"
 
-optional_depends libva             "" "" "for Intel DRI video acceleration support"
-optional_depends libvdpau          "" "" "for NVIDIA (or nouveau) VDPAU support"
-optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
-optional_depends libXxf86misc      "" "" "for some old binary compatibility" n
+optional_depends wayland-protocols "" "" "for Wayland windowing protocol support"
