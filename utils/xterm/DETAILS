@@ -1,17 +1,17 @@
           MODULE=xterm
-         VERSION=348
+         VERSION=349
           SOURCE=$MODULE-$VERSION.tgz
-      SOURCE_URL=https://invisible-mirror.net/archives/$MODULE
-      SOURCE_VFY=sha256:8b1f5121dbf3690de9d85a3b9329e3357021705dd7c21da192e47542769275be
+      SOURCE_URL=ftp://ftp.invisible-island.net/$MODULE
+      SOURCE_VFY=sha256:39a6a3d3724f9a0a068f8cc353ab0c82831f0a43abb24470d933af299658475f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=https://invisible-island.net/xterm
+        WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124
-         UPDATED=20190730
+         UPDATED=20190923
            SHORT="The X terminal emulator"
 
 cat << EOF
-xterm is a terminal emulator for the X Window System. It provides DEC
-VT102 and Tektronix 4014 compatible terminals for programs that cannot
-use the window system directly. This version implements ISO/ANSI
-colors and most of the control sequences used by DEC VT220 terminals.
+xterm is a terminal emulator for the X Window System. It provides DEC VT102 and
+Tektronix 4014 compatible terminals for programs that cannot use the window
+system directly. This version implements ISO/ANSI colors and most of the control
+sequences used by DEC VT220 terminals.
 EOF
