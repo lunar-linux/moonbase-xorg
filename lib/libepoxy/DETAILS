@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://github.com/anholt/libepoxy
          ENTERED=20141223
-         UPDATED=20190709
+         UPDATED=20181005
            SHORT="A library for handling OpenGL function pointer management"
 
 cat << EOF
