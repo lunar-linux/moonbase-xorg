@@ -1,7 +1,7 @@
 OPTS+=" --prefix=/usr \
-        -D debug-ui=false \
-        -D tests=false"
+        -Ddebug-ui=false \
+        -Dtests=false"
 
-OPTS+=" -D udev-dir=/usr/lib/udev"
+OPTS+=" -Dudev-dir=/usr/lib/udev"
 
 default_meson_build
