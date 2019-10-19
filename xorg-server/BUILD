@@ -8,24 +8,22 @@ export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/,-z,now}
 
-OPTS+=" -Dxorg=true \
-        -Ddmx=false \
-        -Dxwin=false \
-        -Dxvfb=true \
-        -Dxnest=false \
-        -Dxephyr=false \
-        -Dpciaccess=true \
-        -Dxcsecurity=true \
-        -Dxkb_default_rules=kbd \
-        -Dxkb-output=/var/lib/xkb \
-        -Dxkb_dir=/usr/share/X11/xkb \
-        -Ddefault_font_path=/usr/share/fonts/"
+OPTS+=" --enable-dri         \
+        --enable-dmx         \
+        --enable-xorg        \
+        --enable-kdrive      \
+        --enable-record      \
+        --enable-composite   \
+        --enable-xcsecurity  \
+        --enable-config-udev \
+        --disable-static     \
+	--disable-glamor     \
+        --disable-devel-docs \
+        --with-xkb-output=/var/lib/xkb \
+        --with-xkb-path=/usr/share/X11/xkb \
+        --with-fontrootdir=/usr/share/fonts/"
 
-#if ! module_installed udev; then
-#   OPTS+=" -Dudev=false"
-#fi
-
-default_meson_build &&
+default_build &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&
@@ -37,11 +35,6 @@ ln -sf /var/lib/xkb /usr/share/X11/xkb/compiled &&
 mkdir -p /usr/share/fonts/X11/OTF &&
 if module_installed mkfontdir; then
   mkfontdir /usr/share/fonts/X11/OTF
-fi &&
-
-if [[ "$ENABLE_WRAPPER" = "y" ]]; then
-   # SUID on Xorg to allow user to start it
-   chmod u+s "/usr/bin/Xorg"
 fi &&
 
 mkdir -p /etc/X11/xorg.conf.d
