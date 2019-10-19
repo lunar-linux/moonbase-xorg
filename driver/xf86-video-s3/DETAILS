@@ -1,12 +1,12 @@
           MODULE=xf86-video-s3
-         VERSION=0.6.5
+         VERSION=0.7.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:4778cd4f1d61490c3562f9be03664576f065fa3acf22fe0d0689212d7ea3ad39
+      SOURCE_VFY=sha256:cf12541557d88107364895273e384f97836b428eeb1e54ed66511d69639562c8
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20180211
+         UPDATED=20191019
            SHORT="The X.Org video driver for legacy S3 based cards"
 
 cat << EOF
