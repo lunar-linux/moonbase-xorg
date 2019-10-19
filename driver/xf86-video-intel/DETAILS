@@ -1,13 +1,13 @@
           MODULE=xf86-video-intel
-         VERSION=Release_3.3.2
+         VERSION=Release_3.6.4
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/endlessm/xf86-video-intel/archive/$VERSION.tar.gz
 
-      SOURCE_VFY=sha256:c1cb50fa82b9457be31189bb881bce2b148fe89953ceeaf54b292ea3ba096242
+      SOURCE_VFY=sha256:8749133c78484a4f079f25df0f5df059a7b670d3b06bb9d2290d9b67bed56d5e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20180121
+         UPDATED=20191019
            SHORT="The X.Org video driver for Intel based cards"
 
 cat << EOF
