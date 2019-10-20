@@ -2,11 +2,11 @@
          VERSION=1.4.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha1:55ea7d12d3e24fd72eacc966a59262864dce7769
+      SOURCE_VFY=shai256:ba2223cd4a537275e11c54974094252d053b490a2b663af3a2b7e3038b3cf65f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20110710
+         UPDATED=20191019
            SHORT=" Aiptek USB Digital Tablet Input Driver for Linux"
 
 cat << EOF
