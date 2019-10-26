@@ -17,7 +17,6 @@ OPTS+=" --enable-dri         \
         --enable-xcsecurity  \
         --enable-config-udev \
         --disable-static     \
-	--disable-glamor     \
         --disable-devel-docs \
         --with-xkb-output=/var/lib/xkb \
         --with-xkb-path=/usr/share/X11/xkb \

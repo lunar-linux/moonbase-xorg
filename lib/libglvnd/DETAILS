@@ -5,7 +5,7 @@
       SOURCE_VFY=sha256:37981bd3320261f14140b8aef6e2e6c08c7e75b6a98dcea034670017f3f1312a
         WEB_SITE=https://github.com/NVIDIA/libglvnd/
          ENTERED=20181118
-         UPDATED=20191023
+         UPDATED=20191026
            SHORT="The GL Vendor-Neutral Dispatch library"
 
 cat << EOF
