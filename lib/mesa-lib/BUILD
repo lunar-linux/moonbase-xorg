@@ -4,10 +4,8 @@ if [[ $GALLIUM == y ]]; then
   OPTS+=" -Dosmesa=gallium \
           -Dgallium-xa=true \
           -Dgallium-extra-hud=true \
+          -Dgallium-nine=true \
           -Dgallium-opencl=disabled"
-
-#        -Dgallium-opencl=icd \
-#        -Dgallium-nine=true \
 
   OPTS+=" -Dgallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)"
 fi
