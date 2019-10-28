@@ -58,10 +58,10 @@ fi &&
 # build nvidia-xconfig
 cd nvidia-xconfig-$VERSION &&
 
- make &&
+make &&
 
- install -m 755 _out/*/nvidia-xconfig      .. &&
- install -m 644 _out/*/nvidia-xconfig.1.gz .. &&
+install -m 755 _out/*/nvidia-xconfig      .. &&
+install -m 644 _out/*/nvidia-xconfig.1.gz .. &&
 
 cd .. &&
 
