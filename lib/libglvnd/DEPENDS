@@ -1,5 +1,4 @@
 depends libXext
-depends libX11
 depends mesa-lib
 depends xorgproto
 depends meson
