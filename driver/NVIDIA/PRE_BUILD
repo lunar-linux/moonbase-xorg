@@ -8,7 +8,7 @@
 
   tar -xf nvidia-persistenced-init.tar.bz2 &&
   sedit 's;__USER__;nvidia-persistenced;' nvidia-persistenced-init/systemd/nvidia-persistenced.service.template &&
-  sedit 's;__NV_VK_ICD__;libGLX_nvidia.so.0;' nvidia_icd.json.template &&
+  #sedit 's;__NV_VK_ICD__;libGLX_nvidia.so.0;' nvidia_icd.json.template &&
 
   # Remove files to avoid module conflicts and
   # make place for source compiled replacements
