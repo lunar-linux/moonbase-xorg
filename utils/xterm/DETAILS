@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124
-         UPDATED=20200119
+         UPDATED=20200123
            SHORT="The X terminal emulator"
 
 cat << EOF
