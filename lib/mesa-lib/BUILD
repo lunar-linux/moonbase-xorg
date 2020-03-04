@@ -1,26 +1,11 @@
-if [[ $GALLIUM == y ]]; then
-  # Mesa Gallium mklib breaks build when linker flags are set
-  bad_flags linker &&
-  OPTS+=" -Dosmesa=gallium \
-          -Dgallium-xa=true \
-          -Dgallium-extra-hud=true \
-          -Dgallium-nine=true \
-          -Dgallium-opencl=disabled"
-
-  OPTS+=" -Dgallium-drivers=swrast,$(echo $GALLIUMDRIVER | sed s/\ /,/g)"
-fi
-
-if [[ $VULKAN == y ]]; then
-  OPTS+=" -Dvulkan-drivers=$(echo $VULKANDRIVER | sed s/\ /,/g)"
-fi
-
-OPTS+=" -D platforms=x11,drm" &&
-if in_depends $MODULE wayland-protocols; then
-  OPTS+=",wayland"
-fi
+bad_flags linker
 
 OPTS+=" -Db_lto=false \
         -Db_ndebug=true \
+        -Dplatforms=x11,drm,wayland,surfaceless \
+        -Ddri-drivers=i915,i965,r100,r200,nouveau \
+        -Dgallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris \
+        -Dvulkan-drivers=amd,intel \
         -Dglx=dri \
         -Dgbm=true \
         -Degl=true \
@@ -30,7 +15,16 @@ OPTS+=" -Db_lto=false \
         -Dvalgrind=false \
         -Dshared-glapi=true \
         -Dswr-arches=avx,avx2 \
-        -Ddri-drivers=$(echo $MESADRIVER | sed s/\ /,/g)" &&
+        -Dglvnd=true \
+        -Dlibunwind=true \
+        -Dgallium-xvmc=false \
+        -Dgallium-va=true \
+        -Dgallium-extra-hud=true \
+        -Dgallium-xa=true \
+        -Dgallium-nine=true \
+        -Dgallium-opencl=disabled \
+        -Dllvm=true \
+        -Dosmesa=gallium"
 
 default_meson_build &&
 
