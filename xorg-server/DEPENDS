@@ -10,6 +10,7 @@ depends libXtst
 depends libXres
 depends libXv
 depends libxkbfile
+depends libepoxy
 depends pixman
 depends font-util
 depends mesa-lib
@@ -20,12 +21,6 @@ depends xcb-util-keysyms
 optional_depends libgcrypt \
                  "--with-sha1=libgcrypt" "" \
                  "for SHA1 implementation"
-
-# it breaks the compile - force it to disable in the BUILD file
-#optional_depends libepoxy \
-#                 "--enable-glamor" \
-#                 "--disable-glamor" \
-#                 "for glamor support (needed for radeonsi driver)" y
 
 optional_depends libunwind \
                  "--enable-libunwind" \
@@ -40,5 +35,3 @@ optional_depends xmlto \
                  "--with-xmlto" \
                  "--without-xmlto" \
                  "for xmlto support to regenerate documentation" n
-
-#optional_depends libXxf86misc "" "" "for some old binary compatibility" n
