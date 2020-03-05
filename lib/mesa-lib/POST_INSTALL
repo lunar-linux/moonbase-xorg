@@ -4,11 +4,11 @@ if [[ ! -e /usr/include/GL/glut.h ]]; then
   lin -c freeglut
 fi
 
-lin -c mesa-demos
-
 # Handle cyclic depends
-for mod in cairo libva libglvnd; do
+for mod in cairo libglvnd libva; do
   if module_installed $mod; then
     lin -c $mod
   fi
 done
+
+lin -c mesa-demos
