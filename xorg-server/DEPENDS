@@ -10,7 +10,6 @@ depends libXtst
 depends libXres
 depends libXv
 depends libxkbfile
-depends libepoxy
 depends pixman
 depends font-util
 depends mesa-lib
