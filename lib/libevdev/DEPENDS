@@ -1,4 +1,4 @@
 depends check
 
-optional_depends doxygen  "" "" "for documentation install"
-optional_depends valgrind "" "" "for valgrind support"
+optional_depends doxygen  "" "" "for documentation install" "n"
+optional_depends valgrind "" "" "for valgrind support" "n"

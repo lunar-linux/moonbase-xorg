@@ -3,4 +3,5 @@ depends libICE
 optional_depends util-linux \
                  "--with-libuuid" \
                  "--without-libuuid" \
-                 "Build with libuuid support for client IDs?"
+                 "Build with libuuid support for client IDs?" \
+                 "y"

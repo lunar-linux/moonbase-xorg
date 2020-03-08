@@ -18,4 +18,5 @@ optional_depends luit \
 
 optional_depends libutempter \
                  "--with-utempter" "" \
-                 "for session logging in utmp and wtpm files"
+                 "for session logging in utmp and wtpm files" \
+                 "y"

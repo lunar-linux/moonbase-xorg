@@ -4,7 +4,8 @@ depends libXfixes
 optional_depends wayland \
                  "--enable-wayland" \
                  "--disable-wayland" \
-                 "for wayland support"
+                 "for wayland support" \
+                 "y"
 
 # circular depend on mesa-lib
 #optional_depends mesa-lib \

@@ -12,7 +12,8 @@ optional_depends xsnow   "" "" "to allow xsnow to be used as a screensaver"
 optional_depends Linux-PAM \
                  "--with-pam --without-shadow" \
                  "--without-pam --with-shadow" \
-                 "for PAM support"
+                 "for PAM support" \
+                 "y"
 
 optional_depends %JPEG \
                  "--with-jpeg" \

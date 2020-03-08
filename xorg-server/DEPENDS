@@ -24,13 +24,16 @@ optional_depends libgcrypt \
 optional_depends libunwind \
                  "--enable-libunwind" \
                  "--disable-libunwind" \
-                 "for call-chain library support" n
+                 "for call-chain library support" \
+                 "n"
 
 optional_depends wayland \
                  "--enable-xwayland" "" \
-                 "for Wayland support"
+                 "for Wayland support" \
+                 "y"
 
 optional_depends xmlto \
                  "--with-xmlto" \
                  "--without-xmlto" \
-                 "for xmlto support to regenerate documentation" n
+                 "for xmlto support to regenerate documentation" \
+                 "n"
