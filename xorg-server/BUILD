@@ -16,7 +16,7 @@ OPTS+=" --enable-dri         \
         --enable-composite   \
         --enable-xcsecurity  \
         --enable-config-udev \
-        --disable-glamor     \
+        --enable-glamor      \
         --disable-static     \
         --disable-devel-docs \
         --with-xkb-output=/var/lib/xkb \
