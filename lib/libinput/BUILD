@@ -1,6 +1,6 @@
 OPTS+=" --prefix=/usr \
-        -Ddebug-ui=false \
-        -Dtests=false"
+        -Dtests=false \
+        -Ddebug-ui=false"
 
 OPTS+=" -Dudev-dir=/usr/lib/udev"
 
