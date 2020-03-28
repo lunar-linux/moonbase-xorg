@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20200221
+         UPDATED=20200302
            SHORT="The X.Org XKB keyboard description compiler"
 
 cat << EOF
