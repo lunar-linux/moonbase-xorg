@@ -165,10 +165,19 @@ ln -sf libnvidia-ptxjitcompiler.so.$VERSION /usr/lib/libnvidia-ptxjitcompiler.so
 ln -sf libnvidia-ptxjitcompiler.so.$VERSION /usr/lib/libnvidia-ptxjitcompiler.so &&
 ln -sf libnvidia-rtcore.so.$VERSION /usr/lib/libnvidia-rtcore.so &&
 ln -sf libnvidia-tls.so.$VERSION /usr/lib/libnvidia-tls.so &&
-ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so.1 &&
-ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so.1 &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so &&
+
+# So lunar fix doesn't attempt to recompile when not required.
+# If libwfb.so already exists, nvidia-installer will not overwrite it. Otherwise, it will create a symbolic link from libwfb.so to libnvidia-wfb.so.x.y.z.
+# http://us.download.nvidia.com/XFree86/Linux-x86/256.35/README/installedcomponents.html
+if [ -f /usr/lib/xorg/modules/libwfb.so ] ; then
+  ln -sf /usr/lib/xorg/modules/libwfb.so /usr/lib/libnvidia-wfb.so &&
+  ln -sf /usr/lib/xorg/modules/libwfb.so /usr/lib/libnvidia-wfb.so.1
+ else
+  ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so.1 &&
+  ln -sf libnvidia-wfb.so.$VERSION /usr/lib/libnvidia-wfb.so
+fi &&
 
 # Register Nvidia XvMC library for use in any XvMC enabled media player
 install -m644 XvMCConfig /etc/X11 &&
