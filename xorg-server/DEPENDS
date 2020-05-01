@@ -16,6 +16,7 @@ depends mesa-lib
 depends dbus-glib
 depends xkeyboard-config
 depends xcb-util-keysyms
+depends libepoxy
 
 optional_depends libgcrypt \
                  "--with-sha1=libgcrypt" "" \
