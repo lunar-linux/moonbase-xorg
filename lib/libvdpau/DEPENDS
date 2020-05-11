@@ -1,0 +1,4 @@
+depends libX11
+depends libXau
+depends libxcb
+depends libXext
