@@ -1,0 +1,35 @@
+--- ./src/Makefile.am.orig	2017-11-16 12:03:48.000000000 +0200
++++ ./src/Makefile.am	2020-05-23 22:13:45.521190974 +0300
+@@ -18,7 +18,7 @@
+ #  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ #  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+-SUBDIRS = render_program legacy
++SUBDIRS = render_program
+ 
+ # this is obnoxious:
+ # -module lets us name the module exactly how we want
+@@ -41,7 +41,7 @@
+ intel_drv_la_LTLIBRARIES = intel_drv.la
+ intel_drv_la_LDFLAGS = -module -avoid-version
+ intel_drv_ladir = $(moduledir)/drivers
+-intel_drv_la_LIBADD = legacy/liblegacy.la $(PCIACCESS_LIBS) $(XORG_LIBS)
++#intel_drv_la_LIBADD = legacy/liblegacy.la $(PCIACCESS_LIBS) $(XORG_LIBS)
+ 
+ if SNA
+ SUBDIRS += sna
+@@ -45,12 +45,12 @@
+ 
+ if SNA
+ SUBDIRS += sna
+-intel_drv_la_LIBADD += sna/libsna.la
++#intel_drv_la_LIBADD += sna/libsna.la
+ endif
+ 
+ if UXA
+ SUBDIRS += uxa
+-intel_drv_la_LIBADD += uxa/libuxa.la
++#intel_drv_la_LIBADD += uxa/libuxa.la
+ endif
+ 
+ NULL:=#
