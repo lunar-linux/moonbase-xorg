@@ -1,6 +1,5 @@
 bad_flags linker
 
-OPTS+=" -Db_lto=false \
         -Db_ndebug=true \
         -Dplatforms=x11,drm,wayland,surfaceless \
         -Ddri-drivers=i915,i965,r100,r200,nouveau \
