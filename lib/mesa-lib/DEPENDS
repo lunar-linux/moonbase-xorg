@@ -10,7 +10,6 @@ depends libXrandr
 depends libxml2
 depends dbus-glib
 depends python-mako
-depends meson
 depends wayland-protocols
 depends libglvnd
 depends libunwind
@@ -19,6 +18,9 @@ depends libXvMC
 depends zstd
 depends llvm
 depends libva
+depends meson
+
+optional_depends libepoxy "" "" "for OpenGL pointer management support (gtk+-3 needs it)"
 
 optional_depends lm_sensors \
                  "-Dlmsensors=true" \
