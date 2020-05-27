@@ -6,4 +6,6 @@ export LDFLAGS=${LDFLAGS/,-z,now}
 
 OPTS+=" --with-default-dri=3"
 
+./autogen.sh &&
+
 default_build
