@@ -1,0 +1,16 @@
+           MODULE=glslang
+          VERSION=8.13.3743
+           SOURCE=$MODULE-$VERSION.tar.gz
+  SOURCE_URL_FULL=https://github.com/KhronosGroup/glslang/archive/${VERSION}.tar.gz
+       SOURCE_VFY=sha256:639ebec56f1a7402f2fa094469a5ddea1eceecfaf2e9efe361376a0f73a7ee2f
+         WEB_SITE=https://github.com/KhronosGroup/glslang/
+          ENTERED=20200530
+          UPDATED=20200530
+            SHORT="OpenGL and OpenGL ES shader front end and validator"
+
+cat << EOF
+An OpenGL GLSL and OpenGL|ES GLSL (ESSL) front-end for reference validation
+and translation of GLSL/ESSL into an internal abstract syntax tree (AST).
+Status: Virtually complete, with results carrying similar weight as the
+specifications.
+EOF
