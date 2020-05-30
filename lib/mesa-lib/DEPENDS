@@ -31,3 +31,10 @@ optional_depends libomxil-bellagio \
                  "-Dgallium-omx=bellagio" \
                  "-Dgallium-omx=disabled" \
                  "for OpenMAX Integration Layer API support"
+
+optional_depends glslang \
+                 "-Dvulkan-overlay-layer=true \
+                  -Dvulkan-device-select-layer=true" "" \
+                 "for Vulkan Device Selection Layer" \
+                 "n"
+
