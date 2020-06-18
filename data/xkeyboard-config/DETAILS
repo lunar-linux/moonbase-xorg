@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://freedesktop.org/wiki/Software/XKeyboardConfig
          ENTERED=20070329
-         UPDATED=20200604
+         UPDATED=20200618
            SHORT="keyboard data files for the X.Org server"
        LDD_CHECK=off
 
