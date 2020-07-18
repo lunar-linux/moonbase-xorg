@@ -151,7 +151,6 @@ ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
 ln -sf libnvidia-eglcore.so.$VERSION /usr/lib/libnvidia-eglcore.so &&
 ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so.1 &&
 ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so &&
-ln -sf libnvidia-fatbinaryloader.so.$VERSION /usr/lib/libnvidia-fatbinaryloader.so &&
 ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so.1 &&
 ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so &&
 ln -sf libnvidia-glcore.so.$VERSION /usr/lib/libnvidia-glcore.so &&
