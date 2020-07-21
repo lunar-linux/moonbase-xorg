@@ -1,4 +1,4 @@
-# This is an installer-less build script. If you find bugs let me know by e-mail: zbiggy(0)o2(period)pl
+# This is an installer-less build script.
 
 GCCKNL=`cat /proc/version | cut -d\( -f3 | cut -d\  -f3`
 GCCNOW=`gcc --version | grep gcc | cut -d\  -f3`
@@ -95,10 +95,10 @@ cd "${SOURCE_DIRECTORY}" &&
 mkdir -p /etc/OpenCL/vendors &&
 install -m644 nvidia.icd /etc/OpenCL/vendors &&
 install -m0755 nvidia-bug-report.sh /usr/bin &&
-#install -m0755 nvidia-installer /usr/bin &&
 install -m0755 nvidia-smi /usr/bin &&
-#ln -sf  /usr/bin/nvidia-installer /usr/bin/nvidia-uninstall &&
 install -m0755 nvidia-xconfig /usr/bin &&
+#install -m0755 nvidia-installer /usr/bin &&
+#ln -sf  /usr/bin/nvidia-installer /usr/bin/nvidia-uninstall &&
 
 install -m0755 libnv*.so.$VERSION /usr/lib &&
 ln -sf /usr/lib/libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so.1 &&
@@ -136,8 +136,8 @@ mkdir -p /usr/share/{applications,doc/NVIDIA_GLX-1.0/html} &&
 install -m644 html/* /usr/share/doc/NVIDIA_GLX-1.0/html/ &&
 
 install -m644 README.txt LICENSE NVIDIA_Changelog /usr/share/doc/NVIDIA_GLX-1.0 &&
-#install -m644 nvidia-xconfig.1.gz nvidia-smi.1.gz nvidia-installer.1.gz /usr/share/man/man1 &&
 install -m644 nvidia-xconfig.1.gz nvidia-smi.1.gz /usr/share/man/man1 &&
+#install -m644 nvidia-installer.1.gz /usr/share/man/man1 &&
 
 # Register Nvidia XvMC library for use in any XvMC enabled media player
 #install -m644 XvMCConfig /etc/X11 &&
