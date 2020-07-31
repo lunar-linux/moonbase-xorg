@@ -5,7 +5,7 @@
      SOURCE_VFY=sha256:d17b646bee4ba0fb7850c1cc55b18e3e8513ed5c02bdf38da7e107f84e2d0146
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20200330
+         UPDATED=20200731
            SHORT="The X.Org X11R7 server for the X Window System"
 
 cat << EOF
