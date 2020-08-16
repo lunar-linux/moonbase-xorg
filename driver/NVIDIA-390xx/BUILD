@@ -39,7 +39,6 @@ sedit 's/-DNV_X86_64//' Makefile
 make clean &&
 make rebuild_tls_test &&
 make rebuild_tls_test_dso &&
-#make rebuild_rtld_test &&
 make &&
 
 install -m 755 _out/Linux_x86_64/nvidia-installer .. &&

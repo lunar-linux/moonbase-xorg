@@ -18,7 +18,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-no-compat32
         WEB_SITE=http://www.nvidia.com
          LICENSE="proprietary"
          ENTERED=20030804
-         UPDATED=20120617
+         UPDATED=20120816
            SHORT="X11 NVIDIA binary beta driver for all Geforce 6/7/8/9/GT2xx"
 
 cat << EOF
@@ -31,5 +31,5 @@ all Geforce 8xxx
 all Geforce 9xxx
 GeForce GTX 260
 GeForce GTX 280
-some models may be not supported yet.
+Some models may be not supported yet.
 EOF
