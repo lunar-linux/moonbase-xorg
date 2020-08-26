@@ -1,12 +1,12 @@
           MODULE=libX11
-         VERSION=1.6.11
+         VERSION=1.6.12
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:b1cc4b802058be7e3fb438ee2490f66fcc52ac3b2a14f47a22cbf77638e33606
+      SOURCE_VFY=sha256:f108227469419ac04d196df0f3b80ce1f7f65059bb54c0de811f4d8e03fd6ec7
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20200811
+         UPDATED=20200826
            SHORT="The X.Org client-side library"
 
 cat << EOF
