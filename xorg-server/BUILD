@@ -6,7 +6,7 @@ fi &&
 
 export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
-export LDFLAGS=${LDFLAGS/,-z,now}
+export LDFLAGS=${LDFLAGS/-Wl,-z,now}
 
 OPTS+=" --enable-dri         \
         --enable-dmx         \
