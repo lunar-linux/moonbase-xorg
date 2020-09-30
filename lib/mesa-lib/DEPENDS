@@ -23,18 +23,17 @@ depends meson
 optional_depends libepoxy "" "" "for OpenGL pointer management support (gtk+-3 needs it)"
 
 optional_depends lm_sensors \
-                 "-Dlmsensors=true" \
-                 "-Dlmsensors=false" \
+                 "-D lmsensors=enabled" \
+                 "-D lmsensors=disabled" \
                  "for hardware sensors monitoring support"
 
 optional_depends libomxil-bellagio \
-                 "-Dgallium-omx=bellagio" \
-                 "-Dgallium-omx=disabled" \
+                 "-D gallium-omx=bellagio" \
+                 "-D gallium-omx=disabled" \
                  "for OpenMAX Integration Layer API support"
 
 optional_depends glslang \
-                 "-Dvulkan-overlay-layer=true \
-                  -Dvulkan-device-select-layer=true" "" \
+                 "-D vulkan-overlay-layer=true \
+                  -D vulkan-device-select-layer=true" "" \
                  "for Vulkan Device Selection Layer" \
                  "n"
-

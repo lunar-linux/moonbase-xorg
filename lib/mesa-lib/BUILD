@@ -1,30 +1,31 @@
 bad_flags linker
 
-OPTS+=" -Db_lto=true \
-        -Db_ndebug=true \
-        -Dplatforms=x11,drm,wayland,surfaceless \
-        -Ddri-drivers=i915,i965,r100,r200,nouveau \
-        -Dgallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris \
-        -Dvulkan-drivers=amd,intel \
-        -Dglx=dri \
-        -Dgbm=true \
-        -Degl=true \
-        -Ddri3=true \
-        -Dgles1=false \
-        -Dgles2=true \
-        -Dglvnd=true \
-        -Dvalgrind=false \
-        -Dshared-glapi=true \
-        -Dswr-arches=avx,avx2 \
-        -Dlibunwind=true \
-        -Dgallium-va=true \
-        -Dgallium-xa=true \
-        -Dgallium-nine=true \
-        -Dgallium-xvmc=false \
-        -Dgallium-extra-hud=true \
-        -Dgallium-opencl=disabled \
-        -Dllvm=true \
-        -Dosmesa=gallium"
+OPTS+=" -D b_lto=true \
+        -D b_ndebug=true \
+        -D platforms=x11,wayland \
+        -D dri-drivers=i915,i965,r100,r200,nouveau \
+        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris \
+        -D vulkan-drivers=amd,intel \
+        -D glx=dri \
+        -D gbm=enabled \
+        -D egl=enabled \
+        -D dri3=enabled \
+        -D gles2=enabled \
+        -D gles1=disabled \
+        -D glvnd=true \
+        -D valgrind=disabled \
+        -D shared-glapi=enabled \
+        -D swr-arches=avx,avx2 \
+        -D libunwind=enabled \
+        -D gallium-va=enabled \
+        -D gallium-xa=enabled \
+        -D gallium-nine=true \
+        -D gallium-vdpau=enabled \
+        -D gallium-xvmc=disabled \
+        -D gallium-extra-hud=true \
+        -D gallium-opencl=disabled \
+        -D llvm=enabled \
+        -D osmesa=gallium"
 
 default_meson_build &&
 
