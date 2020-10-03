@@ -5,7 +5,7 @@ ln -sf libGL.so.1 libGL.so
 rm -f libGLcore.so*
 
 # Restore generic libglx from X server:
-cd /usr/X11/lib/xorg/modules/extensions
+cd /usr/lib/xorg/modules/extensions
 ln -sf libglx.so.xorg libglx.so
 
 # Unregister Nvidia XvMC

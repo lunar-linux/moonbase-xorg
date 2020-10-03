@@ -2,8 +2,7 @@
 
 ld_add "${MODULE_PREFIX}/lib" &&
 
-# We need those three symlinks. They are making sure a lot of apps
-# don't brake
+# We need those three symlinks. They are making sure a lot of apps don't brake
 if [ $(readlink -f /usr/X11) != "${MODULE_PREFIX}" ]; then
   rm -rf /usr/X11;
   ln -sf "${MODULE_PREFIX}" /usr/X11;
