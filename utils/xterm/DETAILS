@@ -1,8 +1,8 @@
           MODULE=xterm
-         VERSION=360
+         VERSION=361
           SOURCE=$MODULE-$VERSION.tgz
       SOURCE_URL=ftp://ftp.invisible-island.net/$MODULE
-      SOURCE_VFY=sha256:a5f6e1f1de01fa9fddf132d9fb7a9a749a411f1e77ee6a7fdf1c8c0c1db80dba
+      SOURCE_VFY=sha256:85610f20d5e47205cc1b6876f7a4da28d6ae051bd8eac0b932e92c37a73a623f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124
