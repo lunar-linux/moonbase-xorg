@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
       SOURCE_VFY=sha256:304060806415579cdb5c1f71f1c54d11cacb431b5552b170decbc883ed43bf06
         WEB_SITE=https://nouveau.freedesktop.org/wiki
          ENTERED=20120405
-         UPDATED=20190130
+         UPDATED=20201021
            SHORT="Open Source 2D NVidia drivers"
 
 cat <<EOF
