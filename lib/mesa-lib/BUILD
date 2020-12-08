@@ -5,7 +5,7 @@ OPTS+=" -D b_lto=true \
         -D platforms=x11,wayland \
         -D dri-drivers=i915,i965,r100,r200,nouveau \
         -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,swr,iris \
-        -D vulkan-drivers=amd,intel \
+        -D vulkan-drivers=amd,intel,swrast \
         -D glx=dri \
         -D gbm=enabled \
         -D egl=enabled \
