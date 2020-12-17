@@ -21,7 +21,7 @@ diff --git a/src/gallium/winsys/radeon/drm/radeon_drm_winsys.c b/src/gallium/win
 index 0aab59cd236..ef7434d7589 100644
 --- a/src/gallium/winsys/radeon/drm/radeon_drm_winsys.c
 +++ b/src/gallium/winsys/radeon/drm/radeon_drm_winsys.c
-@@ -530,6 +530,8 @@ static bool do_winsys_init(struct radeon_drm_winsys *ws)
+@@ -532,6 +532,8 @@ static bool do_winsys_init(struct radeon_drm_winsys *ws)
        }
     }
  
