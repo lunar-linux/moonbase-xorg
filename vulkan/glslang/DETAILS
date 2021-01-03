@@ -1,11 +1,11 @@
            MODULE=glslang
-          VERSION=8.13.3743
+          VERSION=11.1.0
            SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/KhronosGroup/glslang/archive/${VERSION}.tar.gz
-       SOURCE_VFY=sha256:639ebec56f1a7402f2fa094469a5ddea1eceecfaf2e9efe361376a0f73a7ee2f
+       SOURCE_VFY=sha256:a47f1f9ed17a1f53a074fef20787110ef49522c6de68b218db68d04a81d649c5
          WEB_SITE=https://github.com/KhronosGroup/glslang/
           ENTERED=20200530
-          UPDATED=20200530
+          UPDATED=20210103
             SHORT="OpenGL and OpenGL ES shader front end and validator"
 
 cat << EOF
