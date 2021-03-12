@@ -24,8 +24,9 @@ OPTS+=" -D b_lto=true \
         -D gallium-xvmc=disabled \
         -D gallium-extra-hud=true \
         -D gallium-opencl=disabled \
+        -D microsoft-clc=disabled \
         -D llvm=enabled \
-        -D osmesa=gallium"
+        -D osmesa=true"
 
 default_meson_build &&
 
