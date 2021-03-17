@@ -1,12 +1,12 @@
           MODULE=xkbcomp
-         VERSION=1.4.4
+         VERSION=1.4.5
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:59cce603a607a17722a0a1cf99010f4894e7812beb5d695abbc08474d59af27e
+      SOURCE_VFY=sha256:6851086c4244b6fd0cc562880d8ff193fb2bbf1e141c73632e10731b31d4b05e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20201105
+         UPDATED=20210317
            SHORT="The X.Org XKB keyboard description compiler"
 
 cat << EOF
