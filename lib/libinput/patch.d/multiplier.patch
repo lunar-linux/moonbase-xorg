@@ -2,7 +2,7 @@ diff --git a/src/evdev.c b/src/evdev.c
 index 8afa8e4..fae672a 100644
 --- a/src/evdev.c
 +++ b/src/evdev.c
-@@ -1272,6 +1272,7 @@ evdev_read_wheel_click_props(struct evdev_device *device)
+@@ -1302,6 +1302,7 @@ evdev_read_wheel_click_props(struct evdev_device *device)
  	} else {
  		angles.x = angles.y;
  	}
@@ -24,7 +24,7 @@ index 6d00a00..0bf1324 100644
 
  #include "libinput.h"
  #include "libinput-private.h"
-@@ -728,6 +728,16 @@ libinput_event_pointer_get_axis_value(struct libinput_event_pointer *event,
+@@ -730,6 +730,16 @@ libinput_event_pointer_get_axis_value(struct libinput_event_pointer *event,
  	return value;
  }
 
@@ -41,7 +41,7 @@ index 6d00a00..0bf1324 100644
  LIBINPUT_EXPORT double
  libinput_event_pointer_get_axis_value_discrete(struct libinput_event_pointer *event,
  					       enum libinput_pointer_axis axis)
-@@ -758,7 +758,7 @@ libinput_event_pointer_get_axis_value_discrete(struct libinput_event_pointer *ev
+@@ -760,7 +760,7 @@ libinput_event_pointer_get_axis_value_discrete(struct libinput_event_pointer *ev
  			value = event->discrete.x;
  			break;
  		case LIBINPUT_POINTER_AXIS_SCROLL_VERTICAL:
@@ -50,7 +50,7 @@ index 6d00a00..0bf1324 100644
  			break;
  		}
  	}
-@@ -1802,6 +1802,7 @@ libinput_init(struct libinput *libinput,
+@@ -1804,6 +1804,7 @@ libinput_init(struct libinput *libinput,
  		close(libinput->epoll_fd);
  		return -1;
  	}
