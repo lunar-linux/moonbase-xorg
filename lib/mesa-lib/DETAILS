@@ -1,12 +1,12 @@
            MODULE=mesa-lib
-          VERSION=21.0.2
+          VERSION=21.0.3
            SOURCE=mesa-$VERSION.tar.xz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/mesa-$VERSION
        SOURCE_URL=https://mesa.freedesktop.org/archive/
-       SOURCE_VFY=sha256:46c1dc5bb54a372dee43ec3c067229c299187d5bdadf1402756bbf66a6df5b88
+       SOURCE_VFY=sha256:565c6f4bd2d5747b919454fc1d439963024fc78ca56fd05158c3b2cde2f6912b
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20210408
+          UPDATED=20210421
             SHORT="Mesa 3D library"
 
 cat << EOF
