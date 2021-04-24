@@ -21,11 +21,11 @@ optional_depends %JPEG \
                  "for JPEG support"
 
 optional_depends glu \
-                 "--with-gl --without-gle" \
-                 "--without-gl --without-gle" \
+                 "--with-gl" \
+                 "--without-gl" \
                  "for OpenGL support"
 
-optional_depends libglade \
+optional_depends gtk+-3 \
                  "--with-gtk" \
                  "--without-gtk" \
                  "needed for GTK support"
@@ -35,8 +35,7 @@ optional_depends gdm \
                  "--without-login-manager" \
                  "for gdm login manager support"
 
-# it fails to compile with this option
-#optional_depends gdk-pixbuf \
-#                 "--with-pixbuf" \
-#                 "--without-pixbuf" \
-#                 "for image loading support"
+optional_depends gdk-pixbuf \
+                 "--with-pixbuf" \
+                 "--without-pixbuf" \
+                 "for image loading support"

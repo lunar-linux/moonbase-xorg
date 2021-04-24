@@ -5,7 +5,7 @@ OPTS+=" --enable-locking       \
         --with-xf86vmode-ext   \
         --with-xf86gamma-ext   \
         --with-proc-interrupts \
-	--without-pixbuf       \
+        --without-gle          \
         --without-kerberos"
 
 default_build
