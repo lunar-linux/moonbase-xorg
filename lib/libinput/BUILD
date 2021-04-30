@@ -1,4 +1,5 @@
 OPTS+=" --prefix=/usr \
+        -Db_lto=false \
         -Dtests=false \
         -Ddebug-ui=false"
 
