@@ -2,7 +2,7 @@ diff --git a/src/evdev.c b/src/evdev.c
 index 8afa8e4..fae672a 100644
 --- a/src/evdev.c
 +++ b/src/evdev.c
-@@ -1302,6 +1302,7 @@ evdev_read_wheel_click_props(struct evdev_device *device)
+@@ -1304,6 +1304,7 @@ evdev_read_wheel_click_props(struct evdev_device *device)
  	} else {
  		angles.x = angles.y;
  	}
