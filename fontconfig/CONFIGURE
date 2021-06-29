@@ -1,1 +1,4 @@
-mquery DOCS "Build docs?" n "" "--disable-docs"
+mquery DOCS "Build docs?" n "" "-D doc=disabled \
+                                -D doc-txt=disabled \
+                                -D doc-pdf=disabled \
+                                -D dox-html=disabled"
