@@ -19,6 +19,7 @@ OPTS+=" --enable-dri         \
         --enable-glamor      \
         --disable-static     \
         --disable-devel-docs \
+        --disable-selective-werror \
         --with-xkb-output=/var/lib/xkb \
         --with-xkb-path=/usr/share/X11/xkb \
         --with-fontrootdir=/usr/share/fonts/"
