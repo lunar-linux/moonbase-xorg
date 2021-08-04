@@ -1,12 +1,12 @@
           MODULE=xeyes
-         VERSION=1.1.2
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:57bcec0d2d167af9e5d44d0dbd74c6d7c0f0591cd0608952b23c749fdd910553
+      SOURCE_VFY=sha256:f8a17e23146bef1ab345a1e303c6749e42aaa7bcf4f25428afad41770721b6db
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20180312
+         UPDATED=20210804
            SHORT="The X.Org xeyes application"
 
 cat << EOF

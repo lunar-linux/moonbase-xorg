@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20180804
+         UPDATED=20210804
            SHORT="Dump an image of an X window"
 
 cat << EOF
