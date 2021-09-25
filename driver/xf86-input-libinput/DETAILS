@@ -1,12 +1,12 @@
           MODULE=xf86-input-libinput
-         VERSION=1.1.0
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:e11d2a41419124a6e9b148f1df181bf7819fc7398c8ee9a1b6390b0742c68d16
+      SOURCE_VFY=sha256:f80da3c514fe1cbf57fa1b1bd6ff97f6b0a1f87466ad89247bac59cd0a5869f6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20150901
-         UPDATED=20210624
+         UPDATED=20210921
            SHORT="Generic input driver based on libinput"
 
 cat << EOF
