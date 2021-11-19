@@ -5,7 +5,7 @@ depends %UDEV
 depends meson
 
 optional_depends gtk+-3 \
-                 "-Ddeebug-gui=true" \
+                 "-Ddebug-gui=true" \
                  "-Ddebug-gui=false" \
                  " for debug-gui support" \
                  "n"
