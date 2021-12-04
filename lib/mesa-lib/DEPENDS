@@ -33,7 +33,6 @@ optional_depends libomxil-bellagio \
                  "for OpenMAX Integration Layer API support"
 
 optional_depends glslang \
-                 "-D vulkan-overlay-layer=true \
-                  -D vulkan-device-select-layer=true" "" \
+                 "-D vulkan-layers=device-select,intel-nullhw,overlay" "" \
                  "for Vulkan Device Selection Layer" \
                  "n"
