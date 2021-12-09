@@ -147,7 +147,6 @@ install -D -m644 nvidia-persistenced-init/systemd/nvidia-persistenced.service.te
 ln -sf libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so.1 &&
 ln -sf libnvidia-cfg.so.$VERSION /usr/lib/libnvidia-cfg.so &&
 ln -sf libnvcuvid.so.$VERSION /usr/lib/libnvcuvid.so &&
-ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
 ln -sf libnvidia-eglcore.so.$VERSION /usr/lib/libnvidia-eglcore.so &&
 ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so.1 &&
 ln -sf libnvidia-encode.so.$VERSION /usr/lib/libnvidia-encode.so &&
@@ -156,7 +155,6 @@ ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so &&
 ln -sf libnvidia-glcore.so.$VERSION /usr/lib/libnvidia-glcore.so &&
 ln -sf libnvidia-glsi.so.$VERSION /usr/lib/libnvidia-glsi.so &&
 ln -sf libnvidia-glvkspirv.so.$VERSION /usr/lib/libnvidia-glvkspirv.so &&
-ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so.1 &&
 ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so &&
 ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so.1 &&
 ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so &&
@@ -166,6 +164,8 @@ ln -sf libnvidia-rtcore.so.$VERSION /usr/lib/libnvidia-rtcore.so &&
 ln -sf libnvidia-tls.so.$VERSION /usr/lib/libnvidia-tls.so &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so.1 &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so &&
+#ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so.1 &&
+#ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
 
 # So lunar fix doesn't attempt to recompile when not required.
 # If libwfb.so already exists, nvidia-installer will not overwrite it. Otherwise, it will create a symbolic link from libwfb.so to libnvidia-wfb.so.x.y.z.
