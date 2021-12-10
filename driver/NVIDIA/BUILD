@@ -155,7 +155,6 @@ ln -sf libnvidia-fbc.so.$VERSION /usr/lib/libnvidia-fbc.so &&
 ln -sf libnvidia-glcore.so.$VERSION /usr/lib/libnvidia-glcore.so &&
 ln -sf libnvidia-glsi.so.$VERSION /usr/lib/libnvidia-glsi.so &&
 ln -sf libnvidia-glvkspirv.so.$VERSION /usr/lib/libnvidia-glvkspirv.so &&
-ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so &&
 ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so.1 &&
 ln -sf libnvidia-ml.so.$VERSION /usr/lib/libnvidia-ml.so &&
 ln -sf libnvidia-ptxjitcompiler.so.$VERSION /usr/lib/libnvidia-ptxjitcompiler.so.1 &&
@@ -166,6 +165,7 @@ ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so.1 &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so &&
 #ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so.1 &&
 #ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
+#ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so &&
 
 # So lunar fix doesn't attempt to recompile when not required.
 # If libwfb.so already exists, nvidia-installer will not overwrite it. Otherwise, it will create a symbolic link from libwfb.so to libnvidia-wfb.so.x.y.z.
