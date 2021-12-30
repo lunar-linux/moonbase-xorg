@@ -1,7 +1,7 @@
 depends meson
 
 optional_depends doxygen \
-                 "-Denable-docs=true" \
-                 "-Denable-docs=false" \
+                 "-D docs=true" \
+                 "-D docs=false" \
                  "for install the documentation" \
                  "n"
