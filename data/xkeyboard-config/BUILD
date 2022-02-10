@@ -1,7 +1,7 @@
 . /etc/profile.d/x11r7.rc &&
 
-OPTS+=" --enable-compat-rules \
-        --with-xkb-rules-symlink=xorg \
-        --with-xkb-base=/usr/share/X11/xkb"
+OPTS+=" -D compat-rules=true \
+        -D xorg-rules-symlinks=true \
+        -D xkb-base=/usr/share/X11/xkb"
 
-default_build
+default_meson_build
