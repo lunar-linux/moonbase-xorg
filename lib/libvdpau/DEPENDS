@@ -1,3 +1,4 @@
+depends meson
 depends libX11
 depends libXau
 depends libxcb
