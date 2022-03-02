@@ -25,7 +25,6 @@ OPTS+=" -D b_lto=true \
         -D gallium-extra-hud=true \
         -D gallium-opencl=disabled \
         -D microsoft-clc=disabled \
-        -D libunwind=enabled \
         -D llvm=enabled \
         -D osmesa=true"
 
