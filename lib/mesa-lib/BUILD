@@ -15,7 +15,7 @@ OPTS+=" -D b_lto=true \
         -D glvnd=true \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
-        -D swr-arches=avx,avx2 \
+        #-D swr-arches=avx,avx2 \
         -D libunwind=enabled \
         -D gallium-va=enabled \
         -D gallium-xa=enabled \
