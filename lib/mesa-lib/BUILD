@@ -1,10 +1,18 @@
 bad_flags linker
 
+# Build only minimal debug info to reduce size
+CFLAGS+=' -g1'
+CXXFLAGS+=' -g1'
+
+# https://gitlab.freedesktop.org/mesa/mesa/-/issues/6229
+CFLAGS+=' -mtls-dialect=gnu'
+CXXFLAGS+=' -mtls-dialect=gnu'
+
+#        -D dri-drivers=i915,i965,r100,r200,nouveau \
 OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
-        -D dri-drivers=i915,i965,r100,r200,nouveau \
-        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris \
+        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris,crocus,d3d12 \
         -D vulkan-drivers=amd,intel,swrast \
         -D glx=dri \
         -D gbm=enabled \
@@ -15,7 +23,6 @@ OPTS+=" -D b_lto=true \
         -D glvnd=true \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
-        -D swr-arches=avx,avx2 \
         -D libunwind=enabled \
         -D gallium-va=enabled \
         -D gallium-xa=enabled \
