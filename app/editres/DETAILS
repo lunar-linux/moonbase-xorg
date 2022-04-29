@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20220428
+         UPDATED=20220429
            SHORT="The X.Org dynamic resource editor"
 
 cat << EOF
