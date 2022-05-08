@@ -1,12 +1,12 @@
           MODULE=editres
-         VERSION=1.0.7
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.0.8
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:089ad34628e55a779b97e369f55fb12caefc96d684b508d9022eb9e12b775c11
+      SOURCE_VFY=sha256:83cf5dffb1883635fd9c6a8dc48ff9e560f6c6d8ce1a0e929d5f409cba18b6f9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20180315
+         UPDATED=20220429
            SHORT="The X.Org dynamic resource editor"
 
 cat << EOF
