@@ -1,12 +1,12 @@
           MODULE=xf86-video-dummy
-         VERSION=0.3.8
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=0.4.0
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:3712bb869307233491e4c570732d6073c0dc3d99adfdb9977396a3fdf84e95b9
+      SOURCE_VFY=sha256:e78ceae5c8c0588c7cb658f2afc3a9fac9ef665b52a75b01f8e9c5449a4e1e5a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20180211
+         UPDATED=20220508
            SHORT="the X.Org dummy video driver"
 
 cat << EOF
