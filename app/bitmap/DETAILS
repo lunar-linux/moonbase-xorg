@@ -1,12 +1,12 @@
           MODULE=bitmap
-         VERSION=1.0.9
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.1.0
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:e0f3afad5272d796f54c33fa1b5bd1fb3f62843a54b28c87196d06a35123e5f5
+      SOURCE_VFY=sha256:8e86879c2feeece3f10e189330479cf51da0dd268355d1e3ee8a8497ab833690
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060227
-         UPDATED=20190812
+         UPDATED=20220508
            SHORT="The X.Org bitmap file editor"
 
 cat << EOF
