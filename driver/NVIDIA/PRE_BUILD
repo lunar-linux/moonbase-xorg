@@ -16,3 +16,4 @@
     pkg-history.txt nvidia-installer{,.*}                  \
     mkprecompiled nvidia-xconfig{,.*} nvidia-settings{,.*} \
     tls_test* libGL.la gl*.h
+

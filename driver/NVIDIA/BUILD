@@ -1,4 +1,7 @@
-if [[ `arch` == x68_64 ]]; then
+
+CFLAGS+=" -fcommon"
+
+if [[ `arch` == x86_64 ]]; then
   ARCH=`arch`
 else
   ARCH=x86
