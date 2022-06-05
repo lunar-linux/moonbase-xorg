@@ -1,5 +1,9 @@
 bad_flags linker
 
+ # https://gitlab.freedesktop.org/mesa/mesa/-/issues/6229
+CFLAGS+=' -mtls-dialect=gnu'
+CXXFLAGS+=' -mtls-dialect=gnu'
+
 OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
