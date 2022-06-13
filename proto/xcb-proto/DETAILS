@@ -1,12 +1,12 @@
           MODULE=xcb-proto
-         VERSION=1.14.1
+         VERSION=1.15
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://xorg.freedesktop.org/archive/individual/proto/
-      SOURCE_VFY=sha256:f04add9a972ac334ea11d9d7eb4fc7f8883835da3e4859c9afa971efdf57fcc3
+      SOURCE_VFY=sha256:d34c3b264e8365d16fa9db49179cfa3e9952baaf9275badda0f413966b65955f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org
          ENTERED=20060216
-         UPDATED=20201009
+         UPDATED=20201613
            SHORT="The X C-bindings (XCB) protocol headers"
 
 cat << EOF
