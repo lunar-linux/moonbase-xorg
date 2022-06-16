@@ -1,12 +1,12 @@
           MODULE=xcalc
-         VERSION=1.1.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:d5d746954465afc3da1f355d721882806568fb04b4d059c027702c0d16a3b5eb
+      SOURCE_VFY=sha256:8cb08212c5322e8043f39b28699e13a43f000976c90b3c7fadd4fae2766326b4
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20190611
+         UPDATED=20220616
            SHORT="The X.Org calculator application"
 
 cat << EOF
