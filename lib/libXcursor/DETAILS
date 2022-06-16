@@ -1,12 +1,12 @@
           MODULE=libXcursor
-         VERSION=1.2.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.2.1
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:3ad3e9f8251094af6fe8cb4afcf63e28df504d46bfa5a5529db74a505d628782
+      SOURCE_VFY=sha256:46c143731610bafd2070159a844571b287ac26192537d047a39df06155492104
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20190312
+         UPDATED=20220616
            SHORT="The X.Org cursor management library"
 
 cat << EOF
