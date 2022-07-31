@@ -16,7 +16,7 @@ depends libunwind
 depends libvdpau
 depends libXvMC
 depends zstd
-depends llvm
+depends lld #Pulls in llvm
 depends libva
 depends meson
 
