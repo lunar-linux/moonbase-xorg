@@ -1,12 +1,12 @@
           MODULE=xev
-         VERSION=1.2.4
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.2.5
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:d700e08bfe751ed2dbf802baa204b056d0e49348b6eb3c6f9cb035d8ae4885e2
+      SOURCE_VFY=sha256:c9461a4389714e0f33974f9e75934bdc38d836a0f059b8dc089c7cbf2ce36ec1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20200719
+         UPDATED=20220809
            SHORT="The X.Org event application"
 
 cat << EOF
