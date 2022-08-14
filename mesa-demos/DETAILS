@@ -4,6 +4,7 @@
       SOURCE_URL=https://archive.mesa3d.org/demos/${VERSION}/
       SOURCE_VFY=sha256:cea2df0a80f09a30f635c4eb1a672bf90c5ddee0b8e77f4d70041668ef71aac1
         WEB_SITE=http://mesa3d.org
+            TYPE=meson
          ENTERED=20110227
          UPDATED=20220604
            SHORT="Mesa Demos - glxgears and glxinfo"
