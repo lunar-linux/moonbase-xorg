@@ -1,4 +1,4 @@
-depends %UDEV
+depends systemd
 depends expat
 depends elfutils
 depends libgcrypt

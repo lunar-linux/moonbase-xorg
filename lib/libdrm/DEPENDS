@@ -2,7 +2,7 @@ depends cairo
 depends libpciaccess
 depends util-macros
 depends libxslt
-depends %UDEV
+depends systemd
 depends meson
 
 optional_depends valgrind \
