@@ -1,8 +1,8 @@
           MODULE=xorgproto
-         VERSION=2021.5
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=2022.2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/proto/
-      SOURCE_VFY=sha256:aa2f663b8dbd632960b24f7477aa07d901210057f6ab1a1db5158732569ca015
+      SOURCE_VFY=sha256:5d13dbf2be08f95323985de53352c4f352713860457b95ccaf894a647ac06b9e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20180210
