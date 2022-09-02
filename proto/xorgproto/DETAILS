@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20180210
-         UPDATED=20210921
+         UPDATED=20220903
            SHORT="Combined X.Org X11 Protocol headers"
 
 cat << EOF
