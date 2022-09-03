@@ -1,8 +1,8 @@
           MODULE=xterm
-         VERSION=371
-          SOURCE=$MODULE-$VERSION.tgz
-      SOURCE_URL=ftp://ftp.invisible-island.net/$MODULE
-      SOURCE_VFY=sha256:32f888277b19e28ebc0a3112bff000607c07bed0679caa0beebb36f9cad484f5
+         VERSION=372
+          SOURCE=$MODULE.tar.gz
+      SOURCE_URL=https://invisible-island.net/datafiles/release/
+      SOURCE_VFY=sha256:c6d08127cb2409c3a04bcae559b7025196ed770bb7bf26630abcb45d95f60ab1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://invisible-island.net/xterm
          ENTERED=20060124
