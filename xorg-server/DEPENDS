@@ -17,7 +17,7 @@ depends dbus-glib
 depends xkeyboard-config
 depends xcb-util-keysyms
 depends libepoxy
-
+depends libxcvt
 optional_depends libgcrypt \
                  "--with-sha1=libgcrypt" "" \
                  "for SHA1 implementation"
