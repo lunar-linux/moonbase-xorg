@@ -1,11 +1,11 @@
           MODULE=libglvnd
-         VERSION=1.4.0
+         VERSION=1.5.0
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/NVIDIA/libglvnd/archive/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:1eb5c2be8d213ad5d31cfb4efbb331d42f3d9f5617c885ce7e89f572ec2bb4b8
+      SOURCE_VFY=sha256:abdf8229c86358f651e35bdc7cfced0fdf67d0a2acdf9197d08a9732ef7b53bc
         WEB_SITE=https://github.com/NVIDIA/libglvnd/
          ENTERED=20181118
-         UPDATED=20211224
+         UPDATED=20220905
            SHORT="The GL Vendor-Neutral Dispatch library"
 
 cat << EOF
