@@ -1,6 +1,6 @@
           MODULE=libfontenc
          VERSION=1.1.6
-          SOURCE=$MODULE-$VERSION.tar.bz2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
       SOURCE_VFY=sha256:ea8606ed5255dda8f570b7d1a74d59ee8d198675b2f114d07807431e6ba1d111
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
