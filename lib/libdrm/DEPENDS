@@ -5,14 +5,8 @@ depends libxslt
 depends systemd
 depends meson
 
-optional_depends valgrind \
-                 "-Dvalgrind=true" \
-                 "-Dvalgrind=false" \
-                 "for valgrind support" \
-                 "n"
-
 optional_depends docbook-xsl \
-                 "-Dman-pages=true" \
-                 "-Dman-pages=false" \
+                 "-Dman-pages=enabled" \
+                 "-Dman-pages=disabled" \
                  "for man pages install" \
                  "n"
