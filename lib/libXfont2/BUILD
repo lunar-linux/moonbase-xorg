@@ -1,4 +1,4 @@
-autoreconf -i &&
+autoreconf -fi &&
 
 OPTS+=" --sysconfdir=/etc --disable-static" &&
 
