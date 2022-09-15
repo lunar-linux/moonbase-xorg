@@ -1,6 +1,8 @@
 depends libfontenc
 depends freetype2
 depends xtrans
+depends util-macros
+depends xorgproto
 
 optional_depends bzip2 \
                  "--with-bzip2" \
