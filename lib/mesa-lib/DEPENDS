@@ -19,6 +19,7 @@ depends zstd
 depends llvm
 depends libva
 depends meson
+depends glslang
 
 optional_depends libepoxy "" "" "for OpenGL pointer management support (gtk+-3 needs it)"
 
