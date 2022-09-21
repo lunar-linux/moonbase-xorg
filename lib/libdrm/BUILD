@@ -1,5 +1,4 @@
 OPTS+=" -Dudev=false \
-        -Dcairo-tests=false \
-        -Dvalgrind=auto"
+        -Dcairo-tests=false " 
 
 default_meson_build
