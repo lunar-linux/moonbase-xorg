@@ -3,9 +3,9 @@ bad_flags linker
 OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
-        -D dri-drivers=i915,i965,r100,r200,nouveau \
-        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris \
+        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris,d3d12 \
         -D vulkan-drivers=amd,intel,swrast \
+        -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
         -D glx=dri \
         -D gbm=enabled \
         -D egl=enabled \
@@ -15,7 +15,6 @@ OPTS+=" -D b_lto=true \
         -D glvnd=true \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
-        -D swr-arches=avx,avx2 \
         -D libunwind=enabled \
         -D gallium-va=enabled \
         -D gallium-xa=enabled \
@@ -24,6 +23,9 @@ OPTS+=" -D b_lto=true \
         -D gallium-xvmc=disabled \
         -D gallium-extra-hud=true \
         -D gallium-opencl=disabled \
+        -D gallium-omx=bellagio \
+        -D gallium-opencl=icd \
+        -D gallium-va=enabled \
         -D microsoft-clc=disabled \
         -D llvm=enabled \
         -D osmesa=true"
