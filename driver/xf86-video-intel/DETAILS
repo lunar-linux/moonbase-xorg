@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-Release_$VERSION
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20220409
+         UPDATED=20230104
            SHORT="The X.Org video driver for Intel based cards"
 
 cat << EOF
