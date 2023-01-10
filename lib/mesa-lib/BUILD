@@ -1,11 +1,14 @@
 bad_flags linker
 
+#        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris,d3d12 \
+
 OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
-        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris,d3d12 \
-        -D vulkan-drivers=amd,intel,swrast \
+        -D vulkan-drivers=auto \
+        -D shader-cache=auto \
         -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
+        -D gallium-drivers=auto \
         -D glx=dri \
         -D gbm=enabled \
         -D egl=enabled \
@@ -20,7 +23,6 @@ OPTS+=" -D b_lto=true \
         -D gallium-xa=enabled \
         -D gallium-nine=true \
         -D gallium-vdpau=enabled \
-        -D gallium-xvmc=disabled \
         -D gallium-extra-hud=true \
         -D gallium-opencl=disabled \
         -D gallium-omx=bellagio \
