@@ -8,8 +8,7 @@ if [ ! -h /usr/X11R6 ] && [ -d /usr/X11R6 ]; then
   exit 1;
 fi
 
-OPTS+=" --prefix /usr \
-        -D legacy=true"
+OPTS+=" --prefix /usr"
 
 meson $OPTS . build &&
 
