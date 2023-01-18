@@ -5,7 +5,7 @@
       SOURCE_VFY=sha256:ec6f06d7495cdba37a732039f9b5e1578bcb296576fde0da40edb2f52220df3c
         WEB_SITE=https://www.freedesktop.org/wiki/Software/xdg-user-dirs
          ENTERED=20070825
-         UPDATED=20220903
+         UPDATED=20230118
            SHORT="a tool to help manage 'well known' user directories"
 
 cat << EOF
