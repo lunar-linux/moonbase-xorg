@@ -1,12 +1,12 @@
           MODULE=xset
-         VERSION=1.2.4
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.2.5
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:e4fd95280df52a88e9b0abc1fee11dcf0f34fc24041b9f45a247e52df941c957
+      SOURCE_VFY=sha256:9f692d55635b3862cd63633b1222a87680ec283c7a8e8ed6dd698a3147f75e2f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060210
-         UPDATED=20180311
+         UPDATED=20221210
            SHORT="A user preference utility for X"
 
 cat << EOF
