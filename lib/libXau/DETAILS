@@ -1,12 +1,12 @@
           MODULE=libXau
-         VERSION=1.0.9
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.0.10
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:ccf8cbf0dbf676faa2ea0a6d64bcc3b6746064722b606c8c52917ed00dcb73ec
+      SOURCE_VFY=sha256:8be6f292334d2f87e5b919c001e149a9fdc27005d6b3e053862ac6ebbf1a0c0a
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20190212
+         UPDATED=20220905
            SHORT="The X.Org authorization library"
 
 cat << EOF
