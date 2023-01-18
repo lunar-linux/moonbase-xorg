@@ -1,12 +1,12 @@
           MODULE=xf86-video-nv
-         VERSION=2.1.21
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=2.1.22
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:1f98649e6ff0e8214b9d5dcac661f1d004be8e73823d8247b9c7025fd81db32d
+      SOURCE_VFY=sha256:6218932db5c389878d853b11b8fbb667c321b65276f55aa6842a56fb1a30d288
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060227
-         UPDATED=20180218
+         UPDATED=20220903
            SHORT="The X.Org video driver for legacy NVIDIA based cards"
 
 cat << EOF

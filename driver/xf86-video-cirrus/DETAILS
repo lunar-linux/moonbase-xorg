@@ -1,12 +1,12 @@
           MODULE=xf86-video-cirrus
-         VERSION=1.5.3
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.6.0
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:edc87b20a55259126b5239b5c1ef913419eab7ded0ed12ae9ae989460d7351ab
+      SOURCE_VFY=sha256:0ef3fa0083de3d9a040f11b3af38598d8405f1165b908fdd6712c30038326401
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20180211
+         UPDATED=20220903
            SHORT="The X.Org video driver for Cirrus Logic based cards"
 
 cat << EOF
