@@ -1,15 +1,11 @@
            MODULE=SPIRV-Tools
-          VERSION=2020.3
-         VERSION2=1.5.3
+          VERSION=2022.3
            SOURCE=$MODULE-$VERSION.tar.gz
-          SOURCE2=SPIRV-HeaderS-$VERSION2.tar.gz
   SOURCE_URL_FULL=https://github.com/KhronosGroup/SPIRV-Tools/archive/v${VERSION}.tar.gz
- SOURCE2_URL_FULL=https://github.com/KhronosGroup/SPIRV-Headers/archive/${VERSION2}.tar.gz
-       SOURCE_VFY=sha256:8b538a1cb2a4275ef9617abcb047d54e8292f975ac1d93323d5dd1e19c85280b
-      SOURCE2_VFY=sha256:eece8a9e147d37997d425d5d2eeb2e757ad25adc30d6651467094f3b18609b5a
+       SOURCE_VFY=sha256:df6dc5ed5351f99aaaa6acc78111342d3400b27b99f18148d3be408570144a70
          WEB_SITE=https://github.com/KhronosGroup/SPIRV-Tools/
           ENTERED=20200530
-          UPDATED=20200530
+          UPDATED=20221022
             SHORT="API and commands for processing SPIR-V modules"
 
 cat << EOF
