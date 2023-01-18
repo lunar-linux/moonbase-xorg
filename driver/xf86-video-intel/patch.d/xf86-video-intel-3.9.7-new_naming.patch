@@ -1,0 +1,79 @@
+diff -ur xf86-video-intel-Release_3.9.7/src/legacy/i810/i810.h xf86-video-intel-Release_3.9.7-new/src/legacy/i810/i810.h
+--- xf86-video-intel-Release_3.9.7/src/legacy/i810/i810.h	2017-11-16 05:03:48.000000000 -0500
++++ xf86-video-intel-Release_3.9.7-new/src/legacy/i810/i810.h	2022-10-12 15:36:45.285148782 -0400
+@@ -322,6 +322,6 @@
+ extern const OptionInfoRec *I810AvailableOptions(int chipid, int busid);
+ 
+ extern const int I810CopyROP[16];
+-const int I810PatternROP[16];
++extern const int I810PatternROP[16];
+ 
+ #endif /* _I810_H_ */
+diff -ur xf86-video-intel-Release_3.9.7/src/sna/sna_accel.c xf86-video-intel-Release_3.9.7-new/src/sna/sna_accel.c
+--- xf86-video-intel-Release_3.9.7/src/sna/sna_accel.c	2017-11-16 05:03:48.000000000 -0500
++++ xf86-video-intel-Release_3.9.7-new/src/sna/sna_accel.c	2022-10-12 13:25:07.162078040 -0400
+@@ -17659,7 +17659,7 @@
+ 			continue;
+ 
+ 		src = dirty->src;
+-		dst = dirty->slave_dst->master_pixmap;
++		dst = dirty->secondary_dst->primary_pixmap;
+ 
+ 		region.extents.x1 = dirty->x;
+ 		region.extents.x2 = dirty->x + dst->drawable.width;
+@@ -17686,7 +17686,7 @@
+ 		dy += dirty->dst_y;
+ #endif
+ 		RegionTranslate(&region, dx, dy);
+-		DamageRegionAppend(&dirty->slave_dst->drawable, &region);
++		DamageRegionAppend(&dirty->secondary_dst->drawable, &region);
+ 
+ 		DBG(("%s: slave:  ((%d, %d), (%d, %d))x%d\n", __FUNCTION__,
+ 		     region.extents.x1, region.extents.y1,
+@@ -17763,7 +17763,7 @@
+ 			kgem_bo_sync__gtt(&sna->kgem, __sna_pixmap_get_bo(dst));
+ 		}
+ 
+-		DamageRegionProcessPending(&dirty->slave_dst->drawable);
++		DamageRegionProcessPending(&dirty->secondary_dst->drawable);
+ skip:
+ 		RegionUninit(&region);
+ 		DamageEmpty(dirty->damage);
+diff -ur xf86-video-intel-Release_3.9.7/src/uxa/intel_driver.c xf86-video-intel-Release_3.9.7-new/src/uxa/intel_driver.c
+--- xf86-video-intel-Release_3.9.7/src/uxa/intel_driver.c	2017-11-16 05:03:48.000000000 -0500
++++ xf86-video-intel-Release_3.9.7-new/src/uxa/intel_driver.c	2022-10-12 13:28:26.408752267 -0400
+@@ -625,30 +625,30 @@
+ 	RegionRec pixregion;
+ 	int was_blocked;
+ 
+-	PixmapRegionInit(&pixregion, dirty->slave_dst->master_pixmap);
++	PixmapRegionInit(&pixregion, dirty->secondary_dst->primary_pixmap);
+ 	RegionTranslate(&pixregion, dirty->x, dirty->y);
+ 	RegionIntersect(&pixregion, &pixregion, DamageRegion(dirty->damage));
+ 	RegionTranslate(&pixregion, -dirty->x, -dirty->y);
+ 	was_blocked = RegionNil(&pixregion);
+-	DamageRegionAppend(&dirty->slave_dst->drawable, &pixregion);
++	DamageRegionAppend(&dirty->secondary_dst->drawable, &pixregion);
+ 	RegionUninit(&pixregion);
+ 	if (was_blocked)
+ 		return;
+ 
+-	PixmapRegionInit(&pixregion, dirty->slave_dst->master_pixmap);
++	PixmapRegionInit(&pixregion, dirty->secondary_dst->primary_pixmap);
+ 	PixmapSyncDirtyHelper(dirty, &pixregion);
+ 	RegionUninit(&pixregion);
+ 
+         intel_flush(intel);
+ 	if (!intel->has_prime_vmap_flush) {
+-		drm_intel_bo *bo = intel_uxa_get_pixmap_bo(dirty->slave_dst->master_pixmap);
++		drm_intel_bo *bo = intel_uxa_get_pixmap_bo(dirty->secondary_dst->primary_pixmap);
+ 		was_blocked = xf86BlockSIGIO();
+ 		drm_intel_bo_map(bo, FALSE);
+ 		drm_intel_bo_unmap(bo);
+ 		xf86UnblockSIGIO(was_blocked);
+ 	}
+ 
+-	DamageRegionProcessPending(&dirty->slave_dst->drawable);
++	DamageRegionProcessPending(&dirty->secondary_dst->drawable);
+ 	return;
+ }
