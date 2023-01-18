@@ -1,11 +1,11 @@
           MODULE=XOrg7
-         VERSION=X11R7.4
+         VERSION=X11R7.7
         WEB_SITE=http://www.x.org/
          ENTERED=20060120
          UPDATED=20180211
-           SHORT="A profile for the autotooled version of XOrg 7.4"
+           SHORT="A profile for the autotooled version of XOrg 7.7"
          PROFILE=yes
 
 cat << EOF
-A profile for the autotooled version of XOrg 7.4
+A profile for the autotooled version of XOrg 7.7
 EOF
