@@ -16,9 +16,10 @@ depends libunwind
 depends libvdpau
 depends libXvMC
 depends zstd
-depends llvm
+depends lld
 depends libva
 depends meson
+depends libclc
 
 optional_depends libepoxy "" "" "for OpenGL pointer management support (gtk+-3 needs it)"
 
