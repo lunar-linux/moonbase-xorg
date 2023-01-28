@@ -1,4 +1,5 @@
-           MODULE=SPIRV-Tools
+           MODULE=spirv-tools
+         REPLACES=SPIRV-Tools
           VERSION=2022.3
            SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/KhronosGroup/SPIRV-Tools/archive/v${VERSION}.tar.gz
