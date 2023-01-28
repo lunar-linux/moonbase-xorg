@@ -1,4 +1,3 @@
 depends libXvMC
 depends libXrandr
 depends libXft
-depends libXfontcache
