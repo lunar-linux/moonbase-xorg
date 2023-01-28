@@ -2,5 +2,6 @@ depends libxslt
 depends xcb-proto
 depends libXau
 depends libpthread-stubs
+depends util-macros
 
 optional_depends libXdmcp "" "" "for X Display Manager Control Protocol support (recommended)"
