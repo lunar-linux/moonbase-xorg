@@ -1,4 +1,4 @@
 depends python
-depends git
 depends cmake
+depends ninja
 depends spirv-headers
