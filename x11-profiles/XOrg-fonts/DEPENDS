@@ -1,4 +1,4 @@
-depends mkfontdir
+depends mkfontscale
 depends font-alias
 depends font-cursor-misc
 depends font-adobe-100dpi
