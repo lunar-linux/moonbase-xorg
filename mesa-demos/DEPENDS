@@ -1,3 +1,4 @@
 depends meson
 depends glew
 depends glu
+depends bitmap

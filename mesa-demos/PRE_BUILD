@@ -1,0 +1,5 @@
+default_pre_build &&
+
+OPTS+=" -D with-system-data-files=true" &&
+
+sedit '24d' src/glsl/meson.build

@@ -1,0 +1,3 @@
+if module_installed bitmap; then
+  lunar fix bitmap
+fi
