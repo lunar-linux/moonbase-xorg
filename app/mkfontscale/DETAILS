@@ -7,6 +7,7 @@
         WEB_SITE=http://www.x.org
          ENTERED=20070216
          UPDATED=20220429
+        REPLACES=mkfontdir
            SHORT="The X.Org scalable font directory creator"
 
 cat << EOF
