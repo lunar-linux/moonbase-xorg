@@ -1,4 +1,0 @@
-default_pre_build &&
-
-# Build fix
-sedit 's;#include "mibstore.h";;' src/trident_driver.c
