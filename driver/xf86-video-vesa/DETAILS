@@ -1,12 +1,12 @@
           MODULE=xf86-video-vesa
-         VERSION=2.5.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=2.6.0
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:1f1624f3c73906801ad1bc98335a2cb5676a7a4d18e5374d9a1d18464e54c659
+      SOURCE_VFY=sha256:10082771b1a8f659c60b3d9b70456a4b59948a75b3cade2dfa33b8b05e549bb1
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20201112
+         UPDATED=20230306
            SHORT="The X.Org VESA video driver for all video cards"
 
 cat << EOF
