@@ -163,9 +163,6 @@ ln -sf libnvidia-rtcore.so.$VERSION /usr/lib/libnvidia-rtcore.so &&
 ln -sf libnvidia-tls.so.$VERSION /usr/lib/libnvidia-tls.so &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so.1 &&
 ln -sf libnvoptix.so.$VERSION /usr/lib/libnvoptix.so &&
-#ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so.1 &&
-#ln -sf libnvidia-cbl.so.$VERSION /usr/lib/libnvidia-cbl.so &&
-#ln -sf libnvidia-ifr.so.$VERSION /usr/lib/libnvidia-ifr.so &&
 
 # So lunar fix doesn't attempt to recompile when not required.
 # If libwfb.so already exists, nvidia-installer will not overwrite it. Otherwise, it will create a symbolic link from libwfb.so to libnvidia-wfb.so.x.y.z.
@@ -190,5 +187,7 @@ if in_depends $MODULE "gtk+-3" ; then
   install -m0444 nvidia-settings-$VERSION/doc/nvidia-settings.png /usr/share/doc/NVIDIA_GLX-1.0 &&
   install -m0444 nvidia-settings.1.gz /usr/share/man/man1
 fi &&
+
+sedit 's:/bin/rm:/usr/bin/rm:' /usr/lib/systemd/system/nvidia-persistenced.service /etc/systemd/system/multi-user.target.wants/nvidia-persistenced.service &&
 
 gather_docs README.txt LICENSE NVIDIA_Changelog
