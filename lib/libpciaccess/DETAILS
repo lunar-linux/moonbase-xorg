@@ -1,12 +1,12 @@
           MODULE=libpciaccess
-         VERSION=0.16
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=0.17
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:214c9d0d884fdd7375ec8da8dcb91a8d3169f263294c9a90c575bf1938b9f489
+      SOURCE_VFY=sha256:74283ba3c974913029e7a547496a29145b07ec51732bbb5b5c58d5025ad95b73
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20070828
-         UPDATED=20190718
+         UPDATED=20230317
            SHORT="Access the PCI bus and devices"
 
 cat << EOF
