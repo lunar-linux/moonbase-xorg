@@ -188,6 +188,6 @@ if in_depends $MODULE "gtk+-3" ; then
   install -m0444 nvidia-settings.1.gz /usr/share/man/man1
 fi &&
 
-sedit 's:/bin/rm:/usr/bin/rm:' /usr/lib/systemd/system/nvidia-persistenced.service /etc/systemd/system/multi-user.target.wants/nvidia-persistenced.service &&
+sedit 's:/bin/rm:/usr/bin/rm:' /usr/lib/systemd/system/nvidia-persistenced.service &&
 
 gather_docs README.txt LICENSE NVIDIA_Changelog
