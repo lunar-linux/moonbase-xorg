@@ -1,12 +1,12 @@
         MODULE=libXinerama
-       VERSION=1.1.4
-        SOURCE=$MODULE-$VERSION.tar.bz2
+       VERSION=1.1.5
+        SOURCE=$MODULE-$VERSION.tar.xz
     SOURCE_URL=$XORG_URL/individual/lib/
-    SOURCE_VFY=sha256:0008dbd7ecf717e1e507eed1856ab0d9cf946d03201b85d5dcf61489bb02d720
+    SOURCE_VFY=sha256:5094d1f0fcc1828cb1696d0d39d9e866ae32520c54d01f618f1a3c1e30c2085c
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-      WEB_SITE=http://www.x.org
+      WEB_SITE=https://www.x.org
        ENTERED=20060120
-       UPDATED=20180710
+       UPDATED=20230318
          SHORT="The X.Org XINERAMA extension protocol library"
 
 cat << EOF
