@@ -1,12 +1,12 @@
           MODULE=libSM
-         VERSION=1.2.3
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.2.4
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:2d264499dcb05f56438dee12a1b4b71d76736ce7ba7aa6efbf15ebb113769cbb
+      SOURCE_VFY=sha256:fdcbe51e4d1276b1183da77a8a4e74a137ca203e0bcfb20972dd5f3347e97b84
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20181014
+         UPDATED=20230317
            SHORT="The X.Org Session Management library"
 
 cat << EOF
