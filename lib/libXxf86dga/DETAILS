@@ -1,12 +1,12 @@
           MODULE=libXxf86dga
-         VERSION=1.1.5
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.1.6
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:2b98bc5f506c6140d4eddd3990842d30f5dae733b64f198a504f07461bdb7203
+      SOURCE_VFY=sha256:be44427579808fe3a217d59f51cae756a26913eb6e4c8738ccab65ff56d7980f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20220905
+         UPDATED=20230319
            SHORT="The X.Org XFree86-DGA extension library"
 
 cat << EOF
