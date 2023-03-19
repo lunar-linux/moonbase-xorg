@@ -1,12 +1,12 @@
         MODULE=libXxf86vm
-       VERSION=1.1.4
-        SOURCE=$MODULE-$VERSION.tar.bz2
+       VERSION=1.1.5
+        SOURCE=$MODULE-$VERSION.tar.xz
     SOURCE_URL=$XORG_URL/individual/lib/
-    SOURCE_VFY=sha256:afee27f93c5f31c0ad582852c0fb36d50e4de7cd585fcf655e278a633d85cd57
+    SOURCE_VFY=sha256:247fef48b3e0e7e67129e41f1e789e8d006ba47dba1c0cdce684b9b703f888e7
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-      WEB_SITE=http://www.x.org
+      WEB_SITE=https://www.x.org
        ENTERED=20060120
-       UPDATED=20180211
+       UPDATED=20230319
          SHORT="The X.Org XFree86-VidModeExtension extension library"
 
 cat << EOF
