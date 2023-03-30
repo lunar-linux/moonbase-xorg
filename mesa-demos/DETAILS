@@ -1,12 +1,12 @@
           MODULE=mesa-demos
-         VERSION=8.5.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
-      SOURCE_URL=https://archive.mesa3d.org/demos/${VERSION}/
-      SOURCE_VFY=sha256:cea2df0a80f09a30f635c4eb1a672bf90c5ddee0b8e77f4d70041668ef71aac1
+         VERSION=9.0.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://mesa.freedesktop.org/archive/demos/
+      SOURCE_VFY=sha256:3046a3d26a7b051af7ebdd257a5f23bfeb160cad6ed952329cdff1e9f1ed496b
         WEB_SITE=http://mesa3d.org
             TYPE=meson
          ENTERED=20110227
-         UPDATED=20220604
+         UPDATED=20230330
            SHORT="Mesa Demos - glxgears and glxinfo"
 
 cat << EOF
