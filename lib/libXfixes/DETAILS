@@ -1,12 +1,12 @@
           MODULE=libXfixes
-         VERSION=6.0.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=6.0.1
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:a7c1a24da53e0b46cac5aea79094b4b2257321c621b258729bc3139149245b4c
+      SOURCE_VFY=sha256:b695f93cd2499421ab02d22744458e650ccc88c1d4c8130d60200213abc02d58
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20210512
+         UPDATED=20230531
            SHORT="The X.Org miscellaneous fixes extension"
 
 cat << EOF
