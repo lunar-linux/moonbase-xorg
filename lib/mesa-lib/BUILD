@@ -1,7 +1,5 @@
 bad_flags linker
 
-#        -D gallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,swrast,iris,d3d12 \
-
 OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
@@ -35,4 +33,4 @@ OPTS+=" -D b_lto=true \
 default_meson_build &&
 
 # indirect rendering
-ln -s /usr/lib/libGLX_mesa.so.0 /usr/lib/libGLX_indirect.so.0
+ln -sf /usr/lib/libGLX_mesa.so.0 /usr/lib/libGLX_indirect.so.0
