@@ -18,7 +18,9 @@ depends libvdpau
 depends libXvMC
 depends zstd
 depends libva
-depends libclc
+
+optional_depends llvm "-D llvm=enabled" "-D llvm=disabled" "for low level virtual machine support,${PROBLEM_COLOR} say no on first install${DEFAULT_COLOR}"
+optional_depends libclc "-D intel-clc=enabled" "-D intel-clc=false" "for opencl c programming support,${PROBLEM_COLOR}}say no on first install${DEFAULT_COLOR}"
 
 optional_depends libepoxy "" "" "for OpenGL pointer management support (gtk+-3 needs it)"
 
