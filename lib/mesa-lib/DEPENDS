@@ -37,4 +37,4 @@ optional_depends libomxil-bellagio \
 optional_depends glslang \
                  "-D vulkan-layers=device-select,intel-nullhw,overlay" "" \
                  "for Vulkan Device Selection Layer" \
-                 "n"
+                 "y"
