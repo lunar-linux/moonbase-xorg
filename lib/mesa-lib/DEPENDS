@@ -18,6 +18,7 @@ depends libvdpau
 depends libXvMC
 depends zstd
 depends libva
+depends glslang
 
 optional_depends llvm "-D llvm=enabled" "-D llvm=disabled" "for low level virtual machine support,${PROBLEM_COLOR} say no on first install${DEFAULT_COLOR}"
 optional_depends libclc "-D intel-clc=enabled" "-D intel-clc=disabled" "for opencl c programming support,${PROBLEM_COLOR}}say no on first install${DEFAULT_COLOR}"
@@ -33,8 +34,3 @@ optional_depends libomxil-bellagio \
                  "-D gallium-omx=bellagio" \
                  "-D gallium-omx=disabled" \
                  "for OpenMAX Integration Layer API support"
-
-optional_depends glslang \
-                 "-D vulkan-layers=device-select,intel-nullhw,overlay" "" \
-                 "for Vulkan Device Selection Layer" \
-                 "y"
