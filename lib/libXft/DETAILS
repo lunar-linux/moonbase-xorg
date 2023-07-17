@@ -1,13 +1,13 @@
           MODULE=libXft
-         VERSION=2.3.4
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=2.3.8
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
      SOURCE2_URL=$PATCH_URL
-      SOURCE_VFY=sha256:57dedaab20914002146bdae0cb0c769ba3f75214c4c91bd2613d6ef79fc9abdd
+      SOURCE_VFY=sha256:5e8c3c4bc2d4c0a40aef6b4b38ed2fb74301640da29f6528154b5009b1c6dd49
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20070216
-         UPDATED=20210804
+         UPDATED=20230716
            SHORT="The X.Org FreeType-based font drawing library"
 
 cat << EOF
