@@ -1,5 +1,8 @@
 bad_flags linker
 
+CFLAGS+=' -g1'
+CXXFLAGS+=' -g1'
+
 if in_depends $MODULE llvm; then
   OPTS+=" -D gallium-drivers=auto \
           -D vulkan-drivers=auto"
