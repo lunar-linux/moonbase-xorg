@@ -13,6 +13,7 @@ fi &&
 
 OPTS+=" --buildtype=release    \
         -D b_lto=true \
+        -D build-tests=false \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
         -D shader-cache=auto \
