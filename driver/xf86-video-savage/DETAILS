@@ -1,6 +1,6 @@
           MODULE=xf86-video-savage
          VERSION=2.4.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
       SOURCE_VFY=sha256:b36cf02cfdd08a39423bb977c45397fbca5813267c727f0fd3c963ac38b601fd
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
