@@ -1,12 +1,12 @@
           MODULE=xf86-input-vmmouse
-         VERSION=13.1.0
+         VERSION=13.2.0
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:0af558957ac1be1b2863712c2475de8f4d7f14921fd01ded2e2fde4921b19319
+      SOURCE_VFY=sha256:56f077580ab8f02e2f40358c5c46b0ae3e1828fc77744526b24adf1ceea339b8
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20180211
+         UPDATED=20230817
            SHORT="The X.Org mouse input device driver for vm"
 
 cat << EOF
