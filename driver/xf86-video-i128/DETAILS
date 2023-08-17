@@ -1,12 +1,12 @@
           MODULE=xf86-video-i128
-         VERSION=1.4.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.4.1
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:8f2c0a6bf5a169dad3fc07c6dd4537b492d0e44489e4a1297311e617c3bed0ea
+      SOURCE_VFY=sha256:7064b513ffe33efa040577c4d355ce2c76ed218989ab38feb8972750d5acbc46
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20191019
+         UPDATED=20230817
            SHORT="The X.Org video driver for Number 9 I128 based cards"
 
 cat << EOF
