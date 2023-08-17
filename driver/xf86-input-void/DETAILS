@@ -1,12 +1,12 @@
           MODULE=xf86-input-void
-         VERSION=1.4.1
+         VERSION=1.4.2
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:f96e4f0a622821bf43a74bd419f2a18423343996c9d243c7e1430ba2d142339c
+      SOURCE_VFY=sha256:a211d8e21ce0e2ed8af5b8a2e8d4409d70c9c7e5ee528f5e6002ad279bf07885
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20180211
+         UPDATED=20230817
            SHORT="A null input driver"
 
 cat << EOF
