@@ -1,6 +1,6 @@
           MODULE=xlsatoms
          VERSION=1.1.4
-          SOURCE=$MODULE-$VERSION.tar.bz2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
       SOURCE_VFY=sha256:f4bfa15f56c066d326a5d5b292646708f25b9247506840b9047cd2687dcc71b7
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
