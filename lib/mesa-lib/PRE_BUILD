@@ -1,3 +1,3 @@
 default_pre_build &&
 
-lin -c libdrm wayland-protocols
+lin -c libdrm
