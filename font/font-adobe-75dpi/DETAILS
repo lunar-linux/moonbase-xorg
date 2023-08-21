@@ -1,12 +1,12 @@
           MODULE=font-adobe-75dpi
-         VERSION=1.0.3
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.0.4
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/font/
-      SOURCE_VFY=sha256:c6024a1e4a1e65f413f994dd08b734efd393ce0a502eb465deb77b9a36db4d09
+      SOURCE_VFY=sha256:1281a62dbeded169e495cae1a5b487e1f336f2b4d971d92911c59c103999b911
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=xorg.freedesktop.org/
          ENTERED=20060120
-         UPDATED=20161130
+         UPDATED=20230821
            SHORT="XOrg Adobe 75dpi fonts"
 
 cat << EOF
