@@ -1,12 +1,12 @@
           MODULE=xcb-util-wm
-         VERSION=0.4.1
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=0.4.2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://xcb.freedesktop.org/dist/
-      SOURCE_VFY=sha256:28bf8179640eaa89276d2b0f1ce4285103d136be6c98262b6151aaee1d3c2a3f
+      SOURCE_VFY=sha256:62c34e21d06264687faea7edbf63632c9f04d55e72114aa4a57bb95e4f888a0b
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org/
          ENTERED=20110608
-         UPDATED=20180211
+         UPDATED=20230821
            SHORT="wm extensions for libxcb"
 
 cat << EOF
