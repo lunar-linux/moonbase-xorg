@@ -1,12 +1,12 @@
           MODULE=xcb-util-image
-         VERSION=0.4.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=0.4.1
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://xcb.freedesktop.org/dist/
-      SOURCE_VFY=sha256:2db96a37d78831d643538dd1b595d7d712e04bdccf8896a5e18ce0f398ea2ffc
+      SOURCE_VFY=sha256:ccad8ee5dadb1271fd4727ad14d9bd77a64e505608766c4e98267d9aede40d3d
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://xcb.freedesktop.org/
          ENTERED=20110608
-         UPDATED=20180211
+         UPDATED=20230821
            SHORT="Image extensions for libxcb"
 
 cat << EOF
