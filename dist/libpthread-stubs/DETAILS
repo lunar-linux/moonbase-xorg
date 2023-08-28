@@ -1,12 +1,12 @@
           MODULE=libpthread-stubs
-         VERSION=0.4
-          SOURCE=$MODULE-$VERSION.tar.gz
+         VERSION=0.5
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://xcb.freedesktop.org/dist/
-      SOURCE_VFY=sha256:50d5686b79019ccea08bcbd7b02fe5a40634abcfd4146b6e75c6420cc170e9d9
+      SOURCE_VFY=sha256:59da566decceba7c2a7970a4a03b48d9905f1262ff94410a649224e33d2442bc
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org/
          ENTERED=20070216
-         UPDATED=20180217
+         UPDATED=20230821
            SHORT="A library that provides weak aliases for pthread functions"
 
 cat << EOF
