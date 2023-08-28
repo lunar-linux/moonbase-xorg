@@ -1,12 +1,12 @@
           MODULE=xwininfo
-         VERSION=1.1.5
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.1.6
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:7a405441dfc476666c744f5fcd1bc8a75abf8b5b1d85db7b88b370982365080e
+      SOURCE_VFY=sha256:3518897c17448df9ba99ad6d9bb1ca0f17bc0ed7c0fd61281b34ceed29a9253f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20191018
+         UPDATED=20230817
            SHORT="The X.Org window information utility"
 
 cat << EOF
