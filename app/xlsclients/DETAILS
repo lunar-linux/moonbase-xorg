@@ -2,7 +2,7 @@
          VERSION=1.1.5
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:68baee57e70250ac4a7759fb78221831f97d88bc8e51dcc2e64eb3f8ca56bae3
+      SOURCE_VFY=sha256:225d75e4c0b0929f16f974e20931ab85204b40098d92a5479b0b9379120637e5
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070305
