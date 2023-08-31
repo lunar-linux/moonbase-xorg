@@ -1,2 +1,3 @@
+depends meson
 depends libglvnd
 depends mesa-lib

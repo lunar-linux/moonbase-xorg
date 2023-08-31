@@ -6,6 +6,7 @@
       SOURCE_VFY=sha256:bd43fe12f374b1192eb15fe20e45ff456b9bc26ab57f0eee919f96ca0f8a330f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
+            TYPE=meson
          ENTERED=20121011
          UPDATED=20230821
            SHORT="GL Utility library"
