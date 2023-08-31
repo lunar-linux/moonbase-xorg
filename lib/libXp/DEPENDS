@@ -1,2 +1,3 @@
 depends xorgproto
+depends printproto
 depends libXext
