@@ -1,6 +1,6 @@
           MODULE=xf86-input-vmmouse
          VERSION=13.2.0
-          SOURCE=$MODULE-$VERSION.tar.bz2
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
       SOURCE_VFY=sha256:56f077580ab8f02e2f40358c5c46b0ae3e1828fc77744526b24adf1ceea339b8
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
