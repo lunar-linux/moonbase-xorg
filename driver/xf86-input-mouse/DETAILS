@@ -1,12 +1,12 @@
           MODULE=xf86-input-mouse
-         VERSION=1.9.3
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.9.5
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:93ecb350604d05be98b7d4e5db3b8155a44890069a7d8d6b800c0bea79c85cc5
+      SOURCE_VFY=sha256:4fde8ae9b44352e2a208584c36528ee3ed13cf5fe4417208a9785daccefd9968
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20180619
+         UPDATED=20230817
            SHORT="The X.Org mouse input device driver"
 
 cat << EOF
