@@ -1,12 +1,12 @@
           MODULE=xf86-input-elographics
-         VERSION=1.4.2
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.4.3
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver
-      SOURCE_VFY=sha256:2bd91c0509d0e01bd77371893d0b3580f8a7b5958a781074bf44b01b08f1a5aa
+      SOURCE_VFY=sha256:1ebeb4eacb9c2a87d315bf1e8d53691c3f67d9c334be9e410ea8c3dae0b516b3
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20190611
+         UPDATED=20230817
            SHORT="Elographics input driver"
 
 cat << EOF
