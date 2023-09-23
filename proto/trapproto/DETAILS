@@ -1,0 +1,14 @@
+          MODULE=trapproto
+         VERSION=3.4.3
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/proto/
+      SOURCE_VFY=sha256:ff32a0d3bc696cadc3457be9c85e9818af2b6daa2f159188bb01aad7e932a0e1
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20230923
+         UPDATED=20230923
+           SHORT="trap extension headers"
+
+cat << EOF
+Extention headers for libXTrap.
+EOF
