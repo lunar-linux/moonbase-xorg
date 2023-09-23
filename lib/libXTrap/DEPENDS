@@ -1,2 +1,3 @@
 depends libXext
 depends libXt
+depends trapproto
