@@ -8,9 +8,9 @@ optional_depends freetype2 \
                  "--disable-freetype" \
                  "for TTF fonts support"
 
-optional_depends pcre \
-                 "--with-pcre" "" \
-                 "for PCRE regular expressions support"
+optional_depends pcre2 \
+                 "--with-pcre2" "--without-pcre2" \
+                 "for PCRE2 regular expressions support"
 
 optional_depends luit \
                  "--enable-luit" "" \
