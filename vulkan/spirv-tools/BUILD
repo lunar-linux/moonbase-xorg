@@ -1,13 +1,13 @@
-OPTS+=" -DSPIRV_WERROR=Off \
+OPTS+=" -DSPIRV_WERROR=OFF \
         -DBUILD_SHARED_LIBS=ON \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \
-        -DBUILD_SHARED_LIBS=ON \
         -DSPIRV_TOOLS_BUILD_STATIC=OFF \
-        -DSPIRV-Headers_SOURCE_DIR=/usr "
+        -DSPIRV-Headers_SOURCE_DIR=/usr"
 
-default_cmake_build &&
+cmake -B $MODULE-$VERSION -G Ninja $OPTS &&
+ninja -C $MODULE-$VERSION &&
 
-cd ../
-install -dm755 include/spirv-tools/ /usr/include/spirv-tools
+prepare_install &&
+ninja -C $MODULE-$VERSION install
