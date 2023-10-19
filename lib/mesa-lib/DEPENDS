@@ -1,4 +1,5 @@
 depends systemd
+depends python-ply
 depends meson
 depends expat
 depends elfutils
