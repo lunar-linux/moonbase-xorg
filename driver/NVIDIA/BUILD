@@ -73,6 +73,10 @@ rm -f $SOURCE_DIRECTORY/{libGL.so,libGLcore.so.1,libnvidia-tls.so.1} &&
 # We don't want to track the kernel module
 make modules_install KERNEL_UNAME=$KVER &&
 
+# Don't need, it want to link with libcrypto.so.1.1 which is an
+# old version of openssl
+rm ../libnvidia-pkcs11.so.$VERSION &&
+
 prepare_install &&
 
 install -dm 0755 /usr/lib/modprobe.d &&
