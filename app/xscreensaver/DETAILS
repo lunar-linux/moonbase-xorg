@@ -1,11 +1,11 @@
           MODULE=xscreensaver
-         VERSION=6.06
+         VERSION=6.08
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://www.jwz.org/xscreensaver/
-      SOURCE_VFY=sha256:f534fab85a836de5b8be8e91fc21b80ca7d6a4ed9386ebe207d4be7a4e7499a7
+      SOURCE_VFY=sha256:5cf52ba525ceecf94b2f2bd63485ebdf318e12fcc0f2adad7d4c106d855e76a3
         WEB_SITE=https://www.jwz.org/xscreensaver
          ENTERED=20010922
-         UPDATED=20230118
+         UPDATED=20231105
            SHORT="A modular screen saver and locker for X"
 
 cat << EOF
