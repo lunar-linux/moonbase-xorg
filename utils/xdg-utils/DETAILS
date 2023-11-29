@@ -3,7 +3,7 @@
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=https://portland.freedesktop.org/download/
       SOURCE_VFY=sha256:d798b08af8a8e2063ddde6c9fa3398ca81484f27dec642c5627ffcaa0d4051d9
-        WEB_SITE=https://portland.freedesktop.org/wiki/XdgUtils
+        WEB_SITE=https://www.freedesktop.org/wiki/Software/xdg-utils/
          ENTERED=20061012
          UPDATED=20170512
            SHORT="Tools to easily integrate applications with the free desktop standards"
