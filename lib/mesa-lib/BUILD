@@ -1,8 +1,3 @@
-bad_flags linker
-
-CFLAGS+=' -g1'
-CXXFLAGS+=' -g1'
-
 if in_depends $MODULE llvm; then
   OPTS+=" -D gallium-drivers=auto \
           -D vulkan-drivers=auto"
@@ -11,8 +6,7 @@ if in_depends $MODULE llvm; then
           -D vulkan-drivers="""
 fi &&
 
-OPTS+=" --buildtype=release    \
-        -D b_lto=true \
+OPTS+=" -D b_lto=true \
         -D build-tests=false \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
