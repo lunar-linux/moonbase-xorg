@@ -1,3 +1,7 @@
 depends python
-depends spirv-tools
 depends cmake
+
+optional_depends spirv-tools \
+                 "-DALLOW_EXTERNAL_SPIRV_TOOLS=ON"  \
+                 "-DALLOW_EXTERNAL_SPIRV_TOOLS=OFF" \
+                 "yes to use system spirv-tools"
