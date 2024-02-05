@@ -1,7 +1,4 @@
+depends meson
 depends util-macros
 
-optional_depends zlib \
-                 "--with-zlib" \
-                 "--without-zlib" \
-                 "for compressed pci.ids read support" \
-                 "y"
+optional_depends zlib "-Dzlib=enabled" "-Dzlib=disabled" "for compressed pci.ids read support" "y"
