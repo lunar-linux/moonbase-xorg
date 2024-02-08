@@ -1,11 +1,11 @@
-          ODULE=xman
-         VERSION=1.1.5
-          SOURCE=$MODULE-$VERSION.tar.bz2
+          MODULE=xman
+         VERSION=1.1.6
+          SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:4e3c2c7497e9734a6d3c8e1b6a364612892bb31e9f33076c9fdae7177ab60978
+      SOURCE_VFY=sha256:7f555acd3855e49060e186a0be60f3224f60b4123b2990dcf6b8d70c482ed593
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20190715
+         UPDATED=20240208
            SHORT="Manual page display program for the X Window System"
 
 cat << EOF
