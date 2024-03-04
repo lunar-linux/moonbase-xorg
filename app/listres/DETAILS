@@ -1,12 +1,12 @@
           MODULE=listres
-         VERSION=1.0.5
+         VERSION=1.0.6
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:ce2a00bbe7d2eb8d75177006f343c80443a22d52570c48a43c6fe70ea074dc9d
+      SOURCE_VFY=sha256:4d1c53efd69ba654f2877e1577e994c78874b0512fa1b0666cffcf452aee43ca
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20220903
+         UPDATED=20240304
            SHORT="List resources in widgets"
 
 cat << EOF
