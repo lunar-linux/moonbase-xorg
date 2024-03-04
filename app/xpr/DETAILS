@@ -1,12 +1,12 @@
           MODULE=xpr
-         VERSION=1.1.0
+         VERSION=1.2.0
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:a0bbb11475366622632440b1c6f16d19964b4516483232fe5f46c169528557c5
+      SOURCE_VFY=sha256:8b9402f8331309f0a9d8143d4d6129c4a7479ff9449616849b9f1e2a5835cec3
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20220903
+         UPDATED=20240304
            SHORT="Print an X window dump"
 
 cat << EOF
