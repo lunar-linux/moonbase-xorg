@@ -1,12 +1,12 @@
           MODULE=xfontsel
-         VERSION=1.1.0
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:17052c3357bbfe44b8468675ae3d099c2427ba9fcac10540aef524ae4d77d1b4
+      SOURCE_VFY=sha256:7a4b86658a7701253ed0fe8a66471e54e4cacbba66d7278f1759d3b3a33a02c9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20071021
-         UPDATED=20220903
+         UPDATED=20240304
            SHORT="A program to query and display X11 fonts"
 
 cat << EOF
