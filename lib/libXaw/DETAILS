@@ -1,12 +1,12 @@
           MODULE=libXaw
-         VERSION=1.0.15
+         VERSION=1.0.16
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:ab35f70fde9fb02cc71b342f654846a74328b74cb3a0703c02d20eddb212754a
+      SOURCE_VFY=sha256:731d572b54c708f81e197a6afa8016918e2e06dfd3025e066ca642a5b8c39c8f
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20220318
+         UPDATED=20240311
            SHORT="The X.Org Athena Widget library"
 
 cat << EOF
