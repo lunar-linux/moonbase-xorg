@@ -1,12 +1,12 @@
           MODULE=xf86-video-savage
-         VERSION=2.4.0
+         VERSION=2.4.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:b36cf02cfdd08a39423bb977c45397fbca5813267c727f0fd3c963ac38b601fd
+      SOURCE_VFY=sha256:674191160c61982199c582233c5f1df5163a09f3ecbcb3d5bb5079b31a7d10af
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20230817
+         UPDATED=20240327
            SHORT="Video driver for S3/VIA Savage based cards"
 
 cat << EOF
