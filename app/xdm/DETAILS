@@ -1,12 +1,12 @@
           MODULE=xdm
-         VERSION=1.1.15
+         VERSION=1.1.16
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:4bb028de68fa3ca918d46109123095c8ba89bea97c965ccc79c6387bfd84b172
+      SOURCE_VFY=sha256:bcf2209881e95708363777b282fedb1c1055790f38046fa46beff2f1d087679c
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20240324
+         UPDATED=20240406
            SHORT="The X Display Manager"
 
 cat << EOF
