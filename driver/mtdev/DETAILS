@@ -1,11 +1,11 @@
           MODULE=mtdev
-         VERSION=1.1.6
+         VERSION=1.1.7
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=http://bitmath.org/code/$MODULE
-      SOURCE_VFY=sha256:1325f389a2f25cd5f5a8ea4d29aad24aa7c3ec30401d679400dd79eb9c0a8dbb
-        WEB_SITE=http://bitmath.org/code/mtdev
+      SOURCE_URL=https://bitmath.org/code/$MODULE
+      SOURCE_VFY=sha256:a55bd02a9af4dd266c0042ec608744fff3a017577614c057da09f1f4566ea32c
+        WEB_SITE=https://bitmath.org/code/mtdev
          ENTERED=20120317
-         UPDATED=20220903
+         UPDATED=20240407
            SHORT="mtdev - Multitouch Protocol Translation Library"
 
 cat << EOF
