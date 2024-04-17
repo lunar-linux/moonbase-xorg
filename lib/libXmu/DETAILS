@@ -1,12 +1,12 @@
           MODULE=libXmu
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:072026fe305889538e5b0c5f9cbcd623d2c27d2b85dcd37ca369ab21590b6963
+      SOURCE_VFY=sha256:fcb27793248a39e5fcc5b9c4aec40cc0734b3ca76aac3d7d1c264e7f7e14e8b2
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20240327
+         UPDATED=20240417
            SHORT="The X.Org miscellaneous utility library"
 
 cat << EOF
