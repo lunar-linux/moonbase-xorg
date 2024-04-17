@@ -1,11 +1,11 @@
           MODULE=xorg-server
-         VERSION=21.1.12
+         VERSION=21.1.13
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/xserver
-     SOURCE_VFY=sha256:1e016e2be1b5ccdd65eac3ea08e54bd13ce8f4f6c3fb32ad6fdac4e71729a90f
+     SOURCE_VFY=sha256:b45a02d5943f72236a360d3cc97e75134aa4f63039ff88c04686b508a3dc740c
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20240406
+         UPDATED=20240417
            SHORT="The X.Org X11R7 server for the X Window System"
 
 cat << EOF
