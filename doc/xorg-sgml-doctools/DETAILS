@@ -1,12 +1,13 @@
           MODULE=xorg-sgml-doctools
-         VERSION=1.12
-          SOURCE=$MODULE-$VERSION.tar.bz2
+         VERSION=1.12.1
+          SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$XORG_URL/individual/doc/
-      SOURCE_VFY=sha256:65a9fdddedc17bd5e9c0b00d904960f03f047c3a62de5458989d493c29fec806
+      SOURCE_VFY=sha256:8de3406f96a02bc3ab51ff47ba1612d9a11fc25d2edcaa06caa2cb2420d7bae0
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
+            TYPE=meson
          ENTERED=20070906
-         UPDATED=20220508
+         UPDATED=20240421
            SHORT="SGML entity definitions"
 
 cat << EOF

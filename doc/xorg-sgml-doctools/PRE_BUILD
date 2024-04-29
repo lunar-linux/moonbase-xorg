@@ -1,0 +1,4 @@
+default_pre_build &&
+
+# Change the pkgconfig file location from /usr/share to /usr/lib
+sedit "s@\(install_dir:\) get.*@\1 '/usr/lib/pkgconfig',@" meson.build
