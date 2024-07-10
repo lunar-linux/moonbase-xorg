@@ -6,6 +6,7 @@ if in_depends $MODULE llvm; then
           -D vulkan-drivers="""
 fi &&
 
+#DEPRECATION: Option 'glvnd' value 'true' is replaced by 'enabled'
 OPTS+=" -D b_lto=true \
         -D build-tests=false \
         -D b_ndebug=true \
@@ -18,7 +19,7 @@ OPTS+=" -D b_lto=true \
         -D dri3=enabled \
         -D gles2=enabled \
         -D gles1=disabled \
-        -D glvnd=true \
+        -D glvnd=enabled \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
         -D libunwind=enabled \
