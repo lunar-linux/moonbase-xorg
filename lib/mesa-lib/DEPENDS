@@ -26,7 +26,7 @@ depends cbindgen
 depends rust-bindgen
 
 optional_depends llvm "-D llvm=enabled" "-D llvm=disabled" "for low level virtual machine support,${PROBLEM_COLOR} say no on first install${DEFAULT_COLOR}" n
-optional_depends libclc "-D intel-clc=enabled" "-D intel-clc=disabled" "for opencl c programming support,${PROBLEM_COLOR}say no on first install${DEFAULT_COLOR}" n
+optional_depends libclc "-D intel-clc=system" "-D intel-clc=enabled" "for opencl c programming support,${PROBLEM_COLOR}say no on first install${DEFAULT_COLOR}" n
 
 optional_depends lm_sensors \
                  "-D lmsensors=enabled" \
