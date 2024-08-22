@@ -12,6 +12,7 @@ depends libXrandr
 depends libxml2
 depends dbus-glib
 depends python-mako
+depends python-yaml
 depends wayland-protocols
 depends libglvnd
 depends libunwind
