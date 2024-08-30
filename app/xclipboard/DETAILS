@@ -1,12 +1,12 @@
           MODULE=xclipboard
-         VERSION=1.1.4
+         VERSION=1.1.5
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:f43d4560d1464e8ff58e850212f6bdb703989b66d599fb61f351b5f9e077f253
+      SOURCE_VFY=sha256:8e47a4e18a88d47b14e8eb61a5f298687624a38f9decee9988d8b51a20514c45
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20130907
-         UPDATED=20220903
+         UPDATED=20240830
            SHORT="X clipboard manager"
 
 cat << EOF
