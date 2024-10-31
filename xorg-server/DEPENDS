@@ -18,6 +18,7 @@ depends xkeyboard-config
 depends xcb-util-keysyms
 depends libepoxy
 depends libxcvt
+depends libtirpc
 depends wayland
 
 optional_depends libgcrypt "-Dsha1=libgcrypt" "" "for SHA1 implementation"
