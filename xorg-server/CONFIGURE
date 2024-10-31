@@ -1,4 +1,2 @@
-mquery ENABLE_WRAPPER "Enable suid wrapper (needed by some user-space mode-setting drivers like NVIDIA and VESA)?" y "--enable-suid-wrapper" "--disable-suid-wrapper"
-mquery ENABLE_SETUID  "Enable setuid (run as root)?" n "--enable-install-setuid" "--disable-install-setuid"
-mquery ENABLE_IPV6    "Enable IPv6?" y "" "--disable-ipv6"
-mquery ENABLE_IPV4    "Enable IPv4?" y "" "--disable-tcp-transport"
+mquery ENABLE_WRAPPER "Enable suid wrapper (needed by some user-space mode-setting drivers like NVIDIA and VESA)?" y "-Dsuid_wrapper=true" "-Dsuid_wrapper=false"
+mquery ENABLE_IPV6    "Enable IPv6?" y "" "-Dipv6=true"

@@ -8,23 +8,21 @@ export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
 export LDFLAGS=${LDFLAGS/-Wl,-z,now}
 
-OPTS+=" --enable-dri         \
-        --enable-dmx         \
-        --enable-xorg        \
-        --enable-kdrive      \
-        --enable-record      \
-        --enable-composite   \
-        --enable-xcsecurity  \
-        --enable-config-udev \
-        --enable-glamor      \
-        --disable-static     \
-        --disable-devel-docs \
-        --disable-selective-werror \
-        --with-xkb-output=/var/lib/xkb \
-        --with-xkb-path=/usr/share/X11/xkb \
-        --with-fontrootdir=/usr/share/fonts/"
+OPTS+=" -Ddri1=auto        \
+        -Ddri2=auto        \
+        -Ddri3=auto        \
+        -Ddrm=true         \
+        -Dxorg=true        \
+        -Dxcsecurity=true  \
+        -Dudev=true        \
+        -Dglamor=true      \
+        -Ddocs=false       \
+        -Dxkb_dir=/usr/share/X11/xkb \
+        -Dxkb_output_dir=/var/lib/xkb \
+        -Ddefault_font_path=/usr/share/fonts/"
 
-default_build &&
+default_meson_build
+#default_build &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&
