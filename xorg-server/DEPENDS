@@ -18,23 +18,9 @@ depends xkeyboard-config
 depends xcb-util-keysyms
 depends libepoxy
 depends libxcvt
-optional_depends libgcrypt \
-                 "--with-sha1=libgcrypt" "" \
-                 "for SHA1 implementation"
+depends libtirpc
+depends wayland
 
-optional_depends libunwind \
-                 "--enable-libunwind" \
-                 "--disable-libunwind" \
-                 "for call-chain library support" \
-                 "n"
+optional_depends libgcrypt "-Dsha1=libgcrypt" "" "for SHA1 implementation"
 
-optional_depends wayland \
-                 "--enable-xwayland" "" \
-                 "for Wayland support" \
-                 "y"
-
-optional_depends xmlto \
-                 "--with-xmlto" \
-                 "--without-xmlto" \
-                 "for xmlto support to regenerate documentation" \
-                 "n"
+optional_depends libunwind "-Dlibunwind=true" "-Dlibunwind=false" "for call-chain library support" "n"
