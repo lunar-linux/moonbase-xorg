@@ -14,7 +14,7 @@ depends xprop
 optional_depends xf86-video-vesa "" "" "install VESA driver"
 
 # evdev is optional, some people want a manual setup
-optional_depends xf86-input-evdev "" "" "automatic input device configuration (RECOMMENDED)"
+optional_depends xf86-input-libinput "" "" "automatic input device configuration (RECOMMENDED)"
 
 # it work without it
 optional_depends iceauth "" "" "for ICE authorization support"
