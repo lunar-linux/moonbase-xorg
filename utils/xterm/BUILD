@@ -1,10 +1,5 @@
 . /etc/profile.d/x11r7.rc &&
 
-# To fix compilation error:
-# missing destination file operand after `./icons/xterm-color_32x32.xpm'
-# And to put icons in /usr/share/icons/
-sedit "s:@icondir@:/usr/share/icons:1" Makefile.in &&
-
 OPTS+=" --with-app-defaults=/etc/X11/app-defaults \
         --disable-imake \
         --enable-logging \
