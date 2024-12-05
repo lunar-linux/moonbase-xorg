@@ -8,7 +8,6 @@ OPTS+=" -D b_lto=true \
         -D glx=dri \
         -D gbm=enabled \
         -D egl=enabled \
-        -D dri3=enabled \
         -D gles2=enabled \
         -D gles1=disabled \
         -D glvnd=enabled \
@@ -23,7 +22,6 @@ OPTS+=" -D b_lto=true \
         -D gallium-vdpau=enabled \
         -D gallium-extra-hud=true \
         -D gallium-opencl=disabled \
-        -D gallium-omx=bellagio \
         -D gallium-va=enabled \
         -D microsoft-clc=disabled \
         -D intel-clc=enabled \
