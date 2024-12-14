@@ -1,12 +1,12 @@
         MODULE=libXv
-       VERSION=1.0.12
+       VERSION=1.0.13
         SOURCE=$MODULE-$VERSION.tar.xz
     SOURCE_URL=$XORG_URL/individual/lib/
-    SOURCE_VFY=sha256:aaf7fa09f689f7a2000fe493c0d64d1487a1210db154053e9e2336b860c63848
+    SOURCE_VFY=sha256:7d34910958e1c1f8d193d828fea1b7da192297280a35437af0692f003ba03755
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=https://www.x.org
        ENTERED=20070216
-       UPDATED=20230319
+       UPDATED=20241214
          SHORT="The X.Org XVideo extension library"
 
 cat << EOF
