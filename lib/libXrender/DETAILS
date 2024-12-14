@@ -1,12 +1,12 @@
         MODULE=libXrender
-       VERSION=0.9.11
+       VERSION=0.9.12
         SOURCE=$MODULE-$VERSION.tar.xz
     SOURCE_URL=$XORG_URL/individual/lib/
-    SOURCE_VFY=sha256:bc53759a3a83d1ff702fb59641b3d2f7c56e05051fa0cfa93501166fa782dc24
+    SOURCE_VFY=sha256:b832128da48b39c8d608224481743403ad1691bf4e554e4be9c174df171d1b97
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=https://www.x.org
        ENTERED=20060120
-       UPDATED=20230319
+       UPDATED=20241214
          SHORT="The X.Org Rendering extension library"
 
 cat << EOF
