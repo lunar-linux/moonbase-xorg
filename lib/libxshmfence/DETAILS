@@ -6,7 +6,7 @@
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.x.org/
          ENTERED=20140305
-         UPDATED=20230319
+         UPDATED=20241214
            SHORT="A library that exposes a event API on top of Linux futexes"
 
 cat << EOF
