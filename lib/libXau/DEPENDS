@@ -1,2 +1,3 @@
 depends xorgproto
 depends pkgconf
+depends meson
