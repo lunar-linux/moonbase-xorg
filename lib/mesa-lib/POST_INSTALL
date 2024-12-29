@@ -11,4 +11,9 @@ for mod in cairo libglvnd libva; do
   fi
 done
 
+# Take care of the missing epoxy/glx.h in xorg-server
+if [[ ! -e /usr/include/epoxy/glx.h ]]; then
+  lin -c libepoxy
+fi
+
 lin -c mesa-demos
