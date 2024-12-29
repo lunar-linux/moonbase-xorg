@@ -1,5 +1,6 @@
 depends libdmx
 depends libXaw
+depends libXdmcp
 depends libXt
 depends libXfont2
 depends libxkbui
