@@ -1,12 +1,12 @@
           MODULE=xinit
-         VERSION=1.4.3
+         VERSION=1.4.4
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:86409f21a6a31148d2c1c17bf5f2d904eb5ef455f9dc67c49fbd0c10ab18fd5a
+      SOURCE_VFY=sha256:40a47c7a164c7f981ce3787b4b37f7e411fb43231dcde543d70094075dacfef9
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20250106
+         UPDATED=20250310
            SHORT="The X.Org server initialization tool"
 
 cat << EOF
