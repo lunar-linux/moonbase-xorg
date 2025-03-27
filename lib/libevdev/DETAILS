@@ -1,12 +1,12 @@
           MODULE=libevdev
-         VERSION=1.13.3
+         VERSION=1.13.4
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=https://freedesktop.org/software/$MODULE/
-      SOURCE_VFY=sha256:abf1aace86208eebdd5d3550ffded4c8d73bb405b796d51c389c9d0604cbcfbf
+      SOURCE_VFY=sha256:f00ab8d42ad8b905296fab67e13b871f1a424839331516642100f82ad88127cd
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.freedesktop.org/wiki/Software/libevdev/
          ENTERED=20140520
-         UPDATED=20241105
+         UPDATED=20250327
            SHORT="Wrapper library for evdev devices"
 
 cat << EOF
