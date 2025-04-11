@@ -1,15 +1,10 @@
-depends systemd
-depends python-ply
 depends meson
-depends expat
-depends elfutils
-depends libgcrypt
-depends libdrm
+depends llvm
+depends lua53
+depends systemd
 depends libXxf86vm
-depends libXdamage
 depends libxshmfence
 depends libXrandr
-depends libxml2
 depends dbus-glib
 depends python-mako
 depends python-yaml
@@ -17,15 +12,11 @@ depends wayland-protocols
 depends libglvnd
 depends libunwind
 depends libvdpau
-depends libXvMC
-depends libepoxy
 depends zstd
 depends libva
 depends glslang
-depends libomxil-bellagio
 depends cbindgen
 depends rust-bindgen
-depends llvm
 depends libclc
 
 optional_depends lm_sensors \
