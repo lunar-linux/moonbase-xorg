@@ -7,8 +7,10 @@ OPTS+=" --with-app-defaults=/etc/X11/app-defaults \
         --enable-256-color"
 
 LDFLAGS+=" -lncurses"
+./configure --prefix=/usr $OPTS &&
+sed -i '/^LIBS\s*=/ s/$/ -lfreetype/' Makefile &&
 
-default_build &&
+default_make
 
 # cosmetic but needed adjustments:
 if ! grep -q 'XTerm*loginShell:' /etc/X11/app-defaults/XTerm; then
