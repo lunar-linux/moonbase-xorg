@@ -4,7 +4,6 @@ OPTS+=" -D b_lto=true \
         -D b_ndebug=true \
         -D platforms=x11,wayland \
         -D shader-cache=auto \
-        -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
         -D glx=dri \
         -D gbm=enabled \
         -D egl=enabled \
@@ -15,6 +14,8 @@ OPTS+=" -D b_lto=true \
         -D shared-glapi=enabled \
         -D libunwind=enabled \
         -D vulkan-drivers=auto \
+        -D vulkan-layers=device-select,intel-nullhw,overlay,screenshot,vram-report-limit \
+        -D video-codecs=all \
         -D gallium-drivers=auto \
         -D gallium-va=enabled \
         -D gallium-xa=enabled \
