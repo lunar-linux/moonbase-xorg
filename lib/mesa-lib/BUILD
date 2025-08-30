@@ -18,17 +18,11 @@ OPTS+=" -D b_lto=true \
         -D video-codecs=all \
         -D gallium-drivers=auto \
         -D gallium-va=enabled \
-        -D gallium-xa=enabled \
-        -D gallium-nine=true \
         -D gallium-vdpau=enabled \
         -D gallium-extra-hud=true \
-        -D gallium-opencl=disabled \
         -D gallium-va=enabled \
         -D microsoft-clc=disabled \
-        -D intel-clc=enabled \
-        -D install-intel-clc=true \
-        -D llvm=enabled \
-        -D osmesa=true"
+        -D llvm=enabled"
 
 default_meson_build &&
 
