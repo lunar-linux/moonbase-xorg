@@ -1,12 +1,12 @@
           MODULE=libXres
-         VERSION=1.2.2
+         VERSION=1.2.3
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:9a7446f3484b9b7538ac5ee30d2c1ce9e5b7fbbaf1440e02f6cca186a1fa745f
+      SOURCE_VFY=sha256:d2de8f5401d6c86a8992791654547eb8def585dfdc0c08cc16e24ef6aeeb69dc
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20230319
+         UPDATED=20250909
            SHORT="The X.Org Resource extension library"
 
 cat << EOF
