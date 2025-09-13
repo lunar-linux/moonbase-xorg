@@ -1,12 +1,12 @@
         MODULE=luit
-       VERSION=20240102
+       VERSION=20250912
         SOURCE=$MODULE-$VERSION.tgz
     SOURCE_URL=https://invisible-mirror.net/archives/${MODULE}/
-    SOURCE_VFY=sha256:a07aea28cdcec50ef225d8c96d3944c3ef6401a913b0d78a84ddc85191ebc082
+    SOURCE_VFY=sha256:46958060e66f35bcb8a51ba22da1c13d726d28a86c1cf520511bcf7914bef39e
  MODULE_PREFIX=${X11R7_PREFIX:-/usr}
       WEB_SITE=http://www.x.org
        ENTERED=20070216
-       UPDATED=20240119
+       UPDATED=20250913
          SHORT="Locale and ISO 2022 support for Unicode terminals"
 
 cat << EOF
