@@ -15,9 +15,3 @@ optional_depends libwacom \
                  "-Dlibwacom=false" \
                  " for tablet identification" \
                  "n"
-
-optional_depends doxygen \
-                 "-Ddocumentation=true" \
-                 "-Ddocumentation=false" \
-                 "for documentaton install" \
-                 "n"
