@@ -1,11 +1,12 @@
           MODULE=xdg-user-dirs
-         VERSION=0.18
+         VERSION=0.19
           SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://user-dirs.freedesktop.org/releases/
-      SOURCE_VFY=sha256:ec6f06d7495cdba37a732039f9b5e1578bcb296576fde0da40edb2f52220df3c
+ SOURCE_URL_FULL=https://gitlab.freedesktop.org/xdg/xdg-user-dirs/-/archive/master/xdg-user-dirs-master.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-master
+      SOURCE_VFY=sha256:36d2438c4b0fe3fc45c55150e8a77387e9353cb8e582bd4842a481dd44885958
         WEB_SITE=https://www.freedesktop.org/wiki/Software/xdg-user-dirs
          ENTERED=20070825
-         UPDATED=20230118
+         UPDATED=20250928
            SHORT="a tool to help manage 'well known' user directories"
 
 cat << EOF
