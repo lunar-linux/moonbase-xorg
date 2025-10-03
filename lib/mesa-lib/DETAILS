@@ -6,7 +6,7 @@
        SOURCE_VFY=sha256:a370b4c549cbfbe646b319e34d73edb50ed883978f5e95133f282f0eae39ab52
          WEB_SITE=http://www.mesa3d.org
           ENTERED=20060215
-          UPDATED=20250922
+          UPDATED=20251003
             SHORT="Mesa 3D library"
 
 cat << EOF
