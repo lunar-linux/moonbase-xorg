@@ -1,12 +1,12 @@
           MODULE=xf86-video-ast
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/driver/
-      SOURCE_VFY=sha256:86aa47dca9043867104f609fcdd3bef24aacc054f52b86b40b6e550b6a335d93
+      SOURCE_VFY=sha256:df6b630e193c32972a20b02fa6db7fd38d026e835464e26d469de32e31c87cb6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060303
-         UPDATED=20250106
+         UPDATED=20251005
            SHORT="Ast video driver"
 
 cat << EOF
