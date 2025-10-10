@@ -18,6 +18,7 @@ depends glslang
 depends cbindgen
 depends rust-bindgen
 depends libclc
+depends docutils
 
 optional_depends lm_sensors \
                  "-D lmsensors=enabled" \
