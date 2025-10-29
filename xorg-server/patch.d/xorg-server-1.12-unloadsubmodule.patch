@@ -1,7 +1,7 @@
 diff -u13 -r xorg-server-1.12.3-old/hw/xfree86/loader/loadmod.c xorg-server-1.12.3/hw/xfree86/loader/loadmod.c
 --- xorg-server-1.12.3-old/hw/xfree86/loader/loadmod.c	2012-09-05 18:26:42.000000000 +0200
 +++ xorg-server-1.12.3/hw/xfree86/loader/loadmod.c	2012-09-05 18:28:54.000000000 +0200
-@@ -1109,39 +1109,38 @@
+@@ -887,39 +887,38 @@
  static void
  RemoveChild(ModuleDescPtr child)
  {
