@@ -1,9 +1,10 @@
 depends libdrm
 depends libXfixes
+depends meson
 
 optional_depends wayland \
-                 "--enable-wayland" \
-                 "--disable-wayland" \
+                 "-Dwith_wayland=yes" \
+                 "-Dwith_wayland=no" \
                  "for wayland support" \
                  "y"
 
