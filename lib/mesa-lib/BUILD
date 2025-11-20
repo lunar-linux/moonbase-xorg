@@ -18,9 +18,9 @@ OPTS+=" -D b_lto=true \
         -D video-codecs=all \
         -D gallium-drivers=auto \
         -D gallium-va=enabled \
-        -D gallium-vdpau=enabled \
         -D gallium-extra-hud=true \
         -D gallium-va=enabled \
+        -D gallium-rusticl-enable-drivers=auto \
         -D microsoft-clc=disabled \
         -D llvm=enabled"
 
