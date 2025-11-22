@@ -1,0 +1,14 @@
+          MODULE=egl-gbm
+         VERSION=1.1.2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/NVIDIA/egl-gbm/archive/refs/tags/$VERSION.tar.gz
+      SOURCE_VFY=sha256:7485553525b4212842230098b12671469bddb3c37063a89383f31865aea63aef
+        WEB_SITE=https://github.com/NVIDIA/egl-gbm
+            TYPE=meson
+         ENTERED=20251119
+         UPDATED=20251119
+           SHORT="provides egl gbm libraries"
+
+cat << EOF
+Provides libnvidia-egl-gbm.so libraries that used to be part of NVIDIA drivers.
+EOF
