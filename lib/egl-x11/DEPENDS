@@ -1,0 +1,6 @@
+depends meson
+depends eglexternalplatform
+depends libxcb
+depends libX11
+depends libdrm
+depends mesa-lib
