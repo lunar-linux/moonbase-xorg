@@ -2,7 +2,7 @@
          VERSION=2.99.917
          _commit=4a64400ec6a7d8c0aba0e6a39b16a5e86d0af843 # master 2025-03-21
           SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=git+https://anongit.freedesktop.org/git/xorg/driver/xf86-video-intel:tag=$VERSION:commit=$_commit
+ SOURCE_URL_FULL=git+https://anongit.freedesktop.org/git/xorg/driver/xf86-video-intel:commit=$_commit
 #      SOURCE_VFY=sha256:
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
