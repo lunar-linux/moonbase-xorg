@@ -1,5 +1,7 @@
 depends xorg-server
 depends libva
 depends xcb-util
+depends meson
 
-optional_depends libXvMC "--enable-xvmc" "--disable-xvmc" "for XvMC support"
+optional_depends libXvMC  "-D xvmc=true"     "-D xvmc=false"     "for XvMC support"
+optional_depends valgrind "-D valgrind=true" "-D valgrind=false" "for valgrind support" "n"
