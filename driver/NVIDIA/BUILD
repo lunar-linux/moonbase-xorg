@@ -192,6 +192,13 @@ if in_depends $MODULE "gtk+-3" ; then
   install -m0444 nvidia-settings.1.gz /usr/share/man/man1
 fi &&
 
+# Wayland/GBM
+ln -sr /usr/lib/libnvidia-allocator.so.${VERSION} /usr/lib/gbm/nvidia-drm_gbm.so &&
+
+# firmware
+install -Dm644 -t /usr/lib/firmware/nvidia/${VERSION}/ firmware/*.bin &&
+
+
 sedit 's:/bin/rm:/usr/bin/rm:' /usr/lib/systemd/system/nvidia-persistenced.service &&
 
 gather_docs README.txt LICENSE NVIDIA_Changelog

@@ -5,6 +5,8 @@ depends libvdpau
 depends CUDA-OpenCL-headers
 depends libglvnd
 depends egl-wayland
+depends egl-x11
+depends egl-gbm
 
 # Not really Optional, prevents a break circular dependency between gtk+-2 and nvidia
 optional_depends gtk+-3 "" "" "to build nvidia-settings"
