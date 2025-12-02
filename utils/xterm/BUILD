@@ -8,7 +8,6 @@ OPTS+=" --with-app-defaults=/etc/X11/app-defaults \
 
 LDFLAGS+=" -lncurses"
 ./configure --prefix=/usr $OPTS &&
-sed -i '/^LIBS\s*=/ s/$/ -lfreetype/' Makefile &&
 
 default_make
 
