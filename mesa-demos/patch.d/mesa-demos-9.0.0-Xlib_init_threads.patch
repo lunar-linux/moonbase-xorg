@@ -1,0 +1,212 @@
+Date: 2025-09-14 17:14:00 +0000
+Author: Stephane Fontaine <esselfe16@gmail.com>
+
+I was getting this message when starting glxgears or glxinfo:
+
+"Xlib is not thread-safe.  This should never be the case starting with XLib 1.8.  Either upgrade XLib or call XInitThreads() from your app."
+
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/glsync.c mesa-demos-9.0.0-new/src/xdemos/glsync.c
+--- mesa-demos-9.0.0-orig/src/xdemos/glsync.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/glsync.c	2025-09-14 13:01:17.351017955 -0400
+@@ -129,6 +129,8 @@
+                      None };
+ 	XSizeHints sizehints;
+ 
++	XInitThreads();
++
+ 	opterr = 0;
+ 	while ((c = getopt(argc, argv, optstr)) != -1) {
+ 		switch (c) {
+@@ -292,6 +294,7 @@
+ 	XDestroyWindow(disp, winGL);
+ 	glXDestroyContext(disp, context);
+ 	XCloseDisplay(disp);
++	XFreeThreads();
+ 
+ 	return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/glxdemo.c mesa-demos-9.0.0-new/src/xdemos/glxdemo.c
+--- mesa-demos-9.0.0-orig/src/xdemos/glxdemo.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/glxdemo.c	2025-09-14 13:02:26.944224285 -0400
+@@ -113,6 +113,8 @@
+    Display *dpy;
+    Window win;
+ 
++   XInitThreads();
++
+    dpy = XOpenDisplay(NULL);
+ 
+    win = make_rgb_db_window( dpy, 300, 300 );
+@@ -123,5 +125,8 @@
+    XMapWindow( dpy, win );
+ 
+    event_loop( dpy );
++
++   XFreeThreads();
++
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/glxgears.c mesa-demos-9.0.0-new/src/xdemos/glxgears.c
+--- mesa-demos-9.0.0-orig/src/xdemos/glxgears.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/glxgears.c	2025-09-14 12:44:16.951498766 -0400
+@@ -801,6 +801,8 @@
+    VisualID visId;
+    int i;
+ 
++   XInitThreads();
++
+    for (i = 1; i < argc; i++) {
+       if (strcmp(argv[i], "-display") == 0) {
+          dpyName = argv[i+1];
+@@ -881,6 +883,7 @@
+    glXDestroyContext(dpy, ctx);
+    XDestroyWindow(dpy, win);
+    XCloseDisplay(dpy);
++   XFreeThreads();
+ 
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/glxinfo.c mesa-demos-9.0.0-new/src/xdemos/glxinfo.c
+--- mesa-demos-9.0.0-orig/src/xdemos/glxinfo.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/glxinfo.c	2025-09-14 12:52:18.634158825 -0400
+@@ -1365,6 +1365,8 @@
+    struct options opts;
+    Bool coreWorked;
+ 
++   XInitThreads();
++
+    parse_args(argc, argv, &opts);
+ 
+    dpy = XOpenDisplay(opts.displayName);
+@@ -1406,6 +1408,7 @@
+    }
+ 
+    XCloseDisplay(dpy);
++   XFreeThreads();
+ 
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/glxpixmap.c mesa-demos-9.0.0-new/src/xdemos/glxpixmap.c
+--- mesa-demos-9.0.0-orig/src/xdemos/glxpixmap.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/glxpixmap.c	2025-09-14 13:03:02.700135393 -0400
+@@ -164,6 +164,8 @@
+    Pixmap pm;
+    GLXPixmap glxpm;
+ 
++   XInitThreads();
++
+    dpy = XOpenDisplay(NULL);
+ 
+    win = make_rgb_window( dpy, 300, 300 );
+@@ -186,5 +188,8 @@
+    XMapWindow( dpy, win );
+ 
+    event_loop( dpy, pm );
++
++   XFreeThreads();
++
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/msctest.c mesa-demos-9.0.0-new/src/xdemos/msctest.c
+--- mesa-demos-9.0.0-orig/src/xdemos/msctest.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/msctest.c	2025-09-14 13:03:58.173243349 -0400
+@@ -71,6 +71,8 @@
+ 	int i = 1;
+ 	int64_t ust, msc, sbc;
+ 
++	XInitThreads();
++
+ 	disp = XOpenDisplay(NULL);
+ 	if (!disp) {
+ 		fprintf(stderr, "failed to open display\n");
+@@ -167,6 +169,7 @@
+ 	XDestroyWindow(disp, winGL);
+ 	glXDestroyContext(disp, context);
+ 	XCloseDisplay(disp);
++	XFreeThreads();
+ 
+ 	return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/offset.c mesa-demos-9.0.0-new/src/xdemos/offset.c
+--- mesa-demos-9.0.0-orig/src/xdemos/offset.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/offset.c	2025-09-14 13:05:12.744620096 -0400
+@@ -105,6 +105,8 @@
+     GLXContext cx;
+     GLint z;
+ 
++    XInitThreads();
++
+     dpy = XOpenDisplay(0);
+     if (!dpy) error(argv[0], "can't open display");
+ 
+@@ -148,6 +150,8 @@
+     /* process events until the user presses ESC */
+     while (1) process_input(dpy, win);
+ 
++    XFreeThreads();
++
+     return 0;
+ }
+ 
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/shape.c mesa-demos-9.0.0-new/src/xdemos/shape.c
+--- mesa-demos-9.0.0-orig/src/xdemos/shape.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/shape.c	2025-09-14 13:06:18.087870837 -0400
+@@ -321,6 +321,8 @@
+    int ignore;
+    const char *name = "OpenGL in a Shaped Window";
+ 
++   XInitThreads();
++
+    dpy = XOpenDisplay(NULL);
+    if (!dpy) {
+       fprintf(stderr, "Couldn't open default display\n");
+@@ -389,5 +391,7 @@
+ 
+    event_loop(dpy, win);
+ 
++   XFreeThreads();
++
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/xfont.c mesa-demos-9.0.0-new/src/xdemos/xfont.c
+--- mesa-demos-9.0.0-orig/src/xdemos/xfont.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/xfont.c	2025-09-14 13:00:12.619026801 -0400
+@@ -191,6 +191,8 @@
+    Display *dpy;
+    Window win;
+ 
++   XInitThreads();
++
+    dpy = XOpenDisplay(NULL);
+ 
+    win = make_rgb_db_window( dpy, 0, 0, 300, 300 );
+@@ -202,5 +204,8 @@
+    XMapWindow( dpy, win );
+ 
+    event_loop( dpy );
++
++   XFreeThreads();
++
+    return 0;
+ }
+diff -ur mesa-demos-9.0.0-orig/src/xdemos/xrotfontdemo.c mesa-demos-9.0.0-new/src/xdemos/xrotfontdemo.c
+--- mesa-demos-9.0.0-orig/src/xdemos/xrotfontdemo.c	2023-03-22 08:13:43.000000000 -0400
++++ mesa-demos-9.0.0-new/src/xdemos/xrotfontdemo.c	2025-09-14 13:07:10.535159602 -0400
+@@ -205,6 +205,8 @@
+    Display *dpy;
+    Window win;
+ 
++   XInitThreads();
++
+    dpy = XOpenDisplay(NULL);
+ 
+    win = make_rgb_db_window( dpy, 0, 0, 300, 300 );
+@@ -216,5 +218,8 @@
+    XMapWindow( dpy, win );
+ 
+    event_loop( dpy );
++
++   XFreeThreads();
++
+    return 0;
+ }
