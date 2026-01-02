@@ -1,10 +1,13 @@
 #DEPRECATION: Option 'glvnd' value 'true' is replaced by 'enabled'
-OPTS+=" -D b_lto=true \
+OPTS+=" -D b_lto=false \
+        -D intel-rt=enabled \
+        -D sysprof=false \
         -D build-tests=false \
         -D b_ndebug=true \
-        -D platforms=x11,wayland \
+        -D platforms=auto \
+        -D egl-native-platform=auto \
         -D shader-cache=auto \
-        -D glx=dri \
+        -D glx=auto \
         -D gbm=enabled \
         -D egl=enabled \
         -D gles2=enabled \
@@ -12,7 +15,7 @@ OPTS+=" -D b_lto=true \
         -D glvnd=enabled \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
-        -D libunwind=enabled \
+        -D libunwind=disabled \
         -D vulkan-drivers=auto \
         -D vulkan-layers=device-select,intel-nullhw,overlay,screenshot,vram-report-limit \
         -D video-codecs=all \
