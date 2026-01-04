@@ -1,12 +1,12 @@
           MODULE=xauth
-         VERSION=1.1.4
+         VERSION=1.1.5
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:e9318141464ad7b4dc0f8564a580f0d20f977c85a388cc40d5a766206151c690
+      SOURCE_VFY=sha256:a4000e2f441facebf569026bedecc23ba262cc6927be52070abe0002625cfbe0
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
-        WEB_SITE=http://www.x.org
+        WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20250309
+         UPDATED=20260104
            SHORT="The X.Org authentication utility"
 
 cat << EOF
