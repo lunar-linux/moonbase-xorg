@@ -1,12 +1,12 @@
           MODULE=rgb
-         VERSION=1.1.0
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:fc03d7f56e5b2a617668167f8927948cce54f93097e7ccd9f056077f479ed37b
+      SOURCE_VFY=sha256:c80ff280a02f56c30fadc2dfa210fc6979c4ab968afa315278cb97768b64ecab
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20221031
+         UPDATED=20260105
            SHORT="database of known RGB colors for X"
 
 cat << EOF
