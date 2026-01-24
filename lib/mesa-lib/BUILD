@@ -24,6 +24,7 @@ OPTS+=" -D b_lto=false \
         -D gallium-extra-hud=true \
         -D gallium-va=enabled \
         -D gallium-rusticl-enable-drivers=auto \
+        -D gallium-rusticl=true \
         -D microsoft-clc=disabled \
         -D llvm=enabled"
 
