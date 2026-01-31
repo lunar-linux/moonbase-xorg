@@ -22,7 +22,6 @@ OPTS+=" -Ddri1=auto        \
         -Ddefault_font_path=/usr/share/fonts/"
 
 default_meson_build
-#default_build &&
 
 # This should not be needed, check in next release if still needed.
 rm -fr /usr/share/X11/xkb/compiled &&
