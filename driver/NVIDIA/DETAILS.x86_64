@@ -1,5 +1,5 @@
           MODULE=NVIDIA
-         VERSION=580.126.18
+         VERSION=580.142
           SOURCE=NVIDIA-Linux-x86_64-$VERSION-no-compat32.run
          SOURCE2=nvidia-settings-$VERSION.tar.bz2
          SOURCE3=nvidia-installer-$VERSION.tar.bz2
@@ -12,14 +12,14 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-no-compat32
   SOURCE3_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-installer/snapshot
   SOURCE4_URL[0]=$NVIDIA_URL/nvidia-xconfig
   SOURCE4_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-xconfig/snapshot
-      SOURCE_VFY=sha256:289b6be27800ab791b0f6e9631d1f803886077cc8cd08e8d4a694edeee8edf4a
-     SOURCE2_VFY=sha256:b5cca0b359fdf9b3d44aafdaaa48be2b466a1e50fa71963bcfcae08cf2f71fd4
-     SOURCE3_VFY=sha256:d3c054f35ab90f4bd6a25b5fda1538289549399e0786fed79a5b5b381ba22896
-     SOURCE4_VFY=sha256:0e78a7dd17c05d2f5d5ba3f2dce5cc3a78372d8cf45dd863e8b0a7594ce989b7
+      SOURCE_VFY=sha256:fb218f6e99ff16f2a0a8188e6fa53d820138dad8b7735626948e5d8907c90565
+     SOURCE2_VFY=sha256:ba2c52127588cc6ba38ca49f51c094883aecd008425cd3ce8185a14c37586e9a
+     SOURCE3_VFY=sha256:4e8a9f628786816b8dbb48909852c66a4ab7efbbf717ef5c6974a7352634c7dd
+     SOURCE4_VFY=sha256:86d1c5f763ac86e01f51b00c29f8c00918b1ee0dae2b9a77e21af00534658680
         WEB_SITE=http://www.nvidia.com/
          LICENSE="proprietary"
          ENTERED=20030804
-         UPDATED=20260225
+         UPDATED=20260311
            SHORT="X11 NVIDIA binary driver for Geforce 6/7/8/9/GT2xx"
 
 cat << EOF
