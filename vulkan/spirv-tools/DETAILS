@@ -1,12 +1,12 @@
            MODULE=spirv-tools
-          VERSION=1.4.335.0
+          VERSION=1.4.341.0
            SOURCE=$MODULE-$VERSION.tar.gz
   SOURCE_URL_FULL=https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-$VERSION/SPIRV-Tools-vulkan-sdk-$VERSION.tar.gz
-       SOURCE_VFY=sha256:8b3d5637061b52675e506ffa1100740031e38bdd96b8177978acfd898a705da2
+       SOURCE_VFY=sha256:15bfb678138cdf9cd1480dfb952547bbb66b763a735b6d5582578572f5c2e6f9
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/SPIRV-Tools-vulkan-sdk-${VERSION}
          WEB_SITE=https://github.com/KhronosGroup/SPIRV-Tools/
           ENTERED=20200530
-          UPDATED=20260102
+          UPDATED=20260313
          REPLACES=SPIRV-Tools
             SHORT="API and commands for processing SPIR-V modules"
 
