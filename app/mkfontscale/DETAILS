@@ -1,12 +1,12 @@
           MODULE=mkfontscale
-         VERSION=1.2.3
+         VERSION=1.2.4
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:2921cdc344f1acee04bcd6ea1e29565c1308263006e134a9ee38cf9c9d6fe75e
+      SOURCE_VFY=sha256:a01492a17a9b6c0ee3f92ee578850e305315b9f298da5f006a1cd4b51db01a5e
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070216
-         UPDATED=20240303
+         UPDATED=20260422
         REPLACES=mkfontdir
            SHORT="The X.Org scalable font directory creator"
 
