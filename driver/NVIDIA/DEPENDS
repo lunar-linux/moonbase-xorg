@@ -8,6 +8,6 @@ depends egl-wayland
 depends egl-x11
 depends egl-gbm
 
-# Not really Optional, prevents a break circular dependency between gtk+-2 and nvidia
+# Not really Optional, prevents a break circular dependency between gtk2-ng and nvidia
 optional_depends gtk+-3 "" "" "to build nvidia-settings"
 optional_depends gtk2-ng "" "" "to build nvidia-settings"
