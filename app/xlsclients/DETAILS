@@ -1,12 +1,12 @@
           MODULE=xlsclients
-         VERSION=1.1.5
+         VERSION=1.1.6
           SOURCE=$MODULE-$VERSION.tar.gz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:225d75e4c0b0929f16f974e20931ab85204b40098d92a5479b0b9379120637e5
+      SOURCE_VFY=sha256:fabc7a067d3baa53bf2c094a227ea8462aa2659f319497331f2e8bc240d23892
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20070305
-         UPDATED=20230817
+         UPDATED=20260531
            SHORT="List client applications running on a display"
 
 cat << EOF
