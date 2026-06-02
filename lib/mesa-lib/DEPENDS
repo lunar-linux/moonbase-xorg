@@ -1,6 +1,6 @@
 depends meson
 depends llvm
-depends lua53
+depends lua
 depends systemd
 depends libXxf86vm
 depends libxshmfence
