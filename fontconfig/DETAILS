@@ -1,11 +1,11 @@
           MODULE=fontconfig
-         VERSION=2.18.0
+         VERSION=2.18.1
           SOURCE=$MODULE-$VERSION.tar.bz2
       SOURCE_URL=https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/$VERSION/
-      SOURCE_VFY=sha256:13ec38f5a62e475254df107ef34ae67de79f06f9c0d42902ad5b675fa31cfa6d
+      SOURCE_VFY=sha256:200e01dec62e94adde5a0d221b0fa21fde06110c814701046c101655bb61363e
         WEB_SITE=http://www.fontconfig.org
          ENTERED=20030425
-         UPDATED=20260521
+         UPDATED=20260603
            SHORT="A library for configuring and customizing font access"
 
 cat << EOF
