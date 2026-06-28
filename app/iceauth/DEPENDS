@@ -1,1 +1,3 @@
 depends libICE
+depends util-macros
+depends xorgproto
