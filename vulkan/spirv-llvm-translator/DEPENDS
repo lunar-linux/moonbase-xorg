@@ -1,4 +1,5 @@
-depends cmake
+depends clang
 depends lld
+depends cmake
 depends spirv-tools
 depends spirv-headers
