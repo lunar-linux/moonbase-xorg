@@ -1,12 +1,12 @@
           MODULE=xedit
-         VERSION=1.2.4
+         VERSION=1.2.5
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:b00d488b29cd007fadf9a4e44193cbdd72b48c94080be5ebc02565f21f9a2a71
+      SOURCE_VFY=sha256:733460cbf20a9d88e2a482ff1b288f51a97150cff807c7ffb98d2430546c8867
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060523
-         UPDATED=20240324
+         UPDATED=20260630
            SHORT="The X.Org simple text editor"
 
 cat << EOF
