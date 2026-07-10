@@ -1,1 +1,3 @@
+depends libXext
 depends libXmu
+depends util-macros
