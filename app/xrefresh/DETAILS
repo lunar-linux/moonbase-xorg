@@ -1,12 +1,12 @@
           MODULE=xrefresh
-         VERSION=1.1.0
+         VERSION=1.1.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:29ed592d5ece35a3029004d8c46f3002f92970870a96c11e38baf7f1122b8b5f
+      SOURCE_VFY=sha256:e947048130f6300e8be86573af8f225b486884fac14fcfe01bd913b41fa73bd3
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20240304
+         UPDATED=20260710
            SHORT="refresh all or part of an X screen"
 
 cat << EOF
