@@ -1,3 +1,4 @@
 depends libXcursor
 depends libXmu
 depends xbitmaps
+depends util-macros
