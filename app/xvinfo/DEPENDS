@@ -1,1 +1,2 @@
 depends libXv
+depends util-macros

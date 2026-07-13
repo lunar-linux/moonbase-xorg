@@ -1,12 +1,12 @@
           MODULE=xvinfo
-         VERSION=1.1.5
+         VERSION=1.1.6
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:3ede71ecb26d9614ccbc6916720285e95a2c7e0c5e19b8570eaaf72ad7c5c404
+      SOURCE_VFY=sha256:a436945e6a4ab70590358eec2b85d26970f7de480d27e8a25af8fe8421e88ae2
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060302
-         UPDATED=20230817
+         UPDATED=20260713
            SHORT="Print out X-Video extension adaptor information"
 
 cat << EOF
