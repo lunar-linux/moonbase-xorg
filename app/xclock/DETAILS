@@ -1,12 +1,12 @@
           MODULE=xclock
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:410f0372f8381efd9a8282d8227122bab882d7cffe2f7f8f886dd9876d5fc875
+      SOURCE_VFY=sha256:e326cac20f7ad2af5412b9c4b70b1c3d392e08cd3cc6246e0a77b7c3935a4851
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060120
-         UPDATED=20260628
+         UPDATED=20260718
            SHORT="The X.Org xclock application"
 
 cat << EOF

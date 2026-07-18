@@ -2,3 +2,4 @@ depends libXft
 depends libxkbfile
 depends libXaw
 depends libXrender
+depends util-macros
