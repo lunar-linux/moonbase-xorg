@@ -1,7 +1,8 @@
+depends expat
 depends meson
-depends llvm
+depends clang
 depends lua
-depends systemd
+depends xorgproto
 depends libXxf86vm
 depends libxshmfence
 depends libXrandr
@@ -19,6 +20,8 @@ depends cbindgen
 depends rust-bindgen
 depends libclc
 depends docutils
+
+optional_depends systemd "" "" "for systemd support" "y"
 
 optional_depends lm_sensors \
                  "-D lmsensors=enabled" \
