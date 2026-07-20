@@ -1,12 +1,13 @@
           MODULE=xload
-         VERSION=1.2.0
+         VERSION=1.2.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/app/
-      SOURCE_VFY=sha256:2c0fe6d624e1a25c1707e2d56407b979d6a78d64271df9ea0a89d99b81b59a80
+      SOURCE_VFY=sha256:a5516860997349b8c31a6b51b681ca2abc99376437b5d97b4fb46bf7d7c957ba
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
+            TYPE=meson
          ENTERED=20070823
-         UPDATED=20240325
+         UPDATED=20260720
            SHORT="System load average display for X"
 
 cat << EOF
