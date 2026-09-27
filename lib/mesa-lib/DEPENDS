@@ -1,5 +1,4 @@
 depends expat
-depends meson
 depends clang
 depends lua
 depends xorgproto
@@ -14,13 +13,14 @@ depends wayland-protocols
 depends libglvnd
 depends libunwind
 depends libvdpau
-depends zstd
 depends libva
 depends glslang
 depends cbindgen
 depends rust-bindgen
 depends libclc
 depends docutils
+depends zstd
+depends meson
 
 optional_depends systemd "" "" "for systemd support" "y"
 
