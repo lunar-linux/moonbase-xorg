@@ -1,12 +1,12 @@
           MODULE=xorgproto
-         VERSION=2025.1
+         VERSION=2026.1
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/proto/
-      SOURCE_VFY=sha256:56898c716c0578df8a2d828c9c3e5c528277705c0484381a81960fe1a67668e8
+      SOURCE_VFY=sha256:f9bfe4a9ed8c8ab9d2a3b0d49797f046052dadd06b7a8b45dbffaffb137e8290
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20180210
-         UPDATED=20251219
+         UPDATED=20261004
            SHORT="Combined X.Org X11 Protocol headers"
 
 cat << EOF
