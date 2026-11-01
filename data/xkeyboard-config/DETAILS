@@ -1,12 +1,12 @@
           MODULE=xkeyboard-config
-         VERSION=2.48
+         VERSION=2.49
           SOURCE=$MODULE-$VERSION.tar.xz
-      SOURCE_URL=$XORG_URL/individual/data/$MODULE
-      SOURCE_VFY=sha256:b77041324f0109f77161ee43743fe04baa485866af8460d31e476ad3f7648fd5
+ SOURCE_URL_FULL=git+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git
+#      SOURCE_VFY=sha256:5c5f317718d4306b4204db1f7abfd77124a78763312433a2504b230b4614da67
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://freedesktop.org/wiki/Software/XKeyboardConfig
          ENTERED=20070329
-         UPDATED=20260622
+         UPDATED=20261101
            SHORT="keyboard data files for the X.Org server"
        LDD_CHECK=off
 
