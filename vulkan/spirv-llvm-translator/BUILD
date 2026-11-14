@@ -8,7 +8,6 @@ OPTS+=" -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DLLVM_EXTERNAL_LIT=/usr/bin/lit \
-        -DLLVM_EXTERNAL_SPIRV_HEADERS_SOURCE_DIR=/usr/include/spirv/ \
         -Wno-dev"
 
 cmake -B $MODULE-$VERSION -S . $OPTS &&
