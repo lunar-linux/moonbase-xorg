@@ -1,1 +1,5 @@
+depends meson
+depends libXmu
 depends libXaw
+depends libXt
+depends libX11
