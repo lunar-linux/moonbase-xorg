@@ -3,6 +3,7 @@ depends ncurses
 depends libXxf86vm
 depends libvdpau
 depends CUDA-OpenCL-headers
+depends Vulkan-Loader
 depends libglvnd
 depends egl-wayland
 depends egl-x11
