@@ -1,12 +1,12 @@
           MODULE=libfontenc
-         VERSION=1.1.9
+         VERSION=1.1.10
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$XORG_URL/individual/lib/
-      SOURCE_VFY=sha256:9d8392705cb10803d5fe1d27d236cbab3f664e26841ce01916bbbe430cf273e2
+      SOURCE_VFY=sha256:daa186a49e3cc2b6fc585ca09971351e6f010f618abc6a164eda82e42e4aa4d6
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=https://www.x.org
          ENTERED=20060120
-         UPDATED=20260208
+         UPDATED=2026111
            SHORT="The X.Org font encoding library"
 
 cat << EOF
