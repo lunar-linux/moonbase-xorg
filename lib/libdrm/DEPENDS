@@ -2,8 +2,9 @@ depends cairo
 depends libpciaccess
 depends util-macros
 depends libxslt
-depends systemd
 depends meson
+
+optional_depends systemd "" "" "for systemd support" "y"
 
 optional_depends docbook-xsl \
                  "-Dman-pages=enabled" \
