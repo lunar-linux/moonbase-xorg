@@ -26,6 +26,8 @@ depends meson
 
 optional_depends systemd "" "" "for systemd support" "y"
 
+optional_depends lua "" "" "for Lua support"
+
 optional_depends lm_sensors \
                  "-D lmsensors=enabled" \
                  "-D lmsensors=disabled" \
