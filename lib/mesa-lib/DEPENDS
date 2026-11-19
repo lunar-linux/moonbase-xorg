@@ -1,18 +1,20 @@
 depends expat
 depends clang
-depends lua
 depends xorgproto
-depends libXxf86vm
-depends libxshmfence
-depends libXrandr
 depends dbus-glib
 depends python-mako
 depends python-yaml
 depends python-markupsafe
+depends libdrm
+depends libXext
+depends libXrandr
+depends libXxf86vm
+depends libxshmfence
 depends wayland-protocols
 depends libglvnd
 depends libunwind
 depends libvdpau
+depends libxcb
 depends libva
 depends glslang
 depends cbindgen
@@ -28,3 +30,5 @@ optional_depends lm_sensors \
                  "-D lmsensors=enabled" \
                  "-D lmsensors=disabled" \
                  "for hardware sensors monitoring support"
+
+optional_depends libdisplay-info "" "" "for display info support" "n"

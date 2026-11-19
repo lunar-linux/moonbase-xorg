@@ -1,5 +1,6 @@
 #DEPRECATION: Option 'glvnd' value 'true' is replaced by 'enabled'
 OPTS+=" --optimization 2 \
+        -D amdgpu-virtio=true \
         -D android-libbacktrace=disabled \
         -D b_lto=false \
         -D sysprof=false \
@@ -18,18 +19,19 @@ OPTS+=" --optimization 2 \
         -D valgrind=disabled \
         -D html-docs=disabled \
         -D libunwind=disabled \
+        -D vulkan-loader-rpath= \
+        -D panfrost-virtio=true \
         -D shared-glapi=enabled \
         -D microsoft-clc=disabled \
-        -D vulkan-drivers=auto \
-        -D vulkan-layers=device-select,intel-nullhw,overlay,screenshot,anti-lag,vram-report-limit \
+        -D vulkan-layers=device-select,intel-nullhw,overlay,screenshot,vram-report-limit \
         -D video-codecs=all \
+        -D gallium-va=enabled \
+        -D vulkan-drivers=auto \
         -D gallium-drivers=auto \
-        -D gallium-va=enabled \
+        -D gallium-rusticl=true \
         -D gallium-extra-hud=true \
-        -D gallium-va=enabled \
         -D gallium-rusticl-enable-drivers=auto \
         -D vulkan-manifest-per-architecture=false \
-        -D gallium-rusticl=true \
         -D llvm=enabled"
 
 default_meson_build &&
