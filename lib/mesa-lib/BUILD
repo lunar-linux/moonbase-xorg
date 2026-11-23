@@ -27,6 +27,7 @@ OPTS+=" --optimization 2 \
         -D video-codecs=all \
         -D gallium-va=enabled \
         -D vulkan-drivers=auto \
+        -D panfrost-virtio=true \
         -D gallium-drivers=auto \
         -D gallium-rusticl=true \
         -D gallium-extra-hud=true \
